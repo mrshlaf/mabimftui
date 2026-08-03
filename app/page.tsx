@@ -52,62 +52,91 @@ const regulerCount = statistik.departemen.filter((d) => d.kode !== "PI").length;
 export default function Home() {
   return (
     <div className="min-h-full">
-      <section className="relative overflow-hidden bg-teal text-cream">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20 grayscale"
-          style={{ backgroundImage: "url('/bg-site.jpg')" }}
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto max-w-6xl px-6 py-14 sm:px-8 sm:py-20">
-          <div className="grid items-center gap-10 lg:gap-16 md:grid-cols-2">
-            <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur">
-                Mahasiswa Baru FTUI 2026
-              </span>
-              <h1 className="mt-5 font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Mabim FTUI{" "}
-                <span className="text-accent">2026</span>
-              </h1>
-              <p className="mt-4 max-w-xl font-heading text-lg font-semibold tracking-tight text-cream sm:text-xl">
-                Find Your Path. Forge Your Legacy.
-              </p>
+      <section className="mx-auto max-w-6xl px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-[2.5rem] bg-teal text-cream shadow-lift ring-1 ring-white/15">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-25 grayscale"
+            style={{ backgroundImage: "url('/bg-site.jpg')" }}
+            aria-hidden="true"
+          />
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-8 -top-12 select-none font-heading text-[10rem] font-bold leading-none tracking-tight text-white/5 lg:text-[14rem]"
+          >
+            2026
+          </span>
 
-              <div className="mt-8">
-                <Countdown />
+          <div className="relative mx-auto max-w-6xl px-6 py-12 sm:px-12 sm:py-16 lg:px-16">
+            <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
+              <div>
+                <span className="inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+                  </span>
+                  Mahasiswa Baru FTUI 2026
+                </span>
+
+                <h1 className="mt-6 font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                  Mabim FTUI <span className="text-accent">2026</span>
+                </h1>
+                <p className="mt-5 max-w-xl font-heading text-lg font-semibold tracking-tight text-cream sm:text-xl">
+                  Find Your Path. Forge Your Legacy.
+                </p>
+
+                <div className="mt-8">
+                  <Countdown />
+                </div>
+
+                <div className="mt-8 flex flex-wrap items-center gap-3">
+                  <Button asChild size="lg" className="h-12 rounded-full px-7">
+                    <Link href="/kelompok">
+                      <Search data-slot="icon-inline-start" />
+                      Cari Kelompokmu
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="h-12 rounded-full border-white/30 bg-transparent px-7 text-cream hover:bg-white/10 hover:text-cream"
+                  >
+                    <Link href="/kontak">
+                      <Phone data-slot="icon-inline-start" />
+                      Kontak SC
+                    </Link>
+                  </Button>
+                </div>
               </div>
 
-              <div className="mt-7 flex flex-wrap items-center gap-3">
-                <Button asChild size="lg" className="h-12 rounded-full px-7">
-                  <Link href="/kelompok">
-                    <Search data-slot="icon-inline-start" />
-                    Cari Kelompokmu
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="h-12 rounded-full border-white/30 bg-transparent px-7 text-cream hover:bg-white/10 hover:text-cream"
-                >
-                  <Link href="/kontak">
-                    <Phone data-slot="icon-inline-start" />
-                    Kontak SC
-                  </Link>
-                </Button>
+              <div>
+                <VideoTeaser />
               </div>
             </div>
 
-            <div>
-              <VideoTeaser />
-              <div className="mt-4 flex flex-wrap gap-2">
-                <span className="rounded-full border border-white/20 bg-white/10 px-3.5 py-2 text-xs font-semibold text-cream backdrop-blur">
-                  {statistik.total.toLocaleString("id-ID")} Maba
-                </span>
-                <span className="rounded-full bg-accent px-3.5 py-2 text-xs font-semibold text-white">
-                  {regulerCount} Departemen + PI
-                </span>
-                <span className="rounded-full border border-white/20 bg-white/10 px-3.5 py-2 text-xs font-semibold text-cream backdrop-blur">
-                  {statistik.prodi} Program Studi
-                </span>
+            <div className="mt-12 grid grid-cols-3 divide-x divide-white/10 rounded-[2rem] border border-white/15 bg-white/5 px-4 py-5 backdrop-blur sm:mt-14">
+              <div className="px-2 text-center">
+                <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+                  {statistik.total.toLocaleString("id-ID")}
+                </p>
+                <p className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-cream/70 sm:text-xs">
+                  Maba
+                </p>
+              </div>
+              <div className="px-2 text-center">
+                <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+                  {regulerCount}
+                </p>
+                <p className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-cream/70 sm:text-xs">
+                  Departemen + PI
+                </p>
+              </div>
+              <div className="px-2 text-center">
+                <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+                  {statistik.prodi}
+                </p>
+                <p className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-cream/70 sm:text-xs">
+                  Program Studi
+                </p>
               </div>
             </div>
           </div>
