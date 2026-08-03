@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -50,7 +50,31 @@ export default function SearchMahasiswa() {
   const [npm, setNpm] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [found, setFound] = useState<Mahasiswa | null>(null);
+  const [namaFocus, setNamaFocus] = useState(false);
+  const [suggestions, setSuggestions] = useState<Mahasiswa[]>([]);
   const recordsRef = useRef<Mahasiswa[] | null>(null);
+
+  async function getRecords() {
+    if (!recordsRef.current) {
+      recordsRef.current = (await import("@/data/mahasiswa")).mahasiswaData;
+    }
+    return recordsRef.current;
+  }
+
+  useEffect(() => {
+    let cancelled = false;
+    const q = normalize(nama);
+    if (!namaFocus || !q) return;
+    getRecords().then((records) => {
+      if (cancelled) return;
+      setSuggestions(
+        records.filter((m) => normalize(m.nama).includes(q)).slice(0, 6)
+      );
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [nama, namaFocus]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -58,10 +82,8 @@ export default function SearchMahasiswa() {
     setStatus("loading");
     setFound(null);
     try {
-      if (!recordsRef.current) {
-        recordsRef.current = (await import("@/data/mahasiswa")).mahasiswaData;
-      }
-      const match = recordsRef.current.find(
+      const records = await getRecords();
+      const match = records.find(
         (m) =>
           normalize(m.nama) === normalize(nama) && m.npm === npm.trim()
       );
@@ -84,7 +106,7 @@ export default function SearchMahasiswa() {
   return (
     <div className="space-y-5">
       {status === "idle" && (
-        <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card sm:p-8">
+        <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card !overflow-visible sm:p-8">
           <div className="flex items-center gap-3">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
               <Search className="h-6 w-6" />
@@ -106,10 +128,43 @@ export default function SearchMahasiswa() {
                 type="text"
                 autoComplete="off"
                 value={nama}
-                onChange={(e) => setNama(e.target.value)}
+                onChange={(e) => {
+                  setNama(e.target.value);
+                  if (!normalize(e.target.value)) setSuggestions([]);
+                }}
+                onFocus={() => setNamaFocus(true)}
+                onBlur={() =>
+                  setTimeout(() => {
+                    setNamaFocus(false);
+                    setSuggestions([]);
+                  }, 150)
+                }
                 placeholder="Nama lengkap kamu"
                 className="h-13 rounded-full border-border bg-card pl-12 pr-4 text-base shadow-card placeholder:text-muted-foreground/70"
               />
+              {namaFocus && suggestions.length > 0 && (
+                <ul className="absolute left-0 right-0 top-[calc(100%+6px)] z-20 max-h-[232px] overflow-y-auto rounded-2xl border border-border bg-card shadow-lift">
+                  {suggestions.map((m) => (
+                    <li key={m.npm}>
+                      <button
+                        type="button"
+                        onMouseDown={(e) => e.preventDefault()}
+                        onClick={() => {
+                          setNama(m.nama);
+                          setSuggestions([]);
+                          setNamaFocus(false);
+                        }}
+                        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left text-sm text-foreground transition-colors hover:bg-secondary"
+                      >
+                        <span className="truncate font-medium">{m.nama}</span>
+                        <span className="shrink-0 text-xs text-muted-foreground">
+                          {m.prodi}
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
             <div className="relative">
               <IdCard className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />

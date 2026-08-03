@@ -52,6 +52,36 @@ export const DEPARTEMEN_WARNA: Record<
     heading: "text-amber-950",
     sub: "text-amber-800/70",
   },
+  BEM: {
+    badge: "bg-blue-900 text-white",
+    card: "bg-blue-100/80 ring-blue-300/60",
+    heading: "text-blue-950",
+    sub: "text-blue-800/70",
+  },
+  MPM: {
+    badge: "bg-blue-900 text-white",
+    card: "bg-blue-100/80 ring-blue-300/60",
+    heading: "text-blue-950",
+    sub: "text-blue-800/70",
+  },
+  FUSI: {
+    badge: "bg-yellow-400 text-yellow-950",
+    card: "bg-yellow-50 ring-yellow-300/60",
+    heading: "text-yellow-950",
+    sub: "text-yellow-800/70",
+  },
+  KMK: {
+    badge: "bg-yellow-400 text-yellow-950",
+    card: "bg-yellow-50 ring-yellow-300/60",
+    heading: "text-yellow-950",
+    sub: "text-yellow-800/70",
+  },
+  PO: {
+    badge: "bg-yellow-400 text-yellow-950",
+    card: "bg-yellow-50 ring-yellow-300/60",
+    heading: "text-yellow-950",
+    sub: "text-yellow-800/70",
+  },
 };
 
 export const statistik: Statistik = {

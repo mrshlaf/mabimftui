@@ -12,7 +12,21 @@ export default function VideoTeaser() {
 
   useEffect(() => {
     function onChange() {
-      setFullscreen(Boolean(document.fullscreenElement));
+      const isFs = Boolean(document.fullscreenElement);
+      setFullscreen(isFs);
+      const orientation = screen.orientation as ScreenOrientation & {
+        lock?: (o: string) => Promise<void>;
+        unlock?: () => void;
+      };
+      if (isFs) {
+        try {
+          orientation.lock?.("portrait")?.catch(() => {});
+        } catch {}
+      } else {
+        try {
+          orientation.unlock?.();
+        } catch {}
+      }
     }
     document.addEventListener("fullscreenchange", onChange);
     return () => document.removeEventListener("fullscreenchange", onChange);
@@ -61,7 +75,7 @@ export default function VideoTeaser() {
         playsInline
         preload="none"
         onClick={togglePlay}
-        className={`w-full cursor-pointer object-cover ${fullscreen ? "h-full" : "aspect-[16/9]"}`}
+        className={`w-full cursor-pointer ${fullscreen ? "h-full bg-black object-contain" : "aspect-[16/9] object-cover"}`}
       />
 
       {!playing && (
