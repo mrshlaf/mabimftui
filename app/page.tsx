@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Countdown from "./components/Countdown";
 import Icon, { type IconName } from "./components/Icon";
@@ -7,61 +8,87 @@ export const metadata: Metadata = {
   title: "Mabim FTUI 2026",
 };
 
+const HERO_STYLE = {
+  backgroundImage:
+    "linear-gradient(rgba(9,65,82,0.9), rgba(6,47,59,0.95)), url('/hero-mabim.jpg')",
+};
+
 const CARDS: { href: string; icon: IconName; title: string; desc: string }[] = [
   {
     href: "/kelompok",
     icon: "users",
     title: "Cari Kelompok",
-    desc: "Cari nama kamu untuk melihat nomor kelompok dan grup Line.",
+    desc: "Temukan nomor kelompok dan grup Line kamu.",
   },
   {
     href: "/tugas",
     icon: "doc",
     title: "Link Tugas",
-    desc: "Akses link pengumpulan tugas tiap departemen & lembaga.",
+    desc: "Akses link pengumpulan tugas tiap unit.",
   },
   {
     href: "/info",
     icon: "megaphone",
     title: "Info Penting",
-    desc: "Pelaporan pengaduan, guidebook, dan kalender kegiatan.",
+    desc: "Pengaduan, guidebook, dan kalender kegiatan.",
+  },
+  {
+    href: "/kontak",
+    icon: "phone",
+    title: "Kontak Panitia",
+    desc: "Hubungi contact person BEM, MPM, dan unit.",
   },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-full">
-      <section className="bg-teal px-4 py-10 text-cream sm:py-12">
-        <div className="mx-auto max-w-4xl">
-          <div className="flex items-center gap-3">
-            <span className="grid h-12 w-12 place-items-center rounded-xl bg-accent text-teal-dark">
-              <Icon name="line" className="h-8 w-8" />
-            </span>
-            <h1 className="text-2xl font-bold sm:text-3xl">Mabim FTUI 2026</h1>
-          </div>
-          <p className="mt-3 max-w-xl text-sm text-cream/85 sm:text-base">
-            Satu pintu informasi untuk Mahasiswa Baru: cari kelompokmu, akses
-            link tugas, dan temukan info penting Mabim.
-          </p>
-          <div className="mt-4">
-            <Countdown />
+      <section className="relative overflow-hidden bg-teal text-cream">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={HERO_STYLE}
+          aria-hidden="true"
+        />
+        <div className="relative mx-auto max-w-4xl px-4 py-14 sm:py-20">
+          <div className="flex flex-col items-center text-center">
+            <Image
+              src="/logo-mabim.png"
+              alt="Logo Mabim FTUI"
+              width={144}
+              height={144}
+              priority
+              className="rounded-full drop-shadow-lg"
+            />
+            <p className="mt-6 text-xs font-bold uppercase tracking-[0.25em] text-accent">
+              Mahasiswa Baru 2026
+            </p>
+            <h1 className="mt-2 text-3xl font-bold sm:text-4xl">
+              Mabim FTUI 2026
+            </h1>
+            <p className="mt-3 max-w-xl text-sm text-cream/80 sm:text-base">
+              Satu pintu informasi: cari kelompokmu, akses link tugas, dan
+              temukan info penting Mabim.
+            </p>
+            <div className="mt-6">
+              <Countdown />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:py-10">
+      <section className="px-4 py-10 sm:py-12">
         <div className="mx-auto max-w-4xl">
-          <h2 className="mb-4 text-lg font-semibold text-teal">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
             Menu Utama
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-3">
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
             {CARDS.map((card) => (
               <Link
                 key={card.href}
                 href={card.href}
-                className="group flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
+                className="group flex items-start gap-4 rounded-2xl border border-teal/10 bg-white p-5 transition-colors hover:border-accent/40"
               >
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-cream text-accent">
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cream text-accent transition-colors group-hover:bg-accent group-hover:text-white">
                   <Icon name={card.icon} className="h-6 w-6" />
                 </span>
                 <span>

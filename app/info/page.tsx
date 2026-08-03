@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { infoLinks, infoTimeline } from "@/data/info";
 import { safeExternalUrl } from "@/lib/url";
 import Icon, { type IconName } from "../components/Icon";
+import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Info Penting - Mabim FTUI 2026",
@@ -58,22 +59,18 @@ const BLOCKS: {
 export default function InfoPage() {
   return (
     <div className="min-h-full">
-      <header className="bg-teal px-4 py-8 text-cream">
-        <div className="mx-auto max-w-4xl">
-          <h1 className="text-2xl font-bold">Info Penting</h1>
-          <p className="mt-2 text-sm text-cream/85">
-            Pelaporan pengaduan, guidebook, dan kalender kegiatan Mabim dalam
-            satu tempat.
-          </p>
-        </div>
-      </header>
+      <PageHeader
+        eyebrow="Info Penting"
+        title="Info & Bantuan"
+        desc="Pelaporan pengaduan, guidebook, dan kalender kegiatan Mabim dalam satu tempat."
+      />
 
       <section className="mx-auto max-w-4xl px-4 py-6">
         <div className="grid gap-4">
           {BLOCKS.map((block) => (
             <div
               key={block.title}
-              className="rounded-2xl bg-white p-5 shadow-sm"
+              className="rounded-2xl border border-teal/10 bg-white p-5"
             >
               <div className="flex items-center gap-3">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cream text-accent">
@@ -92,7 +89,7 @@ export default function InfoPage() {
           ))}
         </div>
 
-        <div className="mt-6 rounded-2xl bg-white p-5 shadow-sm">
+        <div className="mt-6 rounded-2xl border border-teal/10 bg-white p-5">
           <div className="flex items-center gap-3">
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cream text-accent">
               <Icon name="info" className="h-6 w-6" />

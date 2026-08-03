@@ -17,24 +17,25 @@ export default function Countdown() {
 
   if (days === null) {
     return (
-      <p className="text-sm text-cream/80">
+      <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-cream/80 backdrop-blur">
         Menghitung hari menuju Mabim...
-      </p>
+      </span>
     );
   }
 
   if (days <= 0) {
     return (
-      <p className="text-sm font-semibold text-accent">
+      <span className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/15 px-4 py-2 text-sm font-semibold text-accent backdrop-blur">
         Mabim FTUI 2026 telah dimulai! Semangat, Maba!
-      </p>
+      </span>
     );
   }
 
   return (
-    <p className="text-sm text-cream/80">
-      Mabim dimulai dalam{" "}
-      <span className="text-2xl font-bold text-accent">{days}</span> hari lagi
-    </p>
+    <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-cream/80 backdrop-blur">
+      Mabim dimulai dalam
+      <span className="text-2xl font-bold text-accent">{days}</span>
+      hari lagi
+    </span>
   );
 }

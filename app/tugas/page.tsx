@@ -3,6 +3,7 @@ import { tugasUnits } from "@/data/tugas";
 import type { TugasUnit } from "@/data/types";
 import { safeExternalUrl } from "@/lib/url";
 import Icon from "../components/Icon";
+import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Link Tugas - Mabim FTUI 2026",
@@ -56,29 +57,27 @@ function TaskList({ unit }: { unit: TugasUnit }) {
 export default function TugasPage() {
   return (
     <div className="min-h-full">
-      <header className="bg-teal px-4 py-8 text-cream">
-        <div className="mx-auto max-w-4xl">
-          <h1 className="text-2xl font-bold">Link Tugas</h1>
-          <p className="mt-2 text-sm text-cream/85">
-            Pilih unit pengumpul tugas, lalu buka link pengumpulan sesuai
-            ketentuan. Link dibuka di tab baru.
-          </p>
-        </div>
-      </header>
+      <PageHeader
+        eyebrow="Link Tugas"
+        title="Pengumpulan Tugas"
+        desc="Pilih unit pengumpul tugas, lalu buka link pengumpulan sesuai ketentuan. Link dibuka di tab baru."
+      />
 
       <section className="mx-auto max-w-4xl px-4 py-6">
         {KATEGORI.map((kat) => (
           <div key={kat.key} className="mb-8">
-            <h2 className="mb-3 text-lg font-semibold text-teal">{kat.title}</h2>
+            <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-accent">
+              {kat.title}
+            </h2>
             <div className="space-y-3">
               {tugasUnits
                 .filter((u) => u.kategori === kat.key)
                 .map((unit) => (
                   <details
                     key={unit.kode}
-                    className="group rounded-2xl bg-white p-4 shadow-sm"
+                    className="group rounded-2xl border border-teal/10 bg-white"
                   >
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-3 [&::-webkit-details-marker]:hidden">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 [&::-webkit-details-marker]:hidden">
                       <span className="flex min-w-0 items-center gap-3">
                         <span className="shrink-0 rounded-lg bg-cream px-2.5 py-1 text-xs font-bold text-teal">
                           {unit.kode}
@@ -92,7 +91,7 @@ export default function TugasPage() {
                         className="h-5 w-5 shrink-0 text-accent transition-transform group-open:rotate-180"
                       />
                     </summary>
-                    <div className="mt-4 border-t border-teal/10 pt-4">
+                    <div className="border-t border-teal/10 px-5 py-4">
                       <TaskList unit={unit} />
                     </div>
                   </details>

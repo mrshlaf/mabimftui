@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mabim FTUI 2026
 
-## Getting Started
+Website dashboard Mahasiswa Baru (Maba) FTUI 2026 — satu pintu informasi:
+cari kelompok & grup Line, link tugas per unit, info penting, dan kontak panitia.
+Next.js (App Router), Tailwind CSS v4, statis, deploy Vercel.
 
-First, run the development server:
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Update Data Mahasiswa
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Data sumber ada di folder `maba/` (CSV SIAK-NG) dan diproses ke `data/`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run data:maba
+```
 
-## Learn More
+Untuk mengisi nomor kelompok & link grup Line per mahasiswa, tambahkan kolom
+opsional pada CSV (parser sudah mendukung), lalu jalankan ulang perintah di atas.
+Generator punya pengecekan otomatis: total entri harus 1.806, tanpa duplikat NPM.
 
-To learn more about Next.js, take a look at the following resources:
+## Kontak Panitia
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Data contact person di-edit langsung di `data/kontak.ts` (nama, peran, NPM,
+departemen, alamat, no. telepon). Tombol Telepon & WhatsApp dibuat otomatis dari
+nomor.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Ganti Foto
 
-## Deploy on Vercel
+- **Hero background**: timpa isi `public/hero-mabim.jpg` dengan foto asli
+  kegiatan Mabim. Cukup ganti file-nya, nama tetap, tanpa ubah kode.
+- **Logo**: timpa isi `public/logo-mabim.png` (lebih baik tetap transparan di
+  sudut, ~persegi). Sumber asli ada di folder `images/`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Verifikasi
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+npm run build
+```

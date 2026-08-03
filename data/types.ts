@@ -51,3 +51,21 @@ export interface InfoTimeline {
   jamSeninJumat: string;
   jamSabtu: string;
 }
+
+export interface KontakPerson {
+  nama: string;
+  peran: string;
+  npm: string;
+  departemen: string;
+  alamat: string;
+  noTelp: string;
+}
+
+export type KontakKategoriKey = "lembaga" | "departemen";
+
+export interface KontakUnit {
+  kode: string;
+  nama: string;
+  kategori: KontakKategoriKey;
+  kontak: KontakPerson[];
+}
