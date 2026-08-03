@@ -31,10 +31,16 @@ nomor.
 
 ## Ganti Foto
 
-- **Hero background**: timpa isi `public/hero-mabim.jpg` dengan foto asli
-  kegiatan Mabim. Cukup ganti file-nya, nama tetap, tanpa ubah kode.
-- **Logo**: timpa isi `public/logo-mabim.png` (lebih baik tetap transparan di
-  sudut, ~persegi). Sumber asli ada di folder `images/`.
+Semua background memakai foto dummy (stok gratis) yang siap diganti foto asli
+kegiatan Mabim — cukup timpa isi file-nya, nama file tetap, tanpa ubah kode:
+
+- `public/hero-mabim.jpg` → hero halaman Home
+- `public/bg-kelompok.jpg` → header halaman Kelompok
+- `public/bg-tugas.jpg` → header halaman Tugas
+- `public/bg-info.jpg` → header halaman Info
+- `public/bg-kontak.jpg` → header halaman Kontak
+- `public/logo-mabim.png` → logo (usahan tetap transparan di sudut, ~persegi).
+  Sumber asli ada di folder `images/`.
 
 ## Verifikasi
 

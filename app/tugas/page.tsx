@@ -30,7 +30,7 @@ function TaskList({ unit }: { unit: TugasUnit }) {
           return (
             <li
               key={i}
-              className="rounded-lg bg-cream px-4 py-3 text-sm text-teal-dark/60"
+              className="rounded-lg border border-teal/5 bg-cream px-4 py-3 text-sm text-teal-dark/60"
             >
               {t.label} (link menyusul)
             </li>
@@ -42,7 +42,7 @@ function TaskList({ unit }: { unit: TugasUnit }) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex min-h-12 items-center justify-between gap-3 rounded-lg bg-cream px-4 py-3 text-sm font-semibold text-teal transition-colors hover:bg-accent/15"
+              className="flex min-h-12 items-center justify-between gap-3 rounded-lg border border-teal/5 bg-cream px-4 py-3 text-sm font-semibold text-teal transition-colors hover:border-accent/30 hover:bg-accent/10"
             >
               <span>{t.label}</span>
               <Icon name="external" className="h-4 w-4 shrink-0 text-accent" />
@@ -61,6 +61,7 @@ export default function TugasPage() {
         eyebrow="Link Tugas"
         title="Pengumpulan Tugas"
         desc="Pilih unit pengumpul tugas, lalu buka link pengumpulan sesuai ketentuan. Link dibuka di tab baru."
+        bg="/bg-tugas.jpg"
       />
 
       <section className="mx-auto max-w-4xl px-4 py-6">
@@ -75,9 +76,9 @@ export default function TugasPage() {
                 .map((unit) => (
                   <details
                     key={unit.kode}
-                    className="group rounded-2xl border border-teal/10 bg-white"
+                    className="group rounded-2xl border border-teal/10 bg-white shadow-card"
                   >
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 [&::-webkit-details-marker]:hidden">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 transition-colors group-open:bg-cream/60 [&::-webkit-details-marker]:hidden">
                       <span className="flex min-w-0 items-center gap-3">
                         <span className="shrink-0 rounded-lg bg-cream px-2.5 py-1 text-xs font-bold text-teal">
                           {unit.kode}
@@ -86,10 +87,9 @@ export default function TugasPage() {
                           {unit.nama}
                         </span>
                       </span>
-                      <Icon
-                        name="chevron-down"
-                        className="h-5 w-5 shrink-0 text-accent transition-transform group-open:rotate-180"
-                      />
+                      <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-cream text-accent transition-all group-open:rotate-180 group-open:bg-accent group-open:text-white">
+                        <Icon name="chevron-down" className="h-4 w-4" />
+                      </span>
                     </summary>
                     <div className="border-t border-teal/10 px-5 py-4">
                       <TaskList unit={unit} />

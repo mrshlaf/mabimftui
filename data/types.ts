@@ -47,7 +47,6 @@ export interface InfoLinks {
 }
 
 export interface InfoTimeline {
-  rentang: string;
   jamSeninJumat: string;
   jamSabtu: string;
 }
@@ -57,7 +56,6 @@ export interface KontakPerson {
   peran: string;
   npm: string;
   departemen: string;
-  alamat: string;
   noTelp: string;
 }
 

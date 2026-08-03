@@ -35,7 +35,7 @@ function KontakCard({ person }: { person: KontakPerson }) {
   const tel = safeExternalUrl(phoneToTel(person.noTelp));
   const wa = safeExternalUrl(phoneToWa(person.noTelp));
   return (
-    <div className="rounded-2xl border border-teal/10 bg-white p-5">
+    <div className="rounded-2xl border border-teal/10 bg-white p-5 shadow-card">
       <div className="flex items-start gap-3">
         <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-cream text-sm font-bold text-teal">
           {initials(person.nama)}
@@ -60,18 +60,12 @@ function KontakCard({ person }: { person: KontakPerson }) {
             <dd>{person.departemen}</dd>
           </div>
         )}
-        {person.alamat && (
-          <div className="flex gap-2">
-            <dt className="shrink-0 font-medium text-teal-dark/45">Alamat</dt>
-            <dd>{person.alamat}</dd>
-          </div>
-        )}
       </dl>
       <div className="mt-4 grid grid-cols-2 gap-2">
         {tel && (
           <a
             href={tel}
-            className="flex min-h-11 items-center justify-center gap-2 rounded-xl bg-accent px-4 text-sm font-bold text-white transition-transform active:scale-[0.98]"
+            className="flex min-h-11 items-center justify-center gap-2 rounded-xl bg-accent px-4 text-sm font-bold text-white shadow-card transition-transform hover:brightness-105 active:scale-[0.98]"
           >
             <Icon name="phone" className="h-4 w-4" />
             Telepon
@@ -100,6 +94,7 @@ export default function KontakPage() {
         eyebrow="Kontak Panitia"
         title="Hubungi Kami"
         desc="Butuh bantuan? Hubungi contact person resmi berikut sesuai unitmu."
+        bg="/bg-kontak.jpg"
       />
 
       <section className="mx-auto max-w-4xl px-4 py-6">

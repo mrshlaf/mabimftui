@@ -22,7 +22,7 @@ function ExternalButton({ label, url }: { label: string; url: string }) {
       href={safe}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-accent px-5 text-base font-bold text-white shadow-sm transition-transform active:scale-[0.98]"
+      className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-accent px-5 text-base font-bold text-white shadow-card transition-transform hover:brightness-105 active:scale-[0.98]"
     >
       {label}
       <Icon name="external" className="h-5 w-5" />
@@ -63,6 +63,7 @@ export default function InfoPage() {
         eyebrow="Info Penting"
         title="Info & Bantuan"
         desc="Pelaporan pengaduan, guidebook, dan kalender kegiatan Mabim dalam satu tempat."
+        bg="/bg-info.jpg"
       />
 
       <section className="mx-auto max-w-4xl px-4 py-6">
@@ -70,7 +71,7 @@ export default function InfoPage() {
           {BLOCKS.map((block) => (
             <div
               key={block.title}
-              className="rounded-2xl border border-teal/10 bg-white p-5"
+              className="rounded-2xl border border-teal/10 bg-white p-5 shadow-card"
             >
               <div className="flex items-center gap-3">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cream text-accent">
@@ -89,20 +90,14 @@ export default function InfoPage() {
           ))}
         </div>
 
-        <div className="mt-6 rounded-2xl border border-teal/10 bg-white p-5">
+        <div className="mt-6 rounded-2xl border border-teal/10 bg-white p-5 shadow-card">
           <div className="flex items-center gap-3">
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cream text-accent">
-              <Icon name="info" className="h-6 w-6" />
+              <Icon name="calendar" className="h-6 w-6" />
             </span>
-            <h2 className="font-semibold text-teal">Rentang Pelaksanaan Mabim</h2>
+            <h2 className="font-semibold text-teal">Jam Kegiatan Mabim</h2>
           </div>
           <ul className="mt-4 space-y-2 text-sm text-teal-dark/80">
-            <li className="flex justify-between gap-4 border-b border-teal/10 pb-2">
-              <span className="text-teal-dark/60">Periode</span>
-              <span className="text-right font-semibold">
-                {infoTimeline.rentang}
-              </span>
-            </li>
             <li className="flex justify-between gap-4 border-b border-teal/10 pb-2">
               <span className="text-teal-dark/60">Senin - Jumat</span>
               <span className="font-semibold">{infoTimeline.jamSeninJumat}</span>

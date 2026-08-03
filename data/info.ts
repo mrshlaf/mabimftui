@@ -16,7 +16,6 @@ export const infoLinks: InfoLinks = {
 };
 
 export const infoTimeline: InfoTimeline = {
-  rentang: "29 Agustus - 30 November 2026",
   jamSeninJumat: "08.00 - 20.00",
   jamSabtu: "06.00 - 17.00",
 };

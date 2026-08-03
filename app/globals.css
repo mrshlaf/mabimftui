@@ -5,6 +5,7 @@
   --color-teal-dark: #062f3b;
   --color-cream: #f1efd7;
   --color-accent: #f1842a;
+  --shadow-card: 0 1px 2px rgba(6, 47, 59, 0.05), 0 10px 28px -14px rgba(6, 47, 59, 0.14);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -21,4 +22,9 @@ body {
   background: var(--color-cream);
   color: var(--color-teal-dark);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
 }

@@ -13,6 +13,7 @@ export default function KelompokPage() {
         eyebrow="Cari Kelompok"
         title="Kelompok Mabim"
         desc="Ketik nama lengkap atau sebagian untuk menemukan nomor kelompok dan grup Line kamu."
+        bg="/bg-kelompok.jpg"
       />
       <section className="mx-auto max-w-4xl px-4 py-6">
         <SearchMahasiswa />

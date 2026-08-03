@@ -25,7 +25,7 @@ function GroupLineButton({ link }: { link: string | null }) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-accent px-5 text-base font-bold text-white shadow-sm transition-transform active:scale-[0.98]"
+      className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-accent px-5 text-base font-bold text-white shadow-card transition-transform hover:brightness-105 active:scale-[0.98]"
     >
       <Icon name="line" className="h-6 w-6" />
       Gabung Grup Line
@@ -90,13 +90,13 @@ export default function SearchMahasiswa() {
               setSelectedNpm(null);
             }}
             placeholder="Contoh: Ahmad Fadil"
-            className="w-full rounded-xl border border-teal/20 bg-white py-3.5 pl-12 pr-4 text-base text-teal-dark shadow-sm outline-none placeholder:text-teal-dark/40 focus:border-accent focus:ring-2 focus:ring-accent/30"
+            className="w-full rounded-2xl border border-teal/20 bg-white py-4 pl-12 pr-4 text-base text-teal-dark shadow-card outline-none placeholder:text-teal-dark/40 focus:border-accent focus:ring-2 focus:ring-accent/30"
           />
         </div>
       </div>
 
       {selected && (
-        <div className="mt-4 rounded-2xl border border-teal/15 bg-white p-5 shadow-sm">
+        <div className="mt-4 rounded-2xl border border-teal/15 bg-white p-5 shadow-card">
           <div className="flex items-center justify-between gap-2">
             <span className="rounded-full bg-cream px-3 py-1 text-xs font-semibold text-teal">
               {DEPARTEMEN_NAMA[selected.departemen]}
@@ -137,7 +137,7 @@ export default function SearchMahasiswa() {
           </p>
         )}
         {loadError && (
-          <div className="rounded-2xl bg-white p-5 text-center shadow-sm">
+          <div className="rounded-2xl bg-white p-5 text-center shadow-card">
             <p className="font-semibold text-teal">Gagal memuat data</p>
             <p className="mt-1 text-sm text-teal-dark/70">
               Coba muat ulang halaman ini.
@@ -145,7 +145,7 @@ export default function SearchMahasiswa() {
           </div>
         )}
         {normalizedQuery !== "" && records && matches.length === 0 && (
-          <div className="rounded-2xl bg-white p-5 text-center shadow-sm">
+          <div className="rounded-2xl bg-white p-5 text-center shadow-card">
             <Icon name="search" className="mx-auto h-8 w-8 text-teal/40" />
             <p className="mt-2 font-semibold text-teal">
               Nama tidak ditemukan
@@ -168,7 +168,7 @@ export default function SearchMahasiswa() {
             key={m.npm}
             type="button"
             onClick={() => setSelectedNpm(m.npm)}
-            className="flex w-full items-center justify-between gap-3 rounded-xl bg-white p-4 text-left shadow-sm transition-colors hover:bg-cream"
+            className="flex w-full items-center justify-between gap-3 rounded-2xl border border-teal/10 bg-white p-4 text-left shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/40"
           >
             <span className="min-w-0">
               <span className="block truncate font-semibold text-teal">
