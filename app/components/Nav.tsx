@@ -87,7 +87,7 @@ export default function Nav() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "flex min-h-16 flex-col items-center justify-center gap-1 py-1.5 text-[11px] font-medium transition-colors",
+                  "flex min-h-16 flex-col items-center justify-center gap-1 py-1.5 text-xs font-medium transition-colors",
                   active ? "text-accent" : "text-muted-foreground"
                 )}
               >

@@ -4,7 +4,9 @@ import PageHeader from "../components/PageHeader";
 import SearchMahasiswa from "../components/SearchMahasiswa";
 
 export const metadata: Metadata = {
-  title: "Cari Kelompok - Mabim FTUI 2026",
+  title: "Cari Kelompok",
+  description:
+    "Cari nomor kelompok dan grup Line Mahasiswa Baru FTUI 2026 dengan nama lengkap dan NPM.",
 };
 
 export default function KelompokPage() {
@@ -17,7 +19,7 @@ export default function KelompokPage() {
         bg="/bg-kelompok.jpg"
         icon={Users}
       />
-      <section className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <section className="mx-auto max-w-3xl px-4 pt-5 pb-16 sm:px-6 sm:pt-6 sm:pb-20 lg:px-8">
         <SearchMahasiswa />
       </section>
     </div>

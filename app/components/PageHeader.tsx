@@ -15,7 +15,7 @@ export default function PageHeader({
   icon?: LucideIcon;
 }) {
   return (
-    <header className="mx-auto max-w-6xl px-4 pb-4 pt-4 sm:px-6 sm:pb-6 sm:pt-6 lg:px-8 lg:pb-8 lg:pt-8">
+    <header className="mx-auto max-w-6xl px-4 pb-4 pt-4 sm:px-6 sm:pb-5 sm:pt-6 lg:px-8 lg:pb-6 lg:pt-8">
       <div className="relative overflow-hidden rounded-[2.5rem] bg-teal shadow-lift ring-1 ring-white/15">
         <div
           className="absolute inset-0 bg-cover bg-center grayscale"

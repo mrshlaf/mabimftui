@@ -14,7 +14,9 @@ import { safeExternalUrl } from "@/lib/url";
 import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Info Penting - Mabim FTUI 2026",
+  title: "Info Penting",
+  description:
+    "Pengaduan, guidebook, dan kalender kegiatan Mabim FTUI 2026 dalam satu tempat.",
 };
 
 function ExternalButton({ label, url }: { label: string; url: string }) {
@@ -73,7 +75,7 @@ export default function InfoPage() {
         icon={Megaphone}
       />
 
-      <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <section className="mx-auto max-w-4xl px-4 pt-5 pb-16 sm:px-6 sm:pt-6 sm:pb-20 lg:px-8">
         <div className="grid gap-4">
           {BLOCKS.map((block) => (
             <Card

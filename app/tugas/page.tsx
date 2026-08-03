@@ -8,7 +8,9 @@ import { safeExternalUrl } from "@/lib/url";
 import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Link Tugas - Mabim FTUI 2026",
+  title: "Link Tugas",
+  description:
+    "Kumpulan link pengumpulan tugas Mabim FTUI 2026 untuk tiap lembaga dan departemen.",
 };
 
 function TaskList({ lembaga }: { lembaga: TugasLembaga }) {
@@ -62,7 +64,7 @@ export default function TugasPage() {
         icon={FileText}
       />
 
-      <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <section className="mx-auto max-w-4xl px-4 pt-5 pb-16 sm:px-6 sm:pt-6 sm:pb-20 lg:px-8">
         <div className="space-y-3">
           {tugasLembaga.map((lembaga) => (
             <details

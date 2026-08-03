@@ -1,15 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Geist_Mono, Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
+import { siteName, siteDescription, siteUrl } from "@/lib/site";
 import "./globals.css";
 import Nav from "./components/Nav";
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -19,9 +15,39 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Mabim FTUI 2026",
-  description:
-    "Satu pintu informasi Mabim FTUI 2026: cari kelompok, link tugas, dan info penting.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteName,
+    template: `%s | ${siteName}`,
+  },
+  description: siteDescription,
+  applicationName: siteName,
+  keywords: [
+    "Mabim",
+    "FTUI",
+    "Mabim FTUI 2026",
+    "Mahasiswa Baru",
+    "Universitas Indonesia",
+    "kelompok mabim",
+    "link tugas mabim",
+  ],
+  openGraph: {
+    type: "website",
+    siteName,
+    locale: "id_ID",
+    url: siteUrl,
+    title: siteName,
+    description: siteDescription,
+  },
+  twitter: {
+    card: "summary",
+    title: siteName,
+    description: siteDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export const viewport: Viewport = {
@@ -36,9 +62,22 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${inter.variable} ${geistMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: siteName,
+              url: siteUrl,
+              inLanguage: "id",
+              description: siteDescription,
+            }),
+          }}
+        />
         <div
           aria-hidden="true"
           className="pointer-events-none fixed inset-0 z-[-1] bg-cover bg-center opacity-[0.15]"

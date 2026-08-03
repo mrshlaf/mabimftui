@@ -18,7 +18,8 @@ import VideoTeaser from "./components/VideoTeaser";
 import { statistik, DEPARTEMEN_WARNA } from "@/data/statistik";
 
 export const metadata: Metadata = {
-  title: "Mabim FTUI 2026",
+  description:
+    "Satu pintu informasi Mabim FTUI 2026: cari kelompok dan grup Line, link tugas, info penting, dan kontak Steering Committee.",
 };
 
 const MENU: { href: string; icon: LucideIcon; title: string; desc: string }[] = [
@@ -53,7 +54,7 @@ const lembagaCount = statistik.departemen.length;
 export default function Home() {
   return (
     <div className="min-h-full">
-      <section className="mx-auto max-w-6xl px-4 pb-4 pt-4 sm:px-6 sm:pb-6 sm:pt-6 lg:px-8 lg:pb-8 lg:pt-8">
+      <section className="mx-auto max-w-6xl px-4 pb-2 pt-4 sm:px-6 sm:pb-3 sm:pt-6 lg:px-8 lg:pb-4 lg:pt-8">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-teal text-cream shadow-lift ring-1 ring-white/15">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-25 grayscale"
@@ -77,7 +78,7 @@ export default function Home() {
           />
 
           <div className="relative mx-auto max-w-6xl px-6 py-12 sm:px-12 sm:py-16 lg:px-16">
-            <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
+            <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
               <div>
                 <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur">
                   Mahasiswa Baru FTUI 2026
@@ -119,12 +120,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-12 grid grid-cols-3 divide-x divide-white/10 rounded-[2rem] border border-white/15 bg-white/5 px-4 py-5 backdrop-blur sm:mt-14">
+            <div className="mt-8 grid grid-cols-3 divide-x divide-white/10 rounded-[2rem] border border-white/15 bg-white/5 px-4 py-5 backdrop-blur sm:mt-12">
               <div className="px-2 text-center">
                 <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
                   {statistik.total.toLocaleString("id-ID")}
                 </p>
-                <p className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-cream/70 sm:text-xs">
+                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-cream/70 sm:text-sm">
                   Maba
                 </p>
               </div>
@@ -132,7 +133,7 @@ export default function Home() {
                 <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
                   {lembagaCount}
                 </p>
-                <p className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-cream/70 sm:text-xs">
+                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-cream/70 sm:text-sm">
                   Departemen + PI
                 </p>
               </div>
@@ -140,7 +141,7 @@ export default function Home() {
                 <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
                   {statistik.prodi}
                 </p>
-                <p className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-cream/70 sm:text-xs">
+                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-cream/70 sm:text-sm">
                   Program Studi
                 </p>
               </div>
@@ -149,7 +150,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <section className="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
             Navigasi
@@ -188,7 +189,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <section className="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-end justify-between gap-4">
             <div>

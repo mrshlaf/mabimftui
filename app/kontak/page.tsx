@@ -12,7 +12,9 @@ import { phoneToTel, phoneToWa, safeExternalUrl } from "@/lib/url";
 import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Kontak - Mabim FTUI 2026",
+  title: "Kontak SC",
+  description:
+    "Hubungi contact person resmi BEM, MPM, dan lembaga lain Mabim FTUI 2026.",
 };
 
 function initials(nama: string) {
@@ -94,11 +96,11 @@ function LembagaSection({ lembaga }: { lembaga: (typeof kontakLembaga)[number] }
       <div className="mb-4 flex items-center gap-2.5">
         <Badge
           variant="secondary"
-          className={cn("rounded-full px-3 py-1.5", warna?.badge)}
+          className={cn("rounded-full px-3 py-1.5 text-sm", warna?.badge)}
         >
           {lembaga.kode}
         </Badge>
-        <h3 className="font-heading text-lg font-semibold text-foreground">
+        <h3 className="font-heading text-xl font-semibold text-foreground">
           {lembaga.nama}
         </h3>
       </div>
@@ -128,8 +130,8 @@ export default function KontakPage() {
         icon={Phone}
       />
 
-      <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div className="space-y-10">
+      <section className="mx-auto max-w-6xl px-4 pt-5 pb-16 sm:px-6 sm:pt-6 sm:pb-20 lg:px-8">
+        <div className="space-y-8">
           {kontakLembaga.map((lembaga) => (
             <LembagaSection key={lembaga.kode} lembaga={lembaga} />
           ))}
