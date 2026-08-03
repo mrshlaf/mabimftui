@@ -11,11 +11,6 @@ export const metadata: Metadata = {
   title: "Link Tugas - Mabim FTUI 2026",
 };
 
-const KATEGORI: { key: TugasUnit["kategori"]; title: string }[] = [
-  { key: "departemen", title: "Departemen / PI" },
-  { key: "lembaga", title: "Lembaga" },
-];
-
 function TaskList({ unit }: { unit: TugasUnit }) {
   if (unit.tugas.length === 0) {
     return (
@@ -66,47 +61,38 @@ export default function TugasPage() {
         bg="/bg-tugas.jpg"
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-8 sm:px-8">
-        {KATEGORI.map((kat) => (
-          <div key={kat.key} className="mb-8">
-            <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-accent">
-              {kat.title}
-            </h2>
-            <div className="space-y-3">
-              {tugasUnits
-                .filter((u) => u.kategori === kat.key)
-                .map((unit) => (
-                  <details
-                    key={unit.kode}
-                    className="group rounded-3xl ring-1 ring-border/60 shadow-card"
-                    open
+      <section className="mx-auto max-w-4xl px-6 py-10 sm:px-8">
+        <div className="space-y-3">
+          {tugasUnits.map((unit) => (
+            <details
+              key={unit.kode}
+              className="group overflow-hidden rounded-[2rem] ring-1 ring-border/60 shadow-card"
+              open
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 bg-card px-5 py-4 [&::-webkit-details-marker]:hidden">
+                <span className="flex min-w-0 items-center gap-3">
+                  <span
+                    className={cn(
+                      "shrink-0 rounded-full px-2.5 py-1 text-xs font-bold",
+                      DEPARTEMEN_WARNA[unit.kode]?.badge ?? "bg-secondary text-secondary-foreground"
+                    )}
                   >
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-3 bg-card px-5 py-4 [&::-webkit-details-marker]:hidden">
-                      <span className="flex min-w-0 items-center gap-3">
-                        <span
-                          className={cn(
-                            "shrink-0 rounded-full px-2.5 py-1 text-xs font-bold",
-                            DEPARTEMEN_WARNA[unit.kode]?.badge ?? "bg-secondary text-secondary-foreground"
-                          )}
-                        >
-                          {unit.kode}
-                        </span>
-                        <span className="truncate font-semibold text-foreground">
-                          {unit.nama}
-                        </span>
-                      </span>
-                      <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-secondary text-accent transition-transform group-open:rotate-180">
-                        <ChevronDown className="h-4 w-4" />
-                      </span>
-                    </summary>
-                    <div className="border-t border-border/60 px-5 py-4">
-                      <TaskList unit={unit} />
-                    </div>
-                  </details>
-                ))}
-            </div>
-          </div>
-        ))}
+                    {unit.kode}
+                  </span>
+                  <span className="truncate font-semibold text-foreground">
+                    {unit.nama}
+                  </span>
+                </span>
+                <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-secondary text-accent transition-transform group-open:rotate-180">
+                  <ChevronDown className="h-4 w-4" />
+                </span>
+              </summary>
+              <div className="border-t border-border/60 px-5 py-4">
+                <TaskList unit={unit} />
+              </div>
+            </details>
+          ))}
+        </div>
       </section>
     </div>
   );

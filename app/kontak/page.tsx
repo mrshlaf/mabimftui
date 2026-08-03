@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import {
-  Building2,
-  IdCard,
-  MessageCircle,
-  Phone,
-  Users,
-} from "lucide-react";
+import { Building2, IdCard, MessageCircle, Phone } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { kontakUnits } from "@/data/kontak";
 import { DEPARTEMEN_WARNA } from "@/data/statistik";
-import type { KontakKategoriKey, KontakPerson } from "@/data/types";
+import type { KontakPerson } from "@/data/types";
 import { cn } from "@/lib/utils";
 import { phoneToTel, phoneToWa, safeExternalUrl } from "@/lib/url";
 import PageHeader from "../components/PageHeader";
@@ -20,19 +14,6 @@ import PageHeader from "../components/PageHeader";
 export const metadata: Metadata = {
   title: "Kontak - Mabim FTUI 2026",
 };
-
-const KATEGORI: { key: KontakKategoriKey; title: string; desc: string }[] = [
-  {
-    key: "lembaga",
-    title: "Lembaga & Organisasi",
-    desc: "Contact person BEM FTUI, MPM FTUI, FUSI, KMK, dan PO.",
-  },
-  {
-    key: "departemen",
-    title: "Koordinator Departemen / PI",
-    desc: "Contact person koordinator tiap departemen dan Program Internasional.",
-  },
-];
 
 function initials(nama: string) {
   return nama
@@ -146,32 +127,12 @@ export default function KontakPage() {
         bg="/bg-kontak.jpg"
       />
 
-      <section className="mx-auto max-w-6xl px-6 py-8 sm:px-8 sm:py-10">
-        {KATEGORI.map((kat) => (
-          <div key={kat.key} className="mt-10">
-            <div className="mb-6 flex items-start gap-3">
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-secondary text-accent">
-                <Users className="h-5 w-5" />
-              </span>
-              <div>
-                <h2 className="font-heading text-xl font-bold text-foreground">
-                  {kat.title}
-                </h2>
-                <p className="mt-0.5 text-sm text-muted-foreground">
-                  {kat.desc}
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-10">
-              {kontakUnits
-                .filter((u) => u.kategori === kat.key)
-                .map((unit) => (
-                  <UnitSection key={unit.kode} unit={unit} />
-                ))}
-            </div>
-          </div>
-        ))}
+      <section className="mx-auto max-w-6xl px-6 py-10 sm:px-8">
+        <div className="space-y-10">
+          {kontakUnits.map((unit) => (
+            <UnitSection key={unit.kode} unit={unit} />
+          ))}
+        </div>
 
         <p className="mt-12 text-center text-xs text-muted-foreground">
           Data contact person dikelola Steering Committee Mabim FTUI 2026 dan

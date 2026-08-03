@@ -68,9 +68,8 @@ export default function Home() {
                 Mabim FTUI{" "}
                 <span className="text-accent">2026</span>
               </h1>
-              <p className="mt-4 max-w-xl text-sm leading-relaxed text-cream/85 sm:text-base">
-                Satu pintu informasi: cari kelompokmu, akses link tugas, dan
-                temukan info penting selama masa Mabim.
+              <p className="mt-4 max-w-xl font-heading text-lg font-semibold tracking-tight text-cream sm:text-xl">
+                Find Your Path. Forge Your Legacy.
               </p>
 
               <div className="mt-8">

@@ -2,44 +2,56 @@ import type { TugasUnit } from "./types";
 
 export const tugasUnits: TugasUnit[] = [
   {
+    kode: "BEM",
+    nama: "BEM FTUI",
+    kategori: "lembaga",
+    tugas: [],
+  },
+  {
+    kode: "MPM",
+    nama: "MPM FTUI",
+    kategori: "lembaga",
+    tugas: [],
+  },
+  {
     kode: "DTSL",
-    nama: "Teknik Sipil",
+    nama: "Departemen Teknik Sipil dan Lingkungan",
     kategori: "departemen",
     tugas: [],
   },
   {
     kode: "DTM",
-    nama: "Teknik Mesin",
+    nama: "Departemen Teknik Mesin",
     kategori: "departemen",
     tugas: [],
   },
   {
     kode: "DTE",
-    nama: "Teknik Elektro",
+    nama: "Departemen Teknik Elektro",
     kategori: "departemen",
     tugas: [],
   },
   {
     kode: "DTMM",
-    nama: "Teknik Metalurgi & Material",
+    nama: "Departemen Teknik Metalurgi dan Material",
     kategori: "departemen",
     tugas: [],
   },
   {
     kode: "DA",
-    nama: "Arsitektur",
+    nama: "Departemen Arsitektur",
     kategori: "departemen",
     tugas: [],
   },
   {
     kode: "DTK",
-    nama: "Teknik Kimia",
+    nama: "Departemen Teknik Kimia",
     kategori: "departemen",
     tugas: [],
   },
   {
     kode: "DTI",
-    nama: "Teknik Industri",
+    nama: "Departemen Teknik Industri",
     kategori: "departemen",
     tugas: [],
   },
@@ -47,12 +59,6 @@ export const tugasUnits: TugasUnit[] = [
     kode: "PI",
     nama: "Program Internasional",
     kategori: "departemen",
-    tugas: [],
-  },
-  {
-    kode: "BEM",
-    nama: "BEM FTUI",
-    kategori: "lembaga",
     tugas: [],
   },
   {

@@ -8,21 +8,21 @@ export const kontakUnits: KontakUnit[] = [
     kontak: [
       {
         nama: "Grace Kezia Siregar",
-        peran: "Pengurus BEM FTUI",
+        peran: "Steering Committee",
         npm: "2306251531",
         departemen: "Teknik Elektro",
         noTelp: "081210384640",
       },
       {
         nama: "Sausan Naila Althaf",
-        peran: "Pengurus BEM FTUI",
+        peran: "Steering Committee",
         npm: "2406360716",
         departemen: "Teknik Sipil dan Lingkungan",
         noTelp: "081311447342",
       },
       {
         nama: "Nafis Atha Rahman P.",
-        peran: "Pengurus BEM FTUI",
+        peran: "Steering Committee",
         npm: "2406448650",
         departemen: "Program Internasional",
         noTelp: "081517986560",
@@ -36,7 +36,7 @@ export const kontakUnits: KontakUnit[] = [
     kontak: [
       {
         nama: "Marshal Aufa Diliyana",
-        peran: "Pengurus MPM FTUI",
+        peran: "Steering Committee",
         npm: "2406346913",
         departemen: "Teknik Elektro",
         noTelp: "085810289428",
@@ -44,67 +44,25 @@ export const kontakUnits: KontakUnit[] = [
     ],
   },
   {
-    kode: "FUSI",
-    nama: "FUSI",
-    kategori: "lembaga",
-    kontak: [
-      {
-        nama: "Fauzan Arfa Nofiantoro",
-        peran: "Koordinator FUSI",
-        npm: "2406411793",
-        departemen: "Teknik Elektro",
-        noTelp: "081219554037",
-      },
-    ],
-  },
-  {
-    kode: "KMK",
-    nama: "KMK",
-    kategori: "lembaga",
-    kontak: [
-      {
-        nama: "Gabriel Kekona Bayanaka Amidarmo",
-        peran: "Koordinator KMK",
-        npm: "2406357652",
-        departemen: "Teknik Mesin",
-        noTelp: "085211569076",
-      },
-    ],
-  },
-  {
-    kode: "PO",
-    nama: "PO",
-    kategori: "lembaga",
-    kontak: [
-      {
-        nama: "Jonathan Maruli Muara Sianturi",
-        peran: "Koordinator PO",
-        npm: "2206056021",
-        departemen: "Teknik Elektro",
-        noTelp: "081264233669",
-      },
-    ],
-  },
-  {
     kode: "DTSL",
-    nama: "Teknik Sipil dan Lingkungan",
+    nama: "Departemen Teknik Sipil dan Lingkungan",
     kategori: "departemen",
     kontak: [],
   },
   {
     kode: "DTM",
-    nama: "Teknik Mesin",
+    nama: "Departemen Teknik Mesin",
     kategori: "departemen",
     kontak: [],
   },
   {
     kode: "DTE",
-    nama: "Teknik Elektro",
+    nama: "Departemen Teknik Elektro",
     kategori: "departemen",
     kontak: [
       {
         nama: "Aslam Dani",
-        peran: "Koordinator Departemen",
+        peran: "Steering Committee",
         npm: "2406344725",
         departemen: "Teknik Elektro",
         noTelp: "081289815302",
@@ -113,26 +71,26 @@ export const kontakUnits: KontakUnit[] = [
   },
   {
     kode: "DTMM",
-    nama: "Teknik Metalurgi dan Material",
+    nama: "Departemen Teknik Metalurgi dan Material",
     kategori: "departemen",
     kontak: [
       {
         nama: "Anggita Andra Apriliyani",
-        peran: "Koordinator Departemen",
+        peran: "Steering Committee",
         npm: "2406353175",
-        departemen: "Teknik Metalurgi & Material",
+        departemen: "Teknik Metalurgi dan Material",
         noTelp: "081386045006",
       },
     ],
   },
   {
     kode: "DA",
-    nama: "Arsitektur",
+    nama: "Departemen Arsitektur",
     kategori: "departemen",
     kontak: [
       {
         nama: "Nadhira Widya Putri",
-        peran: "Koordinator Departemen",
+        peran: "Steering Committee",
         npm: "2406487185",
         departemen: "Arsitektur",
         noTelp: "087776769234",
@@ -141,18 +99,18 @@ export const kontakUnits: KontakUnit[] = [
   },
   {
     kode: "DTK",
-    nama: "Teknik Kimia",
+    nama: "Departemen Teknik Kimia",
     kategori: "departemen",
     kontak: [],
   },
   {
     kode: "DTI",
-    nama: "Teknik Industri",
+    nama: "Departemen Teknik Industri",
     kategori: "departemen",
     kontak: [
       {
         nama: "Kamilah Safitri Sjarif",
-        peran: "Koordinator Departemen",
+        peran: "Steering Committee",
         npm: "2406404964",
         departemen: "Teknik Industri",
         noTelp: "085921809200",
@@ -166,10 +124,52 @@ export const kontakUnits: KontakUnit[] = [
     kontak: [
       {
         nama: "Wilbert Chang",
-        peran: "Koordinator Departemen",
+        peran: "Steering Committee",
         npm: "2406448726",
         departemen: "Program Internasional",
         noTelp: "081210968392",
+      },
+    ],
+  },
+  {
+    kode: "FUSI",
+    nama: "FUSI",
+    kategori: "lembaga",
+    kontak: [
+      {
+        nama: "Fauzan Arfa Nofiantoro",
+        peran: "Steering Committee",
+        npm: "2406411793",
+        departemen: "Teknik Elektro",
+        noTelp: "081219554037",
+      },
+    ],
+  },
+  {
+    kode: "KMK",
+    nama: "KMK",
+    kategori: "lembaga",
+    kontak: [
+      {
+        nama: "Gabriel Kekona Bayanaka Amidarmo",
+        peran: "Steering Committee",
+        npm: "2406357652",
+        departemen: "Teknik Mesin",
+        noTelp: "085211569076",
+      },
+    ],
+  },
+  {
+    kode: "PO",
+    nama: "PO",
+    kategori: "lembaga",
+    kontak: [
+      {
+        nama: "Jonathan Maruli Muara Sianturi",
+        peran: "Steering Committee",
+        npm: "2206056021",
+        departemen: "Teknik Elektro",
+        noTelp: "081264233669",
       },
     ],
   },
