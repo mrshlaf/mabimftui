@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { CalendarDays } from "lucide-react";
 
 const MABIM_START = new Date("2026-08-29T00:00:00+07:00");
 
@@ -17,7 +18,8 @@ export default function Countdown() {
 
   if (days === null) {
     return (
-      <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-cream/80 backdrop-blur">
+      <span className="inline-flex items-center gap-2 rounded-full bg-cream/95 px-4 py-2.5 text-sm font-medium text-teal-dark shadow-card">
+        <CalendarDays className="h-4 w-4 text-accent" />
         Menghitung hari menuju Mabim...
       </span>
     );
@@ -25,16 +27,20 @@ export default function Countdown() {
 
   if (days <= 0) {
     return (
-      <span className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/15 px-4 py-2 text-sm font-semibold text-accent backdrop-blur">
+      <span className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-card">
+        <CalendarDays className="h-4 w-4" />
         Mabim FTUI 2026 telah dimulai! Semangat, Maba!
       </span>
     );
   }
 
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-cream/80 backdrop-blur">
+    <span className="inline-flex items-center gap-2.5 rounded-full bg-cream/95 px-4 py-2.5 text-sm font-medium text-teal-dark shadow-card">
+      <CalendarDays className="h-4 w-4 text-accent" />
       Mabim dimulai dalam
-      <span className="text-2xl font-bold text-accent">{days}</span>
+      <span className="font-heading text-2xl font-bold leading-none text-accent">
+        {days}
+      </span>
       hari lagi
     </span>
   );

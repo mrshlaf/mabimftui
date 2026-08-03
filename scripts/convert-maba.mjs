@@ -22,7 +22,7 @@ const DEPARTEMEN_NAMA = {
   DTM: "Teknik Mesin",
   DTE: "Teknik Elektro",
   DTMM: "Teknik Metalurgi & Material",
-  DA: "Teknik Arsitektur",
+  DA: "Arsitektur",
   DTK: "Teknik Kimia",
   DTI: "Teknik Industri",
   PI: "Program Internasional",
@@ -185,6 +185,23 @@ ${imports}
 export const mahasiswaData: Mahasiswa[] = [
 ${spread}
 ];
+`
+  );
+
+  const statLines = ORDER.map(
+    (c) =>
+      `    { kode: ${JSON.stringify(c)}, nama: ${JSON.stringify(DEPARTEMEN_NAMA[c])}, jumlah: ${byDept[c].length} },`
+  ).join("\n");
+  writeDataFile(
+    "statistik.ts",
+    `import type { Statistik } from "./types";
+
+export const statistik: Statistik = {
+  total: ${allRecords.length},
+  departemen: [
+${statLines}
+  ],
+};
 `
   );
 

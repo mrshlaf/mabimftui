@@ -1,191 +1,272 @@
 "use client";
 
-import { useDeferredValue, useEffect, useMemo, useState } from "react";
-import { DEPARTEMEN_NAMA, type Mahasiswa } from "@/data/types";
+import { useRef, useState } from "react";
+import Link from "next/link";
+import {
+  ArrowRight,
+  IdCard,
+  RotateCcw,
+  Search,
+  ShieldCheck,
+  User,
+  UserX,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import type { Mahasiswa } from "@/data/types";
+import { DEPARTEMEN_WARNA } from "@/data/statistik";
+import { cn } from "@/lib/utils";
 import { safeExternalUrl } from "@/lib/url";
-import Icon from "./Icon";
-
-const MAX_RESULTS = 50;
+import LineIcon from "./LineIcon";
 
 function normalize(s: string) {
   return s.toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+type Status = "idle" | "loading" | "found" | "notfound" | "error";
+
 function GroupLineButton({ link }: { link: string | null }) {
   const url = safeExternalUrl(link ?? "");
   if (!url) {
     return (
-      <p className="text-center text-sm text-teal-dark/60">
+      <p className="text-center text-sm text-muted-foreground">
         Link grup Line akan dibagikan oleh SC segera.
       </p>
     );
   }
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex min-h-14 w-full items-center justify-center gap-2 rounded-xl bg-accent px-5 text-base font-bold text-white shadow-card transition-transform hover:brightness-105 active:scale-[0.98]"
-    >
-      <Icon name="line" className="h-6 w-6" />
-      Gabung Grup Line
-    </a>
+    <Button asChild size="lg" className="h-13 w-full rounded-full px-6">
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <LineIcon className="h-5 w-5" />
+        Gabung Grup Line
+      </a>
+    </Button>
   );
 }
 
 export default function SearchMahasiswa() {
-  const [query, setQuery] = useState("");
-  const [selectedNpm, setSelectedNpm] = useState<string | null>(null);
-  const [records, setRecords] = useState<Mahasiswa[] | null>(null);
-  const [loadError, setLoadError] = useState(false);
-  const deferredQuery = useDeferredValue(query);
-  const normalizedQuery = normalize(deferredQuery);
+  const [nama, setNama] = useState("");
+  const [npm, setNpm] = useState("");
+  const [status, setStatus] = useState<Status>("idle");
+  const [found, setFound] = useState<Mahasiswa | null>(null);
+  const recordsRef = useRef<Mahasiswa[] | null>(null);
 
-  useEffect(() => {
-    if (records !== null || normalizedQuery === "") return;
-    let active = true;
-    import("@/data/mahasiswa")
-      .then((mod) => {
-        if (active) setRecords(mod.mahasiswaData);
-      })
-      .catch(() => {
-        if (active) setLoadError(true);
-      });
-    return () => {
-      active = false;
-    };
-  }, [normalizedQuery, records]);
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!nama.trim() || !npm.trim()) return;
+    setStatus("loading");
+    setFound(null);
+    try {
+      if (!recordsRef.current) {
+        recordsRef.current = (await import("@/data/mahasiswa")).mahasiswaData;
+      }
+      const match = recordsRef.current.find(
+        (m) =>
+          normalize(m.nama) === normalize(nama) && m.npm === npm.trim()
+      );
+      if (match) {
+        setFound(match);
+        setStatus("found");
+      } else {
+        setStatus("notfound");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
 
-  const matches = useMemo(() => {
-    if (!normalizedQuery || !records) return [];
-    return records.filter((m) => normalize(m.nama).includes(normalizedQuery));
-  }, [records, normalizedQuery]);
-
-  const results = matches.slice(0, MAX_RESULTS);
-  const selected =
-    (selectedNpm && records?.find((m) => m.npm === selectedNpm)) || null;
+  function reset() {
+    setStatus("idle");
+    setFound(null);
+  }
 
   return (
-    <div>
-      <div className="sticky top-0 z-10 -mx-4 bg-cream px-4 py-3">
-        <label
-          htmlFor="search-nama"
-          className="mb-1 block text-xs font-semibold text-teal/70"
-        >
-          Ketik nama kamu
-        </label>
-        <div className="relative">
-          <Icon
-            name="search"
-            className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-teal/50"
-          />
-          <input
-            id="search-nama"
-            type="search"
-            inputMode="search"
-            autoComplete="off"
-            value={query}
-            onChange={(e) => {
-              setQuery(e.target.value);
-              setSelectedNpm(null);
-            }}
-            placeholder="Contoh: Ahmad Fadil"
-            className="w-full rounded-2xl border border-teal/20 bg-white py-4 pl-12 pr-4 text-base text-teal-dark shadow-card outline-none placeholder:text-teal-dark/40 focus:border-accent focus:ring-2 focus:ring-accent/30"
-          />
-        </div>
-      </div>
-
-      {selected && (
-        <div className="mt-4 rounded-2xl border border-teal/15 bg-white p-5 shadow-card">
-          <div className="flex items-center justify-between gap-2">
-            <span className="rounded-full bg-cream px-3 py-1 text-xs font-semibold text-teal">
-              {DEPARTEMEN_NAMA[selected.departemen]}
+    <div className="space-y-5">
+      {status === "idle" && (
+        <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card sm:p-8">
+          <div className="flex items-center gap-3">
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
+              <Search className="h-6 w-6" />
             </span>
-            <span className="text-xs text-teal-dark/50">{selected.npm}</span>
+            <div>
+              <h2 className="font-heading text-lg font-bold text-foreground">
+                Cari Kelompokmu
+              </h2>
+              <p className="text-sm text-muted-foreground">
+                Masukkan nama lengkap dan NPM sesuai data yang kamu terima.
+              </p>
+            </div>
           </div>
-          <h3 className="mt-3 text-xl font-bold text-teal">{selected.nama}</h3>
-          <p className="mt-1 text-sm text-teal-dark/70">{selected.prodi}</p>
-          <div className="mt-4 rounded-xl bg-cream p-4 text-center">
-            <p className="text-xs font-semibold uppercase tracking-wide text-teal/60">
+
+          <form className="mt-6 space-y-3" onSubmit={handleSubmit}>
+            <div className="relative">
+              <User className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="text"
+                autoComplete="off"
+                value={nama}
+                onChange={(e) => setNama(e.target.value)}
+                placeholder="Nama lengkap kamu"
+                className="h-13 rounded-full border-border bg-card pl-12 pr-4 text-base shadow-card placeholder:text-muted-foreground/70"
+              />
+            </div>
+            <div className="relative">
+              <IdCard className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="text"
+                inputMode="numeric"
+                autoComplete="off"
+                value={npm}
+                onChange={(e) => setNpm(e.target.value.replace(/\D/g, ""))}
+                placeholder="NPM kamu (contoh: 2606736862)"
+                className="h-13 rounded-full border-border bg-card pl-12 pr-4 text-base shadow-card placeholder:text-muted-foreground/70"
+              />
+            </div>
+            <Button type="submit" size="lg" className="h-13 w-full rounded-full">
+              <Search data-slot="icon-inline-start" />
+              Cari Kelompok
+            </Button>
+          </form>
+
+          <p className="mt-5 text-center text-xs text-muted-foreground">
+            Tidak ingat NPM?{" "}
+            <Link href="/kontak" className="font-semibold text-accent underline-offset-4 hover:underline">
+              Hubungi Steering Committee
+            </Link>
+          </p>
+        </Card>
+      )}
+
+      {status === "loading" && (
+        <Card className="rounded-[2rem] p-8 text-center ring-border/60 shadow-card">
+          <span className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-secondary">
+            <span className="h-6 w-6 animate-spin rounded-full border-2 border-accent border-t-transparent" />
+          </span>
+          <p className="mt-3 font-semibold text-foreground">Mencari data kamu...</p>
+        </Card>
+      )}
+
+      {status === "found" && found && (
+        <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card sm:p-8">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800">
+            <ShieldCheck className="h-3.5 w-3.5" />
+            Terverifikasi
+          </span>
+
+          <div className="mt-4 flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <h2 className="font-heading text-2xl font-bold tracking-tight text-foreground">
+                {found.nama}
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">{found.prodi}</p>
+            </div>
+            <div className="text-right">
+              <span
+                className={cn(
+                  "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-bold",
+                  DEPARTEMEN_WARNA[found.departemen].badge
+                )}
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-white/80" />
+                {found.departemen}
+              </span>
+              <p className="mt-1 text-xs text-muted-foreground">
+                NPM {found.npm}
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-3xl bg-secondary/60 p-5 text-center">
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
               Nomor Kelompok
             </p>
-            {selected.kelompok ? (
-              <p className="mt-1 text-4xl font-bold text-accent">
-                {selected.kelompok}
+            {found.kelompok ? (
+              <p className="mt-1 font-heading text-5xl font-bold text-accent">
+                {found.kelompok}
               </p>
             ) : (
-              <p className="mt-1 text-sm text-teal-dark/60">
+              <p className="mt-1 text-sm text-muted-foreground">
                 Nomor kelompok menyusul
               </p>
             )}
           </div>
-          <div className="mt-4">
-            <GroupLineButton link={selected.linkGrupLine} />
+
+          <div className="mt-5">
+            <GroupLineButton link={found.linkGrupLine} />
           </div>
-        </div>
+
+          <div className="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:justify-between">
+            <p className="text-xs text-muted-foreground">
+              Link tidak aktif?{" "}
+              <Link href="/kontak" className="font-semibold text-accent underline-offset-4 hover:underline">
+                Hubungi SC
+              </Link>
+            </p>
+            <button
+              type="button"
+              onClick={reset}
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <RotateCcw className="h-3.5 w-3.5" />
+              Cari data lain
+            </button>
+          </div>
+        </Card>
       )}
 
-      <div className="mt-4 space-y-2">
-        {normalizedQuery === "" && (
-          <p className="py-8 text-center text-sm text-teal-dark/60">
-            Mulai ketik nama kamu di atas untuk mencari kelompok.
+      {status === "notfound" && (
+        <Card className="rounded-[2rem] p-8 text-center ring-border/60 shadow-card">
+          <span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-red-100 text-red-600">
+            <UserX className="h-7 w-7" />
+          </span>
+          <h2 className="mt-4 font-heading text-xl font-bold text-foreground">
+            Data tidak ditemukan
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
+            Nama atau NPM yang kamu masukkan tidak cocok dengan data Mabim FTUI
+            2026. Periksa kembali, atau hubungi Steering Committee untuk
+            dibantu.
           </p>
-        )}
-        {normalizedQuery !== "" && records === null && !loadError && (
-          <p className="py-8 text-center text-sm text-teal-dark/60">
-            Memuat data mahasiswa...
-          </p>
-        )}
-        {loadError && (
-          <div className="rounded-2xl bg-white p-5 text-center shadow-card">
-            <p className="font-semibold text-teal">Gagal memuat data</p>
-            <p className="mt-1 text-sm text-teal-dark/70">
-              Coba muat ulang halaman ini.
-            </p>
+          <div className="mt-6 flex flex-col gap-2.5 sm:flex-row sm:justify-center">
+            <Button asChild size="lg" className="h-13 rounded-full px-6">
+              <Link href="/kontak">
+                Hubungi Steering Committee
+                <ArrowRight data-slot="icon-inline-end" />
+              </Link>
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              size="lg"
+              onClick={reset}
+              className="h-13 rounded-full border-border px-6"
+            >
+              Coba lagi
+            </Button>
           </div>
-        )}
-        {normalizedQuery !== "" && records && matches.length === 0 && (
-          <div className="rounded-2xl bg-white p-5 text-center shadow-card">
-            <Icon name="search" className="mx-auto h-8 w-8 text-teal/40" />
-            <p className="mt-2 font-semibold text-teal">
-              Nama tidak ditemukan
-            </p>
-            <p className="mt-1 text-sm text-teal-dark/70">
-              Periksa kembali ejaan nama, atau hubungi SC/IC kelompokmu untuk
-              bantuan.
-            </p>
-          </div>
-        )}
-        {normalizedQuery !== "" && matches.length > 0 && (
-          <p className="text-xs text-teal-dark/60">
-            {matches.length > MAX_RESULTS
-              ? `Menampilkan ${MAX_RESULTS} dari ${matches.length} hasil`
-              : `${matches.length} hasil ditemukan`}
+        </Card>
+      )}
+
+      {status === "error" && (
+        <Card className="rounded-[2rem] p-8 text-center ring-border/60 shadow-card">
+          <h2 className="font-heading text-xl font-bold text-foreground">
+            Gagal memuat data
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
+            Terjadi kendala saat memuat data. Coba muat ulang halaman ini.
           </p>
-        )}
-        {results.map((m) => (
-          <button
-            key={m.npm}
+          <Button
             type="button"
-            onClick={() => setSelectedNpm(m.npm)}
-            className="flex w-full items-center justify-between gap-3 rounded-2xl border border-teal/10 bg-white p-4 text-left shadow-card transition-all hover:-translate-y-0.5 hover:border-accent/40"
+            variant="outline"
+            size="lg"
+            onClick={reset}
+            className="mt-6 h-13 rounded-full border-border px-6"
           >
-            <span className="min-w-0">
-              <span className="block truncate font-semibold text-teal">
-                {m.nama}
-              </span>
-              <span className="mt-0.5 block truncate text-sm text-teal-dark/70">
-                {DEPARTEMEN_NAMA[m.departemen]} · {m.prodi}
-              </span>
-            </span>
-            {m.kelompok && (
-              <span className="shrink-0 rounded-full bg-accent/10 px-3 py-1 text-sm font-bold text-accent">
-                Kel. {m.kelompok}
-              </span>
-            )}
-          </button>
-        ))}
-      </div>
+            Coba lagi
+          </Button>
+        </Card>
+      )}
     </div>
   );
 }

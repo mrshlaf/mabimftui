@@ -27,7 +27,7 @@ export const tugasUnits: TugasUnit[] = [
   },
   {
     kode: "DA",
-    nama: "Teknik Arsitektur",
+    nama: "Arsitektur",
     kategori: "departemen",
     tugas: [],
   },

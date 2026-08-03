@@ -18,11 +18,11 @@ export interface Mahasiswa {
 }
 
 export const DEPARTEMEN_NAMA: Record<DepartemenCode, string> = {
-  DTSL: "Teknik Sipil",
+  DTSL: "Teknik Sipil dan Lingkungan",
   DTM: "Teknik Mesin",
   DTE: "Teknik Elektro",
-  DTMM: "Teknik Metalurgi & Material",
-  DA: "Teknik Arsitektur",
+  DTMM: "Teknik Metalurgi dan Material",
+  DA: "Arsitektur",
   DTK: "Teknik Kimia",
   DTI: "Teknik Industri",
   PI: "Program Internasional",
@@ -66,4 +66,16 @@ export interface KontakUnit {
   nama: string;
   kategori: KontakKategoriKey;
   kontak: KontakPerson[];
+}
+
+export interface StatistikDepartemen {
+  kode: string;
+  nama: string;
+  jumlah: number;
+}
+
+export interface Statistik {
+  total: number;
+  prodi: number;
+  departemen: StatistikDepartemen[];
 }

@@ -23,7 +23,7 @@ Untuk mengisi nomor kelompok & link grup Line per mahasiswa, tambahkan kolom
 opsional pada CSV (parser sudah mendukung), lalu jalankan ulang perintah di atas.
 Generator punya pengecekan otomatis: total entri harus 1.806, tanpa duplikat NPM.
 
-## Kontak Panitia
+## Kontak SC
 
 Data contact person di-edit langsung di `data/kontak.ts` (nama, peran, NPM,
 departemen, alamat, no. telepon). Tombol Telepon & WhatsApp dibuat otomatis dari
@@ -39,6 +39,8 @@ kegiatan Mabim — cukup timpa isi file-nya, nama file tetap, tanpa ubah kode:
 - `public/bg-tugas.jpg` → header halaman Tugas
 - `public/bg-info.jpg` → header halaman Info
 - `public/bg-kontak.jpg` → header halaman Kontak
+- `public/bg-site.jpg` → background situs (dummy sudah hitam-putih; ganti dengan
+  foto hitam-putih Mabim asli saat tiba waktunya)
 - `public/logo-mabim.png` → logo (usahan tetap transparan di sudut, ~persegi).
   Sumber asli ada di folder `images/`.
 

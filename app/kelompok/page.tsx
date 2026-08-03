@@ -12,10 +12,10 @@ export default function KelompokPage() {
       <PageHeader
         eyebrow="Cari Kelompok"
         title="Kelompok Mabim"
-        desc="Ketik nama lengkap atau sebagian untuk menemukan nomor kelompok dan grup Line kamu."
+        desc="Masukkan nama lengkap dan NPM kamu untuk menemukan nomor kelompok dan grup Line."
         bg="/bg-kelompok.jpg"
       />
-      <section className="mx-auto max-w-4xl px-4 py-6">
+      <section className="mx-auto max-w-3xl px-6 py-10 sm:px-8">
         <SearchMahasiswa />
       </section>
     </div>
