@@ -18,6 +18,7 @@ import VideoTeaser from "./components/VideoTeaser";
 import { statistik, DEPARTEMEN_WARNA } from "@/data/statistik";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   description:
     "Satu pintu informasi Mabim FTUI 2026: cari kelompok dan grup Line, link tugas, info penting, dan kontak Steering Committee.",
 };

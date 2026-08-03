@@ -5,6 +5,7 @@ import SearchMahasiswa from "../components/SearchMahasiswa";
 
 export const metadata: Metadata = {
   title: "Cari Kelompok",
+  alternates: { canonical: "/kelompok" },
   description:
     "Cari nomor kelompok dan grup Line Mahasiswa Baru FTUI 2026 dengan nama lengkap dan NPM.",
 };

@@ -13,6 +13,7 @@ import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Kontak SC",
+  alternates: { canonical: "/kontak" },
   description:
     "Hubungi contact person resmi BEM, MPM, dan lembaga lain Mabim FTUI 2026.",
 };

@@ -8,12 +8,6 @@ export const tugasLembaga: TugasLembaga[] = [
     tugas: [],
   },
   {
-    kode: "MPM",
-    nama: "MPM FTUI",
-    kategori: "lembaga",
-    tugas: [],
-  },
-  {
     kode: "DTSL",
     nama: "Departemen Teknik Sipil dan Lingkungan",
     kategori: "departemen",

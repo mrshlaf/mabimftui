@@ -9,6 +9,7 @@ import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Link Tugas",
+  alternates: { canonical: "/tugas" },
   description:
     "Kumpulan link pengumpulan tugas Mabim FTUI 2026 untuk tiap lembaga dan departemen.",
 };

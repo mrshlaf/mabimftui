@@ -15,6 +15,7 @@ import PageHeader from "../components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Info Penting",
+  alternates: { canonical: "/info" },
   description:
     "Pengaduan, guidebook, dan kalender kegiatan Mabim FTUI 2026 dalam satu tempat.",
 };
