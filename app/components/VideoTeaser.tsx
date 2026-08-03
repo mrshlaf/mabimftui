@@ -1,12 +1,22 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { Pause, Play, Volume2, VolumeX } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Maximize, Minimize, Pause, Play, Volume2, VolumeX } from "lucide-react";
 
 export default function VideoTeaser() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const wrapRef = useRef<HTMLDivElement>(null);
   const [muted, setMuted] = useState(false);
   const [playing, setPlaying] = useState(false);
+  const [fullscreen, setFullscreen] = useState(false);
+
+  useEffect(() => {
+    function onChange() {
+      setFullscreen(Boolean(document.fullscreenElement));
+    }
+    document.addEventListener("fullscreenchange", onChange);
+    return () => document.removeEventListener("fullscreenchange", onChange);
+  }, []);
 
   function togglePlay() {
     const v = videoRef.current;
@@ -28,8 +38,21 @@ export default function VideoTeaser() {
     setMuted(!muted);
   }
 
+  function toggleFullscreen() {
+    const wrap = wrapRef.current;
+    if (!wrap) return;
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    } else {
+      wrap.requestFullscreen().catch(() => {});
+    }
+  }
+
   return (
-    <div className="group relative overflow-hidden rounded-[2rem] bg-teal-dark shadow-lift ring-1 ring-white/15">
+    <div
+      ref={wrapRef}
+      className={`group relative overflow-hidden bg-teal-dark shadow-lift ring-1 ring-white/15 ${fullscreen ? "rounded-none bg-black" : "rounded-[2rem]"}`}
+    >
       <video
         ref={videoRef}
         src="/video-mabim.mp4"
@@ -38,13 +61,13 @@ export default function VideoTeaser() {
         playsInline
         preload="none"
         onClick={togglePlay}
-        className="aspect-[16/9] w-full cursor-pointer object-cover"
+        className={`w-full cursor-pointer object-cover ${fullscreen ? "h-full" : "aspect-[16/9]"}`}
       />
 
       {!playing && (
         <button
           type="button"
-          aria-label="Putar video teaser Mabim"
+          aria-label="Putar teaser Mabim"
           onClick={togglePlay}
           className="absolute inset-0 grid place-items-center"
         >
@@ -56,7 +79,7 @@ export default function VideoTeaser() {
 
       <span className="pointer-events-none absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-black/45 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur">
         <Play className="h-3.5 w-3.5" fill="currentColor" />
-        Video Teaser Mabim
+        Teaser Mabim
       </span>
 
       {playing && (
@@ -75,9 +98,20 @@ export default function VideoTeaser() {
           type="button"
           aria-label={muted ? "Nyalakan suara" : "Matikan suara"}
           onClick={toggleMute}
-          className="absolute bottom-4 right-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white backdrop-blur transition-colors hover:bg-black/65"
+          className="absolute bottom-4 right-16 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white backdrop-blur transition-colors hover:bg-black/65"
         >
           {muted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
+        </button>
+      )}
+
+      {playing && (
+        <button
+          type="button"
+          aria-label={fullscreen ? "Keluar fullscreen" : "Fullscreen"}
+          onClick={toggleFullscreen}
+          className="absolute bottom-4 right-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white backdrop-blur transition-colors hover:bg-black/65"
+        >
+          {fullscreen ? <Minimize className="h-5 w-5" /> : <Maximize className="h-5 w-5" />}
         </button>
       )}
     </div>
