@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { ChevronDown, ExternalLink } from "lucide-react";
-import { tugasUnits } from "@/data/tugas";
+import { ChevronDown, ExternalLink, FileText } from "lucide-react";
+import { tugasLembaga } from "@/data/tugas";
 import { DEPARTEMEN_WARNA } from "@/data/statistik";
-import type { TugasUnit } from "@/data/types";
+import type { TugasLembaga } from "@/data/types";
 import { cn } from "@/lib/utils";
 import { safeExternalUrl } from "@/lib/url";
 import PageHeader from "../components/PageHeader";
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "Link Tugas - Mabim FTUI 2026",
 };
 
-function TaskList({ unit }: { unit: TugasUnit }) {
-  if (unit.tugas.length === 0) {
+function TaskList({ lembaga }: { lembaga: TugasLembaga }) {
+  if (lembaga.tugas.length === 0) {
     return (
       <p className="text-sm text-muted-foreground">
         Link tugas akan dibagikan oleh SC segera.
@@ -21,7 +21,7 @@ function TaskList({ unit }: { unit: TugasUnit }) {
   }
   return (
     <ul className="space-y-2">
-      {unit.tugas.map((t, i) => {
+      {lembaga.tugas.map((t, i) => {
         const url = safeExternalUrl(t.url);
         if (!url) {
           return (
@@ -57,15 +57,16 @@ export default function TugasPage() {
       <PageHeader
         eyebrow="Link Tugas"
         title="Pengumpulan Tugas"
-        desc="Pilih unit pengumpul tugas, lalu buka link pengumpulan sesuai ketentuan. Link dibuka di tab baru."
+        desc="Buka link pengumpulan tugas tiap lembaga sesuai ketentuan yang berlaku."
         bg="/bg-tugas.jpg"
+        icon={FileText}
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-10 sm:px-8">
+      <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="space-y-3">
-          {tugasUnits.map((unit) => (
+          {tugasLembaga.map((lembaga) => (
             <details
-              key={unit.kode}
+              key={lembaga.kode}
               className="group overflow-hidden rounded-[2rem] ring-1 ring-border/60 shadow-card"
               open
             >
@@ -74,13 +75,13 @@ export default function TugasPage() {
                   <span
                     className={cn(
                       "shrink-0 rounded-full px-2.5 py-1 text-xs font-bold",
-                      DEPARTEMEN_WARNA[unit.kode]?.badge ?? "bg-secondary text-secondary-foreground"
+                      DEPARTEMEN_WARNA[lembaga.kode]?.badge ?? "bg-secondary text-secondary-foreground"
                     )}
                   >
-                    {unit.kode}
+                    {lembaga.kode}
                   </span>
                   <span className="truncate font-semibold text-foreground">
-                    {unit.nama}
+                    {lembaga.nama}
                   </span>
                 </span>
                 <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-secondary text-accent transition-transform group-open:rotate-180">
@@ -88,7 +89,7 @@ export default function TugasPage() {
                 </span>
               </summary>
               <div className="border-t border-border/60 px-5 py-4">
-                <TaskList unit={unit} />
+                <TaskList lembaga={lembaga} />
               </div>
             </details>
           ))}

@@ -164,11 +164,10 @@ export default function SearchMahasiswa() {
             <div className="text-right">
               <span
                 className={cn(
-                  "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-bold",
+                  "inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold",
                   DEPARTEMEN_WARNA[found.departemen].badge
                 )}
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-white/80" />
                 {found.departemen}
               </span>
               <p className="mt-1 text-xs text-muted-foreground">

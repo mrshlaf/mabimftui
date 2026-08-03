@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -31,7 +32,7 @@ const MENU: { href: string; icon: LucideIcon; title: string; desc: string }[] = 
     href: "/tugas",
     icon: FileText,
     title: "Link Tugas",
-    desc: "Akses link pengumpulan tugas tiap unit.",
+    desc: "Akses link pengumpulan tugas tiap lembaga.",
   },
   {
     href: "/info",
@@ -43,16 +44,16 @@ const MENU: { href: string; icon: LucideIcon; title: string; desc: string }[] = 
     href: "/kontak",
     icon: Phone,
     title: "Kontak SC",
-    desc: "Hubungi contact person BEM, MPM, dan unit.",
+    desc: "Hubungi contact person BEM, MPM, dan lembaga lainnya.",
   },
 ];
 
-const regulerCount = statistik.departemen.filter((d) => d.kode !== "PI").length;
+const lembagaCount = statistik.departemen.length;
 
 export default function Home() {
   return (
     <div className="min-h-full">
-      <section className="mx-auto max-w-6xl px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8">
+      <section className="mx-auto max-w-6xl px-4 pb-4 pt-4 sm:px-6 sm:pb-6 sm:pt-6 lg:px-8 lg:pb-8 lg:pt-8">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-teal text-cream shadow-lift ring-1 ring-white/15">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-25 grayscale"
@@ -65,15 +66,20 @@ export default function Home() {
           >
             2026
           </span>
+          <Image
+            src="/logo-mabim.png"
+            alt=""
+            aria-hidden="true"
+            width={480}
+            height={480}
+            priority
+            className="pointer-events-none absolute -bottom-10 -right-6 h-44 w-44 object-contain opacity-10 sm:-right-8 sm:h-64 sm:w-64 lg:h-72 lg:w-72"
+          />
 
           <div className="relative mx-auto max-w-6xl px-6 py-12 sm:px-12 sm:py-16 lg:px-16">
             <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
               <div>
-                <span className="inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-                  </span>
+                <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur">
                   Mahasiswa Baru FTUI 2026
                 </span>
 
@@ -124,7 +130,7 @@ export default function Home() {
               </div>
               <div className="px-2 text-center">
                 <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-                  {regulerCount}
+                  {lembagaCount}
                 </p>
                 <p className="mt-1 text-[11px] font-semibold uppercase tracking-wider text-cream/70 sm:text-xs">
                   Departemen + PI
@@ -143,12 +149,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 pt-12 sm:px-8 sm:pt-16">
+      <section className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-            Menu Utama
+            Navigasi
           </p>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <h2 className="mt-2 font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+            Menu Utama
+          </h2>
+          <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+            Empat pintu untuk kebutuhanmu selama masa Mabim.
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {MENU.map((card) => (
               <Card
                 key={card.href}
@@ -176,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-12 sm:px-8 sm:py-16">
+      <section className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-end justify-between gap-4">
             <div>
@@ -187,7 +199,7 @@ export default function Home() {
                 Tujuh Departemen & Program Internasional
               </h2>
               <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-                Delapan pengelola akademik membawahi {statistik.prodi} program
+                Delapan lembaga pengelola akademik membawahi {statistik.prodi} program
                 studi sebagai kesatuan rencana belajar.
               </p>
             </div>
@@ -210,7 +222,6 @@ export default function Home() {
                     >
                       {d.kode}
                     </span>
-                    <span className={`h-2.5 w-2.5 rounded-full ${c.dot}`} />
                   </div>
                   <p
                     className={`mt-4 font-heading text-3xl font-bold tracking-tight ${c.heading}`}

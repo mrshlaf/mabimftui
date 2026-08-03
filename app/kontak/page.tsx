@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { kontakUnits } from "@/data/kontak";
+import { kontakLembaga } from "@/data/kontak";
 import { DEPARTEMEN_WARNA } from "@/data/statistik";
 import type { KontakPerson } from "@/data/types";
 import { cn } from "@/lib/utils";
@@ -87,8 +87,8 @@ function KontakCard({ person }: { person: KontakPerson }) {
   );
 }
 
-function UnitSection({ unit }: { unit: (typeof kontakUnits)[number] }) {
-  const warna = DEPARTEMEN_WARNA[unit.kode];
+function LembagaSection({ lembaga }: { lembaga: (typeof kontakLembaga)[number] }) {
+  const warna = DEPARTEMEN_WARNA[lembaga.kode];
   return (
     <div>
       <div className="mb-4 flex items-center gap-2.5">
@@ -96,21 +96,21 @@ function UnitSection({ unit }: { unit: (typeof kontakUnits)[number] }) {
           variant="secondary"
           className={cn("rounded-full px-3 py-1.5", warna?.badge)}
         >
-          {unit.kode}
+          {lembaga.kode}
         </Badge>
         <h3 className="font-heading text-lg font-semibold text-foreground">
-          {unit.nama}
+          {lembaga.nama}
         </h3>
       </div>
-      {unit.kontak.length > 0 ? (
+      {lembaga.kontak.length > 0 ? (
         <div className="grid gap-4 sm:grid-cols-2">
-          {unit.kontak.map((person) => (
+          {lembaga.kontak.map((person) => (
             <KontakCard key={person.npm} person={person} />
           ))}
         </div>
       ) : (
         <Card className="rounded-[2rem] border border-dashed p-6 text-center text-sm text-muted-foreground ring-0">
-          Kontak unit ini menyusul.
+          Kontak lembaga ini menyusul.
         </Card>
       )}
     </div>
@@ -123,14 +123,15 @@ export default function KontakPage() {
       <PageHeader
         eyebrow="Kontak SC"
         title="Hubungi Kami"
-        desc="Butuh bantuan selama Mabim? Hubungi contact person resmi sesuai unitmu."
+        desc="Hubungi contact person resmi tiap lembaga saat butuh bantuan selama Mabim."
         bg="/bg-kontak.jpg"
+        icon={Phone}
       />
 
-      <section className="mx-auto max-w-6xl px-6 py-10 sm:px-8">
+      <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="space-y-10">
-          {kontakUnits.map((unit) => (
-            <UnitSection key={unit.kode} unit={unit} />
+          {kontakLembaga.map((lembaga) => (
+            <LembagaSection key={lembaga.kode} lembaga={lembaga} />
           ))}
         </div>
 

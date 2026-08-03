@@ -1,6 +1,6 @@
-import type { TugasUnit } from "./types";
+import type { TugasLembaga } from "./types";
 
-export const tugasUnits: TugasUnit[] = [
+export const tugasLembaga: TugasLembaga[] = [
   {
     kode: "BEM",
     nama: "BEM FTUI",

@@ -31,7 +31,7 @@ export default function Nav() {
   return (
     <>
       <header className="sticky top-0 z-40 hidden border-b border-border/60 bg-background/90 backdrop-blur md:block">
-        <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-6 py-3">
+        <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-4 py-3 sm:px-6 lg:px-8">
           <Link href="/" className="flex w-fit items-center gap-2.5">
             <Image
               src="/logo-mabim.png"

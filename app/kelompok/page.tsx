@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Users } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import SearchMahasiswa from "../components/SearchMahasiswa";
 
@@ -12,10 +13,11 @@ export default function KelompokPage() {
       <PageHeader
         eyebrow="Cari Kelompok"
         title="Kelompok Mabim"
-        desc="Masukkan nama lengkap dan NPM kamu untuk menemukan nomor kelompok dan grup Line."
+        desc="Cari nomor kelompok dan grup Line kamu dengan nama dan NPM."
         bg="/bg-kelompok.jpg"
+        icon={Users}
       />
-      <section className="mx-auto max-w-3xl px-6 py-10 sm:px-8">
+      <section className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <SearchMahasiswa />
       </section>
     </div>

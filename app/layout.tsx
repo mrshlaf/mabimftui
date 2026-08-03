@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   title: "Mabim FTUI 2026",
   description:
     "Satu pintu informasi Mabim FTUI 2026: cari kelompok, link tugas, dan info penting.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#062f3b",
 };
 
 export default function RootLayout({

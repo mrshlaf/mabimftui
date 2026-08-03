@@ -1,29 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Pause, Play, Volume2, VolumeX } from "lucide-react";
 
 export default function VideoTeaser() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [muted, setMuted] = useState(true);
+  const [muted, setMuted] = useState(false);
   const [playing, setPlaying] = useState(false);
-
-  useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    let cancelled = false;
-    v.play()
-      .then(() => {
-        if (!cancelled) setPlaying(true);
-      })
-      .catch(() => {
-        if (!cancelled) setPlaying(false);
-      });
-    return () => {
-      cancelled = true;
-      v.pause();
-    };
-  }, []);
 
   function togglePlay() {
     const v = videoRef.current;
@@ -51,11 +34,9 @@ export default function VideoTeaser() {
         ref={videoRef}
         src="/video-mabim.mp4"
         poster="/hero-mabim.jpg"
-        autoPlay
         loop
-        muted
         playsInline
-        preload="metadata"
+        preload="none"
         onClick={togglePlay}
         className="aspect-[16/9] w-full cursor-pointer object-cover"
       />
@@ -83,20 +64,22 @@ export default function VideoTeaser() {
           type="button"
           aria-label="Jeda video"
           onClick={togglePlay}
-          className="absolute bottom-4 left-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white opacity-0 backdrop-blur transition-opacity group-hover:opacity-100 hover:bg-black/65"
+          className="absolute bottom-4 left-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white opacity-100 backdrop-blur transition-colors hover:bg-black/65 md:opacity-0 md:group-hover:opacity-100"
         >
           <Pause className="h-5 w-5" />
         </button>
       )}
 
-      <button
-        type="button"
-        aria-label={muted ? "Nyalakan suara" : "Matikan suara"}
-        onClick={toggleMute}
-        className="absolute bottom-4 right-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white backdrop-blur transition-colors hover:bg-black/65"
-      >
-        {muted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
-      </button>
+      {playing && (
+        <button
+          type="button"
+          aria-label={muted ? "Nyalakan suara" : "Matikan suara"}
+          onClick={toggleMute}
+          className="absolute bottom-4 right-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white backdrop-blur transition-colors hover:bg-black/65"
+        >
+          {muted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
+        </button>
+      )}
     </div>
   );
 }

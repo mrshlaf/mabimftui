@@ -1,8 +1,45 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  compress: true,
   async headers() {
+    const staticCache = [
+      { key: "Cache-Control", value: "public, max-age=86400, stale-while-revalidate=604800" },
+    ];
     return [
+      {
+        source: "/video-mabim.mp4",
+        headers: staticCache,
+      },
+      {
+        source: "/hero-mabim.jpg",
+        headers: staticCache,
+      },
+      {
+        source: "/bg-site.jpg",
+        headers: staticCache,
+      },
+      {
+        source: "/bg-kelompok.jpg",
+        headers: staticCache,
+      },
+      {
+        source: "/bg-tugas.jpg",
+        headers: staticCache,
+      },
+      {
+        source: "/bg-info.jpg",
+        headers: staticCache,
+      },
+      {
+        source: "/bg-kontak.jpg",
+        headers: staticCache,
+      },
+      {
+        source: "/logo-mabim.png",
+        headers: staticCache,
+      },
       {
         source: "/(.*)",
         headers: [
@@ -13,6 +50,9 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=(), payment=()",
           },
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+          { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
           {
             key: "Content-Security-Policy",
             value: [
@@ -21,6 +61,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data:",
               "font-src 'self' data:",
+              "media-src 'self'",
               "connect-src 'self'",
               "base-uri 'self'",
               "form-action 'self'",

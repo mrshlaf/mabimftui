@@ -18,13 +18,13 @@ export interface Mahasiswa {
 }
 
 export const DEPARTEMEN_NAMA: Record<DepartemenCode, string> = {
-  DTSL: "Teknik Sipil dan Lingkungan",
-  DTM: "Teknik Mesin",
-  DTE: "Teknik Elektro",
-  DTMM: "Teknik Metalurgi dan Material",
-  DA: "Arsitektur",
-  DTK: "Teknik Kimia",
-  DTI: "Teknik Industri",
+  DTSL: "Departemen Teknik Sipil dan Lingkungan",
+  DTM: "Departemen Teknik Mesin",
+  DTE: "Departemen Teknik Elektro",
+  DTMM: "Departemen Teknik Metalurgi dan Material",
+  DA: "Departemen Arsitektur",
+  DTK: "Departemen Teknik Kimia",
+  DTI: "Departemen Teknik Industri",
   PI: "Program Internasional",
 };
 
@@ -33,7 +33,7 @@ export interface TugasItem {
   url: string;
 }
 
-export interface TugasUnit {
+export interface TugasLembaga {
   kode: string;
   nama: string;
   kategori: "departemen" | "lembaga";
@@ -61,7 +61,7 @@ export interface KontakPerson {
 
 export type KontakKategoriKey = "lembaga" | "departemen";
 
-export interface KontakUnit {
+export interface KontakLembaga {
   kode: string;
   nama: string;
   kategori: KontakKategoriKey;
