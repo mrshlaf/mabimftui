@@ -4,7 +4,25 @@ export const tugasLembaga: TugasLembaga[] = [
   {
     kode: "BEM",
     nama: "BEM FTUI",
-    kategori: "lembaga",
+    kategori: "bem",
+    tugas: [],
+  },
+  {
+    kode: "FUSI",
+    nama: "BOK FTUI",
+    kategori: "bok",
+    tugas: [],
+  },
+  {
+    kode: "KMK",
+    nama: "KMK FTUI",
+    kategori: "bok",
+    tugas: [],
+  },
+  {
+    kode: "PO",
+    nama: "PO FTUI",
+    kategori: "bok",
     tugas: [],
   },
   {
@@ -53,24 +71,6 @@ export const tugasLembaga: TugasLembaga[] = [
     kode: "PI",
     nama: "Program Internasional",
     kategori: "departemen",
-    tugas: [],
-  },
-  {
-    kode: "FUSI",
-    nama: "FUSI FTUI",
-    kategori: "lembaga",
-    tugas: [],
-  },
-  {
-    kode: "KMK",
-    nama: "KMK FTUI",
-    kategori: "lembaga",
-    tugas: [],
-  },
-  {
-    kode: "PO",
-    nama: "PO FTUI",
-    kategori: "lembaga",
     tugas: [],
   },
 ];

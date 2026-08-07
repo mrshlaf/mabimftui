@@ -3,6 +3,20 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
+  async redirects() {
+    return [
+      {
+        source: "/kelompok",
+        destination: "/dashboard",
+        permanent: true,
+      },
+      {
+        source: "/tugas",
+        destination: "/dashboard",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     const staticCache = [
       { key: "Cache-Control", value: "public, max-age=86400, stale-while-revalidate=604800" },
@@ -22,10 +36,6 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/bg-kelompok.jpg",
-        headers: staticCache,
-      },
-      {
-        source: "/bg-tugas.jpg",
         headers: staticCache,
       },
       {

@@ -33,11 +33,14 @@ export interface TugasItem {
   url: string;
 }
 
+export type KategoriTugas = "departemen" | "bem" | "bok";
+
 export interface TugasLembaga {
   kode: string;
   nama: string;
-  kategori: "departemen" | "lembaga";
+  kategori: KategoriTugas;
   tugas: TugasItem[];
+  linkForm?: string;
 }
 
 export interface InfoLinks {

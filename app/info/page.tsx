@@ -4,12 +4,15 @@ import {
   CalendarDays,
   Clock3,
   ExternalLink,
+  Hospital,
   Megaphone,
+  Phone,
   type LucideIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { infoLinks, infoTimeline } from "@/data/info";
+import { rumahSakitTerdekat } from "@/data/rs";
 import { safeExternalUrl } from "@/lib/url";
 import PageHeader from "../components/PageHeader";
 
@@ -40,24 +43,28 @@ function ExternalButton({ label, url }: { label: string; url: string }) {
 }
 
 const BLOCKS: {
+  id: string;
   icon: LucideIcon;
   title: string;
   desc: string;
   link: { label: string; url: string };
 }[] = [
   {
+    id: "pengaduan",
     icon: Megaphone,
     title: "Pelaporan Pengaduan",
     desc: "Laporkan pelanggaran atau kendala selama Mabim melalui form resmi.",
     link: infoLinks.pengaduan,
   },
   {
+    id: "guidebook",
     icon: BookOpen,
     title: "Guidebook Mabim",
     desc: "Baca guidebook resmi untuk panduan lengkap kegiatan Mabim.",
     link: infoLinks.guidebook,
   },
   {
+    id: "kalender",
     icon: CalendarDays,
     title: "Kalender Kegiatan",
     desc: "Gabung Google Calendar Mabim agar agenda penting tidak terlewat.",
@@ -81,7 +88,8 @@ export default function InfoPage() {
           {BLOCKS.map((block) => (
             <Card
               key={block.title}
-              className="rounded-[2rem] p-5 ring-border/60 shadow-card"
+              id={block.id}
+              className="scroll-mt-20 rounded-[2rem] p-5 ring-border/60 shadow-card"
             >
               <div className="flex items-center gap-3">
                 <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
@@ -101,7 +109,48 @@ export default function InfoPage() {
           ))}
         </div>
 
-        <Card className="mt-6 rounded-[2rem] p-5 ring-border/60 shadow-card">
+          <Card
+            id="rumah-sakit"
+            className="mt-6 scroll-mt-20 rounded-[2rem] p-5 ring-border/60 shadow-card"
+          >
+            <div className="flex items-center gap-3">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
+                <Hospital className="h-6 w-6" />
+              </span>
+              <h2 className="font-heading text-base font-semibold text-foreground">
+                Rumah Sakit Terdekat
+              </h2>
+            </div>
+            <div className="mt-4 space-y-3">
+              {rumahSakitTerdekat.map((rs) => (
+                <div
+                  key={rs.nama}
+                  className="rounded-2xl bg-secondary/60 p-4"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-card text-accent shadow-card">
+                      <Hospital className="h-4 w-4" />
+                    </span>
+                    <p className="text-sm font-semibold text-foreground">
+                      {rs.nama}
+                    </p>
+                  </div>
+                  <p className="mt-2 pl-10 text-xs leading-relaxed text-muted-foreground">
+                    {rs.alamat}
+                  </p>
+                  <a
+                    href={`tel:${rs.telp}`}
+                    className="ml-10 mt-2.5 inline-flex items-center gap-1.5 rounded-full bg-card px-3 py-1 text-xs font-semibold text-accent ring-1 ring-accent/30 transition-colors hover:ring-accent/60"
+                  >
+                    <Phone className="h-3.5 w-3.5" />
+                    {rs.telp}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          <Card className="mt-6 rounded-[2rem] p-5 ring-border/60 shadow-card">
           <div className="flex items-center gap-3">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
               <Clock3 className="h-6 w-6" />

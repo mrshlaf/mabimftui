@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
-  FileText,
+  Building2,
+  Compass,
+  LayoutDashboard,
   Megaphone,
   Phone,
-  Search,
-  Users,
   type LucideIcon,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -20,27 +20,21 @@ import { statistik, DEPARTEMEN_WARNA } from "@/data/statistik";
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
   description:
-    "Satu pintu informasi Mabim FTUI 2026: cari kelompok dan grup Line, link tugas, info penting, dan kontak Steering Committee.",
+    "Satu pintu informasi Mabim FTUI 2026: dashboard pribadi untuk cari kelompok dan grup Line, info penting, dan kontak Steering Committee.",
 };
 
 const MENU: { href: string; icon: LucideIcon; title: string; desc: string }[] = [
   {
-    href: "/kelompok",
-    icon: Users,
-    title: "Cari Kelompok",
-    desc: "Temukan nomor kelompok dan grup Line kamu.",
-  },
-  {
-    href: "/tugas",
-    icon: FileText,
-    title: "Link Tugas",
-    desc: "Akses link pengumpulan tugas tiap lembaga.",
+    href: "/dashboard",
+    icon: LayoutDashboard,
+    title: "Dashboard",
+    desc: "Masuk untuk lihat kelompok, grup Line, dan teman se-departemen.",
   },
   {
     href: "/info",
     icon: Megaphone,
     title: "Info Penting",
-    desc: "Pengaduan, guidebook, dan kalender kegiatan.",
+    desc: "Pengaduan, guidebook, kalender, dan RS terdekat.",
   },
   {
     href: "/kontak",
@@ -52,15 +46,25 @@ const MENU: { href: string; icon: LucideIcon; title: string; desc: string }[] = 
 
 const lembagaCount = statistik.departemen.length;
 
+const STATS: { value: string; label: string }[] = [
+  { value: statistik.total.toLocaleString("id-ID"), label: "Maba" },
+  { value: String(lembagaCount), label: "Departemen + PI" },
+  { value: String(statistik.prodi), label: "Program Studi" },
+];
+
 export default function Home() {
   return (
     <div className="min-h-full">
       <section className="mx-auto max-w-6xl px-4 pb-2 pt-4 sm:px-6 sm:pb-3 sm:pt-6 lg:px-8 lg:pb-4 lg:pt-8">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-teal text-cream shadow-lift ring-1 ring-white/15">
+        <div className="relative overflow-hidden rounded-[2.5rem] bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-25 grayscale"
+            className="absolute inset-0 bg-cover bg-center opacity-15 grayscale"
             style={{ backgroundImage: "url('/bg-site.jpg')" }}
             aria-hidden="true"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-accent/25 blur-3xl"
           />
           <span
             aria-hidden="true"
@@ -97,10 +101,14 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 flex flex-wrap items-center gap-3">
-                  <Button asChild size="lg" className="h-12 rounded-full px-7">
-                    <Link href="/kelompok">
-                      <Search data-slot="icon-inline-start" />
-                      Cari Kelompokmu
+                  <Button
+                    asChild
+                    size="lg"
+                    className="h-12 rounded-full bg-cream px-7 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark"
+                  >
+                    <Link href="/dashboard">
+                      <LayoutDashboard data-slot="icon-inline-start" />
+                      Masuk Dashboard
                     </Link>
                   </Button>
                   <Button
@@ -108,9 +116,9 @@ export default function Home() {
                     variant="outline"
                     className="h-12 rounded-full border-white/30 bg-transparent px-7 text-cream hover:bg-white/10 hover:text-cream"
                   >
-                    <Link href="/kontak">
-                      <Phone data-slot="icon-inline-start" />
-                      Kontak SC
+                    <Link href="/info">
+                      <Megaphone data-slot="icon-inline-start" />
+                      Info Penting
                     </Link>
                   </Button>
                 </div>
@@ -121,31 +129,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-8 grid grid-cols-3 divide-x divide-white/10 rounded-[2rem] border border-white/15 bg-white/5 px-4 py-5 backdrop-blur sm:mt-12">
-              <div className="px-2 text-center">
-                <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-                  {statistik.total.toLocaleString("id-ID")}
-                </p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-cream/70 sm:text-sm">
-                  Maba
-                </p>
-              </div>
-              <div className="px-2 text-center">
-                <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-                  {lembagaCount}
-                </p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-cream/70 sm:text-sm">
-                  Departemen + PI
-                </p>
-              </div>
-              <div className="px-2 text-center">
-                <p className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-                  {statistik.prodi}
-                </p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-cream/70 sm:text-sm">
-                  Program Studi
-                </p>
-              </div>
+            <div className="mt-8 grid grid-cols-3 gap-3 sm:mt-12">
+              {STATS.map((s) => (
+                <div
+                  key={s.label}
+                  className="rounded-3xl bg-white/10 p-4 text-center ring-1 ring-white/15 backdrop-blur sm:p-5"
+                >
+                  <p className="font-heading text-2xl font-bold tracking-tight text-cream sm:text-3xl">
+                    {s.value}
+                  </p>
+                  <p className="mt-1 text-[10px] font-semibold uppercase leading-snug tracking-wider text-cream/70 sm:text-xs">
+                    {s.label}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -153,16 +150,20 @@ export default function Home() {
 
       <section className="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-            Navigasi
-          </p>
-          <h2 className="mt-2 font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-            Menu Utama
-          </h2>
-          <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-            Empat pintu untuk kebutuhanmu selama masa Mabim.
-          </p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="flex items-center gap-3">
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
+              <Compass className="h-6 w-6" />
+            </span>
+            <div>
+              <h2 className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+                Menu Utama
+              </h2>
+              <p className="text-sm text-muted-foreground">
+                Tiga pintu untuk kebutuhanmu selama masa Mabim.
+              </p>
+            </div>
+          </div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {MENU.map((card) => (
               <Card
                 key={card.href}
@@ -192,25 +193,30 @@ export default function Home() {
 
       <section className="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="flex items-end justify-between gap-4">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-                Departemen & PI
-              </p>
-              <h2 className="mt-2 font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-                Tujuh Departemen & Program Internasional
-              </h2>
-              <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-                Delapan lembaga pengelola akademik membawahi {statistik.prodi} program
-                studi sebagai kesatuan rencana belajar.
-              </p>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
+                <Building2 className="h-6 w-6" />
+              </span>
+              <div>
+                <h2 className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+                  Tujuh Departemen & Program Internasional
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  Delapan lembaga pengelola akademik membawahi {statistik.prodi}{" "}
+                  program studi sebagai kesatuan rencana belajar.
+                </p>
+              </div>
             </div>
-            <Badge variant="secondary" className="hidden rounded-full px-3 py-1.5 text-sm sm:inline-flex">
+            <Badge
+              variant="secondary"
+              className="rounded-full px-3 py-1.5 text-sm"
+            >
               Total {statistik.total.toLocaleString("id-ID")} Maba
             </Badge>
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-3 lg:gap-4 sm:grid-cols-4">
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:gap-4">
             {statistik.departemen.map((d) => {
               const c = DEPARTEMEN_WARNA[d.kode];
               return (
@@ -237,10 +243,6 @@ export default function Home() {
               );
             })}
           </div>
-
-          <p className="mt-10 text-center text-xs text-muted-foreground">
-            © 2026 Steering Committee Mabim FTUI. Dibuat untuk Mahasiswa Baru FTUI.
-          </p>
         </div>
       </section>
     </div>

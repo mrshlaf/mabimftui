@@ -47,13 +47,29 @@ export const kontakLembaga: KontakLembaga[] = [
     kode: "DTSL",
     nama: "Departemen Teknik Sipil dan Lingkungan",
     kategori: "departemen",
-    kontak: [],
+    kontak: [
+      {
+        nama: "Danindra Nusa Pratama",
+        peran: "Steering Committee",
+        npm: "2406408533",
+        departemen: "Departemen Teknik Sipil dan Lingkungan",
+        noTelp: "",
+      },
+    ],
   },
   {
     kode: "DTM",
     nama: "Departemen Teknik Mesin",
     kategori: "departemen",
-    kontak: [],
+    kontak: [
+      {
+        nama: "Faheem Naufal Ahmad",
+        peran: "Steering Committee",
+        npm: "2406353811",
+        departemen: "Departemen Teknik Mesin",
+        noTelp: "08159398899",
+      },
+    ],
   },
   {
     kode: "DTE",

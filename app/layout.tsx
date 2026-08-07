@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import { siteName, siteDescription, siteUrl } from "@/lib/site";
 import "./globals.css";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import { AuthProvider } from "./components/auth-context";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -83,8 +85,11 @@ export default function RootLayout({
           className="pointer-events-none fixed inset-0 z-[-1] bg-cover bg-center opacity-[0.15]"
           style={{ backgroundImage: "url('/bg-site.jpg')" }}
         />
-        <Nav />
-        <main className="flex-1 pb-24 md:pb-0">{children}</main>
+        <AuthProvider>
+          <Nav />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
