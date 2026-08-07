@@ -42,7 +42,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(m));
     } catch {
-      // storage penuh / tidak tersedia — abaikan
+      // storage penuh / tidak tersedia, abaikan
     }
   }, []);
 

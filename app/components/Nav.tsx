@@ -56,24 +56,18 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-40">
-      <div className="h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
-      <div className="border-b border-border/60 bg-background/85 backdrop-blur-xl">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center justify-between gap-4 rounded-[2rem] border border-border/60 bg-background/80 px-4 shadow-lift backdrop-blur-xl sm:px-5">
           <Link href="/" className="group flex items-center gap-2.5">
             <Image
               src="/logo-mabim.png"
               alt="Logo Mabim FTUI"
               width={36}
               height={36}
-              className="rounded-full ring-2 ring-accent/30 transition-colors group-hover:ring-accent/60"
+              className="rounded-full ring-1 ring-border/60 transition-colors group-hover:ring-accent/40"
             />
-            <span className="flex items-center gap-1.5">
-              <span className="font-heading text-lg font-bold tracking-tight text-foreground">
-                Mabim <span className="text-accent">FTUI</span>
-              </span>
-              <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
-                2026
-              </span>
+            <span className="font-heading text-lg font-bold tracking-tight text-foreground">
+              Mabim <span className="text-accent">FTUI</span> 2026
             </span>
           </Link>
 
@@ -153,77 +147,77 @@ export default function Nav() {
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
-        </div>
-      </div>
 
-      {open && (
-        <div
-          id="mobile-menu"
-          className="animate-in fade-in slide-in-from-top-2 motion-reduce:animate-none duration-200 absolute inset-x-3 top-full z-50 mt-2 rounded-[2rem] border border-border/60 bg-card p-3 shadow-lift md:hidden"
-        >
-          <nav className="flex flex-col gap-1">
-            {mobileItems.map((item, i) => {
-              const active = isActive(item.href);
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  style={{ animationDelay: `${i * 40}ms` }}
-                  className={cn(
-                    "animate-in fade-in slide-in-from-top-2 fill-mode-both motion-reduce:animate-none flex min-h-12 items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium transition-colors active:scale-[0.99]",
-                    active
-                      ? "bg-teal-dark font-semibold text-cream"
-                      : "text-muted-foreground hover:bg-secondary/70 hover:text-foreground"
-                  )}
-                >
-                  <span
+          {open && (
+            <div
+              id="mobile-menu"
+              className="animate-in fade-in slide-in-from-top-2 motion-reduce:animate-none duration-200 absolute inset-x-0 top-full z-50 mt-2 rounded-[2rem] border border-border/60 bg-card p-3 shadow-lift md:hidden"
+            >
+            <nav className="flex flex-col gap-1">
+              {mobileItems.map((item, i) => {
+                const active = isActive(item.href);
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    style={{ animationDelay: `${i * 40}ms` }}
                     className={cn(
-                      "grid h-9 w-9 shrink-0 place-items-center rounded-full transition-colors",
-                      active ? "bg-accent text-white" : "bg-secondary text-accent"
+                      "animate-in fade-in slide-in-from-top-2 fill-mode-both motion-reduce:animate-none flex min-h-12 items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium transition-colors active:scale-[0.99]",
+                      active
+                        ? "bg-teal-dark font-semibold text-cream"
+                        : "text-muted-foreground hover:bg-secondary/70 hover:text-foreground"
                     )}
                   >
-                    <item.icon className="h-4.5 w-4.5" />
-                  </span>
-                  {item.label}
-                </Link>
-              );
-            })}
-
-            <div className="mt-1 border-t border-border/60 pt-2">
-              {loading ? (
-                <span className="h-12 w-full animate-pulse rounded-2xl bg-secondary/70" />
-              ) : user ? (
-                <div className="flex items-center justify-between gap-3 rounded-2xl bg-secondary/60 p-3">
-                  <div className="flex min-w-0 items-center gap-2.5">
-                    <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-accent text-xs font-bold text-white">
-                      {initials(user.nama)}
+                    <span
+                      className={cn(
+                        "grid h-9 w-9 shrink-0 place-items-center rounded-full transition-colors",
+                        active ? "bg-accent text-white" : "bg-secondary text-accent"
+                      )}
+                    >
+                      <item.icon className="h-4.5 w-4.5" />
                     </span>
-                    <span className="truncate text-sm font-semibold text-foreground">
-                      {user.nama}
-                    </span>
-                  </div>
-                  <Button
-                    type="button"
-                    variant="outline"
-                    onClick={logout}
-                    className="h-11 shrink-0 rounded-full border-destructive/30 px-4 text-destructive hover:bg-destructive/10 hover:text-destructive"
-                  >
-                    <LogOut data-slot="icon-inline-start" />
-                    Keluar
-                  </Button>
-                </div>
-              ) : (
-                <Button asChild size="lg" className="h-12 w-full rounded-full">
-                  <Link href="/dashboard">
-                    <LayoutDashboard data-slot="icon-inline-start" />
-                    Masuk Dashboard
+                    {item.label}
                   </Link>
-                </Button>
-              )}
-            </div>
-          </nav>
+                );
+              })}
+
+              <div className="mt-1 border-t border-border/60 pt-2">
+                {loading ? (
+                  <span className="h-12 w-full animate-pulse rounded-2xl bg-secondary/70" />
+                ) : user ? (
+                  <div className="flex items-center justify-between gap-3 rounded-2xl bg-secondary/60 p-3">
+                    <div className="flex min-w-0 items-center gap-2.5">
+                      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-accent text-xs font-bold text-white">
+                        {initials(user.nama)}
+                      </span>
+                      <span className="truncate text-sm font-semibold text-foreground">
+                        {user.nama}
+                      </span>
+                    </div>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={logout}
+                      className="h-11 shrink-0 rounded-full border-destructive/30 px-4 text-destructive hover:bg-destructive/10 hover:text-destructive"
+                    >
+                      <LogOut data-slot="icon-inline-start" />
+                      Keluar
+                    </Button>
+                  </div>
+                ) : (
+                  <Button asChild size="lg" className="h-12 w-full rounded-full">
+                    <Link href="/dashboard">
+                      <LayoutDashboard data-slot="icon-inline-start" />
+                      Masuk Dashboard
+                    </Link>
+                  </Button>
+                )}
+              </div>
+            </nav>
+          </div>
+          )}
         </div>
-      )}
+      </div>
     </header>
   );
 }

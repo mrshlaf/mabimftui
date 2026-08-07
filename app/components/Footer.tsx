@@ -54,52 +54,49 @@ function FooterColumn({
 
 export default function Footer() {
   return (
-    <footer className="mt-auto bg-teal-dark text-cream">
-      <div className="h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
+    <footer className="mt-auto px-4 pb-6 pt-3 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-cover bg-center opacity-15 grayscale"
+          style={{ backgroundImage: "url('/bg-site.jpg')" }}
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-20 -right-16 h-48 w-48 rounded-full bg-accent/25 blur-3xl"
+        />
 
-      <div className="mx-auto max-w-6xl px-4 pt-10 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[2rem] bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-15 grayscale"
-            style={{ backgroundImage: "url('/bg-site.jpg')" }}
-            aria-hidden="true"
-          />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -bottom-20 -right-16 h-48 w-48 rounded-full bg-accent/25 blur-3xl"
-          />
-          <div className="relative flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-7">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/logo-mabim.png"
-                alt="Logo Mabim FTUI"
-                width={44}
-                height={44}
-                className="rounded-full ring-2 ring-white/15"
-              />
-              <div>
-                <p className="font-heading text-lg font-bold tracking-tight">
-                  Mabim FTUI 2026
-                </p>
-                <p className="text-xs text-cream/70">
-                  Satu pintu informasi Mahasiswa Baru FTUI.
-                </p>
-              </div>
+        <div className="relative flex flex-col gap-5 px-6 pt-8 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/logo-mabim.png"
+              alt="Logo Mabim FTUI"
+              width={44}
+              height={44}
+              className="rounded-full ring-2 ring-white/15"
+            />
+            <div>
+              <p className="font-heading text-lg font-bold tracking-tight">
+                Mabim FTUI 2026
+              </p>
+              <p className="text-xs text-cream/70">
+                Satu pintu informasi Mahasiswa Baru FTUI.
+              </p>
             </div>
-            <Button
-              asChild
-              size="lg"
-              className="h-11 w-full rounded-full bg-cream px-6 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark sm:w-auto"
-            >
-              <Link href="/kontak">
-                <LifeBuoy data-slot="icon-inline-start" />
-                Hubungi SC
-              </Link>
-            </Button>
           </div>
+          <Button
+            asChild
+            size="lg"
+            className="h-11 w-full rounded-full bg-cream px-6 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark sm:w-auto"
+          >
+            <Link href="/kontak">
+              <LifeBuoy data-slot="icon-inline-start" />
+              Hubungi SC
+            </Link>
+          </Button>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 pb-10 sm:gap-x-10 lg:grid-cols-3">
+        <div className="relative mt-10 grid grid-cols-2 gap-x-6 gap-y-8 px-6 pb-10 sm:gap-x-10 sm:px-8 lg:grid-cols-3">
           <FooterColumn title="Navigasi" links={FOOTER_NAV} />
           <FooterColumn title="Tugas" links={FOOTER_TUGAS} />
           <div className="col-span-2 lg:col-span-1">
@@ -120,15 +117,15 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-      </div>
 
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-cream/50 sm:flex-row sm:px-6 lg:px-8">
-          <p>© 2026 Mabim FTUI. Dibuat untuk Mahasiswa Baru FTUI.</p>
-          <p className="flex items-center gap-1.5">
-            <ShieldCheck className="h-3.5 w-3.5 text-accent/70" />
-            Diselenggarakan BEM FTUI
-          </p>
+        <div className="relative border-t border-white/10">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-5 text-xs text-cream/50 sm:flex-row sm:px-8">
+            <p>© 2026 Mabim FTUI. Dibuat untuk Mahasiswa Baru FTUI.</p>
+            <p className="flex items-center gap-1.5">
+              <ShieldCheck className="h-3.5 w-3.5 text-accent/70" />
+              Diselenggarakan BEM FTUI
+            </p>
+          </div>
         </div>
       </div>
     </footer>
