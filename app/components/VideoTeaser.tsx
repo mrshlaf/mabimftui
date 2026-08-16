@@ -34,7 +34,11 @@ export default function VideoTeaser() {
             sizes="(max-width: 768px) 100vw, 768px"
             className="object-cover"
           />
-          <span className="grid h-16 w-16 place-items-center rounded-full bg-white/90 text-teal-dark shadow-lift transition-transform group-hover:scale-105">
+          <span
+            aria-hidden="true"
+            className="hero-pulse pointer-events-none absolute h-16 w-16 rounded-full bg-white/70"
+          />
+          <span className="grid h-16 w-16 place-items-center rounded-full bg-white/90 text-teal-dark shadow-lift transition-transform duration-300 group-hover:scale-110">
             <Play className="ml-0.5 h-7 w-7" fill="currentColor" />
           </span>
         </button>

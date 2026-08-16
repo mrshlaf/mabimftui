@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -14,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Countdown from "./components/Countdown";
+import Reveal from "./components/Reveal";
 import VideoTeaser from "./components/VideoTeaser";
 import { statistik, DEPARTEMEN_WARNA } from "@/data/statistik";
 
@@ -65,39 +65,26 @@ const MENU: {
   },
 ];
 
-const lembagaCount = statistik.departemen.length;
-
-const STATS: { value: string; label: string }[] = [
-  { value: statistik.total.toLocaleString("id-ID"), label: "Maba" },
-  { value: String(lembagaCount), label: "Departemen + PI" },
-  { value: String(statistik.prodi), label: "Program Studi" },
-];
-
 const AURORA: { color: string; className: string; delay: string }[] = [
   {
-    color: "rgba(56, 189, 248, 0.35)",
+    color: "rgba(217, 101, 26, 0.30)",
     className: "-left-24 -top-24 h-96 w-96",
     delay: "0s",
   },
   {
-    color: "rgba(167, 139, 250, 0.32)",
+    color: "rgba(241, 239, 215, 0.13)",
     className: "right-0 top-1/4 h-[26rem] w-[26rem]",
     delay: "-7s",
   },
   {
-    color: "rgba(251, 191, 36, 0.3)",
+    color: "rgba(251, 191, 36, 0.16)",
     className: "bottom-0 left-1/4 h-80 w-80",
     delay: "-13s",
   },
   {
-    color: "rgba(52, 211, 153, 0.28)",
+    color: "rgba(6, 47, 59, 0.6)",
     className: "-bottom-16 -right-16 h-96 w-96",
     delay: "-19s",
-  },
-  {
-    color: "rgba(248, 113, 113, 0.22)",
-    className: "left-1/2 top-0 h-72 w-72",
-    delay: "-10s",
   },
 ];
 
@@ -128,55 +115,61 @@ export default function Home() {
               />
             ))}
           </div>
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute -right-8 -top-12 select-none font-heading text-[10rem] font-bold leading-none tracking-tight text-white/5 lg:text-[14rem]"
-          >
-            2026
-          </span>
-          <Image
-            src="/logo-mabim.png"
-            alt=""
-            aria-hidden="true"
-            width={480}
-            height={480}
-            priority
-            className="pointer-events-none absolute -bottom-10 -right-6 h-44 w-44 object-contain opacity-10 sm:-right-8 sm:h-64 sm:w-64 lg:h-72 lg:w-72"
-          />
+          <div aria-hidden="true" className="hero-beam" />
 
           <div className="relative mx-auto max-w-6xl px-6 py-12 sm:px-12 sm:py-16 lg:px-16">
-            <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
+            <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
               <div>
-                <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur">
+                <span
+                  className="hero-fade inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-cream backdrop-blur"
+                  style={{ animationDelay: "0.05s" }}
+                >
                   Mahasiswa Baru FTUI 2026
                 </span>
 
-                <h1 className="mt-6 font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                  Mabim FTUI <span className="text-accent">2026</span>
+                <h1
+                  className="hero-fade mt-6 font-heading text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl"
+                  style={{ animationDelay: "0.12s" }}
+                >
+                  Mabim FTUI{" "}
+                  <span className="bg-gradient-to-r from-cream via-white to-accent bg-clip-text text-transparent">
+                    2026
+                  </span>
                 </h1>
-                <p className="mt-5 max-w-xl font-heading text-lg font-semibold tracking-tight text-cream sm:text-xl">
-                  Find Your Path. Forge Your Legacy.
+                <p
+                  className="hero-fade mt-5 max-w-xl text-base leading-relaxed text-cream/85 sm:text-lg"
+                  style={{ animationDelay: "0.19s" }}
+                >
+                  Satu pintu info untuk kelompok, grup Line, jadwal, dan kontak
+                  SC.
                 </p>
 
-                <div className="mt-8">
+                <div className="hero-fade mt-7" style={{ animationDelay: "0.26s" }}>
                   <Countdown />
                 </div>
 
-                <div className="mt-8 flex flex-wrap items-center gap-3">
+                <div
+                  className="hero-fade mt-7 flex flex-wrap items-center gap-3"
+                  style={{ animationDelay: "0.33s" }}
+                >
                   <Button
                     asChild
                     size="lg"
-                    className="h-12 rounded-full bg-cream px-7 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark"
+                    className="group h-12 rounded-full bg-cream px-7 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark active:scale-[0.98]"
                   >
                     <Link href="/dashboard">
-                      <LayoutDashboard data-slot="icon-inline-start" />
+                      <LayoutDashboard
+                        data-slot="icon-inline-start"
+                        className="transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110"
+                      />
                       Masuk Dashboard
                     </Link>
                   </Button>
                   <Button
                     asChild
                     variant="outline"
-                    className="h-12 rounded-full border-white/30 bg-transparent px-7 text-cream hover:bg-white/10 hover:text-cream"
+                    size="lg"
+                    className="group h-12 rounded-full border-white/30 bg-transparent px-7 text-cream hover:bg-white/10 hover:text-cream active:scale-[0.98]"
                   >
                     <Link href="/info">
                       <Megaphone data-slot="icon-inline-start" />
@@ -186,139 +179,133 @@ export default function Home() {
                 </div>
               </div>
 
-              <div>
+              <div className="hero-fade relative" style={{ animationDelay: "0.22s" }}>
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute -inset-6 rounded-[2.75rem] bg-accent/15 blur-3xl"
+                />
                 <VideoTeaser />
               </div>
-            </div>
-
-            <div className="mt-8 grid grid-cols-3 gap-3 sm:mt-12">
-              {STATS.map((s) => (
-                <div
-                  key={s.label}
-                  className="rounded-3xl bg-white/10 p-4 text-center ring-1 ring-white/15 backdrop-blur sm:p-5"
-                >
-                  <p className="font-heading text-2xl font-bold tracking-tight text-cream sm:text-3xl">
-                    {s.value}
-                  </p>
-                  <p className="mt-1 text-[10px] font-semibold uppercase leading-snug tracking-wider text-cream/70 sm:text-xs">
-                    {s.label}
-                  </p>
-                </div>
-              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="flex items-center gap-3">
-            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
-              <Compass className="h-6 w-6" />
-            </span>
-            <div>
-              <h2 className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-                Menu Utama
-              </h2>
-              <p className="text-sm text-muted-foreground">
-                Tiga pintu untuk kebutuhanmu selama masa Mabim.
-              </p>
+          <Reveal>
+            <div className="flex items-center gap-3">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
+                <Compass className="h-6 w-6" />
+              </span>
+              <div>
+                <h2 className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+                  Menu Utama
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  Tiga pintu untuk kebutuhanmu selama masa Mabim.
+                </p>
+              </div>
             </div>
-          </div>
+          </Reveal>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {MENU.map((card) => (
-              <Card
-                key={card.href}
-                className={`group relative overflow-hidden rounded-[2rem] p-0 ring-1 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift hover:ring-accent/40 ${card.card}`}
-              >
-                <span
-                  aria-hidden="true"
-                  className={`pointer-events-none absolute -right-3 -top-6 select-none font-heading text-8xl font-bold leading-none tracking-tight ${card.watermark}`}
-                >
-                  {card.numeral}
-                </span>
-                <Link
-                  href={card.href}
-                  className="relative flex items-start gap-4 p-5"
+            {MENU.map((card, i) => (
+              <Reveal key={card.href} delay={i * 90}>
+                <Card
+                  className={`group relative overflow-hidden rounded-[2rem] p-0 ring-1 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift hover:ring-accent/40 has-[:focus-visible]:outline-none has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-accent/70 has-[:focus-visible]:ring-offset-2 has-[:focus-visible]:ring-offset-background ${card.card}`}
                 >
                   <span
-                    className={`grid h-12 w-12 shrink-0 place-items-center rounded-full text-white shadow-card transition-colors group-hover:bg-accent ${card.chip}`}
+                    aria-hidden="true"
+                    className={`pointer-events-none absolute -right-3 -top-6 select-none font-heading text-8xl font-bold leading-none tracking-tight ${card.watermark}`}
                   >
-                    <card.icon className="h-6 w-6" />
+                    {card.numeral}
                   </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="flex items-center justify-between gap-2">
-                      <span className="font-heading text-base font-semibold text-foreground">
-                        {card.title}
+                  <Link
+                    href={card.href}
+                    className="relative flex items-start gap-4 p-5"
+                  >
+                    <span
+                      className={`grid h-12 w-12 shrink-0 place-items-center rounded-full text-white shadow-card transition-colors group-hover:bg-accent ${card.chip}`}
+                    >
+                      <card.icon className="h-6 w-6" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="flex items-center justify-between gap-2">
+                        <span className="font-heading text-base font-semibold text-foreground">
+                          {card.title}
+                        </span>
+                        <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
                       </span>
-                      <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
+                      <span className="mt-1 block text-sm leading-snug text-muted-foreground">
+                        {card.desc}
+                      </span>
                     </span>
-                    <span className="mt-1 block text-sm leading-snug text-muted-foreground">
-                      {card.desc}
-                    </span>
-                  </span>
-                </Link>
-              </Card>
+                  </Link>
+                </Card>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="flex items-center gap-3">
-            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
-              <Building2 className="h-6 w-6" />
-            </span>
-            <div>
-              <h2 className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
-                Tujuh Departemen & Program Internasional
-              </h2>
-              <p className="text-sm text-muted-foreground">
-                Delapan lembaga pengelola akademik membawahi {statistik.prodi}{" "}
-                program studi sebagai kesatuan rencana belajar.
-              </p>
+          <Reveal>
+            <div className="flex items-center gap-3">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
+                <Building2 className="h-6 w-6" />
+              </span>
+              <div>
+                <h2 className="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+                  Tujuh Departemen & Program Internasional
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  Delapan lembaga, {statistik.prodi} program studi.
+                </p>
+              </div>
             </div>
-          </div>
+          </Reveal>
 
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:gap-4">
-            {departemen.map((d) => {
+            {departemen.map((d, i) => {
               const c = DEPARTEMEN_WARNA[d.kode];
               const pct = Math.round((d.jumlah / statistik.total) * 100);
               return (
-                <Card
-                  key={d.kode}
-                  className={`rounded-[2rem] p-5 ring-1 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift ${c.card}`}
-                >
-                  <div className="flex items-center justify-between gap-2">
-                    <span
-                      className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold ${c.badge}`}
-                    >
-                      {d.kode}
-                    </span>
-                    <span className={`text-xs font-bold ${c.sub}`}>
-                      {pct}%
-                    </span>
-                  </div>
-                  <p
-                    className={`mt-4 font-heading text-3xl font-bold tracking-tight ${c.heading}`}
+                <Reveal key={d.kode} delay={(i % 4) * 60}>
+                  <Card
+                    className={`rounded-[2rem] p-5 ring-1 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift ${c.card}`}
                   >
-                    {d.jumlah.toLocaleString("id-ID")}
-                  </p>
-                  <p className={`mt-1 text-sm font-medium leading-snug ${c.sub}`}>
-                    {d.nama}
-                  </p>
-                  <div className={`mt-4 h-1.5 overflow-hidden rounded-full ${c.track}`}>
-                    <div
-                      className={`h-full rounded-full ${c.bar}`}
-                      style={{ width: `${pct}%` }}
-                    />
-                  </div>
-                </Card>
+                    <div className="flex items-center justify-between gap-2">
+                      <span
+                        className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold ${c.badge}`}
+                      >
+                        {d.kode}
+                      </span>
+                      <span className={`text-xs font-bold ${c.sub}`}>
+                        {pct}%
+                      </span>
+                    </div>
+                    <p
+                      className={`mt-4 font-heading text-3xl font-bold tracking-tight ${c.heading}`}
+                    >
+                      {d.jumlah.toLocaleString("id-ID")}
+                    </p>
+                    <p className={`mt-1 text-sm font-medium leading-snug ${c.sub}`}>
+                      {d.nama}
+                    </p>
+                    <div className={`mt-4 h-1.5 overflow-hidden rounded-full ${c.track}`}>
+                      <div
+                        className={`h-full rounded-full ${c.bar}`}
+                        style={{ width: `${pct}%` }}
+                      />
+                    </div>
+                  </Card>
+                </Reveal>
               );
             })}
 
-            <Card className="relative col-span-2 overflow-hidden rounded-[2rem] bg-teal-dark p-5 text-cream ring-1 ring-white/15 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift sm:col-span-4 sm:p-6">
+            <Reveal className="col-span-2 sm:col-span-4">
+              <Card className="relative overflow-hidden rounded-[2rem] bg-teal-dark p-5 text-cream ring-1 ring-white/15 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift sm:p-6">
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-[0.12] grayscale"
@@ -340,23 +327,24 @@ export default function Home() {
                     <p className="mt-3 font-heading text-4xl font-bold tracking-tight text-white sm:text-5xl">
                       {statistik.total.toLocaleString("id-ID")}
                     </p>
-                    <p className="mt-1 text-sm font-medium text-cream/70">
+                    <p className="mt-1 text-sm font-medium text-cream/80">
                       Maba Mabim FTUI 2026
                     </p>
                   </div>
                 </div>
                 <div className="w-full sm:w-64 sm:border-l sm:border-white/10 sm:pl-6">
-                  <p className="text-xs font-bold text-cream/70">100%</p>
+                  <p className="text-xs font-bold text-cream/80">100%</p>
                   <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/15">
                     <div className="h-full w-full rounded-full bg-gradient-to-r from-cream to-accent" />
                   </div>
-                  <p className="mt-2 text-xs text-cream/60">
+                  <p className="mt-2 text-xs text-cream/70">
                     {statistik.departemen.length} lembaga, {statistik.prodi}{" "}
                     program studi
                   </p>
                 </div>
               </div>
-            </Card>
+              </Card>
+            </Reveal>
           </div>
         </div>
       </section>

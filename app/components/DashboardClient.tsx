@@ -21,6 +21,7 @@ import { useAuth } from "./auth-context";
 import KenalanDepartemen from "./KenalanDepartemen";
 import LineIcon from "./LineIcon";
 import LoginForm from "./LoginForm";
+import Reveal from "./Reveal";
 
 type TabKey = "dept" | "bem" | "bok";
 
@@ -48,7 +49,7 @@ function LembagaBlock({
 }) {
   const formUrl = safeExternalUrl(lembaga.linkForm ?? "");
   return (
-    <div className="rounded-3xl bg-card p-5 ring-1 ring-border/60 sm:p-6">
+    <div className="rounded-3xl bg-card p-5 ring-1 ring-border/60 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift hover:ring-accent/40 sm:p-6">
       <div className="flex items-center gap-3">
         <span
           className={cn(
@@ -170,10 +171,33 @@ export default function DashboardClient() {
           style={{ backgroundImage: "url('/bg-site.jpg')" }}
           aria-hidden="true"
         />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -bottom-24 -left-16 h-64 w-64 rounded-full bg-accent/25 blur-3xl"
-        />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <span
+            className="aurora-blob -left-24 -top-24 h-80 w-80"
+            style={{
+              background:
+                "radial-gradient(closest-side, rgba(217, 101, 26, 0.30), transparent 70%)",
+              animationDelay: "0s",
+            }}
+          />
+          <span
+            className="aurora-blob right-0 top-1/4 h-72 w-72"
+            style={{
+              background:
+                "radial-gradient(closest-side, rgba(241, 239, 215, 0.12), transparent 70%)",
+              animationDelay: "-7s",
+            }}
+          />
+          <span
+            className="aurora-blob -bottom-16 -right-16 h-80 w-80"
+            style={{
+              background:
+                "radial-gradient(closest-side, rgba(6, 47, 59, 0.6), transparent 70%)",
+              animationDelay: "-13s",
+            }}
+          />
+        </div>
+        <div aria-hidden="true" className="hero-beam" />
         <span
           aria-hidden="true"
           className="pointer-events-none absolute -right-6 -top-8 select-none font-heading text-[8rem] font-bold leading-none tracking-tight text-white/5 sm:text-[11rem]"
@@ -181,15 +205,18 @@ export default function DashboardClient() {
           {user.departemen}
         </span>
 
-        <div className="relative px-6 py-8 sm:px-10 sm:py-10">
+        <div className="hero-fade relative px-6 py-8 sm:px-10 sm:py-10">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="flex min-w-0 items-center gap-4">
-              <span className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-white/10 font-heading text-lg font-bold text-cream ring-2 ring-white/25 backdrop-blur">
+              <span className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-gradient-to-br from-accent to-amber-500 font-heading text-lg font-bold text-white shadow-lift ring-2 ring-white/25">
                 {initials(user.nama)}
               </span>
               <div className="min-w-0">
                 <h2 className="truncate font-heading text-3xl font-bold tracking-tight sm:text-4xl">
-                  Halo, {firstName}
+                  Halo,{" "}
+                  <span className="bg-gradient-to-r from-cream via-white to-accent bg-clip-text text-transparent">
+                    {firstName}
+                  </span>
                 </h2>
                 <p className="mt-1 truncate text-sm text-cream/80">
                   {user.prodi} · NPM {user.npm}
@@ -270,20 +297,21 @@ export default function DashboardClient() {
         </div>
       </div>
 
-      <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card sm:p-8">
-        <div className="flex items-center gap-3">
-          <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
-            <FileText className="h-6 w-6" />
-          </span>
-          <div>
-            <h3 className="font-heading text-lg font-bold text-foreground">
-              Tugas
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              Tugas dari departemenmu, BEM, dan BOK dalam satu tempat.
-            </p>
+      <Reveal>
+        <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card sm:p-8">
+          <div className="flex items-center gap-3">
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-gradient-to-br from-secondary to-accent/15 text-accent">
+              <FileText className="h-6 w-6" />
+            </span>
+            <div>
+              <h3 className="font-heading text-lg font-bold text-foreground">
+                Tugas
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Tugas dari departemenmu, BEM, dan BOK dalam satu tempat.
+              </p>
+            </div>
           </div>
-        </div>
 
         <div
           role="tablist"
@@ -334,13 +362,18 @@ export default function DashboardClient() {
           )}
         </div>
       </Card>
+      </Reveal>
 
-      <KenalanDepartemen departemen={user.departemen} npm={user.npm} />
+      <Reveal>
+        <KenalanDepartemen departemen={user.departemen} npm={user.npm} />
+      </Reveal>
 
-      <p className="flex items-center justify-center gap-1.5 text-center text-xs text-muted-foreground">
-        <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-emerald-600" />
-        Sesi kamu tersimpan aman di perangkat ini.
-      </p>
+      <Reveal delay={100}>
+        <p className="flex items-center justify-center gap-1.5 text-center text-xs text-muted-foreground">
+          <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-emerald-600" />
+          Sesi kamu tersimpan aman di perangkat ini.
+        </p>
+      </Reveal>
     </div>
   );
 }

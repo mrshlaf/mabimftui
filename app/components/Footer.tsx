@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Compass, LifeBuoy } from "lucide-react";
 import InstagramIcon from "./InstagramIcon";
+import Reveal from "./Reveal";
 import { Button } from "@/components/ui/button";
 
 const FOOTER_NAV = [
@@ -62,11 +63,27 @@ export default function Footer() {
           className="absolute inset-0 bg-cover bg-center opacity-15 grayscale"
           style={{ backgroundImage: "url('/bg-site.jpg')" }}
         />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -bottom-20 -right-16 h-48 w-48 rounded-full bg-accent/25 blur-3xl"
-        />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <span
+            className="aurora-blob -left-24 -top-24 h-72 w-72"
+            style={{
+              background:
+                "radial-gradient(closest-side, rgba(217, 101, 26, 0.28), transparent 70%)",
+              animationDelay: "0s",
+            }}
+          />
+          <span
+            className="aurora-blob -bottom-20 -right-16 h-72 w-72"
+            style={{
+              background:
+                "radial-gradient(closest-side, rgba(251, 191, 36, 0.14), transparent 70%)",
+              animationDelay: "-11s",
+            }}
+          />
+        </div>
+        <div aria-hidden="true" className="hero-beam" />
 
+        <Reveal>
         <div className="relative flex flex-col gap-5 px-6 pt-8 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <div className="flex items-center gap-3">
             <Image
@@ -78,7 +95,10 @@ export default function Footer() {
             />
             <div>
               <p className="font-heading text-lg font-bold tracking-tight">
-                Mabim FTUI 2026
+                Mabim FTUI{" "}
+                <span className="bg-gradient-to-r from-cream via-white to-accent bg-clip-text text-transparent">
+                  2026
+                </span>
               </p>
               <p className="text-xs text-cream/70">
                 Satu pintu informasi Mahasiswa Baru FTUI.
@@ -139,6 +159,7 @@ export default function Footer() {
           </p>
           </div>
         </div>
+        </Reveal>
       </div>
     </footer>
   );

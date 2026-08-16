@@ -67,7 +67,10 @@ export default function Nav() {
               className="rounded-full ring-1 ring-border/60 transition-colors group-hover:ring-accent/40"
             />
             <span className="font-heading text-lg font-bold tracking-tight text-foreground">
-              Mabim <span className="text-accent">FTUI</span> 2026
+              Mabim FTUI{" "}
+              <span className="bg-gradient-to-r from-accent to-amber-500 bg-clip-text text-transparent">
+                2026
+              </span>
             </span>
           </Link>
 
