@@ -23,10 +23,6 @@ const nextConfig: NextConfig = {
     ];
     return [
       {
-        source: "/video-mabim.mp4",
-        headers: staticCache,
-      },
-      {
         source: "/hero-mabim.jpg",
         headers: staticCache,
       },
@@ -69,9 +65,10 @@ const nextConfig: NextConfig = {
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
               "style-src 'self' 'unsafe-inline'",
-              "img-src 'self' data:",
+              "img-src 'self' data: https://img.youtube.com https://i.ytimg.com",
               "font-src 'self' data:",
               "media-src 'self'",
+              "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
               "connect-src 'self'",
               "base-uri 'self'",
               "form-action 'self'",

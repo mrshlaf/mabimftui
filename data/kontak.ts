@@ -53,7 +53,7 @@ export const kontakLembaga: KontakLembaga[] = [
         peran: "Steering Committee",
         npm: "2406408533",
         departemen: "Departemen Teknik Sipil dan Lingkungan",
-        noTelp: "",
+        noTelp: "08980519883",
       },
     ],
   },
@@ -117,7 +117,15 @@ export const kontakLembaga: KontakLembaga[] = [
     kode: "DTK",
     nama: "Departemen Teknik Kimia",
     kategori: "departemen",
-    kontak: [],
+    kontak: [
+      {
+        nama: "Avriell Hafidz Ghafara",
+        peran: "Steering Committee",
+        npm: "2406414486",
+        departemen: "Departemen Teknik Kimia",
+        noTelp: "082125335598",
+      },
+    ],
   },
   {
     kode: "DTI",

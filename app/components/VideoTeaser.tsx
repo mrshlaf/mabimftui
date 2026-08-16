@@ -1,90 +1,39 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { Maximize, Minimize, Pause, Play, Volume2, VolumeX } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
+import { Play } from "lucide-react";
+
+const VIDEO_ID = "b4e9hyJ0DIg";
 
 export default function VideoTeaser() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const wrapRef = useRef<HTMLDivElement>(null);
-  const [muted, setMuted] = useState(false);
   const [playing, setPlaying] = useState(false);
-  const [fullscreen, setFullscreen] = useState(false);
-
-  useEffect(() => {
-    function onChange() {
-      const isFs = Boolean(document.fullscreenElement);
-      setFullscreen(isFs);
-      const orientation = screen.orientation as ScreenOrientation & {
-        lock?: (o: string) => Promise<void>;
-        unlock?: () => void;
-      };
-      if (isFs) {
-        try {
-          orientation.lock?.("portrait")?.catch(() => {});
-        } catch {}
-      } else {
-        try {
-          orientation.unlock?.();
-        } catch {}
-      }
-    }
-    document.addEventListener("fullscreenchange", onChange);
-    return () => document.removeEventListener("fullscreenchange", onChange);
-  }, []);
-
-  function togglePlay() {
-    const v = videoRef.current;
-    if (!v) return;
-    if (v.paused) {
-      v.play()
-        .then(() => setPlaying(true))
-        .catch(() => {});
-    } else {
-      v.pause();
-      setPlaying(false);
-    }
-  }
-
-  function toggleMute() {
-    const v = videoRef.current;
-    if (!v) return;
-    v.muted = !muted;
-    setMuted(!muted);
-  }
-
-  function toggleFullscreen() {
-    const wrap = wrapRef.current;
-    if (!wrap) return;
-    if (document.fullscreenElement) {
-      document.exitFullscreen().catch(() => {});
-    } else {
-      wrap.requestFullscreen().catch(() => {});
-    }
-  }
 
   return (
-    <div
-      ref={wrapRef}
-      className={`group relative overflow-hidden bg-teal-dark shadow-lift ring-1 ring-white/15 ${fullscreen ? "rounded-none bg-black" : "rounded-[2rem]"}`}
-    >
-      <video
-        ref={videoRef}
-        src="/video-mabim.mp4"
-        poster="/hero-mabim.jpg"
-        loop
-        playsInline
-        preload="none"
-        onClick={togglePlay}
-        className={`w-full cursor-pointer ${fullscreen ? "h-full bg-black object-contain" : "aspect-[16/9] object-cover"}`}
-      />
-
-      {!playing && (
+    <div className="group relative aspect-[16/9] overflow-hidden rounded-[2rem] bg-teal-dark shadow-lift ring-1 ring-white/15">
+      {playing ? (
+        <iframe
+          className="absolute inset-0 h-full w-full"
+          src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0`}
+          title="Teaser Mabim FTUI 2026"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      ) : (
         <button
           type="button"
           aria-label="Putar teaser Mabim"
-          onClick={togglePlay}
+          onClick={() => setPlaying(true)}
           className="absolute inset-0 grid place-items-center"
         >
+          <Image
+            src="/hero-mabim.jpg"
+            alt=""
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
           <span className="grid h-16 w-16 place-items-center rounded-full bg-white/90 text-teal-dark shadow-lift transition-transform group-hover:scale-105">
             <Play className="ml-0.5 h-7 w-7" fill="currentColor" />
           </span>
@@ -95,39 +44,6 @@ export default function VideoTeaser() {
         <Play className="h-3.5 w-3.5" fill="currentColor" />
         Teaser Mabim
       </span>
-
-      {playing && (
-        <button
-          type="button"
-          aria-label="Jeda video"
-          onClick={togglePlay}
-          className="absolute bottom-4 left-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white opacity-100 backdrop-blur transition-colors hover:bg-black/65 md:opacity-0 md:group-hover:opacity-100"
-        >
-          <Pause className="h-5 w-5" />
-        </button>
-      )}
-
-      {playing && (
-        <button
-          type="button"
-          aria-label={muted ? "Nyalakan suara" : "Matikan suara"}
-          onClick={toggleMute}
-          className="absolute bottom-4 right-16 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white backdrop-blur transition-colors hover:bg-black/65"
-        >
-          {muted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
-        </button>
-      )}
-
-      {playing && (
-        <button
-          type="button"
-          aria-label={fullscreen ? "Keluar fullscreen" : "Fullscreen"}
-          onClick={toggleFullscreen}
-          className="absolute bottom-4 right-4 grid h-10 w-10 place-items-center rounded-full bg-black/45 text-white backdrop-blur transition-colors hover:bg-black/65"
-        >
-          {fullscreen ? <Minimize className="h-5 w-5" /> : <Maximize className="h-5 w-5" />}
-        </button>
-      )}
     </div>
   );
 }

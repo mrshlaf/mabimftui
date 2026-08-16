@@ -2,15 +2,15 @@ import type { InfoLinks, InfoTimeline } from "./types";
 
 export const infoLinks: InfoLinks = {
   pengaduan: {
-    label: "Laporkan Pengaduan",
-    url: "",
+    label: "Laporkan",
+    url: "https://bit.ly/PelanggaranMABIMFTUI2026",
   },
   guidebook: {
-    label: "Buka Guidebook Mabim",
+    label: "Buka Guidebook",
     url: "",
   },
   kalender: {
-    label: "Gabung Google Calendar Mabim",
+    label: "Buka Kalender",
     url: "",
   },
 };

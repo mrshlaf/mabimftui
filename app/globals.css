@@ -90,6 +90,28 @@ html {
   }
 }
 
+@keyframes preload-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes preload-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @theme inline {
   --font-heading: var(--font-display);
   --color-sidebar-ring: var(--sidebar-ring);

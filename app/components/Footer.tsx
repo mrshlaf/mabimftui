@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LifeBuoy, ShieldCheck } from "lucide-react";
+import { Compass, LifeBuoy } from "lucide-react";
+import InstagramIcon from "./InstagramIcon";
 import { Button } from "@/components/ui/button";
 
 const FOOTER_NAV = [
@@ -84,16 +85,27 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <Button
-            asChild
-            size="lg"
-            className="h-11 w-full rounded-full bg-cream px-6 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark sm:w-auto"
-          >
-            <Link href="/kontak">
-              <LifeBuoy data-slot="icon-inline-start" />
-              Hubungi SC
-            </Link>
-          </Button>
+          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+            <a
+              href="https://www.instagram.com/mabimftui"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Mabim FTUI"
+              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 text-cream ring-1 ring-white/15 transition-colors hover:bg-accent hover:text-cream"
+            >
+              <InstagramIcon className="h-5 w-5" />
+            </a>
+            <Button
+              asChild
+              size="lg"
+              className="h-11 w-full rounded-full bg-cream px-6 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark sm:w-auto"
+            >
+              <Link href="/kontak">
+                <LifeBuoy data-slot="icon-inline-start" />
+                Hubungi SC
+              </Link>
+            </Button>
+          </div>
         </div>
 
         <div className="relative mt-10 grid grid-cols-2 gap-x-6 gap-y-8 px-6 pb-10 sm:gap-x-10 sm:px-8 lg:grid-cols-3">
@@ -121,10 +133,10 @@ export default function Footer() {
         <div className="relative border-t border-white/10">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-5 text-xs text-cream/50 sm:flex-row sm:px-8">
             <p>© 2026 Mabim FTUI. Dibuat untuk Mahasiswa Baru FTUI.</p>
-            <p className="flex items-center gap-1.5">
-              <ShieldCheck className="h-3.5 w-3.5 text-accent/70" />
-              Diselenggarakan BEM FTUI
-            </p>
+          <p className="flex items-center gap-1.5">
+            <Compass className="h-3.5 w-3.5 text-accent/70" />
+            Find Your Path, Forge Your Legacy
+          </p>
           </div>
         </div>
       </div>
