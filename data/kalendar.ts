@@ -1,4 +1,4 @@
-export type KalendarTag = "day" | "deadline" | "holiday" | "range" | "extend";
+export type KalendarTag = "day" | "deadline" | "range" | "extend";
 
 export type KalendarEvent = {
   label: string;
@@ -59,8 +59,6 @@ const U5 = "2026-09-27";
 const U6 = "2026-10-04";
 
 export const KALENDER_EVENTS: KalendarEvent[] = [
-  { label: "Indonesian Independence Day", tag: "holiday", start: "2026-08-17", unlockDate: U0 },
-  { label: "Maulid Nabi Muhammad", tag: "holiday", start: "2026-08-25", unlockDate: U0 },
   { label: "DAY 1 - MABIM FTUI 2026", tag: "day", start: "2026-08-29", waktu: "06:00 WIB", unlockDate: U0 },
 
   { label: "PENUGASAN HI", tag: "range", start: "2026-08-31", end: "2026-09-04", unlockDate: U1 },
@@ -101,7 +99,6 @@ export const KALENDER_EVENTS: KalendarEvent[] = [
 export const TAG_STYLE: Record<KalendarTag, { color: string; bg: string; text: string; bar: string }> = {
   day:      { color: "#d9651a", bg: "bg-accent/10",  text: "text-accent",                    bar: "bg-accent" },
   deadline: { color: "#e11d48", bg: "bg-rose-500/10", text: "text-rose-600 dark:text-rose-400", bar: "bg-rose-500" },
-  holiday:  { color: "#0ea5e9", bg: "bg-sky-500/10",  text: "text-sky-600 dark:text-sky-400",   bar: "bg-sky-500" },
   range:    { color: "#7c3aed", bg: "bg-violet-500/10", text: "text-violet-600 dark:text-violet-400", bar: "bg-violet-500" },
   extend:   { color: "#d97706", bg: "bg-amber-500/10", text: "text-amber-600 dark:text-amber-400", bar: "bg-amber-500" },
 };
@@ -109,7 +106,6 @@ export const TAG_STYLE: Record<KalendarTag, { color: string; bg: string; text: s
 export const TAG_LABEL: Record<KalendarTag, string> = {
   day: "Mabim Day",
   deadline: "Deadline",
-  holiday: "Hari Libur",
   range: "Penugasan",
   extend: "Perpanjangan",
 };

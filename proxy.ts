@@ -1,0 +1,14 @@
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export const config = {
+  matcher: ["/admingacor/:path*"],
+};
+
+export function proxy(req: NextRequest) {
+  const session = req.cookies.get("mabim_admin_session");
+  if (!session) {
+    return NextResponse.redirect(new URL("/", req.url));
+  }
+  return NextResponse.next();
+}
