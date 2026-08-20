@@ -61,13 +61,18 @@ export default function TemanSekelompok({
       </div>
 
       {!kelompok ? (
-        <div className="mt-5 grid gap-2 sm:grid-cols-2">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div
-              key={i}
-              className="h-14 animate-pulse rounded-2xl bg-secondary/60"
-            />
-          ))}
+        <div className="mt-5 space-y-3">
+          <p className="text-center text-sm text-muted-foreground">
+            Nomor kelompok belum diumumkan.
+          </p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div
+                key={i}
+                className="h-14 animate-pulse rounded-2xl bg-secondary/60"
+              />
+            ))}
+          </div>
         </div>
       ) : members === null ? (
         <p className="mt-5 text-center text-sm text-muted-foreground">
@@ -105,22 +110,15 @@ export default function TemanSekelompok({
                       </span>
                     )}
                   </span>
-                  {dept && (
-                    <span className="block text-xs text-muted-foreground">
-                      {dept}
-                    </span>
-                  )}
                 </span>
-                {badge && (
-                  <span
-                    className={cn(
-                      "shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold",
-                      badge
-                    )}
-                  >
-                    {dept}
-                  </span>
-                )}
+                <span
+                  className={cn(
+                    "shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold",
+                    badge ?? "bg-secondary text-muted-foreground"
+                  )}
+                >
+                  {dept ?? "—"}
+                </span>
               </div>
             );
           })}
