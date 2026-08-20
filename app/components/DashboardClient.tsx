@@ -18,10 +18,10 @@ import type { TugasLembaga } from "@/data/types";
 import { cn } from "@/lib/utils";
 import { safeExternalUrl } from "@/lib/url";
 import { useAuth } from "./auth-context";
-import KenalanDepartemen from "./KenalanDepartemen";
 import LineIcon from "./LineIcon";
 import LoginForm from "./LoginForm";
 import Reveal from "./Reveal";
+import TemanSekelompok from "./TemanSekelompok";
 
 type TabKey = "dept" | "bem" | "bok";
 
@@ -365,7 +365,7 @@ export default function DashboardClient() {
       </Reveal>
 
       <Reveal>
-        <KenalanDepartemen departemen={user.departemen} npm={user.npm} />
+        <TemanSekelompok kelompok={user.kelompok} nama={user.nama} />
       </Reveal>
 
       <Reveal delay={100}>

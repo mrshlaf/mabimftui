@@ -4,7 +4,6 @@ import { siteName, siteDescription, siteUrl } from "@/lib/site";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Preloader from "./components/Preloader";
 import { AuthProvider } from "./components/auth-context";
 
 const inter = Inter({
@@ -87,7 +86,6 @@ export default function RootLayout({
           style={{ backgroundImage: "url('/bg-site.jpg')" }}
         />
         <AuthProvider>
-          <Preloader />
           <Nav />
           <main className="flex-1">{children}</main>
           <Footer />
