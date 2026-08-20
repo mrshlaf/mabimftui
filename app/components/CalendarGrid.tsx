@@ -447,31 +447,7 @@ export default function CalendarGrid({
   return (
     <>
       <Reveal>
-        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap gap-2">
-            {(Object.keys(TAG_STYLE) as (keyof typeof TAG_STYLE)[]).map(
-              (tag) => {
-                const s = TAG_STYLE[tag];
-                return (
-                  <div
-                    key={tag}
-                    className="flex items-center gap-1.5 rounded-full bg-secondary/50 px-2.5 py-1 ring-1 ring-border/30"
-                  >
-                    <span
-                      className={cn(
-                        "h-2 w-2 rounded-full",
-                        s.bar,
-                      )}
-                    />
-                    <span className="text-[11px] font-semibold text-muted-foreground">
-                      {TAG_LABEL[tag]}
-                    </span>
-                  </div>
-                );
-              },
-            )}
-          </div>
-
+        <div className="mb-4 flex items-center justify-end">
           <div className="flex items-center gap-2">
             <Button
               type="button"
