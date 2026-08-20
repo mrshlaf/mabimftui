@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Lock, LogOut, Search, UserX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import CalendarGrid from "@/app/components/CalendarGrid";
 import { DEPARTEMEN_WARNA, statistik } from "@/data/statistik";
 import { cn } from "@/lib/utils";
 
@@ -247,6 +248,18 @@ export default function AdminPage() {
             ))}
         </div>
       )}
+
+      <Card className="rounded-[2rem] p-5 ring-border/60 shadow-card sm:p-6">
+        <div className="mb-4">
+          <h2 className="font-heading text-lg font-bold text-foreground">
+            Kalender <span className="text-accent">Mabim</span>
+          </h2>
+          <p className="text-xs text-muted-foreground">
+            Semua jadwal terlihat — tidak ada yang terkunci.
+          </p>
+        </div>
+        <CalendarGrid locked={false} />
+      </Card>
 
       <div className="relative">
         <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />

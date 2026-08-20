@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
+  CalendarDays,
   Home,
   Info,
   LayoutDashboard,
@@ -21,6 +22,7 @@ import { useAuth } from "./auth-context";
 const NAV_ITEMS: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "/", label: "Home", icon: Home },
   { href: "/info", label: "Info", icon: Info },
+  { href: "/kalendar", label: "Kalender", icon: CalendarDays },
   { href: "/kontak", label: "Kontak", icon: Phone },
 ];
 

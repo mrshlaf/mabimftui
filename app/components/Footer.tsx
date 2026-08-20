@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 const FOOTER_NAV = [
   { href: "/", label: "Home" },
   { href: "/info", label: "Info" },
+  { href: "/kalendar", label: "Kalender" },
   { href: "/kontak", label: "Kontak SC" },
   { href: "/dashboard", label: "Dashboard" },
 ];
@@ -22,7 +23,7 @@ const FOOTER_TUGAS = [
 const FOOTER_BANTUAN = [
   { href: "/info#pengaduan", label: "Pengaduan" },
   { href: "/info#guidebook", label: "Guidebook" },
-  { href: "/info#kalender", label: "Kalender" },
+  { href: "/kalendar", label: "Kalender" },
   { href: "/info#rumah-sakit", label: "RS Terdekat" },
 ];
 
