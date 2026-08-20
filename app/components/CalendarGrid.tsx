@@ -15,12 +15,31 @@ import {
   type KalendarEvent,
 } from "@/data/kalendar";
 import { cn } from "@/lib/utils";
+import Reveal from "./Reveal";
 
 const DAY_NAMES = ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
-const DAY_NAMES_FULL = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+const DAY_NAMES_FULL = [
+  "Minggu",
+  "Senin",
+  "Selasa",
+  "Rabu",
+  "Kamis",
+  "Jumat",
+  "Sabtu",
+];
 const MONTH_NAMES = [
-  "Januari", "Februari", "Maret", "April", "Mei", "Juni",
-  "Juli", "Agustus", "September", "Oktober", "November", "Desember",
+  "Januari",
+  "Februari",
+  "Maret",
+  "April",
+  "Mei",
+  "Juni",
+  "Juli",
+  "Agustus",
+  "September",
+  "Oktober",
+  "November",
+  "Desember",
 ];
 
 function dateKey(y: number, m: number, d: number) {
@@ -35,25 +54,45 @@ function buildMonthGrid(year: number, month: number) {
   const first = new Date(year, month, 1);
   const total = daysInMonth(year, month);
   const startDay = first.getDay();
-  const cells: { day: number; current: boolean; dateMs: number; key: string }[] = [];
+  const cells: {
+    day: number;
+    current: boolean;
+    dateMs: number;
+    key: string;
+  }[] = [];
 
   const prevMonthDays = daysInMonth(year, month - 1);
   for (let i = startDay - 1; i >= 0; i--) {
     const d = prevMonthDays - i;
     const m2 = month === 0 ? 11 : month - 1;
     const y2 = month === 0 ? year - 1 : year;
-    cells.push({ day: d, current: false, dateMs: new Date(y2, m2, d).getTime(), key: dateKey(y2, m2, d) });
+    cells.push({
+      day: d,
+      current: false,
+      dateMs: new Date(y2, m2, d).getTime(),
+      key: dateKey(y2, m2, d),
+    });
   }
 
   for (let d = 1; d <= total; d++) {
-    cells.push({ day: d, current: true, dateMs: new Date(year, month, d).getTime(), key: dateKey(year, month, d) });
+    cells.push({
+      day: d,
+      current: true,
+      dateMs: new Date(year, month, d).getTime(),
+      key: dateKey(year, month, d),
+    });
   }
 
   const remaining = 42 - cells.length;
   for (let d = 1; d <= remaining; d++) {
     const m2 = month === 11 ? 0 : month + 1;
     const y2 = month === 11 ? year + 1 : year;
-    cells.push({ day: d, current: false, dateMs: new Date(y2, m2, d).getTime(), key: dateKey(y2, m2, d) });
+    cells.push({
+      day: d,
+      current: false,
+      dateMs: new Date(y2, m2, d).getTime(),
+      key: dateKey(y2, m2, d),
+    });
   }
 
   return cells;
@@ -75,7 +114,9 @@ function DayCell({
   onSelect: (key: string | null) => void;
 }) {
   const allEvts = eventsForDateAll(cell.dateMs, KALENDER_EVENTS);
-  const evts = locked ? allEvts.filter((ev) => isUnlocked(ev, nowMs)) : allEvts;
+  const evts = locked
+    ? allEvts.filter((ev) => isUnlocked(ev, nowMs))
+    : allEvts;
 
   const isToday =
     new Date().getFullYear() === cal.year &&
@@ -84,13 +125,24 @@ function DayCell({
     cell.current;
 
   const rangeInfo = useMemo(() => {
-    const info: { starts: KalendarEvent[]; ends: KalendarEvent[]; mid: KalendarEvent[] }[] = [];
+    const info: {
+      starts: KalendarEvent[];
+      ends: KalendarEvent[];
+      mid: KalendarEvent[];
+    }[] = [];
     for (const ev of evts) {
       if (!ev.end) continue;
       const sMs = new Date(ev.start + "T00:00:00").getTime();
       const eMs = new Date(ev.end + "T00:00:00").getTime();
       const cellStart = new Date(cal.year, cal.month, 1).getTime();
-      const cellEnd = new Date(cal.year, cal.month + 1, 0, 23, 59, 59).getTime();
+      const cellEnd = new Date(
+        cal.year,
+        cal.month + 1,
+        0,
+        23,
+        59,
+        59,
+      ).getTime();
       if (eMs < cellStart || sMs > cellEnd) continue;
       const clampedStart = Math.max(sMs, cellStart);
       const clampedEnd = Math.min(eMs, cellEnd);
@@ -98,7 +150,8 @@ function DayCell({
         const dt = new Date(t);
         const dk = dateKey(dt.getFullYear(), dt.getMonth(), dt.getDate());
         if (dk !== cell.key) continue;
-        if (!info[0]) info[0] = { starts: [], ends: [], mid: [] };
+        if (!info[0])
+          info[0] = { starts: [], ends: [], mid: [] };
         if (t === clampedStart) info[0].starts.push(ev);
         else if (t === clampedEnd) info[0].ends.push(ev);
         else info[0].mid.push(ev);
@@ -110,21 +163,27 @@ function DayCell({
   return (
     <button
       type="button"
-      onClick={() => (cell.current ? onSelect(isSelected ? null : cell.key) : undefined)}
+      onClick={() =>
+        cell.current ? onSelect(isSelected ? null : cell.key) : undefined
+      }
       className={cn(
-        "group relative flex h-16 flex-col border-b border-r border-border/40 px-1 pt-1 transition-colors sm:h-24 sm:p-1.5",
+        "group relative flex h-16 flex-col border-b border-r border-border/30 px-1 pt-1 transition-all duration-200 sm:h-24 sm:p-1.5",
         cell.current
-          ? "bg-background hover:bg-secondary/30"
-          : "bg-muted/30 text-muted-foreground/40",
-        isSelected && "bg-accent/5 ring-2 ring-inset ring-accent/40"
+          ? "bg-background hover:bg-secondary/40 hover:shadow-inner"
+          : "bg-muted/20 text-muted-foreground/30",
+        isSelected &&
+          "bg-accent/8 ring-2 ring-inset ring-accent/50 shadow-inner",
       )}
     >
       <span
         className={cn(
-          "inline-flex h-5 w-5 items-center justify-center rounded-full text-[11px] font-bold sm:h-6 sm:w-6 sm:text-xs",
-          isToday && "bg-accent text-white",
-          !cell.current && "opacity-30",
-          !isToday && cell.current && "text-foreground"
+          "inline-flex h-6 w-6 items-center justify-center rounded-full text-[11px] font-bold transition-all sm:h-7 sm:w-7 sm:text-xs",
+          isToday &&
+            "bg-accent text-white shadow-md shadow-accent/30",
+          !cell.current && "opacity-25",
+          !isToday &&
+            cell.current &&
+            "text-foreground group-hover:font-extrabold",
         )}
       >
         {cell.day}
@@ -138,17 +197,19 @@ function DayCell({
               <span
                 key={ev.label}
                 className={cn(
-                  "hidden truncate rounded-sm px-1 py-px text-[8px] font-bold leading-tight sm:block",
+                  "hidden truncate rounded-md px-1.5 py-px text-[8px] font-bold leading-tight transition-colors sm:block",
                   s.bg,
-                  s.text
+                  s.text,
                 )}
               >
-                {ev.label.length > 14 ? ev.label.slice(0, 14) + "..." : ev.label}
+                {ev.label.length > 14
+                  ? ev.label.slice(0, 14) + "..."
+                  : ev.label}
               </span>
             );
           })}
           {evts.length > 3 && (
-            <span className="hidden text-[8px] font-bold text-muted-foreground sm:inline">
+            <span className="hidden text-[8px] font-bold text-muted-foreground/70 sm:inline">
               +{evts.length - 3}
             </span>
           )}
@@ -157,7 +218,10 @@ function DayCell({
               {evts.slice(0, 2).map((ev) => (
                 <span
                   key={ev.label}
-                  className={cn("h-1.5 w-1.5 rounded-full", TAG_STYLE[ev.tag].bar)}
+                  className={cn(
+                    "h-1.5 w-1.5 rounded-full",
+                    TAG_STYLE[ev.tag].bar,
+                  )}
                 />
               ))}
             </div>
@@ -173,7 +237,11 @@ function DayCell({
             return (
               <div
                 key={ev.label}
-                className={cn("h-1 flex-1", s.bar, isEnd ? "rounded-r-full" : "")}
+                className={cn(
+                  "h-1 flex-1",
+                  s.bar,
+                  isEnd ? "rounded-r-full" : "",
+                )}
               />
             );
           })}
@@ -197,7 +265,9 @@ function EventPopup({
   const [y, m, d] = dateKey.split("-").map(Number);
   const dateMs = new Date(y, m - 1, d).getTime();
   const allEvts = eventsForDateAll(dateMs, KALENDER_EVENTS);
-  const evts = locked ? allEvts.filter((ev) => isUnlocked(ev, nowMs)) : allEvts;
+  const evts = locked
+    ? allEvts.filter((ev) => isUnlocked(ev, nowMs))
+    : allEvts;
 
   const dayName = DAY_NAMES_FULL[new Date(y, m - 1, d).getDay()];
   const monthName = MONTH_NAMES[m - 1];
@@ -205,63 +275,96 @@ function EventPopup({
   if (evts.length === 0) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4 backdrop-blur-sm">
-      <Card className="w-full max-w-md overflow-hidden ring-border/60 shadow-card">
-        <div className="flex items-center justify-between bg-secondary/50 px-5 py-3">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-md"
+      onClick={onClose}
+    >
+      <Card
+        className="relative w-full max-w-md overflow-hidden rounded-[2rem] ring-border/60 shadow-lift"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="pointer-events-none absolute inset-0">
+          <span
+            aria-hidden="true"
+            className="absolute -left-12 -top-12 h-48 w-48 rounded-full bg-accent/15 blur-3xl"
+          />
+          <span
+            aria-hidden="true"
+            className="absolute -bottom-8 -right-8 h-40 w-40 rounded-full bg-amber-400/10 blur-3xl"
+          />
+          <div aria-hidden="true" className="hero-beam" />
+        </div>
+
+        <div className="relative flex items-center justify-between bg-secondary/60 px-6 py-4 ring-b ring-border/40">
           <div>
-            <p className="text-sm font-bold text-foreground">
+            <p className="font-heading text-sm font-bold text-foreground sm:text-base">
               {dayName}, {d} {monthName} {y}
             </p>
-            <p className="text-xs text-muted-foreground">
+            <p className="mt-0.5 text-xs text-muted-foreground">
               {evts.length} kegiatan
             </p>
           </div>
-          <Button type="button" variant="ghost" size="sm" onClick={onClose} className="rounded-full">
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            onClick={onClose}
+            className="h-8 w-8 rounded-full bg-secondary/80 text-muted-foreground hover:bg-secondary hover:text-foreground"
+          >
             <span className="text-xs">✕</span>
           </Button>
         </div>
-        <div className="max-h-80 overflow-y-auto p-4 space-y-2">
+
+        <div className="relative max-h-80 space-y-2 overflow-y-auto p-5">
           {evts.map((ev) => {
             const s = TAG_STYLE[ev.tag];
             return (
               <div
                 key={ev.label}
                 className={cn(
-                  "rounded-xl border px-3 py-2.5",
+                  "rounded-2xl border px-4 py-3 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card",
                   s.bg,
-                  ev.tag === "range" || ev.tag === "extend" ? "border-l-4" : "",
+                  ev.tag === "range" || ev.tag === "extend"
+                    ? "border-l-4"
+                    : "",
                   ev.tag === "range"
                     ? "border-violet-400/30"
                     : ev.tag === "extend"
                       ? "border-amber-400/30"
                       : ev.tag === "day"
                         ? "border-accent/30"
-                        : "border-rose-400/30"
+                        : "border-rose-400/30",
                 )}
               >
-                <div className="flex items-start gap-2">
-                  <span className={cn("mt-0.5 h-2 w-2 shrink-0 rounded-full", s.bar)} />
+                <div className="flex items-start gap-3">
+                  <span
+                    className={cn(
+                      "mt-1 h-2.5 w-2.5 shrink-0 rounded-full",
+                      s.bar,
+                    )}
+                  />
                   <div className="min-w-0 flex-1">
-                    <p className={cn("text-sm font-bold leading-snug", s.text)}>
+                    <p
+                      className={cn(
+                        "text-sm font-bold leading-snug",
+                        s.text,
+                      )}
+                    >
                       {ev.label}
                     </p>
-                    <div className="mt-0.5 flex items-center gap-2 flex-wrap">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                    <div className="mt-1 flex flex-wrap items-center gap-2">
+                      <span className="rounded-full bg-background/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground ring-1 ring-border/40">
                         {TAG_LABEL[ev.tag]}
                       </span>
                       {ev.waktu && (
-                        <>
-                          <span className="text-muted-foreground">·</span>
-                          <span className="text-xs text-muted-foreground">{ev.waktu}</span>
-                        </>
+                        <span className="text-xs text-muted-foreground">
+                          {ev.waktu}
+                        </span>
                       )}
                       {ev.end && (
-                        <>
-                          <span className="text-muted-foreground">·</span>
-                          <span className="text-xs text-muted-foreground">
-                            {ev.start} s/d {ev.end}
-                          </span>
-                        </>
+                        <span className="text-xs text-muted-foreground">
+                          {ev.start} s/d {ev.end}
+                        </span>
                       )}
                     </div>
                   </div>
@@ -285,26 +388,30 @@ function MonthNav({
   cal: CalendarMonth;
 }) {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1.5">
       <Button
         type="button"
         variant="outline"
         size="icon"
-        className="h-9 w-9 rounded-full"
+        className="h-9 w-9 rounded-full border-border/60 transition-all hover:bg-secondary hover:shadow-sm"
         onClick={() => setCalIdx(Math.max(0, calIdx - 1))}
         disabled={calIdx === 0}
       >
         <ChevronLeft className="h-4 w-4" />
       </Button>
-      <span className="min-w-[140px] text-center text-sm font-bold text-foreground">
+      <span className="min-w-[140px] text-center font-heading text-sm font-bold tracking-tight text-foreground">
         {cal.label}
       </span>
       <Button
         type="button"
         variant="outline"
         size="icon"
-        className="h-9 w-9 rounded-full"
-        onClick={() => setCalIdx(Math.min(CALENDAR_MONTHS.length - 1, calIdx + 1))}
+        className="h-9 w-9 rounded-full border-border/60 transition-all hover:bg-secondary hover:shadow-sm"
+        onClick={() =>
+          setCalIdx(
+            Math.min(CALENDAR_MONTHS.length - 1, calIdx + 1),
+          )
+        }
         disabled={calIdx === CALENDAR_MONTHS.length - 1}
       >
         <ChevronRight className="h-4 w-4" />
@@ -313,86 +420,129 @@ function MonthNav({
   );
 }
 
-export default function CalendarGrid({ locked = true }: { locked?: boolean }) {
+export default function CalendarGrid({
+  locked = true,
+}: {
+  locked?: boolean;
+}) {
   const [calIdx, setCalIdx] = useState(() => {
     const now = new Date();
     const idx = CALENDAR_MONTHS.findIndex(
-      (m) => m.year === now.getFullYear() && m.month === now.getMonth()
+      (m) =>
+        m.year === now.getFullYear() && m.month === now.getMonth(),
     );
     return idx >= 0 ? idx : 0;
   });
-  const [selectedDate, setSelectedDate] = useState<string | null>(null);
+  const [selectedDate, setSelectedDate] = useState<string | null>(
+    null,
+  );
   const [nowMs] = useState(() => Date.now());
 
   const cal = CALENDAR_MONTHS[calIdx];
-  const grid = useMemo(() => buildMonthGrid(cal.year, cal.month), [cal.year, cal.month]);
+  const grid = useMemo(
+    () => buildMonthGrid(cal.year, cal.month),
+    [cal.year, cal.month],
+  );
 
   return (
     <>
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-        <div className="flex flex-wrap gap-2">
-          {(Object.keys(TAG_STYLE) as (keyof typeof TAG_STYLE)[]).map((tag) => {
-            const s = TAG_STYLE[tag];
-            return (
-              <div key={tag} className="flex items-center gap-1.5">
-                <span className={cn("h-2.5 w-2.5 rounded-full", s.bar)} />
-                <span className="text-xs font-medium text-muted-foreground">
-                  {TAG_LABEL[tag]}
-                </span>
-              </div>
-            );
-          })}
-        </div>
+      <Reveal>
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap gap-2">
+            {(Object.keys(TAG_STYLE) as (keyof typeof TAG_STYLE)[]).map(
+              (tag) => {
+                const s = TAG_STYLE[tag];
+                return (
+                  <div
+                    key={tag}
+                    className="flex items-center gap-1.5 rounded-full bg-secondary/50 px-2.5 py-1 ring-1 ring-border/30"
+                  >
+                    <span
+                      className={cn(
+                        "h-2 w-2 rounded-full",
+                        s.bar,
+                      )}
+                    />
+                    <span className="text-[11px] font-semibold text-muted-foreground">
+                      {TAG_LABEL[tag]}
+                    </span>
+                  </div>
+                );
+              },
+            )}
+          </div>
 
-        <div className="flex items-center gap-2">
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            className="rounded-full text-xs"
-            onClick={() => {
-              const now = new Date();
-              const idx = CALENDAR_MONTHS.findIndex(
-                (m) => m.year === now.getFullYear() && m.month === now.getMonth()
-              );
-              if (idx >= 0) setCalIdx(idx);
-            }}
-          >
-            Hari Ini
-          </Button>
-          <MonthNav calIdx={calIdx} setCalIdx={setCalIdx} cal={cal} />
-        </div>
-      </div>
-
-      <Card className="overflow-hidden ring-border/60 shadow-card">
-        <div className="grid grid-cols-7 border-b border-border/60">
-          {DAY_NAMES.map((d) => (
-            <div
-              key={d}
-              className={cn(
-                "py-2 text-center text-[11px] font-bold uppercase tracking-wider",
-                d === "Min" || d === "Sab" ? "text-rose-500" : "text-muted-foreground"
-              )}
+          <div className="flex items-center gap-2">
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              className="rounded-full border-accent/30 bg-accent/5 text-xs font-bold text-accent transition-all hover:bg-accent/10 hover:shadow-sm"
+              onClick={() => {
+                const now = new Date();
+                const idx = CALENDAR_MONTHS.findIndex(
+                  (m) =>
+                    m.year === now.getFullYear() &&
+                    m.month === now.getMonth(),
+                );
+                if (idx >= 0) setCalIdx(idx);
+              }}
             >
-              {d}
-            </div>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-7">
-          {grid.map((cell) => (
-            <DayCell
-              key={cell.key}
-              cell={cell}
-              nowMs={nowMs}
+              Hari Ini
+            </Button>
+            <MonthNav
+              calIdx={calIdx}
+              setCalIdx={setCalIdx}
               cal={cal}
-              locked={locked}
-              isSelected={selectedDate === cell.key}
-              onSelect={setSelectedDate}
             />
-          ))}
+          </div>
         </div>
-      </Card>
+      </Reveal>
+
+      <Reveal delay={80}>
+        <Card className="relative overflow-hidden rounded-[2rem] ring-border/60 shadow-card">
+          <div className="pointer-events-none absolute inset-0">
+            <span
+              aria-hidden="true"
+              className="absolute -left-16 -top-16 h-56 w-56 rounded-full bg-accent/8 blur-3xl"
+            />
+            <span
+              aria-hidden="true"
+              className="absolute -bottom-12 -right-12 h-48 w-48 rounded-full bg-amber-400/5 blur-3xl"
+            />
+          </div>
+
+          <div className="relative grid grid-cols-7 border-b border-border/40">
+            {DAY_NAMES.map((d) => (
+              <div
+                key={d}
+                className={cn(
+                  "py-2.5 text-center text-[11px] font-bold uppercase tracking-wider",
+                  d === "Min" || d === "Sab"
+                    ? "text-rose-500/80"
+                    : "text-muted-foreground",
+                )}
+              >
+                {d}
+              </div>
+            ))}
+          </div>
+
+          <div className="relative grid grid-cols-7">
+            {grid.map((cell) => (
+              <DayCell
+                key={cell.key}
+                cell={cell}
+                nowMs={nowMs}
+                cal={cal}
+                locked={locked}
+                isSelected={selectedDate === cell.key}
+                onSelect={setSelectedDate}
+              />
+            ))}
+          </div>
+        </Card>
+      </Reveal>
 
       {selectedDate && (
         <EventPopup
