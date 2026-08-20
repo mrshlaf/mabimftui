@@ -40,13 +40,19 @@ export default function AdminPanel({ authenticated }: { authenticated: boolean }
     if (!authenticated || kelompokData || loadRef.current) return;
     loadRef.current = true;
     setLoading(true);
-    Promise.all([import("@/data/kelompok"), import("@/data/mahasiswa")]).then(
-      ([kMod, mMod]) => {
-        setKelompokData(kMod.KELOMPOK_MEMBER);
-        setAllMahasiswa(mMod.mahasiswaData);
+    fetch("/api/admin/data")
+      .then((r) => {
+        if (!r.ok) throw new Error("Unauthorized");
+        return r.json();
+      })
+      .then((data) => {
+        setKelompokData(data.kelompok);
+        setAllMahasiswa(data.mahasiswa);
         setLoading(false);
-      }
-    );
+      })
+      .catch(() => {
+        setLoading(false);
+      });
   }, [authenticated, kelompokData]);
 
   async function handleLogin(e: React.FormEvent) {
