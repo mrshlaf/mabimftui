@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Users } from "lucide-react";
+import { Link2, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { DEPARTEMEN_WARNA } from "@/data/statistik";
-import type { KelompokMember } from "@/data/kelompok";
+import { KELOMPOK_LINE, type KelompokMember } from "@/data/kelompok";
 import { cn } from "@/lib/utils";
 
 function normalize(s: string) {
@@ -59,6 +59,18 @@ export default function TemanSekelompok({
           </p>
         </div>
       </div>
+
+      {kelompok && KELOMPOK_LINE[kelompok] && (
+        <a
+          href={KELOMPOK_LINE[kelompok]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-secondary hover:text-accent"
+        >
+          <Link2 className="h-4 w-4" />
+          Gabung Grup LINE
+        </a>
+      )}
 
       {!kelompok ? (
         <div className="mt-5 space-y-3">

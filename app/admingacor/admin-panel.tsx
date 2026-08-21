@@ -2,14 +2,15 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Lock, LogOut, Search, UserX } from "lucide-react";
+import { Link2, Lock, LogOut, Search, UserX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import CalendarGrid from "@/app/components/CalendarGrid";
 import { DEPARTEMEN_WARNA, statistik } from "@/data/statistik";
 import { cn } from "@/lib/utils";
 
-type KelompokMember = { n: string; d?: string };
+type KelompokMember = { n: string; d?: string; npm?: string };
+type KelompokLineMap = Record<number, string>;
 
 function initials(nama: string) {
   return nama
@@ -30,6 +31,7 @@ export default function AdminPanel({ authenticated }: { authenticated: boolean }
   const [kelompokData, setKelompokData] = useState<
     Record<number, KelompokMember[]> | null
   >(null);
+  const [kelompokLine, setKelompokLine] = useState<KelompokLineMap | null>(null);
   const [allMahasiswa, setAllMahasiswa] = useState<
     { nama: string; departemen: string; kelompok: number | null; npm: string }[] | null
   >(null);
@@ -47,6 +49,7 @@ export default function AdminPanel({ authenticated }: { authenticated: boolean }
       })
       .then((data) => {
         setKelompokData(data.kelompok);
+        setKelompokLine(data.kelompokLine);
         setAllMahasiswa(data.mahasiswa);
         setLoading(false);
       })
@@ -331,6 +334,7 @@ export default function AdminPanel({ authenticated }: { authenticated: boolean }
             for (const m of members) {
               if (m.d) deptDist[m.d] = (deptDist[m.d] || 0) + 1;
             }
+            const lineUrl = kelompokLine?.[num];
             return (
               <Card
                 key={num}
@@ -348,6 +352,17 @@ export default function AdminPanel({ authenticated }: { authenticated: boolean }
                       {members.length} orang
                     </span>
                   </div>
+                  {lineUrl && (
+                    <a
+                      href={lineUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 rounded-full border border-border bg-secondary/60 px-2.5 py-1 text-[10px] font-semibold text-foreground transition-colors hover:bg-secondary hover:text-accent"
+                    >
+                      <Link2 className="h-3 w-3" />
+                      LINE
+                    </a>
+                  )}
                   <div className="flex flex-wrap gap-1">
                     {Object.entries(deptDist).map(([d, c]) => (
                       <span
@@ -376,6 +391,11 @@ export default function AdminPanel({ authenticated }: { authenticated: boolean }
                         <span className="block truncate text-xs font-semibold text-foreground">
                           {m.n}
                         </span>
+                        {m.npm && (
+                          <span className="block truncate text-[10px] text-muted-foreground">
+                            {m.npm}
+                          </span>
+                        )}
                       </span>
                       {m.d && (
                         <span

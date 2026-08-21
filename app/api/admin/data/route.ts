@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { validateSession } from "@/lib/admin-auth";
-import { KELOMPOK_MEMBER } from "@/data/kelompok";
+import { KELOMPOK_LINE, KELOMPOK_MEMBER } from "@/data/kelompok";
 import { mahasiswaData } from "@/data/mahasiswa";
 
 const COOKIE_NAME = "mabim_admin_session";
@@ -15,6 +15,7 @@ export async function GET() {
 
   return NextResponse.json({
     kelompok: KELOMPOK_MEMBER,
+    kelompokLine: KELOMPOK_LINE,
     mahasiswa: mahasiswaData,
   });
 }
