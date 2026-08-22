@@ -81,7 +81,6 @@ export const mahasiswaDTK: Mahasiswa[] = [
   { npm: "2606872605", nama: "Aurellya Salsabilla Kamsi", departemen: "DTK", prodi: "Teknik Bioproses", kelompok: 22, linkGrupLine: "https://line.me/ti/g/pCVuhKvQsa" },
   { npm: "2606790883", nama: "Darius Anggada", departemen: "DTK", prodi: "Teknik Kimia", kelompok: 34, linkGrupLine: "https://line.me/ti/g/n4_3RALLxb" },
   { npm: "2606872656", nama: "Azra Andi Fadhila", departemen: "DTK", prodi: "Teknik Bioproses", kelompok: 78, linkGrupLine: "https://line.me/ti/g/g8aS7tBkAY" },
-  { npm: "2606790896", nama: "Fachry Reifandri Hairiman", departemen: "DTK", prodi: "Teknik Kimia", kelompok: 75, linkGrupLine: "https://line.me/ti/g/S5eFhqwLg7" },
   { npm: "2606872870", nama: "Cheryl Azzahra Aqila", departemen: "DTK", prodi: "Teknik Bioproses", kelompok: 107, linkGrupLine: "https://line.me/R/ti/g/NXRSQhKWxv" },
   { npm: "2606790914", nama: "Fida Qurrotu Aini", departemen: "DTK", prodi: "Teknik Kimia", kelompok: 101, linkGrupLine: "https://line.me/R/ti/g/msdHAnhQnV" },
   { npm: "2606873066", nama: "Dharmawangsa Daffa Dwi Anggito", departemen: "DTK", prodi: "Teknik Bioproses", kelompok: 92, linkGrupLine: "https://line.me/ti/g/JwymMGYLmX" },
@@ -176,4 +175,5 @@ export const mahasiswaDTK: Mahasiswa[] = [
   { npm: "2606876843", nama: "Sesilia Rosari Gunardi", departemen: "DTK", prodi: "Teknik Kimia", kelompok: 55, linkGrupLine: "https://line.me/ti/g/kSXKVua-Gh" },
   { npm: "2606876894", nama: "Sulkhan Syech Suryo Negoro", departemen: "DTK", prodi: "Teknik Kimia", kelompok: 95, linkGrupLine: "https://line.me/ti/g/Y5MqS-hBz8" },
   { npm: "2606877096", nama: "Winda Pasaribu", departemen: "DTK", prodi: "Teknik Kimia", kelompok: 92, linkGrupLine: "https://line.me/ti/g/JwymMGYLmX" },
+  { npm: "2606790896", nama: "Fachry Reifandri Hairiman", departemen: "DTK", prodi: "Teknik Kimia", kelompok: 75, linkGrupLine: "https://line.me/ti/g/S5eFhqwLg7" },
 ];

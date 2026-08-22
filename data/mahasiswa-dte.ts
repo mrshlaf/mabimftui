@@ -265,5 +265,4 @@ export const mahasiswaDTE: Mahasiswa[] = [
   { npm: "2606876982", nama: "Theo Paska Arios", departemen: "DTE", prodi: "Teknik Elektro", kelompok: 63, linkGrupLine: "https://line.me/ti/g/VAWfvdHRha" },
   { npm: "2606877240", nama: "Zaidan Taufik Alhakim", departemen: "DTE", prodi: "Teknik Elektro", kelompok: 85, linkGrupLine: "https://line.me/ti/g/Pau9kDz9tC" },
   { npm: "2606894796", nama: "Kenzie Khawarizmi Amin", departemen: "DTE", prodi: "Teknik Elektro", kelompok: 95, linkGrupLine: "https://line.me/ti/g/Y5MqS-hBz8" },
-  { npm: "2306251531", nama: "Grace Kezia Siregar", departemen: "DTE", prodi: "Teknik Elektro", kelompok: 1, linkGrupLine: "https://line.me/ti/g/NgnkLd-Rfx" },
 ];

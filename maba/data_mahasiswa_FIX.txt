@@ -1,0 +1,1824 @@
+TOTAL SELURUH MAHASISWA BARU FTUI 2026 (FIX): 1805
+Catatan: Albert Tannesa (belum lapor diri) sudah dihapus dari data. Grace Kezia Siregar (data sample/kating) sudah dihapus.
+Catatan: 4 mahasiswa berikut terdaftar ganda (2 baris) karena memang ke-assign ke 2 kelompok berbeda: Fachry Reifandri Hairiman, Steven Adrian Auw, Muhammad Daffa Athallah, Fariel Adam Sjahboeddin.
+
+=== DA (Arsitektur / Arsitektur Interior) — Total: 107 mahasiswa ===
+1. Ahmad Asraf. Hs | 2606736774 | Arsitektur | Kelompok 52
+2. Aksara Kemal | 2606736843 | Arsitektur | Kelompok 65
+3. Alif Irfan Wijayadi | 2606872214 | Arsitektur Interior | Kelompok 98
+4. Almas Shatha Mulia | 2606736912 | Arsitektur | Kelompok 71
+5. Andi Sitti Fathimah Zahrah Al-ghafirah | 2606737032 | Arsitektur Interior | Kelompok 43
+6. Annissa Cinta Sayidinna | 2606790504 | Arsitektur | Kelompok 95
+7. Catherine Putri Saidah | 2606894726 | Arsitektur | Kelompok 96
+8. Celine Hillary Suryadi | 2606737373 | Arsitektur | Kelompok 49
+9. Cynthia Angelica Grycella Sumantri | 2606737455 | Arsitektur Interior | Kelompok 67
+10. Daniele Justyn Felico | 2606737480 | Arsitektur Interior | Kelompok 59
+11. Daniella Carla Iron's Milo | 2606894745 | Arsitektur Interior | Kelompok 3
+12. Danta Zahratusyita Al Amin | 2606872971 | Arsitektur | Kelompok 84
+13. Dira Hanun Silawarti | 2606853676 | Arsitektur Interior | Kelompok 37
+14. Diza Aisyah Khansa | 2606737625 | Arsitektur | Kelompok 79
+15. Ehsher Matthew Immanuel Ginting | 2606790510 | Arsitektur | Kelompok 64
+16. Ellena Sarah Trisnanto | 2606737663 | Arsitektur | Kelompok 92
+17. Emina Kenzie | 2606737700 | Arsitektur | Kelompok 103
+18. Estrella Jeanette Silitonga | 2606790523 | Arsitektur | Kelompok 89
+19. Eugenius Adriel Dekanadi | 2606792983 | Arsitektur Interior | Kelompok 56
+20. Fara Rana Dewi | 2606737783 | Arsitektur Interior | Kelompok 102
+21. Fatimatuzzahrah | 2606873532 | Arsitektur | Kelompok 86
+22. Fayola Khansa Celena Indhy Prasastyo | 2606792996 | Arsitektur Interior | Kelompok 12
+23. Fedhlina Elhana Sofyan | 2606790536 | Arsitektur | Kelompok 58
+24. Felicia Sinaga | 2606793001 | Arsitektur Interior | Kelompok 107
+25. Gendis Kalisha Putri Hermawan | 2606737953 | Arsitektur Interior | Kelompok 39
+26. Gerlach Winston Aaron S | 2606790542 | Arsitektur | Kelompok 50
+27. Grawira Achmad Suranatadhyaksa | 2606790555 | Arsitektur | Kelompok 51
+28. Gregorius Putra S. M. Samosir | 2606790561 | Arsitektur | Kelompok 104
+29. Hammam Musthafa Prasha | 2606894783 | Arsitektur | Kelompok 20
+30. Hanida Nur Hafidzah | 2606793014 | Arsitektur Interior | Kelompok 53
+31. Hanin Mazaya Auliani Amri | 2606790574 | Arsitektur | Kelompok 46
+32. Hanina Adhwa Muchtadin | 2606793020 | Arsitektur Interior | Kelompok 6
+33. Hasna Azzahra | 2606790580 | Arsitektur | Kelompok 41
+34. Ignatius Kilau Lintang Nugroho | 2606853934 | Arsitektur | Kelompok 35
+35. Innocencia Violetta Junike Sukur | 2606738294 | Arsitektur Interior | Kelompok 27
+36. Irene Gloria | 2606793033 | Arsitektur Interior | Kelompok 74
+37. Ivan Farel Aditya | 2606790593 | Arsitektur | Kelompok 77
+38. Ivander Jeconiah Rinda Barrung | 2606873993 | Arsitektur | Kelompok 18
+39. Janice Tzipiya Shayne Sitohang | 2606874030 | Arsitektur | Kelompok 91
+40. Jellita Jazeera Sadin Al-warits | 2606853966 | Arsitektur Interior | Kelompok 42
+41. Jesslyn Avelina | 2606790605 | Arsitektur | Kelompok 9
+42. Jody Reinhart Situmorang | 2606874112 | Arsitektur Interior | Kelompok 68
+43. Joshua Reynard Rantepadang | 2606738395 | Arsitektur | Kelompok 94
+44. Keiko Adzania | 2606738451 | Arsitektur | Kelompok 4
+45. Keisha Amanda Aira Syahla | 2606874264 | Arsitektur Interior | Kelompok 29
+46. Keisya Aurelia Mahira | 2606874283 | Arsitektur | Kelompok 24
+47. Keiza Ardya Shafaputeri | 2606874296 | Arsitektur Interior | Kelompok 1
+48. Kesya Angel Ap | 2606874320 | Arsitektur Interior | Kelompok 2
+49. Khansa Maydhisa Andriena | 2606738552 | Arsitektur Interior | Kelompok 85
+50. Lavenia Madeline Wardana | 2606738615 | Arsitektur Interior | Kelompok 47
+51. M Rifky Ridhotul Aisy Syam | 2606738640 | Arsitektur | Kelompok 45
+52. M.s Adly Tresnadi | 2606738716 | Arsitektur | Kelompok 30
+53. Maharani Syifa Firmansyah | 2606874711 | Arsitektur Interior | Kelompok 75
+54. Malika Ayesha Marikar | 2606874724 | Arsitektur | Kelompok 105
+55. Maliqa Ar Runa Kurniadi | 2606793052 | Arsitektur Interior | Kelompok 66
+56. Marvel Gabriel Samuel Sinuraya | 2606874762 | Arsitektur | Kelompok 100
+57. Marza Alivia Amirullah | 2606874775 | Arsitektur Interior | Kelompok 54
+58. Mayla Hana Shahab | 2606874806 | Arsitektur | Kelompok 83
+59. Meutia Haura Kinanti Hanna Kusuma | 2606854104 | Arsitektur | Kelompok 10
+60. Meutiyah Deapati | 2606874900 | Arsitektur | Kelompok 8
+61. Moh. Dafin Azka Aldric | 2606854123 | Arsitektur | Kelompok 88
+62. Muhamad Zavier Agasha | 2606875046 | Arsitektur | Kelompok 82
+63. Muhammad Farrel El Athallah | 2606875304 | Arsitektur | Kelompok 26
+64. Muhammad Munajat Suratman | 2606854243 | Arsitektur | Kelompok 13
+65. Muhammad Pramudita Diwangkara | 2606894833 | Arsitektur Interior | Kelompok 76
+66. Muhammad Rafa Aqila | 2606790611 | Arsitektur | Kelompok 15
+67. Muhammad Ridhwan Shafiyyullah Padian | 2606790630 | Arsitektur | Kelompok 61
+68. Muthia Zara Zafirah | 2606790656 | Arsitektur | Kelompok 25
+69. Mutiara Ayu Aminati | 2606790662 | Arsitektur | Kelompok 14
+70. Nadya Ayuri Salsabila | 2606793065 | Arsitektur Interior | Kelompok 17
+71. Naifah Kirana | 2606793071 | Arsitektur Interior | Kelompok 62
+72. Naila Farikha | 2606790675 | Arsitektur | Kelompok 22
+73. Naila Rizqy Ananda | 2606875815 | Arsitektur | Kelompok 5
+74. Naila Winaraisy | 2606875821 | Arsitektur | Kelompok 106
+75. Najah Syua | 2606790681 | Arsitektur | Kelompok 19
+76. Najlaa Sausan | 2606793084 | Arsitektur Interior | Kelompok 69
+77. Nashita Fauzia | 2606875885 | Arsitektur | Kelompok 72
+78. Nasya Aurelia Christabel | 2606875891 | Arsitektur Interior | Kelompok 16
+79. Nasywa Al Aliyya | 2606875903 | Arsitektur | Kelompok 101
+80. Nasywa Griselda El Tsania | 2606790694 | Arsitektur | Kelompok 48
+81. Nayaka Khansa Zen Az Zahra | 2606875941 | Arsitektur | Kelompok 57
+82. Nazwa Fatimah Budiman | 2606875992 | Arsitektur | Kelompok 70
+83. Nisya Alicewati | 2606876061 | Arsitektur Interior | Kelompok 93
+84. Qirana Mahya Farras Rachmadan | 2606793090 | Arsitektur Interior | Kelompok 80
+85. Radja Akbar El Islami | 2606854432 | Arsitektur Interior | Kelompok 60
+86. Raia Shakila Anak Puan Bahri | 2606790706 | Arsitektur | Kelompok 44
+87. Rarastri Nindya Satmoko | 2606793102 | Arsitektur Interior | Kelompok 97
+88. Rheinata Fatima Aurellia | 2606790712 | Arsitektur | Kelompok 11
+89. Salisa Qurrotu Aini | 2606854514 | Arsitektur Interior | Kelompok 73
+90. Salma Elvareta | 2606854520 | Arsitektur Interior | Kelompok 7
+91. Sandra Ifeoma Nwachinaemere | 2606793115 | Arsitektur Interior | Kelompok 38
+92. Sebastian Joel Sanyoto | 2606739694 | Arsitektur | Kelompok 63
+93. Sekar Putri Ayuningtyas | 2606790725 | Arsitektur | Kelompok 32
+94. Shafira Rizkia Khairunnisa | 2606739706 | Arsitektur | Kelompok 36
+95. Sultan Ar-rasyid Andrianto | 2606854552 | Arsitektur | Kelompok 40
+96. Syarifah Khalila Saskia | 2606854565 | Arsitektur | Kelompok 21
+97. Talita Zahra | 2606739782 | Arsitektur | Kelompok 23
+98. Thelma Ghaluna | 2606854571 | Arsitektur Interior | Kelompok 28
+99. Valerie Nikita Pakpahan | 2606877045 | Arsitektur Interior | Kelompok 55
+100. Verlyn Utama | 2606739896 | Arsitektur | Kelompok 90
+101. Vicky Rusli | 2606790731 | Arsitektur | Kelompok 99
+102. Vincent Dipakanaka Theoleuw | 2606790744 | Arsitektur | Kelompok 34
+103. Wafasena Adiwangsa Winarno | 2606854615 | Arsitektur | Kelompok 87
+104. Yuen Trita Dalimunthe | 2606740014 | Arsitektur Interior | Kelompok 78
+105. Yvone Belva Wanadi | 2606854634 | Arsitektur Interior | Kelompok 31
+106. Zalfaa Alya Candra | 2606793121 | Arsitektur Interior | Kelompok 81
+107. Zenith Zein H. Zunaedi | 2606877291 | Arsitektur Interior | Kelompok 33
+
+=== DTE (Teknik Elektro / Teknik Komputer / Teknik Biomedik) — Total: 264 mahasiswa ===
+1. Abbari Rahsa Fisjah | 2606853354 | Teknik Elektro | Kelompok 17
+2. Abdurrahman Faiz | 2606789534 | Teknik Elektro | Kelompok 66
+3. Achmad Mirazha Imtiyaz | 2606789540 | Teknik Elektro | Kelompok 77
+4. Adelia Nafra Cindy Utamy | 2606736736 | Teknik Komputer | Kelompok 46
+5. Adelia Nasywa Ramadhani | 2606793342 | Teknik Biomedik | Kelompok 34
+6. Adnan Zulfaiq Anas | 2606872012 | Teknik Komputer | Kelompok 102
+7. Ahmad Darreno Akbar Subandono | 2606793355 | Teknik Biomedik | Kelompok 92
+8. Ahmad Fahri | 2606793361 | Teknik Biomedik | Kelompok 1
+9. Ahmad Nabil Al Massawa | 2606736805 | Teknik Komputer | Kelompok 103
+10. Aisyah Azzahrah Putriyasa | 2606792655 | Teknik Komputer | Kelompok 74
+11. Aisyah Humaira Helmi | 2606872100 | Teknik Komputer | Kelompok 7
+12. Aleandra Charissa Kezia | 2606736862 | Teknik Elektro | Kelompok 26
+13. Aleefa Haniyya Aryandi Hasibuan | 2606872151 | Teknik Komputer | Kelompok 10
+14. Aleyka Shafira Afhamy | 2606853386 | Teknik Biomedik | Kelompok 8
+15. Alfaiz Zaidan Syusata | 2606792661 | Teknik Komputer | Kelompok 80
+16. Alfallih Bagas Yassaryuko | 2606872183 | Teknik Elektro | Kelompok 44
+17. Alvarel Ardiyanto | 2606872220 | Teknik Elektro | Kelompok 17
+18. Alvia Setyani Putri | 2606872246 | Teknik Komputer | Kelompok 91
+19. Alya Nadhira Andika | 2606872284 | Teknik Biomedik | Kelompok 11
+20. Alya Syafarina Ardhya Putri | 2606789566 | Teknik Elektro | Kelompok 22
+21. Amelia Dian Syafira N | 2606872315 | Teknik Biomedik | Kelompok 37
+22. Anargya Bhanu Prawiro | 2606872353 | Teknik Komputer | Kelompok 8
+23. Andi Alif Fathurrahman | 2606736995 | Teknik Elektro | Kelompok 12
+24. Andi Nailah Ramadhani Zaman | 2606737026 | Teknik Elektro | Kelompok 106
+25. Andra Fadhil Ramadhan | 2606737051 | Teknik Elektro | Kelompok 20
+26. Andreas Cristan Jufranson | 2606789572 | Teknik Elektro | Kelompok 4
+27. Angginatul Najla | 2606737064 | Teknik Komputer | Kelompok 10
+28. Angkasa Arya Bima Hutahaean | 2606792674 | Teknik Komputer | Kelompok 9
+29. Arden Caleb Febrianto Tampubolon | 2606737114 | Teknik Elektro | Kelompok 86
+30. Aria Manggala Putra | 2606872454 | Teknik Komputer | Kelompok 40
+31. Ario Putra | 2606737133 | Teknik Elektro | Kelompok 36
+32. Ariq Athallah | 2606737146 | Teknik Elektro | Kelompok 11
+33. Aristeo Ridwan Wibowo | 2606789585 | Teknik Elektro | Kelompok 13
+34. Aryo Bagus Panuntun | 2606853493 | Teknik Komputer | Kelompok 50
+35. Ashfiya Zaynannisa | 2606793374 | Teknik Biomedik | Kelompok 89
+36. Athallah Putra Ferliansyah | 2606872542 | Teknik Elektro | Kelompok 65
+37. Audrey Vicasia Simamora | 2606872561 | Teknik Komputer | Kelompok 15
+38. Aufa Irfan Adli | 2606872580 | Teknik Komputer | Kelompok 47
+39. Auzan Hilmi Arianto | 2606872624 | Teknik Komputer | Kelompok 61
+40. Azra Aulia Salsabilla | 2606872662 | Teknik Elektro | Kelompok 74
+41. Azriel Maliq Azwat | 2606737266 | Teknik Elektro | Kelompok 76
+42. Bassam Nabil Rabbani | 2606737285 | Teknik Elektro | Kelompok 30
+43. Bening Ayu Azzahwa | 2606872681 | Teknik Biomedik | Kelompok 35
+44. Bening Mustika Brahmantio | 2606872694 | Teknik Biomedik | Kelompok 99
+45. Brandon Ezekiel Lim | 2606872744 | Teknik Elektro | Kelompok 45
+46. Bryan Lie | 2606792680 | Teknik Komputer | Kelompok 71
+47. Budhy Dekobiya Irsyad | 2606872776 | Teknik Komputer | Kelompok 58
+48. Bumi Antar Amega Effran | 2606872782 | Teknik Elektro | Kelompok 54
+49. Catherine Akheela Yosev Saragih | 2606789616 | Teknik Elektro | Kelompok 97
+50. Charmaine Esther Fidelia Panggalo | 2606853575 | Teknik Elektro | Kelompok 93
+51. Chatyn Graciela | 2606872851 | Teknik Elektro | Kelompok 39
+52. Claribel Sefira Lavinsi | 2606872883 | Teknik Biomedik | Kelompok 83
+53. Clarissa Lipudaenan Pangalinan Rantelangi | 2606737410 | Teknik Elektro | Kelompok 28
+54. Claudion | 2606789622 | Teknik Elektro | Kelompok 43
+55. Cokorda Bagus Satria Adijaya | 2606737436 | Teknik Biomedik | Kelompok 47
+56. Dafa Fawwaz Zaidan | 2606737461 | Teknik Komputer | Kelompok 11
+57. Dafa Zulfikar Maulana | 2606792693 | Teknik Komputer | Kelompok 88
+58. Daffa Abhirath Agastya Rizka Putra | 2606853625 | Teknik Komputer | Kelompok 33
+59. Damar Ariansyah | 2606872933 | Teknik Elektro | Kelompok 15
+60. Danke Athaya Malun | 2606872965 | Teknik Komputer | Kelompok 38
+61. Darrel Muharram Zaafarani | 2606872984 | Teknik Komputer | Kelompok 6
+62. Daru Ananta Suri | 2606789635 | Teknik Elektro | Kelompok 93
+63. Davina Khaliza Zahra | 2606737511 | Teknik Biomedik | Kelompok 66
+64. Dean Ryan Fernandez Sitorus | 2606792705 | Teknik Komputer | Kelompok 51
+65. Deanthio Abel Josephin | 2606792711 | Teknik Komputer | Kelompok 103
+66. Demas Aryasatya Herlambang | 2606737543 | Teknik Komputer | Kelompok 45
+67. Desy Rahma Irdianti | 2606737562 | Teknik Komputer | Kelompok 76
+68. Dhika Viranza | 2606789641 | Teknik Elektro | Kelompok 89
+69. Dhirgham Muhammad Anshar Pane | 2606789654 | Teknik Elektro | Kelompok 14
+70. Diandra Dimas Haryo | 2606873072 | Teknik Komputer | Kelompok 99
+71. Dimas Indra Kusuma | 2606873103 | Teknik Elektro | Kelompok 9
+72. Doni Amri Silaban | 2606792724 | Teknik Komputer | Kelompok 58
+73. Dylan Ardito Lesmono | 2606789660 | Teknik Elektro | Kelompok 51
+74. Edward Tjeng | 2606873173 | Teknik Komputer | Kelompok 101
+75. Effia Aziza Rahma | 2606873186 | Teknik Elektro | Kelompok 5
+76. Erika Olivia Chang | 2606853713 | Teknik Biomedik | Kelompok 40
+77. Erlang Setiawan | 2606873236 | Teknik Elektro | Kelompok 87
+78. Evan Fadlurahman | 2606873274 | Teknik Elektro | Kelompok 37
+79. Evan Nishura Yosafat | 2606873280 | Teknik Komputer | Kelompok 23
+80. Faadhilah Luthfi Firdaus | 2606873311 | Teknik Elektro | Kelompok 72
+81. Fachri Arrasyid | 2606793380 | Teknik Biomedik | Kelompok 82
+82. Fadhilatul Khairiyah | 2606793393 | Teknik Biomedik | Kelompok 50
+83. Fadli Kurniawan | 2606737751 | Teknik Elektro | Kelompok 78
+84. Fahri Fahreji | 2606789673 | Teknik Elektro | Kelompok 96
+85. Fahri Halianto | 2606873343 | Teknik Komputer | Kelompok 16
+86. Faiz Atthariq Kusindra | 2606873362 | Teknik Elektro | Kelompok 14
+87. Faliqul Adyan Arsyada Hadiwijaya | 2606792730 | Teknik Komputer | Kelompok 64
+88. Faradiba Citra Mahesti | 2606737796 | Teknik Elektro | Kelompok 13
+89. Farel Syah Putra | 2606873412 | Teknik Elektro | Kelompok 52
+90. Farhan Muhammad Fayyaz | 2606737801 | Teknik Elektro | Kelompok 53
+91. Farrel Ananda Tjian Wardani | 2606737820 | Teknik Elektro | Kelompok 69
+92. Farrel Muhammad Agri | 2606737833 | Teknik Komputer | Kelompok 73
+93. Farrel Muhammad Riva Putra | 2606737846 | Teknik Komputer | Kelompok 84
+94. Farrel Patria Utama | 2606873463 | Teknik Elektro | Kelompok 22
+95. Fatila Nailal Husna | 2606873526 | Teknik Biomedik | Kelompok 100
+96. Felizha Nandy Widodo | 2606873601 | Teknik Elektro | Kelompok 25
+97. Flamingo Giovanny Pasongli | 2606789692 | Teknik Elektro | Kelompok 101
+98. Fredericus Krisantama | 2606873652 | Teknik Elektro | Kelompok 102
+99. Frey Cappi Yapero | 2606737921 | Teknik Komputer | Kelompok 80
+100. Gabriel Alexander T Togatorop | 2606873665 | Teknik Komputer | Kelompok 105
+101. Galuh Prasetiya Pratama | 2606873671 | Teknik Elektro | Kelompok 42
+102. Gathan Rizky Ardian | 2606792743 | Teknik Komputer | Kelompok 27
+103. Gendi H.a Nababan | 2606789704 | Teknik Elektro | Kelompok 75
+104. Gerald Oswald | 2606737966 | Teknik Komputer | Kelompok 95
+105. Gerard Yogiara Sipahutar | 2606873734 | Teknik Elektro | Kelompok 44
+106. Ghazy Rabbani Akmal | 2606737985 | Teknik Komputer | Kelompok 98
+107. Ghiffari Zakka Waly | 2606873740 | Teknik Elektro | Kelompok 49
+108. Gifti Bunga Adianti | 2606873753 | Teknik Biomedik | Kelompok 104
+109. Giorzio Pradigta | 2606873766 | Teknik Biomedik | Kelompok 41
+110. Grace Suellen Harefa | 2606738054 | Teknik Biomedik | Kelompok 50
+111. Hafiidz Luthfi | 2606873835 | Teknik Elektro | Kelompok 21
+112. Haikal Kamil | 2606853890 | Teknik Elektro | Kelompok 77
+113. Hamzah Naylul Fallah | 2606873873 | Teknik Komputer | Kelompok 27
+114. Hanif Mubarok | 2606789710 | Teknik Elektro | Kelompok 12
+115. Hanin Aqila Maharani | 2606738142 | Teknik Biomedik | Kelompok 82
+116. Hanna Naftali Adelia Sirait | 2606789723 | Teknik Elektro | Kelompok 39
+117. Harith Fathurrahman Gunawan | 2606738174 | Teknik Elektro | Kelompok 35
+118. Hasya Rizki Andika | 2606873904 | Teknik Komputer | Kelompok 48
+119. Hathaya Mikail Hafiz | 2606789736 | Teknik Elektro | Kelompok 21
+120. Havier Shakil Rafiazka | 2606792756 | Teknik Komputer | Kelompok 70
+121. Husain Abdurrasyiid | 2606738211 | Teknik Elektro | Kelompok 79
+122. Husin Sami | 2606738224 | Teknik Elektro | Kelompok 30
+123. I Made Satya Narendra Widiarta | 2606738230 | Teknik Elektro | Kelompok 7
+124. Ibnaty Naura Muyassarah Darwis | 2606853921 | Teknik Elektro | Kelompok 44
+125. Ignatius Evan Dwianto | 2606873942 | Teknik Elektro | Kelompok 47
+126. Ilham Fazillah Zulmi | 2606738275 | Teknik Elektro | Kelompok 85
+127. Inayah Kirana | 2606792781 | Teknik Komputer | Kelompok 83
+128. Inger Ludwig Azarya Sihombing | 2606792794 | Teknik Komputer | Kelompok 99
+129. Izar Rahman | 2606874011 | Teknik Elektro | Kelompok 62
+130. Jacqueline Vincencia Lasaru | 2606853940 | Teknik Elektro | Kelompok 70
+131. Jasmine Elmaira | 2606874043 | Teknik Elektro | Kelompok 87
+132. Java Anugrah Pudjijono | 2606874056 | Teknik Elektro | Kelompok 29
+133. Jeannette Suryajaya | 2606793405 | Teknik Biomedik | Kelompok 34
+134. Jibril Roid Zhafran | 2606789742 | Teknik Elektro | Kelompok 18
+135. Johanes Honoratus Grazcio Reresi | 2606738350 | Teknik Elektro | Kelompok 55
+136. Josegracia Sophia Caesarean Setiawan | 2606738382 | Teknik Komputer | Kelompok 84
+137. Jovieta Chavone Tiurmaida Pasaribu | 2606792806 | Teknik Komputer | Kelompok 94
+138. Kamila Nuha Hasna | 2606874195 | Teknik Biomedik | Kelompok 26
+139. Kamilah Afifah Nusyirwan | 2606738413 | Teknik Elektro | Kelompok 63
+140. Kanza Alma Mahya | 2606853991 | Teknik Komputer | Kelompok 42
+141. Kelvin Andreas Aritonang | 2606874301 | Teknik Elektro | Kelompok 71
+142. Kenzie Khawarizmi Amin | 2606894796 | Teknik Elektro | Kelompok 95
+143. Kevin Maulana Juniar | 2606874346 | Teknik Komputer | Kelompok 105
+144. Khalifah Thariq Raudha | 2606738546 | Teknik Komputer | Kelompok 4
+145. Khansa | 2606792812 | Teknik Komputer | Kelompok 92
+146. Kharisma Sauma Ramadhan | 2606789761 | Teknik Elektro | Kelompok 78
+147. Khoirul Hidayat | 2606874440 | Teknik Komputer | Kelompok 18
+148. Kian Maulana Devanda | 2606874466 | Teknik Elektro | Kelompok 71
+149. Kirana Dwi Komala | 2606793411 | Teknik Biomedik | Kelompok 19
+150. Landon Micah Muliawan | 2606738602 | Teknik Komputer | Kelompok 101
+151. Lutfika Aditya Rahmatillah | 2606789793 | Teknik Elektro | Kelompok 94
+152. M Huwaidy Pasha | 2606874642 | Teknik Elektro | Kelompok 54
+153. M. Athallah Rafif Ulhaq | 2606854060 | Teknik Komputer | Kelompok 56
+154. M. Faqih Azmi Risay | 2606738666 | Teknik Komputer | Kelompok 69
+155. M. Guntur Suriadi | 2606738685 | Teknik Komputer | Kelompok 5
+156. M. Heysam Ilmi | 2606874674 | Teknik Elektro | Kelompok 38
+157. Marsha Alysia Nabilah | 2606738741 | Teknik Biomedik | Kelompok 77
+158. Matthew Francesco Lumban Batu | 2606789805 | Teknik Elektro | Kelompok 55
+159. Mazzaya Medina Rahmadani | 2606874863 | Teknik Elektro | Kelompok 10
+160. Michael Benito Simanjuntak | 2606793424 | Teknik Biomedik | Kelompok 96
+161. Michael Owen Herlian | 2606874913 | Teknik Komputer | Kelompok 73
+162. Mirza Adhim Zulkarnain | 2606789811 | Teknik Elektro | Kelompok 53
+163. Mirza Basilio Tsami | 2606792825 | Teknik Komputer | Kelompok 55
+164. Mochammad Farrel | 2606874945 | Teknik Elektro | Kelompok 107
+165. Mori Gunawan | 2606738842 | Teknik Biomedik | Kelompok 100
+166. Muhamad Nelson Fajar | 2606875033 | Teknik Elektro | Kelompok 52
+167. Muhammad Abyan Wardhana | 2606875052 | Teknik Komputer | Kelompok 30
+168. Muhammad Agas Putra Ramadhan | 2606875071 | Teknik Elektro | Kelompok 90
+169. Muhammad Alihf Amir | 2606738911 | Teknik Elektro | Kelompok 1
+170. Muhammad Althaf Fakhri | 2606875115 | Teknik Elektro | Kelompok 21
+171. Muhammad Andrei Luthfi Nazel | 2606854180 | Teknik Komputer | Kelompok 65
+172. Muhammad Arfa Hannan | 2606789824 | Teknik Elektro | Kelompok 98
+173. Muhammad Arifin Ibnu Hafidz | 2606792844 | Teknik Komputer | Kelompok 3
+174. Muhammad Bintang Beryliandri | 2606792850 | Teknik Komputer | Kelompok 46
+175. Muhammad Danish Izzan | 2606792863 | Teknik Komputer | Kelompok 67
+176. Muhammad Fachri Pratama Hartaman | 2606875222 | Teknik Elektro | Kelompok 17
+177. Muhammad Fadli Dafa Akaba | 2606875235 | Teknik Komputer | Kelompok 24
+178. Muhammad Fakhri Wirawan | 2606875292 | Teknik Komputer | Kelompok 54
+179. Muhammad Faris Ramadhan | 2606738975 | Teknik Elektro | Kelompok 32
+180. Muhammad Fathurrahman | 2606738981 | Teknik Biomedik | Kelompok 60
+181. Muhammad Gibran Razzaq Attamimi | 2606739025 | Teknik Elektro | Kelompok 57
+182. Muhammad Gulam Mualla | 2606875380 | Teknik Elektro | Kelompok 93
+183. Muhammad Hazza Islami | 2606875405 | Teknik Komputer | Kelompok 60
+184. Muhammad Ibnu Zuhair | 2606739050 | Teknik Elektro | Kelompok 43
+185. Muhammad Mirza Akmaluddin | 2606739063 | Teknik Komputer | Kelompok 2
+186. Muhammad Nasywan Rahman Latuconsina | 2606875494 | Teknik Komputer | Kelompok 56
+187. Muhammad Naufal Akbar Assagaf | 2606875506 | Teknik Komputer | Kelompok 34
+188. Muhammad Naufaluddin Subansa | 2606789830 | Teknik Elektro | Kelompok 61
+189. Muhammad Raahil Aulia | 2606792876 | Teknik Komputer | Kelompok 31
+190. Muhammad Raffa Akbar | 2606792882 | Teknik Komputer | Kelompok 59
+191. Muhammad Raimi Hamizan | 2606793430 | Teknik Biomedik | Kelompok 57
+192. Muhammad Rasyid Baari Fadillah | 2606789843 | Teknik Elektro | Kelompok 35
+193. Muhammad Rasyid Hazzel | 2606894852 | Teknik Komputer | Kelompok 32
+194. Muhammad Rayaan Alfary | 2606875626 | Teknik Komputer | Kelompok 6
+195. Muhammad Rayhan Deezra Ermizal | 2606793443 | Teknik Biomedik | Kelompok 16
+196. Muhammad Resky Ramadhan | 2606792895 | Teknik Komputer | Kelompok 104
+197. Muhammad Syechan Rasyad | 2606875670 | Teknik Elektro | Kelompok 79
+198. Muhammad Zanki Agha | 2606875714 | Teknik Elektro | Kelompok 59
+199. Nabiel Mufarrid | 2606789875 | Teknik Elektro | Kelompok 96
+200. Nadia Atsabita | 2606854294 | Teknik Komputer | Kelompok 64
+201. Nafisah Suri Azizah | 2606875790 | Teknik Biomedik | Kelompok 38
+202. Nalasendra Ramadhana Kesuma Putra | 2606875853 | Teknik Elektro | Kelompok 31
+203. Nam Ye Jin | 2606792900 | Teknik Komputer | Kelompok 59
+204. Nathan Tobia Chaiyadi | 2606789881 | Teknik Elektro | Kelompok 67
+205. Nayla Raissa Azzahra | 2606875960 | Teknik Biomedik | Kelompok 88
+206. Nayla Syarifah Rizki | 2606792913 | Teknik Komputer | Kelompok 68
+207. Nazwa Haura Djajasinga | 2606876004 | Teknik Biomedik | Kelompok 91
+208. Nihat Fateha Syabani | 2606876036 | Teknik Elektro | Kelompok 81
+209. Nikeysha Maglicha | 2606876042 | Teknik Biomedik | Kelompok 29
+210. Noel Vincent Agung Molyono Kaeng | 2606739391 | Teknik Elektro | Kelompok 81
+211. Nyimas Ratu Najswa Nabila | 2606876105 | Teknik Komputer | Kelompok 100
+212. Owen Wangsaputra | 2606876124 | Teknik Elektro | Kelompok 49
+213. Pandya Hafizh Lingga Pamungkas | 2606876143 | Teknik Komputer | Kelompok 75
+214. Pedro Imanuel Jadiate Sinulingga | 2606789894 | Teknik Elektro | Kelompok 52
+215. Pramesty Ardhyanesta Imanda | 2606854395 | Teknik Komputer | Kelompok 67
+216. Raden Bimo Haryo Putro Prasetyo | 2606876231 | Teknik Elektro | Kelompok 33
+217. Radytia Nareksa Ardhana | 2606789906 | Teknik Elektro | Kelompok 53
+218. Rafa Arfanandito Munanto | 2606876276 | Teknik Elektro | Kelompok 68
+219. Rafasya Dzukran Harastha | 2606876313 | Teknik Komputer | Kelompok 69
+220. Raffael Khresna Aditya Maheswara | 2606854445 | Teknik Elektro | Kelompok 2
+221. Rafif Aulia Permana | 2606792932 | Teknik Komputer | Kelompok 46
+222. Raihan Awal Basyaril | 2606789925 | Teknik Elektro | Kelompok 68
+223. Raihan Radithya Yassar | 2606793456 | Teknik Biomedik | Kelompok 45
+224. Rakha Abdillah Febriano | 2606876446 | Teknik Elektro | Kelompok 20
+225. Rakha Bari Zhafran | 2606876465 | Teknik Komputer | Kelompok 78
+226. Rasya Izzafudien Alfarosi | 2606739542 | Teknik Komputer | Kelompok 56
+227. Rasya Putra Pulungan | 2606876534 | Teknik Komputer | Kelompok 5
+228. Razan Amir | 2606793462 | Teknik Biomedik | Kelompok 36
+229. Rehan Fajri | 2606876566 | Teknik Elektro | Kelompok 87
+230. Reno Dermawan | 2606854483 | Teknik Elektro | Kelompok 19
+231. Revan Gerald Lintin | 2606894871 | Teknik Biomedik | Kelompok 70
+232. Richie Darmawan Tshai | 2606739611 | Teknik Biomedik | Kelompok 25
+233. Ridho Nurpajri Ardiansyah | 2606739624 | Teknik Komputer | Kelompok 91
+234. Rido Gusti Hartono | 2606792945 | Teknik Komputer | Kelompok 49
+235. Rieska Thalia | 2606792951 | Teknik Komputer | Kelompok 41
+236. Riva Matteo Ibrahim | 2606876660 | Teknik Elektro | Kelompok 72
+237. Rizki Alfarizi | 2606876673 | Teknik Elektro | Kelompok 107
+238. Rizky Zahra Fahlevy | 2606876704 | Teknik Elektro | Kelompok 28
+239. Rizkya Putri Aqilah | 2606876710 | Teknik Biomedik | Kelompok 26
+240. Salsabilla Kaeyla Savitri | 2606876805 | Teknik Biomedik | Kelompok 90
+241. Serafi Alvian Farrel Iskandar | 2606792964 | Teknik Komputer | Kelompok 105
+242. Shelly Exaudia Pandiangan | 2606789944 | Teknik Elektro | Kelompok 3
+243. Shelomita Anastasia Sabari | 2606876862 | Teknik Elektro | Kelompok 57
+244. Shiloh Maxima Awuy | 2606739725 | Teknik Biomedik | Kelompok 98
+245. Sulthan Aulian Haz | 2606876906 | Teknik Elektro | Kelompok 48
+246. Syafura Kasih Sururudin | 2606876931 | Teknik Elektro | Kelompok 62
+247. Syaghaf Fakkri Fathan Muliawan | 2606876944 | Teknik Elektro | Kelompok 80
+248. Syahla Hasnah Avani | 2606789950 | Teknik Elektro | Kelompok 104
+249. Syathir Aqilla Daffi | 2606789963 | Teknik Elektro | Kelompok 23
+250. Talitha Aziza | 2606739795 | Teknik Elektro | Kelompok 33
+251. Taqi Tammam | 2606789976 | Teknik Elektro | Kelompok 9
+252. Theo Paska Arios | 2606876982 | Teknik Elektro | Kelompok 63
+253. Tubagus Muhammad Dhia Hafizh | 2606793475 | Teknik Biomedik | Kelompok 24
+254. Tubagus Samudra Anom | 2606739851 | Teknik Komputer | Kelompok 106
+255. Velindra Kristia Prameswari | 2606789982 | Teknik Elektro | Kelompok 22
+256. Vincent Leonard Theng | 2606739920 | Teknik Komputer | Kelompok 66
+257. Vincentia Audrey Elfrida | 2606739933 | Teknik Biomedik | Kelompok 107
+258. Waffa Bika Muhammad | 2606739946 | Teknik Elektro | Kelompok 60
+259. Zaidan Taufik Alhakim | 2606877240 | Teknik Elektro | Kelompok 85
+260. Zaskia Fahriani As-syukri | 2606877253 | Teknik Komputer | Kelompok 97
+261. Zay Zubnul Harits | 2606740065 | Teknik Komputer | Kelompok 12
+262. Zeidan Mumtaz | 2606877272 | Teknik Komputer | Kelompok 72
+263. Zenteno Arya Daniswara | 2606740071 | Teknik Elektro | Kelompok 41
+264. Zickral Adha | 2606793481 | Teknik Biomedik | Kelompok 86
+
+=== DTI (Teknik Industri) — Total: 203 mahasiswa ===
+1. A. Revan Arya Maulana Yusuf | 2606736673 | Teknik Industri | Kelompok 4
+2. Abigail Hanna Liany Pardede | 2606791192 | Teknik Industri | Kelompok 35
+3. Abimanyu Laksana Wicaksono | 2606736692 | Teknik Industri | Kelompok 28
+4. Abimanyu Satria Adiyana | 2606871956 | Teknik Industri | Kelompok 75
+5. Adinda Fawnia Juliany Arifin | 2606871975 | Teknik Industri | Kelompok 18
+6. Aditya Fahmi | 2606871981 | Teknik Industri | Kelompok 61
+7. Adrian Gilang Maulana | 2606872025 | Teknik Industri | Kelompok 55
+8. Ahmad Rei Deta Raharja | 2606791204 | Teknik Industri | Kelompok 76
+9. Aisha Oktaviastika Utami | 2606791223 | Teknik Industri | Kelompok 73
+10. Aisha Tabina Andira | 2606791236 | Teknik Industri | Kelompok 5
+11. Aisyah Salma Komarudin | 2606736824 | Teknik Industri | Kelompok 89
+12. Aisyizah Sastria | 2606872113 | Teknik Industri | Kelompok 67
+13. Alexa Celine Ambarita | 2606872170 | Teknik Industri | Kelompok 15
+14. Ali Yusuf Aditya | 2606872196 | Teknik Industri | Kelompok 15
+15. Almirah Prastika W | 2606736925 | Teknik Industri | Kelompok 103
+16. Alveena Keisyah Putri | 2606872233 | Teknik Industri | Kelompok 98
+17. Amanda Sanya Winfrie | 2606791242 | Teknik Industri | Kelompok 88
+18. Amda Maria Pamaraya | 2606853392 | Teknik Industri | Kelompok 29
+19. Ameera Mufida | 2606872302 | Teknik Industri | Kelompok 23
+20. Amelia Aristawidya Ardianti | 2606853404 | Teknik Industri | Kelompok 45
+21. Anastasya Sigiro | 2606791255 | Teknik Industri | Kelompok 79
+22. Andhika Yizrel | 2606872366 | Teknik Industri | Kelompok 43
+23. Andi Fa'iq Dhifullah Dewangga | 2606737000 | Teknik Industri | Kelompok 74
+24. Andi Muhammad Navies Syawal | 2606872391 | Teknik Industri | Kelompok 60
+25. Anindita Artanti Maheswari | 2606737070 | Teknik Industri | Kelompok 65
+26. Annisa Firda Zuhailia | 2606791261 | Teknik Industri | Kelompok 8
+27. Annisa Luqiana | 2606872435 | Teknik Industri | Kelompok 97
+28. Annisah Dzakiyyah | 2606791274 | Teknik Industri | Kelompok 33
+29. Arfa Apichart Yardan | 2606791280 | Teknik Industri | Kelompok 103
+30. Arvand Azmi Revlisa | 2606737171 | Teknik Industri | Kelompok 87
+31. Ashila Gayuh Kahnan Diva | 2606791293 | Teknik Industri | Kelompok 81
+32. Athalah Valerian Dharma | 2606872510 | Teknik Industri | Kelompok 34
+33. Atikah Qatrunnada | 2606791305 | Teknik Industri | Kelompok 13
+34. Aurelia Lidia Ria Panjaitan | 2606791311 | Teknik Industri | Kelompok 51
+35. Aurin Dhia Maheswari | 2606872611 | Teknik Industri | Kelompok 58
+36. Avicenna Alhazel | 2606791324 | Teknik Industri | Kelompok 6
+37. Azkiya Reikan Chandra Berlian | 2606791330 | Teknik Industri | Kelompok 61
+38. Azra Luftiana | 2606791343 | Teknik Industri | Kelompok 23
+39. Bagas Rafif Kayana | 2606791356 | Teknik Industri | Kelompok 107
+40. Bima Afiq Laviza | 2606872706 | Teknik Industri | Kelompok 7
+41. Birrah Kamilah Raharja | 2606872731 | Teknik Industri | Kelompok 45
+42. Brilian Rafi Pratama | 2606872763 | Teknik Industri | Kelompok 31
+43. Calissa Atailla Ramadina | 2606872813 | Teknik Industri | Kelompok 24
+44. Catherina Callista | 2606737360 | Teknik Industri | Kelompok 69
+45. Catherine Yohana Putri Silaban | 2606791362 | Teknik Industri | Kelompok 95
+46. Ceyda Auliyah Riyadi | 2606791375 | Teknik Industri | Kelompok 85
+47. Challhissah Hanna Raidah | 2606872845 | Teknik Industri | Kelompok 44
+48. Cleverina Citraningrum | 2606872901 | Teknik Industri | Kelompok 71
+49. Daffa Naufal Riandi | 2606791381 | Teknik Industri | Kelompok 36
+50. Danadipa Nityaka Putra | 2606872946 | Teknik Industri | Kelompok 98
+51. Dennis Roberto Wiliam Habeahan | 2606873021 | Teknik Industri | Kelompok 81
+52. Devi Viriyanti | 2606853644 | Teknik Industri | Kelompok 1
+53. Dinar Hayuningtyas Suseno | 2606791406 | Teknik Industri | Kelompok 78
+54. Diniyyah Zahra Firdausi | 2606737606 | Teknik Industri | Kelompok 4
+55. Elvina Nesha Fawnia | 2606737682 | Teknik Industri | Kelompok 90
+56. Emir Marwan | 2606791412 | Teknik Industri | Kelompok 102
+57. Emira Hasna Mufida | 2606853700 | Teknik Industri | Kelompok 11
+58. Emirsyah Fata Putra Ranaji | 2606791425 | Teknik Industri | Kelompok 2
+59. Eunice Abigail Marbun | 2606873261 | Teknik Industri | Kelompok 3
+60. Evan Santoso | 2606873305 | Teknik Industri | Kelompok 11
+61. Faizatul Hasanah | 2606873394 | Teknik Industri | Kelompok 92
+62. Farras Arshad | 2606873431 | Teknik Industri | Kelompok 73
+63. Farrel Saputra Wildan | 2606873476 | Teknik Industri | Kelompok 94
+64. Fasya Asvita | 2606737852 | Teknik Industri | Kelompok 12
+65. Fathan Alqiansyah Hasibuan | 2606873500 | Teknik Industri | Kelompok 102
+66. Febrian Petrus Palit | 2606737884 | Teknik Industri | Kelompok 86
+67. Felicia Artanti Khairunnisa Azhar | 2606873583 | Teknik Industri | Kelompok 38
+68. Feliks Ano Pirdo Manalu | 2606873596 | Teknik Industri | Kelompok 29
+69. Felisha Aleftina Thurayya | 2606791431 | Teknik Industri | Kelompok 64
+70. Ferdinand Nathanael Louis | 2606791444 | Teknik Industri | Kelompok 75
+71. Firzha Khafiyya Ghivada | 2606853814 | Teknik Industri | Kelompok 18
+72. Fitri Felicia | 2606791450 | Teknik Industri | Kelompok 32
+73. Freya Syafira | 2606853820 | Teknik Industri | Kelompok 80
+74. Garneta Raisya Hermawan | 2606873684 | Teknik Industri | Kelompok 55
+75. Georgius Davie Mahandya Yusnadi | 2606873715 | Teknik Industri | Kelompok 6
+76. Gioia Hiranya | 2606853884 | Teknik Industri | Kelompok 66
+77. Hafiz Dzakir Abdillah Siregar | 2606738073 | Teknik Industri | Kelompok 53
+78. Hamzah Naufal | 2606873860 | Teknik Industri | Kelompok 47
+79. Hana Dewanti Hutapea | 2606738104 | Teknik Industri | Kelompok 82
+80. Hana Hestia Handayani | 2606738110 | Teknik Industri | Kelompok 25
+81. Harimatul Fauza Hendrinov | 2606738161 | Teknik Industri | Kelompok 79
+82. Hasna Fauzia | 2606791463 | Teknik Industri | Kelompok 83
+83. Hassya Fidztia Aisha | 2606738205 | Teknik Industri | Kelompok 66
+84. Hasya Afifah Rahmani | 2606791476 | Teknik Industri | Kelompok 42
+85. Ibrahim Chaniago Rosyadi | 2606738256 | Teknik Industri | Kelompok 63
+86. Iffatul Amalia | 2606738262 | Teknik Industri | Kelompok 68
+87. Illona Lavinia | 2606791482 | Teknik Industri | Kelompok 10
+88. Indra Khaligis | 2606873961 | Teknik Industri | Kelompok 106
+89. Iola Titania Wijaya | 2606873974 | Teknik Industri | Kelompok 78
+90. Javier Danendra Andhika Atmadja | 2606791495 | Teknik Industri | Kelompok 28
+91. Jehan Inga Nabeila | 2606874062 | Teknik Industri | Kelompok 95
+92. Jeremy Dharma Prima Sinaga | 2606738331 | Teknik Industri | Kelompok 69
+93. Jessica Ravelina Renata | 2606874094 | Teknik Industri | Kelompok 50
+94. Jihan Madiiha | 2606791500 | Teknik Industri | Kelompok 40
+95. Jihan Tasha Luthfiyah | 2606874106 | Teknik Industri | Kelompok 16
+96. Julian Evan Attallah | 2606874182 | Teknik Industri | Kelompok 5
+97. Kamila Annisa Azzahra | 2606791513 | Teknik Industri | Kelompok 91
+98. Karina Kurniani Azzahra | 2606874226 | Teknik Industri | Kelompok 36
+99. Kayla Dwi Fadliah | 2606738445 | Teknik Industri | Kelompok 82
+100. Kevin Monty Anantha | 2606874352 | Teknik Industri | Kelompok 50
+101. Khalisa Mareta Firka | 2606791526 | Teknik Industri | Kelompok 26
+102. Khansa Dian Khairina | 2606874415 | Teknik Industri | Kelompok 54
+103. Khayla Zhafwani Batu Bara | 2606874421 | Teknik Industri | Kelompok 43
+104. Khumaira Khairani Aryawan | 2606874453 | Teknik Industri | Kelompok 13
+105. Kirana Shine Aqeela | 2606791532 | Teknik Industri | Kelompok 14
+106. Kyrana Tsabita | 2606874485 | Teknik Industri | Kelompok 41
+107. Lala Hikmatul Fadhilah | 2606791545 | Teknik Industri | Kelompok 106
+108. Lalu Hidayatullah | 2606874503 | Teknik Industri | Kelompok 104
+109. Lausha Izzani Rahmi | 2606874522 | Teknik Industri | Kelompok 70
+110. Leonardo Perdinan N | 2606791551 | Teknik Industri | Kelompok 17
+111. Lionel Natan Bangun | 2606874541 | Teknik Industri | Kelompok 77
+112. Luna Callista | 2606874592 | Teknik Industri | Kelompok 93
+113. M. Afif Akil | 2606874661 | Teknik Industri | Kelompok 60
+114. Malik Arif | 2606791564 | Teknik Industri | Kelompok 20
+115. Malika Kireina Daud | 2606874730 | Teknik Industri | Kelompok 59
+116. Marvell Sola Gracio Bangun | 2606791570 | Teknik Industri | Kelompok 67
+117. Maulana Rafi Daniswara | 2606874781 | Teknik Industri | Kelompok 58
+118. Mayka Ghinayah Halian | 2606874794 | Teknik Industri | Kelompok 101
+119. Mazaya Rahmania Setiawan | 2606738786 | Teknik Industri | Kelompok 91
+120. Medina Kinnari Adhiyanisa | 2606874876 | Teknik Industri | Kelompok 35
+121. Meisya Dwi Putri | 2606738792 | Teknik Industri | Kelompok 52
+122. Mesaia Gamaliel Pakasi | 2606874895 | Teknik Industri | Kelompok 104
+123. Mohammad Nabil Arkananta | 2606874970 | Teknik Industri | Kelompok 44
+124. Mohammad Taqii Bagaskara | 2606874983 | Teknik Industri | Kelompok 19
+125. Mourin Mercylia Dewi Manullang | 2606854142 | Teknik Industri | Kelompok 105
+126. Muh. Afdhal Aguspamen | 2606874996 | Teknik Industri | Kelompok 56
+127. Muhammad Abid Alhakim | 2606738893 | Teknik Industri | Kelompok 39
+128. Muhammad Davin Abieza | 2606875185 | Teknik Industri | Kelompok 49
+129. Muhammad Fahri Athar | 2606875241 | Teknik Industri | Kelompok 83
+130. Muhammad Faishal Irsyad | 2606791583 | Teknik Industri | Kelompok 96
+131. Muhammad Farraz Bayuaji | 2606854205 | Teknik Industri | Kelompok 87
+132. Muhammad Farrel Alghozali | 2606791596 | Teknik Industri | Kelompok 74
+133. Muhammad Farrell Raif | 2606875323 | Teknik Industri | Kelompok 27
+134. Muhammad Fathir Arkan | 2606875342 | Teknik Industri | Kelompok 92
+135. Muhammad Hiro Izzataka | 2606875411 | Teknik Industri | Kelompok 97
+136. Muhammad Iffat Hafuza | 2606791601 | Teknik Industri | Kelompok 77
+137. Muhammad Naufalidzaki S | 2606875512 | Teknik Industri | Kelompok 46
+138. Muhammad Nayaka Adrianto | 2606875531 | Teknik Industri | Kelompok 96
+139. Muhammad Pradipa Lopan | 2606739082 | Teknik Industri | Kelompok 76
+140. Muhammad Raditya Nur Dzakiy | 2606791620 | Teknik Industri | Kelompok 24
+141. Muhammad Radya Ramaputra | 2606875563 | Teknik Industri | Kelompok 62
+142. Muhammad Raffi Alghazali | 2606875582 | Teknik Industri | Kelompok 25
+143. Muhammad Rayhan Ramadhan Noor | 2606791633 | Teknik Industri | Kelompok 37
+144. Muhammad Renato Abiyasa | 2606791646 | Teknik Industri | Kelompok 20
+145. Muhammad Tirmidzi | 2606739151 | Teknik Industri | Kelompok 105
+146. Muhammad Wafiq Marsal | 2606739164 | Teknik Industri | Kelompok 94
+147. Nabil Akram | 2606739196 | Teknik Industri | Kelompok 7
+148. Nabila Azzahra | 2606739201 | Teknik Industri | Kelompok 72
+149. Nabila Hasna Kamilia | 2606739214 | Teknik Industri | Kelompok 71
+150. Nadhifah Kiafa Mazaya | 2606791665 | Teknik Industri | Kelompok 100
+151. Nadia Azzahra Shandhika Putri | 2606739246 | Teknik Industri | Kelompok 21
+152. Nadia Felita Putri | 2606739252 | Teknik Industri | Kelompok 64
+153. Nadira Gustina Hariati | 2606739265 | Teknik Industri | Kelompok 88
+154. Naila Syahla | 2606739284 | Teknik Industri | Kelompok 90
+155. Najwa Maulida Zahara | 2606875834 | Teknik Industri | Kelompok 107
+156. Najwa Nissa Setiawan | 2606875840 | Teknik Industri | Kelompok 53
+157. Nandita Safiera Adrianti | 2606875866 | Teknik Industri | Kelompok 65
+158. Naufaldo Ahmad Elkarasjzi | 2606791671 | Teknik Industri | Kelompok 3
+159. Nayla Rahma Diana | 2606739321 | Teknik Industri | Kelompok 9
+160. Nayla Zhafira Andreza | 2606739334 | Teknik Industri | Kelompok 48
+161. Nisrina Nurul Hidayat | 2606791684 | Teknik Industri | Kelompok 84
+162. Nisrina Qurratu'ain | 2606854350 | Teknik Industri | Kelompok 72
+163. Pasha Aditya Fathan | 2606876175 | Teknik Industri | Kelompok 27
+164. Qeyshasha Gamma Chignica | 2606739441 | Teknik Industri | Kelompok 57
+165. Qimaia Mutiara Arta Kadang | 2606739454 | Teknik Industri | Kelompok 39
+166. Queena Azka Mazaya Sutikno | 2606791690 | Teknik Industri | Kelompok 31
+167. Raffa Ahyan Firdaus | 2606876332 | Teknik Industri | Kelompok 86
+168. Rafif Ibrahim Mahfid | 2606739492 | Teknik Industri | Kelompok 8
+169. Raifana Nurfairuz | 2606876383 | Teknik Industri | Kelompok 19
+170. Raka Aksa Faiz Anindya | 2606791702 | Teknik Industri | Kelompok 26
+171. Rania Aisha Putri Bantayan | 2606739504 | Teknik Industri | Kelompok 52
+172. Ravsya Dharma Hapsara | 2606791715 | Teknik Industri | Kelompok 1
+173. Rayhan Alif Abdurrahman | 2606791721 | Teknik Industri | Kelompok 84
+174. Raymond Jeffry Sumbayak | 2606876553 | Teknik Industri | Kelompok 47
+175. Rayya Amelia Putri Sahala | 2606791734 | Teknik Industri | Kelompok 32
+176. Renata Putri Larasati Purba | 2606876572 | Teknik Industri | Kelompok 63
+177. Retna Kencana Andi Rasyid | 2606876591 | Teknik Industri | Kelompok 89
+178. Revina Natasya Marito Sihombing | 2606791753 | Teknik Industri | Kelompok 80
+179. Reyhan Akbar Arifansyah | 2606876616 | Teknik Industri | Kelompok 56
+180. Reyna Amelia Budiman | 2606791766 | Teknik Industri | Kelompok 55
+181. Reynold Moses Manurung | 2606791772 | Teknik Industri | Kelompok 99
+182. Rifa Nurarifa | 2606739630 | Teknik Industri | Kelompok 9
+183. Rifqa Noor Halima | 2606739643 | Teknik Industri | Kelompok 21
+184. Roni Ebenezer Saputra Manongtong Hutahaean | 2606791791 | Teknik Industri | Kelompok 85
+185. Sabrina Mumtaza Lapasau | 2606876755 | Teknik Industri | Kelompok 22
+186. Salma Nur Asyifa | 2606876774 | Teknik Industri | Kelompok 37
+187. Salsabila | 2606739681 | Teknik Industri | Kelompok 2
+188. Salvador Aziz | 2606791803 | Teknik Industri | Kelompok 54
+189. Sanna Ulibasa Gultom | 2606791816 | Teknik Industri | Kelompok 22
+190. Savya Radianty Triyogo | 2606791822 | Teknik Industri | Kelompok 14
+191. Sherlyta Armydian Naffisya | 2606876875 | Teknik Industri | Kelompok 17
+192. Sheyla Yemima Sinambela | 2606791835 | Teknik Industri | Kelompok 10
+193. Simon Matthew Martua Halomoan Sinaga | 2606791841 | Teknik Industri | Kelompok 40
+194. Siti Aisha Faizura | 2606791854 | Teknik Industri | Kelompok 16
+195. Stevany Alfenda Manurung | 2606791860 | Teknik Industri | Kelompok 42
+196. Syakira Marsya Tarrifah | 2606791873 | Teknik Industri | Kelompok 41
+197. Tommy Hartono | 2606791886 | Teknik Industri | Kelompok 30
+198. Valentino Kenzie Hendrawan | 2606739864 | Teknik Industri | Kelompok 70
+199. Valzan Baruna Arkananta | 2606739870 | Teknik Industri | Kelompok 49
+200. Wilza Delaprilia | 2606739952 | Teknik Industri | Kelompok 100
+201. Yoan Patricia | 2606877120 | Teknik Industri | Kelompok 48
+202. Zahra Alifra Muliana | 2606877202 | Teknik Industri | Kelompok 62
+203. Zahra Charity Tanesia | 2606740020 | Teknik Industri | Kelompok 68
+
+=== DTK (Teknik Kimia / Teknik Bioproses) — Total: 175 mahasiswa ===
+1. Abdullah | 2606871930 | Teknik Bioproses | Kelompok 61
+2. Adinda Raisha Putri Pratama | 2606793134 | Teknik Bioproses | Kelompok 94
+3. Adlea Deanta Namine | 2606793140 | Teknik Bioproses | Kelompok 25
+4. Adly Rais Kasworo | 2606790750 | Teknik Kimia | Kelompok 49
+5. Admid Abid Amjad | 2606872006 | Teknik Kimia | Kelompok 53
+6. Adyatma Daris Nugroho | 2606790763 | Teknik Kimia | Kelompok 1
+7. Agha Arfa Riyadi | 2606872050 | Teknik Kimia | Kelompok 58
+8. Ahmad Dhaffa Zulkarnain | 2606736793 | Teknik Kimia | Kelompok 33
+9. Alexandra Yosephanie | 2606736875 | Teknik Bioproses | Kelompok 16
+10. Alyna Leticia Liemarsya | 2606736950 | Teknik Bioproses | Kelompok 91
+11. Amirah Khairunnisa Syahbidin | 2606894676 | Teknik Bioproses | Kelompok 100
+12. Anastasia Vidia Tikupasang | 2606790776 | Teknik Kimia | Kelompok 38
+13. Andi Muhammad Fachry Arief Al Muna | 2606737013 | Teknik Kimia | Kelompok 28
+14. Andrew Alexander Edward Kolibu | 2606853436 | Teknik Bioproses | Kelompok 102
+15. Annisa Zahra Arrayyansyah | 2606793153 | Teknik Bioproses | Kelompok 21
+16. Aqilah Taznazihah | 2606737096 | Teknik Kimia | Kelompok 22
+17. Ardana Izzan | 2606872441 | Teknik Kimia | Kelompok 41
+18. Aretha Aara Ayska | 2606793166 | Teknik Bioproses | Kelompok 104
+19. Aryo Faldiamar Rizky | 2606790800 | Teknik Kimia | Kelompok 77
+20. Athallah Renjiro Brata | 2606790813 | Teknik Kimia | Kelompok 18
+21. Athar Razzaq Alvaro | 2606737190 | Teknik Kimia | Kelompok 61
+22. Athaya Shaquille Mahardika | 2606793172 | Teknik Bioproses | Kelompok 48
+23. Athayya Keisha Antonieta | 2606872555 | Teknik Bioproses | Kelompok 26
+24. Audric Darrel Susilo | 2606872574 | Teknik Bioproses | Kelompok 60
+25. Aulia Azka Azh-zhafira | 2606790826 | Teknik Kimia | Kelompok 38
+26. Aulia Galuh Syaharani | 2606790832 | Teknik Kimia | Kelompok 63
+27. Aulia Kanza Azzahra | 2606737215 | Teknik Bioproses | Kelompok 9
+28. Aurellya Salsabilla Kamsi | 2606872605 | Teknik Bioproses | Kelompok 22
+29. Az Zahrah Izzah Fitriyah | 2606737240 | Teknik Kimia | Kelompok 75
+30. Azra Andi Fadhila | 2606872656 | Teknik Bioproses | Kelompok 78
+31. Bamantara Muhammad Hanif | 2606790845 | Teknik Kimia | Kelompok 39
+32. Batrisyia Amira | 2606737291 | Teknik Kimia | Kelompok 5
+33. Beta Liona Lofia | 2606737303 | Teknik Kimia | Kelompok 20
+34. Brigitta Kanira Odje | 2606737322 | Teknik Bioproses | Kelompok 89
+35. Calya Putri Ramadhani | 2606737341 | Teknik Kimia | Kelompok 32
+36. Catherine Bunga Anggita | 2606872832 | Teknik Kimia | Kelompok 2
+37. Chalesa Elmiya Ramanda | 2606737386 | Teknik Kimia | Kelompok 2
+38. Chalisya Hanasti Shawlaputri | 2606793185 | Teknik Bioproses | Kelompok 104
+39. Cheryl Azzahra Aqila | 2606872870 | Teknik Bioproses | Kelompok 107
+40. Chris Darren Imanuel | 2606790864 | Teknik Kimia | Kelompok 45
+41. Cornelis Cristian Rafael Binsar Tuangkoly | 2606737442 | Teknik Kimia | Kelompok 51
+42. Cyfanda Alifsya Noeraini Laksono | 2606790870 | Teknik Kimia | Kelompok 19
+43. Daffa Octora Vittorio | 2606872914 | Teknik Kimia | Kelompok 90
+44. Darius Anggada | 2606790883 | Teknik Kimia | Kelompok 34
+45. Delvin Santoso | 2606737530 | Teknik Kimia | Kelompok 4
+46. Deryl Hashif Mumtaz Rihanda | 2606873040 | Teknik Kimia | Kelompok 24
+47. Dharmawangsa Daffa Dwi Anggito | 2606873066 | Teknik Bioproses | Kelompok 92
+48. Elysia Fedora Tiaman | 2606737695 | Teknik Kimia | Kelompok 12
+49. Erni Listiyani | 2606873242 | Teknik Bioproses | Kelompok 68
+50. Evelyn | 2606737713 | Teknik Bioproses | Kelompok 56
+51. Evelyn Greysia | 2606737726 | Teknik Bioproses | Kelompok 37
+52. Fachry Reifandri Hairiman | 2606728614 | S1 Kls Internasional Teknik Metalurgi dan Material | Kelompok 75
+53. Faiz Rayyandani Cholikudin | 2606873375 | Teknik Bioproses | Kelompok 15
+54. Fani Althafun Nisa | 2606737770 | Teknik Bioproses | Kelompok 77
+55. Farel Fawaz | 2606873406 | Teknik Kimia | Kelompok 30
+56. Fathan Abdurrahman Hanif | 2606793191 | Teknik Bioproses | Kelompok 58
+57. Fathan Abizard Azzami | 2606873495 | Teknik Bioproses | Kelompok 13
+58. Fauzan Irsyad Priyambada | 2606873545 | Teknik Kimia | Kelompok 98
+59. Fida Qurrotu Aini | 2606790914 | Teknik Kimia | Kelompok 101
+60. Firyal Zalfa Aziza | 2606853801 | Teknik Bioproses | Kelompok 86
+61. Galan Fatih Gumelar | 2606737934 | Teknik Kimia | Kelompok 103
+62. Gelora Bumi Nusantara | 2606790920 | Teknik Kimia | Kelompok 46
+63. Gendis Khairun Nisa' | 2606790933 | Teknik Kimia | Kelompok 90
+64. Genesis Tunggal Panaluan Sianipar | 2606853865 | Teknik Kimia | Kelompok 31
+65. Gilbert Julius Silaen | 2606738003 | Teknik Kimia | Kelompok 45
+66. Gilbert Valentino | 2606738016 | Teknik Kimia | Kelompok 62
+67. Gomgom Abi Panjaitan | 2606738035 | Teknik Kimia | Kelompok 57
+68. Grace Anastasya Prawira | 2606738041 | Teknik Kimia | Kelompok 79
+69. Helena Natasha Gunawan | 2606873923 | Teknik Kimia | Kelompok 83
+70. Ibnu Rafi'i | 2606790946 | Teknik Kimia | Kelompok 98
+71. Imam Azzuhri | 2606738281 | Teknik Kimia | Kelompok 96
+72. Irsyad Adyasta Hermawan | 2606790952 | Teknik Kimia | Kelompok 73
+73. Jahrotun Nabilah | 2606874024 | Teknik Kimia | Kelompok 21
+74. Jasmine Aileen Nurshayna Rahma | 2606793203 | Teknik Bioproses | Kelompok 99
+75. Jehaan Falisha Putri | 2606853953 | Teknik Kimia | Kelompok 30
+76. Jeremy Beltzasar | 2606874075 | Teknik Kimia | Kelompok 29
+77. Jonathan Thamsil | 2606790965 | Teknik Kimia | Kelompok 34
+78. Karen Abigail Tambunan | 2606874200 | Teknik Bioproses | Kelompok 59
+79. Kei Fabio Chandra Wisesa | 2606790971 | Teknik Kimia | Kelompok 84
+80. Keisha Azzahra Sakhi | 2606790984 | Teknik Kimia | Kelompok 93
+81. Kemal Ibrahim Timur | 2606874314 | Teknik Kimia | Kelompok 36
+82. Keysha Ramadhani | 2606854016 | Teknik Kimia | Kelompok 79
+83. Khadiza Fathiya Zahra | 2606854035 | Teknik Kimia | Kelompok 54
+84. Khansa Fathina | 2606854054 | Teknik Kimia | Kelompok 46
+85. Kiana Brita Klarissa | 2606738565 | Teknik Kimia | Kelompok 50
+86. Klara Maydhira Andrieana | 2606738571 | Teknik Bioproses | Kelompok 4
+87. Kleinalden Aaroncisco Dewidiyanto | 2606738584 | Teknik Kimia | Kelompok 40
+88. Lakeisha Nashita | 2606874491 | Teknik Kimia | Kelompok 71
+89. Lavina Areta Ignatiauli Sihombing | 2606790990 | Teknik Kimia | Kelompok 23
+90. Lintang Cahyaning Widodari | 2606791002 | Teknik Kimia | Kelompok 52
+91. Loverto Neo Pangaribuan | 2606874554 | Teknik Bioproses | Kelompok 82
+92. Lutfiah Khairunnisa Kurnia | 2606874610 | Teknik Kimia | Kelompok 72
+93. M Andrea Yasid Usamah | 2606874623 | Teknik Kimia | Kelompok 52
+94. M. Jibril Rachman Al Farisi | 2606874680 | Teknik Kimia | Kelompok 47
+95. Mahendra Rahmantyo Pradipta | 2606793222 | Teknik Bioproses | Kelompok 3
+96. Marfa Azkia | 2606874756 | Teknik Bioproses | Kelompok 83
+97. Maryam Aisyah | 2606738760 | Teknik Bioproses | Kelompok 7
+98. Mayoree Farrica Fayza Azhari | 2606874812 | Teknik Bioproses | Kelompok 20
+99. Michelle Evelyn Natalie Putri Sibarani | 2606874926 | Teknik Kimia | Kelompok 28
+100. Moreno Ivano | 2606791015 | Teknik Kimia | Kelompok 51
+101. Muhammad Adli Ramadhan | 2606875065 | Teknik Kimia | Kelompok 70
+102. Muhammad Bima Soegianto Hatta | 2606738956 | Teknik Bioproses | Kelompok 27
+103. Muhammad Fathan Nail | 2606875336 | Teknik Bioproses | Kelompok 97
+104. Muhammad Ghaizan Akhtar | 2606875374 | Teknik Kimia | Kelompok 9
+105. Muhammad Ismail. A | 2606854211 | Teknik Kimia | Kelompok 36
+106. Muhammad Nabil Hilmi Arofy | 2606739076 | Teknik Kimia | Kelompok 86
+107. Muhammad Naufal Adiyatma | 2606793254 | Teknik Bioproses | Kelompok 84
+108. Muhammad Ramadhan Soedewo | 2606854256 | Teknik Bioproses | Kelompok 8
+109. Muhammad Riva Albani | 2606791021 | Teknik Kimia | Kelompok 94
+110. Muhammad Syahjehan | 2606739132 | Teknik Kimia | Kelompok 81
+111. Muhammad Syathir Azzamul Aswan Al-khathiri | 2606793260 | Teknik Bioproses | Kelompok 81
+112. Mustafa Kemal Pasha | 2606791040 | Teknik Kimia | Kelompok 29
+113. Nabil Annawir Falaq | 2606875733 | Teknik Kimia | Kelompok 85
+114. Nabil Rahmanda | 2606791053 | Teknik Kimia | Kelompok 13
+115. Nabilah | 2606875746 | Teknik Kimia | Kelompok 59
+116. Nadia Fathia | 2606875765 | Teknik Bioproses | Kelompok 63
+117. Nadzlah Zahirah Khansa | 2606875784 | Teknik Kimia | Kelompok 43
+118. Najwa Adli Raychana Turmudzi | 2606791066 | Teknik Kimia | Kelompok 67
+119. Nandia Raisya Adhisty | 2606739290 | Teknik Kimia | Kelompok 16
+120. Nasywa Zivana Humaira | 2606739302 | Teknik Kimia | Kelompok 74
+121. Nathanael Jacob Simbolon | 2606854312 | Teknik Kimia | Kelompok 62
+122. Naufal Fauzan | 2606791072 | Teknik Kimia | Kelompok 43
+123. Naura Auliya | 2606854331 | Teknik Kimia | Kelompok 26
+124. Nayla Syafa Kamila | 2606875973 | Teknik Bioproses | Kelompok 88
+125. Nazli Faathirul Haq | 2606875986 | Teknik Bioproses | Kelompok 40
+126. Nicholaus Christian Andhika | 2606876023 | Teknik Kimia | Kelompok 96
+127. Nicolas Alexander | 2606791085 | Teknik Kimia | Kelompok 41
+128. Nicolas Oliver Kyan Setiadi | 2606739366 | Teknik Bioproses | Kelompok 18
+129. Nicolas William Pramudita | 2606791091 | Teknik Kimia | Kelompok 56
+130. Nikeisha Anindita Salma | 2606739372 | Teknik Kimia | Kelompok 106
+131. Niswah Qonita Dinayyah | 2606854363 | Teknik Bioproses | Kelompok 102
+132. Noeletta Febe Susilo | 2606876080 | Teknik Bioproses | Kelompok 17
+133. Pradipta Dimas Fadhilah | 2606876206 | Teknik Kimia | Kelompok 7
+134. Putri Larasati | 2606791103 | Teknik Kimia | Kelompok 105
+135. Radifan Ahmad Siregar | 2606876250 | Teknik Kimia | Kelompok 87
+136. Raditya Aga Azkarnaen | 2606791116 | Teknik Kimia | Kelompok 25
+137. Raditya Putra Nugraha | 2606876263 | Teknik Kimia | Kelompok 47
+138. Rafif Ihsan Narendra | 2606876364 | Teknik Kimia | Kelompok 54
+139. Raidah Azmi Shabira | 2606876370 | Teknik Kimia | Kelompok 99
+140. Raihanna Azzahra Rizanul | 2606876414 | Teknik Bioproses | Kelompok 71
+141. Raisah Muna | 2606793286 | Teknik Bioproses | Kelompok 76
+142. Raissa Andhini | 2606876420 | Teknik Kimia | Kelompok 14
+143. Rakha Aditya Hartono | 2606876452 | Teknik Kimia | Kelompok 65
+144. Rakha Atharahman Donovan | 2606791122 | Teknik Kimia | Kelompok 88
+145. Ramdhan Fahrani Adam | 2606876502 | Teknik Kimia | Kelompok 35
+146. Rasyla Shara Sitanggang | 2606876540 | Teknik Bioproses | Kelompok 31
+147. Regina Vanya Nalinka | 2606791135 | Teknik Kimia | Kelompok 1
+148. Rembulan Hidayatul Fitri | 2606791141 | Teknik Kimia | Kelompok 12
+149. Renzo Athila Richmy | 2606876585 | Teknik Kimia | Kelompok 6
+150. Rivaldo | 2606791154 | Teknik Kimia | Kelompok 24
+151. Ryan Rana | 2606793292 | Teknik Bioproses | Kelompok 69
+152. Sahlan Hamizan | 2606876761 | Teknik Kimia | Kelompok 80
+153. Salma Nabillah | 2606739675 | Teknik Bioproses | Kelompok 64
+154. Salsabila Vanya Arifin | 2606876793 | Teknik Bioproses | Kelompok 14
+155. Sesilia Rosari Gunardi | 2606876843 | Teknik Kimia | Kelompok 55
+156. Shazia Trina'ilah Madinariyanthi | 2606739712 | Teknik Kimia | Kelompok 107
+157. Stuart Sergio Maki | 2606739750 | Teknik Kimia | Kelompok 65
+158. Sulkhan Syech Suryo Negoro | 2606876894 | Teknik Kimia | Kelompok 95
+159. Sulthan Afif Nouri | 2606793304 | Teknik Bioproses | Kelompok 44
+160. Syabila Nayyaraini Davelia | 2606876912 | Teknik Bioproses | Kelompok 76
+161. Thalita Rafifa Arge | 2606739800 | Teknik Bioproses | Kelompok 33
+162. Therresia Rotua Volkamo Nasution | 2606876995 | Teknik Bioproses | Kelompok 93
+163. Usamah Shaddik Bagdadi | 2606877026 | Teknik Bioproses | Kelompok 42
+164. Valencia Audra Sumito | 2606854602 | Teknik Kimia | Kelompok 5
+165. Vania Putri Elysia | 2606793310 | Teknik Bioproses | Kelompok 23
+166. Vilya Melysha Liling | 2606739914 | Teknik Kimia | Kelompok 89
+167. Warren Moses Tjia | 2606791160 | Teknik Kimia | Kelompok 11
+168. Winda Pasaribu | 2606877096 | Teknik Kimia | Kelompok 92
+169. Yasmin Rhaina Azmy | 2606877114 | Teknik Bioproses | Kelompok 66
+170. Yemima Sylva Kusumaningrum | 2606791173 | Teknik Kimia | Kelompok 10
+171. Yeremia Genichiro Baringin Tamora Panjaitan | 2606793323 | Teknik Bioproses | Kelompok 8
+172. Zahraty Shafa Salsabil | 2606740033 | Teknik Bioproses | Kelompok 63
+173. Zakwan Taqiyya Lubab | 2606740046 | Teknik Kimia | Kelompok 103
+174. Zhaviya Alma Tsamara | 2606793336 | Teknik Bioproses | Kelompok 69
+175. Zulia Hanim Permatahati | 2606791186 | Teknik Kimia | Kelompok 82
+
+=== DTM (Teknik Mesin / Teknik Perkapalan) — Total: 259 mahasiswa ===
+1. Abdurrosyid Kurniawan | 2606792264 | Teknik Perkapalan | Kelompok 25
+2. Abid Al Bahy Fitzmuslim | 2606736686 | Teknik Mesin | Kelompok 21
+3. Abiyoso Bintang Ibrahim | 2606788935 | Teknik Mesin | Kelompok 94
+4. Abyan Arrasyid | 2606736704 | Teknik Mesin | Kelompok 29
+5. Ade Sandi Al-kautsar | 2606736723 | Teknik Perkapalan | Kelompok 24
+6. Aedrian Khaidarkarrar Hadhyan | 2606872044 | Teknik Perkapalan | Kelompok 43
+7. Afif Alauddin Azhar | 2606788941 | Teknik Mesin | Kelompok 97
+8. Ahmad Balyan Bahtunnazar | 2606736780 | Teknik Mesin | Kelompok 31
+9. Ahmad Derryl Al Khayru | 2606872082 | Teknik Perkapalan | Kelompok 70
+10. Ahmad Hisbulloh Lubis | 2606792270 | Teknik Perkapalan | Kelompok 84
+11. Aji Danielo | 2606872126 | Teknik Perkapalan | Kelompok 14
+12. Aji Jiwo Al Sandri | 2606792283 | Teknik Perkapalan | Kelompok 71
+13. Akram Ziyad Al Fajri | 2606736830 | Teknik Mesin | Kelompok 61
+14. Albie Dewa Praseptyo | 2606872145 | Teknik Mesin | Kelompok 58
+15. Alfara Vianty Wibisono | 2606736881 | Teknik Mesin | Kelompok 84
+16. Ali Akmal | 2606792296 | Teknik Perkapalan | Kelompok 72
+17. Almakyla Rezkiano Fahmida Humaira | 2606736906 | Teknik Mesin | Kelompok 28
+18. Alrizta Winant Maliki Herdyanto | 2606736931 | Teknik Mesin | Kelompok 13
+19. Alvin Firmansyah Susiady | 2606788954 | Teknik Mesin | Kelompok 102
+20. Alvin Raditya Sadewa | 2606872252 | Teknik Perkapalan | Kelompok 32
+21. Alvino Haikal | 2606872265 | Teknik Perkapalan | Kelompok 16
+22. Alya Nur Salsabila | 2606736944 | Teknik Perkapalan | Kelompok 87
+23. Ameera Khalis Thahira | 2606736976 | Teknik Perkapalan | Kelompok 3
+24. Amelia Dwi Yuniati | 2606853410 | Teknik Mesin | Kelompok 42
+25. Amirudin Adzan | 2606872321 | Teknik Mesin | Kelompok 41
+26. Ananda Alif Balgarizki | 2606872334 | Teknik Perkapalan | Kelompok 101
+27. Andi Ahmad Yusuf | 2606872372 | Teknik Perkapalan | Kelompok 1
+28. Andika Galuh Pramudya | 2606872403 | Teknik Perkapalan | Kelompok 3
+29. Andrew Reynaldo Wong | 2606853442 | Teknik Mesin | Kelompok 52
+30. Aqilah Dzatur Rahma | 2606792301 | Teknik Perkapalan | Kelompok 80
+31. Arasyihayko Puti Arifia | 2606737101 | Teknik Mesin | Kelompok 67
+32. Arfa Cahya Sangkala | 2606737120 | Teknik Mesin | Kelompok 79
+33. Arief Rahman Hakim | 2606872460 | Teknik Mesin | Kelompok 7
+34. Arkinersta Asatiasto Utomo | 2606788960 | Teknik Mesin | Kelompok 49
+35. Arya Abdian Muhammad | 2606737184 | Teknik Mesin | Kelompok 60
+36. Aryadiraja Anargya | 2606872504 | Teknik Mesin | Kelompok 19
+37. Athalla Dheandra Aulia | 2606872536 | Teknik Mesin | Kelompok 44
+38. Atharizz Muhammad Revaelnino Ginanjar | 2606788973 | Teknik Mesin | Kelompok 51
+39. Atta Rafif Ibrahim | 2606788986 | Teknik Mesin | Kelompok 82
+40. Attariz Putra Aditya | 2606788992 | Teknik Mesin | Kelompok 97
+41. Austin Khairiah | 2606853524 | Teknik Perkapalan | Kelompok 7
+42. Azizah Regina Putri | 2606737253 | Teknik Perkapalan | Kelompok 75
+43. Azkia Nazma Bilqis | 2606853530 | Teknik Perkapalan | Kelompok 53
+44. Bagas Adi Wicaksono Al Rasyid | 2606737272 | Teknik Mesin | Kelompok 103
+45. Bagaskara Ahdhiapradana | 2606872675 | Teknik Mesin | Kelompok 43
+46. Bagus Aditya Nugraha | 2606789010 | Teknik Mesin | Kelompok 63
+47. Bondan Wijaya Setiawan | 2606853543 | Teknik Mesin | Kelompok 102
+48. Brian Manuel Bernardiputra | 2606872750 | Teknik Mesin | Kelompok 28
+49. Cakra Dharma Satya Rohaedi | 2606872800 | Teknik Perkapalan | Kelompok 48
+50. Callula Najwa Wicaksono | 2606737335 | Teknik Perkapalan | Kelompok 100
+51. Carlz Hasselblad Prastowo | 2606737354 | Teknik Mesin | Kelompok 106
+52. Christian Daniel Purba | 2606853606 | Teknik Perkapalan | Kelompok 34
+53. Christian Edward Siagian | 2606737392 | Teknik Mesin | Kelompok 6
+54. Christopher Noldy Samosir | 2606789023 | Teknik Mesin | Kelompok 14
+55. Daniel Roganda Samosir | 2606789036 | Teknik Mesin | Kelompok 30
+56. Daud Arie Azis | 2606792314 | Teknik Perkapalan | Kelompok 65
+57. Dava Maulana Kandias | 2606737493 | Teknik Mesin | Kelompok 86
+58. David Christiano Susilo | 2606789042 | Teknik Mesin | Kelompok 83
+59. David Louis Sie | 2606737505 | Teknik Mesin | Kelompok 20
+60. Delvi Teresya Numberi | 2606737524 | Teknik Mesin | Kelompok 10
+61. Denis Lumbantobing | 2606873015 | Teknik Mesin | Kelompok 89
+62. Dennis Alana Nugroho | 2606737556 | Teknik Perkapalan | Kelompok 57
+63. Dhafi Raja Arzaq Mahardilima | 2606792320 | Teknik Perkapalan | Kelompok 96
+64. Dimas Oktavian | 2606792333 | Teknik Perkapalan | Kelompok 79
+65. Dimas Raditya Abryan Bramantyo | 2606873122 | Teknik Perkapalan | Kelompok 22
+66. Dosrim Tirta Natio Simanjuntak | 2606853682 | Teknik Perkapalan | Kelompok 93
+67. Dzaki Ramzi Azizi | 2606873160 | Teknik Mesin | Kelompok 42
+68. Eghi Azhar Andani | 2606873204 | Teknik Perkapalan | Kelompok 103
+69. Ellen Patricia | 2606737650 | Teknik Mesin | Kelompok 77
+70. Elodya Thariqhsyakir Mumpuni Putri | 2606737676 | Teknik Perkapalan | Kelompok 4
+71. Fadli Nur Hidayat | 2606853726 | Teknik Perkapalan | Kelompok 95
+72. Fahrezi Alfahmi | 2606789055 | Teknik Mesin | Kelompok 84
+73. Faiqa Izzihni Shafin | 2606792346 | Teknik Perkapalan | Kelompok 35
+74. Faiqi Ahmad Subarma | 2606789061 | Teknik Mesin | Kelompok 87
+75. Fakhri Athallah Ramadhan | 2606789074 | Teknik Mesin | Kelompok 32
+76. Farras Ananda Arifian | 2606789093 | Teknik Mesin | Kelompok 39
+77. Farrel Fahrezi | 2606873444 | Teknik Mesin | Kelompok 51
+78. Fathin Arkan Taqi | 2606737865 | Teknik Mesin | Kelompok 62
+79. Fathir | 2606789105 | Teknik Mesin | Kelompok 107
+80. Fathir Islami Abrar | 2606873513 | Teknik Perkapalan | Kelompok 85
+81. Fathir Kimi Ghazi Budiman | 2606789111 | Teknik Mesin | Kelompok 105
+82. Faunia Maharani Dewi | 2606853751 | Teknik Mesin | Kelompok 17
+83. Fauzan Al Ghifari Sugiana | 2606737871 | Teknik Mesin | Kelompok 107
+84. Fawwaz Belkhir Arsyad | 2606853764 | Teknik Mesin | Kelompok 31
+85. Fayyadhani Dzaki Winesta | 2606873551 | Teknik Perkapalan | Kelompok 47
+86. Ferdian Rafif | 2606853770 | Teknik Mesin | Kelompok 13
+87. Fidel Raya Rasendriya | 2606737890 | Teknik Perkapalan | Kelompok 101
+88. Filemon Natanael Pakpahan | 2606873614 | Teknik Mesin | Kelompok 41
+89. Fillah Mahija Hadhiant Saputro | 2606853796 | Teknik Perkapalan | Kelompok 2
+90. Fina Almira Navaliani | 2606737915 | Teknik Perkapalan | Kelompok 101
+91. Gabriel Asima Ramakandra Tambunan | 2606853833 | Teknik Mesin | Kelompok 77
+92. Ganang Zhafran Setyoga | 2606737940 | Teknik Mesin | Kelompok 76
+93. Garel Ardika Putra Pratama | 2606853852 | Teknik Perkapalan | Kelompok 61
+94. Gerrard Michello Partogi Siahaan | 2606792352 | Teknik Perkapalan | Kelompok 55
+95. Gezkha Fatih Syahalan | 2606853871 | Teknik Perkapalan | Kelompok 69
+96. Ghefirah Gladysa | 2606737991 | Teknik Perkapalan | Kelompok 8
+97. Gilang Bondan Hadiwibisono | 2606792365 | Teknik Perkapalan | Kelompok 69
+98. Glenn Lowell Sihar Marpaung | 2606873791 | Teknik Mesin | Kelompok 14
+99. Gustaf Johan Sinaga | 2606873822 | Teknik Perkapalan | Kelompok 23
+100. Hafizh Aulia Umam | 2606738086 | Teknik Mesin | Kelompok 91
+101. Haikal Kamal | 2606738092 | Teknik Perkapalan | Kelompok 95
+102. Hamam Ardell Pratama Prabhaswara | 2606873854 | Teknik Mesin | Kelompok 98
+103. Handaru Hilmi Pratama | 2606789124 | Teknik Mesin | Kelompok 57
+104. Handika Alif Adriansyah | 2606789130 | Teknik Mesin | Kelompok 38
+105. Hangga Reksa Anandi | 2606873886 | Teknik Perkapalan | Kelompok 23
+106. Hasna Zakiya Hanafi | 2606789143 | Teknik Mesin | Kelompok 10
+107. Hazel Shidqi Rahzade | 2606792371 | Teknik Perkapalan | Kelompok 82
+108. Hefizha Eqila Adhwa | 2606873910 | Teknik Mesin | Kelompok 56
+109. Hizkia Kirana Immanuel Butar Butar | 2606792384 | Teknik Perkapalan | Kelompok 45
+110. Ianuno Atar Karim | 2606738243 | Teknik Perkapalan | Kelompok 30
+111. Ihsan Hanif Daulay | 2606789156 | Teknik Mesin | Kelompok 21
+112. Ilman Fuady | 2606789162 | Teknik Mesin | Kelompok 27
+113. Inggrid Cyone Junia Hutabarat | 2606792390 | Teknik Perkapalan | Kelompok 40
+114. Ishaq Acchilles An Najm | 2606789175 | Teknik Mesin | Kelompok 51
+115. Izaac Wilson Tamba | 2606874005 | Teknik Perkapalan | Kelompok 53
+116. Izzan Radhindi Satria | 2606789181 | Teknik Mesin | Kelompok 62
+117. Jason Immanuel Putra Wardono | 2606792402 | Teknik Perkapalan | Kelompok 94
+118. Jessica Nethania Chandra | 2606738344 | Teknik Perkapalan | Kelompok 72
+119. Jonathan Andira Sidauruk | 2606789194 | Teknik Mesin | Kelompok 11
+120. Jonathan Andrew Cahya | 2606874125 | Teknik Mesin | Kelompok 25
+121. Jonathan Baldwin Tambun | 2606789206 | Teknik Mesin | Kelompok 33
+122. Jonathan Hermawan | 2606874131 | Teknik Mesin | Kelompok 56
+123. Joshua Andita Brilyanto | 2606874144 | Teknik Mesin | Kelompok 23
+124. Josua Hamonangan | 2606874150 | Teknik Mesin | Kelompok 36
+125. Jovan Menard Siagian | 2606874163 | Teknik Perkapalan | Kelompok 106
+126. Juan Surya Asido Delwana | 2606874176 | Teknik Mesin | Kelompok 9
+127. Kemal Al Ghifari | 2606738464 | Teknik Mesin | Kelompok 29
+128. Kent Christian Kartawiria | 2606738470 | Teknik Mesin | Kelompok 6
+129. Kenundan Ardanareswari Mukse | 2606738483 | Teknik Mesin | Kelompok 18
+130. Kevin Christian Wijaya | 2606789212 | Teknik Mesin | Kelompok 94
+131. Kevin Fanuel Pasaribu | 2606792415 | Teknik Perkapalan | Kelompok 97
+132. Keysha Aida Alieka Denaya | 2606738514 | Teknik Perkapalan | Kelompok 33
+133. Kezia Deo Gratia Sinaga | 2606874371 | Teknik Mesin | Kelompok 17
+134. Khairi Nasher | 2606792421 | Teknik Perkapalan | Kelompok 65
+135. Khannavarro Maulana Elfawwaz | 2606854041 | Teknik Mesin | Kelompok 59
+136. Levina Indri Avisa | 2606874535 | Teknik Perkapalan | Kelompok 68
+137. Lidya Naomi Maharani | 2606792434 | Teknik Perkapalan | Kelompok 99
+138. Lucky Satrio Khadavi Susilo | 2606874573 | Teknik Mesin | Kelompok 71
+139. M Slamet Riyadi | 2606874655 | Teknik Perkapalan | Kelompok 8
+140. M. Defa Leggy Lakina Effendi | 2606792440 | Teknik Perkapalan | Kelompok 31
+141. M. Miftah Rizqi | 2606738703 | Teknik Mesin | Kelompok 48
+142. M. Royvan Rahadian | 2606874693 | Teknik Mesin | Kelompok 15
+143. Mahmuddin Hafidz Chairuzzady | 2606789225 | Teknik Mesin | Kelompok 13
+144. Marlo Valerio Orleandry | 2606738735 | Teknik Mesin | Kelompok 40
+145. Marsya Rania Averillia | 2606738754 | Teknik Perkapalan | Kelompok 75
+146. Mawar Dwina Dewantari | 2606789231 | Teknik Mesin | Kelompok 28
+147. Michael Manullang | 2606738804 | Teknik Mesin | Kelompok 100
+148. Mikaella Nashywa Attaya | 2606738810 | Teknik Mesin | Kelompok 83
+149. Moch. Mufti Nazar Al Ghofar | 2606792466 | Teknik Perkapalan | Kelompok 55
+150. Mochammad Gheysar Pramatya Ardiantoro | 2606738836 | Teknik Mesin | Kelompok 104
+151. Mohammad Danish Akhtar | 2606792472 | Teknik Perkapalan | Kelompok 85
+152. Mohammad Fiqri Permadiana | 2606854136 | Teknik Perkapalan | Kelompok 54
+153. Mudhiul Faazza A'la Darjat | 2606854155 | Teknik Perkapalan | Kelompok 82
+154. Muhamad Hatta Firdaus Butar Butar | 2606875014 | Teknik Mesin | Kelompok 79
+155. Muhammad Abizar Al Farizi Priyatna | 2606854161 | Teknik Perkapalan | Kelompok 52
+156. Muhammad Akbar Al Arsyah | 2606789244 | Teknik Mesin | Kelompok 3
+157. Muhammad Al Farabi Hartono | 2606789250 | Teknik Mesin | Kelompok 92
+158. Muhammad Al Farissi | 2606875090 | Teknik Perkapalan | Kelompok 66
+159. Muhammad Ali Akbar Palinrungi. | 2606738905 | Teknik Mesin | Kelompok 78
+160. Muhammad Alsyahreza Ritonga | 2606875102 | Teknik Perkapalan | Kelompok 57
+161. Muhammad Altamis Jibran | 2606789263 | Teknik Mesin | Kelompok 78
+162. Muhammad Artiorinu Herlito | 2606792485 | Teknik Perkapalan | Kelompok 59
+163. Muhammad Athallah Budiman | 2606875140 | Teknik Mesin | Kelompok 8
+164. Muhammad Athar Agitama | 2606875153 | Teknik Perkapalan | Kelompok 5
+165. Muhammad Athar Raidisa | 2606789276 | Teknik Mesin | Kelompok 95
+166. Muhammad Aulia Rahman | 2606738930 | Teknik Mesin | Kelompok 33
+167. Muhammad Azraqi Al Khawarizmi | 2606738943 | Teknik Perkapalan | Kelompok 68
+168. Muhammad Bimo Ariestiandi | 2606792491 | Teknik Perkapalan | Kelompok 2
+169. Muhammad Daffa Athallah | 2606788651 | S1 Teknik Sipil | Kelompok 93
+170. Muhammad Danish Nurdin | 2606789295 | Teknik Mesin | Kelompok 85
+171. Muhammad Dhabit Athari | 2606875191 | Teknik Mesin | Kelompok 80
+172. Muhammad Dhabith Al Khairi | 2606875203 | Teknik Mesin | Kelompok 4
+173. Muhammad Dzaki Al Azri | 2606792503 | Teknik Perkapalan | Kelompok 81
+174. Muhammad Fahry Habibi | 2606875260 | Teknik Mesin | Kelompok 24
+175. Muhammad Faiq Akram | 2606792516 | Teknik Perkapalan | Kelompok 49
+176. Muhammad Faisal Akbar | 2606875273 | Teknik Mesin | Kelompok 26
+177. Muhammad Fakhri Rasyad | 2606789300 | Teknik Mesin | Kelompok 88
+178. Muhammad Fakhri Tsani Alfarisyi | 2606875286 | Teknik Mesin | Kelompok 40
+179. Muhammad Fitrah Nabil Al Hakim | 2606738994 | Teknik Mesin | Kelompok 18
+180. Muhammad Ghazali Abdurrahman Adhyaksa Gempita | 2606739006 | Teknik Mesin | Kelompok 100
+181. Muhammad Hafi Rizqi Firdaus | 2606739031 | Teknik Mesin | Kelompok 35
+182. Muhammad Hafid Muzaki | 2606875393 | Teknik Mesin | Kelompok 73
+183. Muhammad Husein | 2606792522 | Teknik Perkapalan | Kelompok 90
+184. Muhammad Izzat Rafi' Anaqi | 2606854224 | Teknik Perkapalan | Kelompok 61
+185. Muhammad Javas Al Huda | 2606875430 | Teknik Perkapalan | Kelompok 88
+186. Muhammad Kaisan Uzhma Tukhan | 2606875443 | Teknik Mesin | Kelompok 60
+187. Muhammad Khansa Rasyad Pradana | 2606875456 | Teknik Mesin | Kelompok 15
+188. Muhammad Lutfi Risman | 2606875462 | Teknik Mesin | Kelompok 22
+189. Muhammad Raffa Hadiyan | 2606875576 | Teknik Mesin | Kelompok 75
+190. Muhammad Rafid Musyaffa | 2606789326 | Teknik Mesin | Kelompok 90
+191. Muhammad Rafli Dhanazi | 2606875600 | Teknik Mesin | Kelompok 29
+192. Muhammad Rasya Fairus | 2606792541 | Teknik Perkapalan | Kelompok 62
+193. Muhammad Rizki | 2606875632 | Teknik Perkapalan | Kelompok 2
+194. Muhammad Rizki Al Hadani | 2606875645 | Teknik Perkapalan | Kelompok 15
+195. Muhammad Sheva Zuhra | 2606792554 | Teknik Perkapalan | Kelompok 81
+196. Muhammad Zaidan Syafei | 2606875701 | Teknik Perkapalan | Kelompok 50
+197. Muhammad Zhafran Tsaqif | 2606739170 | Teknik Perkapalan | Kelompok 34
+198. Naufal Dafa Haidar | 2606789332 | Teknik Mesin | Kelompok 20
+199. Naufal Fadhillah | 2606854325 | Teknik Mesin | Kelompok 73
+200. Naufal Humaidi Kamil | 2606789345 | Teknik Mesin | Kelompok 66
+201. Naura Ervianita | 2606792560 | Teknik Perkapalan | Kelompok 98
+202. Nayaka Arkana Mahya Wisesa | 2606854344 | Teknik Perkapalan | Kelompok 81
+203. Nehemia Ekinisura Bangun | 2606789351 | Teknik Mesin | Kelompok 38
+204. Nesha Aurelia Narisha | 2606739340 | Teknik Perkapalan | Kelompok 64
+205. Noel Fhilippe Simatupang | 2606739385 | Teknik Perkapalan | Kelompok 26
+206. Noell Raymon Putra Simamora | 2606854376 | Teknik Mesin | Kelompok 92
+207. Pandawa Lima Barimbing | 2606876130 | Teknik Mesin | Kelompok 104
+208. Pandu Maulana | 2606739403 | Teknik Perkapalan | Kelompok 12
+209. Panji Bintang Radityo | 2606876162 | Teknik Mesin | Kelompok 91
+210. Panji Kusuma | 2606739416 | Teknik Perkapalan | Kelompok 48
+211. Pasha Farabi Azzikri | 2606876181 | Teknik Mesin | Kelompok 67
+212. Pavitya Riama Daradinanti Napitupulu | 2606792573 | Teknik Perkapalan | Kelompok 46
+213. Ra'id Ahmad Zafir | 2606739473 | Teknik Mesin | Kelompok 35
+214. Rafa Athallah Kayno | 2606789370 | Teknik Mesin | Kelompok 54
+215. Rafaditya Fari Sutanto | 2606792586 | Teknik Perkapalan | Kelompok 64
+216. Rafael Sijabat | 2606789383 | Teknik Mesin | Kelompok 11
+217. Rafi Gajendra Niranda | 2606876345 | Teknik Mesin | Kelompok 9
+218. Rahma Aura Syifa | 2606792592 | Teknik Perkapalan | Kelompok 19
+219. Raihan Egi Ramadhan | 2606876396 | Teknik Mesin | Kelompok 99
+220. Rakha Daivanino | 2606876471 | Teknik Perkapalan | Kelompok 12
+221. Rakha Wicaksono | 2606789396 | Teknik Mesin | Kelompok 86
+222. Rakha Widyadhana | 2606789401 | Teknik Mesin | Kelompok 45
+223. Ralph Edward Halomoan | 2606789414 | Teknik Mesin | Kelompok 1
+224. Randy Fayruz Thohari | 2606876515 | Teknik Mesin | Kelompok 74
+225. Rashad Chalis Budimansyah | 2606739523 | Teknik Mesin | Kelompok 12
+226. Rasya Haikal Riyadi | 2606876521 | Teknik Mesin | Kelompok 74
+227. Rayyan Hakim Wahyudianto | 2606739555 | Teknik Perkapalan | Kelompok 50
+228. Reson Noah Timnata | 2606789420 | Teknik Mesin | Kelompok 46
+229. Reyhan Prayoga Ramadhansyah | 2606876622 | Teknik Mesin | Kelompok 58
+230. Reyner Aziz Sulistyardi | 2606789433 | Teknik Mesin | Kelompok 64
+231. Rheno Al Imanu Rahman | 2606739593 | Teknik Perkapalan | Kelompok 59
+232. Ridhwan Firdaus | 2606854496 | Teknik Mesin | Kelompok 83
+233. Riffat Munawar | 2606854501 | Teknik Mesin | Kelompok 15
+234. Rifki Althafvista Wibisono | 2606876654 | Teknik Mesin | Kelompok 27
+235. Rizqullah Athar Wishsiaputra | 2606792604 | Teknik Perkapalan | Kelompok 39
+236. Robbi Muhammad Rafi | 2606876723 | Teknik Perkapalan | Kelompok 50
+237. Satria Alfahrezi Setiawan | 2606792610 | Teknik Perkapalan | Kelompok 96
+238. Stepanus Panjaitan | 2606739744 | Teknik Mesin | Kelompok 37
+239. Steven Adrian Auw | 2606780056 | S1 Kls Internasional Teknik Mesin | Kelompok 58
+240. Steven Adrian Auw | 2606780056 | S1 Kls Internasional Teknik Mesin | Kelompok 60
+241. Surya Abhiemanyu Putra Darma | 2606739763 | Teknik Perkapalan | Kelompok 76
+242. Syamil Hamizan Mabruri | 2606739776 | Teknik Perkapalan | Kelompok 99
+243. Tasya Munlani | 2606792623 | Teknik Perkapalan | Kelompok 37
+244. Tegar Satria Arya Wibawa | 2606792636 | Teknik Perkapalan | Kelompok 47
+245. Teges Asmo Budisatrio | 2606789452 | Teknik Mesin | Kelompok 74
+246. Theodorus Joyputra Patana' | 2606739813 | Teknik Mesin | Kelompok 89
+247. Tsabitah Abiyyu | 2606854590 | Teknik Mesin | Kelompok 36
+248. Umar Syauqi | 2606792642 | Teknik Perkapalan | Kelompok 27
+249. Vilia Bunga Putri | 2606739901 | Teknik Perkapalan | Kelompok 44
+250. Vito Maynard Wijaya | 2606789471 | Teknik Mesin | Kelompok 16
+251. William Reinhard Harianja | 2606877083 | Teknik Perkapalan | Kelompok 19
+252. Winson | 2606789484 | Teknik Mesin | Kelompok 80
+253. Wisnu Wardhana | 2606739965 | Teknik Mesin | Kelompok 105
+254. Yoga Zulianda | 2606854621 | Teknik Mesin | Kelompok 63
+255. Yosafat Binsar Raja Nathanael Sipangkar | 2606877133 | Teknik Mesin | Kelompok 60
+256. Yosua Andy Cahyana | 2606740001 | Teknik Mesin | Kelompok 73
+257. Yudhistira Panji Kurniawan | 2606789502 | Teknik Mesin | Kelompok 70
+258. Zahran Azizi Prasetyo | 2606877221 | Teknik Mesin | Kelompok 6
+259. Ziauddin Akhtar | 2606789521 | Teknik Mesin | Kelompok 5
+
+=== DTMM (Teknik Metalurgi dan Material) — Total: 125 mahasiswa ===
+1. Adelio Shidqi Rabbani | 2606736742 | Teknik Metalurgi dan Material | Kelompok 102
+2. Ahmad Kholil Taqiuddin | 2606789995 | Teknik Metalurgi dan Material | Kelompok 21
+3. Aisha Nabila Sani | 2606790006 | Teknik Metalurgi dan Material | Kelompok 91
+4. Amar Mulky Sofha | 2606872290 | Teknik Metalurgi dan Material | Kelompok 47
+5. Andika Dwi Purnama | 2606790012 | Teknik Metalurgi dan Material | Kelompok 100
+6. Andika Rahman Sultan | 2606737045 | Teknik Metalurgi dan Material | Kelompok 93
+7. Anindiyah Syafira | 2606737083 | Teknik Metalurgi dan Material | Kelompok 2
+8. Ardiano Dwi Purnama | 2606790025 | Teknik Metalurgi dan Material | Kelompok 31
+9. Arka Mikhael Ndopo | 2606737152 | Teknik Metalurgi dan Material | Kelompok 73
+10. Arkan Sulaiman | 2606737165 | Teknik Metalurgi dan Material | Kelompok 53
+11. Athalia Liona Maheswari | 2606872523 | Teknik Metalurgi dan Material | Kelompok 55
+12. Athaya Ahza Maulana | 2606790031 | Teknik Metalurgi dan Material | Kelompok 99
+13. Aurel Gracia Yoanita Nababan | 2606790044 | Teknik Metalurgi dan Material | Kelompok 49
+14. Avisena Askarillah | 2606790050 | Teknik Metalurgi dan Material | Kelompok 33
+15. Ayrton Visi Raya | 2606790063 | Teknik Metalurgi dan Material | Kelompok 74
+16. Azzam Prayata Anderi Perangin-angin | 2606790076 | Teknik Metalurgi dan Material | Kelompok 10
+17. Bintang Anugerah Farryanza | 2606872725 | Teknik Metalurgi dan Material | Kelompok 46
+18. Cayla Alicia Cheryn Toana | 2606853562 | Teknik Metalurgi dan Material | Kelompok 70
+19. Chieko Jeremias Nainggolan | 2606790095 | Teknik Metalurgi dan Material | Kelompok 7
+20. Clairine Feivel Kenenza | 2606790100 | Teknik Metalurgi dan Material | Kelompok 88
+21. Danadhyaksa Wahya Ganggaputra | 2606790113 | Teknik Metalurgi dan Material | Kelompok 32
+22. David Joshua Parasian | 2606790126 | Teknik Metalurgi dan Material | Kelompok 37
+23. Devara Candra Narotama | 2606873053 | Teknik Metalurgi dan Material | Kelompok 74
+24. Dionisius Peter Sanjaya | 2606790132 | Teknik Metalurgi dan Material | Kelompok 67
+25. Dzikra Alif Azzumar | 2606853695 | Teknik Metalurgi dan Material | Kelompok 26
+26. Ecclesia Abigail | 2606737631 | Teknik Metalurgi dan Material | Kelompok 38
+27. Ehan Faiyaz Erfianto | 2606790145 | Teknik Metalurgi dan Material | Kelompok 68
+28. Erwin Emanuel | 2606873255 | Teknik Metalurgi dan Material | Kelompok 104
+29. Evan Sandy Samuel Marbun | 2606873293 | Teknik Metalurgi dan Material | Kelompok 77
+30. Fadel Razzaq | 2606737745 | Teknik Metalurgi dan Material | Kelompok 27
+31. Fahrani Aulia Diaz | 2606790164 | Teknik Metalurgi dan Material | Kelompok 22
+32. Farel Kasna Karo Karo | 2606790170 | Teknik Metalurgi dan Material | Kelompok 103
+33. Fariel Adam Sjahboeddin | 2606778612 | S1 Kls Internasional Teknik Lingkungan | Kelompok 23
+34. Fariel Adam Sjahboeddin | 2606790183 | S1 Teknik Metalurgi dan Material | Kelompok 86
+35. Fariq Fahras Achmad | 2606737814 | Teknik Metalurgi dan Material | Kelompok 15
+36. Fatih Nivand Maulana | 2606853745 | Teknik Metalurgi dan Material | Kelompok 84
+37. Fikry Nooril Islam | 2606737902 | Teknik Metalurgi dan Material | Kelompok 85
+38. Firdaus Muhammad Fatwa | 2606873633 | Teknik Metalurgi dan Material | Kelompok 6
+39. Franceda Silalahi | 2606873646 | Teknik Metalurgi dan Material | Kelompok 9
+40. Gabriella Tiurma Simanjuntak | 2606790196 | Teknik Metalurgi dan Material | Kelompok 91
+41. Gaeza Fazi Adhalis | 2606853846 | Teknik Metalurgi dan Material | Kelompok 87
+42. Ghavin Ramadan Huda | 2606737972 | Teknik Metalurgi dan Material | Kelompok 56
+43. Ghilman An-naufal Muhammad | 2606790201 | Teknik Metalurgi dan Material | Kelompok 44
+44. Gladys Sabitha Hutajulu | 2606873785 | Teknik Metalurgi dan Material | Kelompok 105
+45. Glenn Wilson Hardian | 2606738022 | Teknik Metalurgi dan Material | Kelompok 61
+46. Hanifah Lidienillah | 2606738136 | Teknik Metalurgi dan Material | Kelompok 69
+47. Hanna Atha Hibatullah | 2606873892 | Teknik Metalurgi dan Material | Kelompok 106
+48. Harianasya Surbakti | 2606738155 | Teknik Metalurgi dan Material | Kelompok 12
+49. Harkoven Simora | 2606790214 | Teknik Metalurgi dan Material | Kelompok 106
+50. Jasson Boris Siagian | 2606738312 | Teknik Metalurgi dan Material | Kelompok 66
+51. Jeniffer Nathania Tiwa | 2606738325 | Teknik Metalurgi dan Material | Kelompok 57
+52. Jocelyn Sheryl Tanlecia | 2606790220 | Teknik Metalurgi dan Material | Kelompok 90
+53. Joshua Lemuel Benedicto | 2606853985 | Teknik Metalurgi dan Material | Kelompok 51
+54. Kayla Nashwa Virya | 2606874232 | Teknik Metalurgi dan Material | Kelompok 1
+55. Kenzo Liv Gunawan | 2606738496 | Teknik Metalurgi dan Material | Kelompok 43
+56. Kevin Celal Putra | 2606874333 | Teknik Metalurgi dan Material | Kelompok 107
+57. Keyza Indy Agustiani Sindua | 2606738520 | Teknik Metalurgi dan Material | Kelompok 60
+58. Lucky Ananda Dicha | 2606874560 | Teknik Metalurgi dan Material | Kelompok 89
+59. M. Ijlal Hakim Muzakki | 2606790233 | Teknik Metalurgi dan Material | Kelompok 41
+60. M.adly Al-verdi R. | 2606874705 | Teknik Metalurgi dan Material | Kelompok 94
+61. Mapaza Fakhri Zakkah | 2606874743 | Teknik Metalurgi dan Material | Kelompok 71
+62. Marcello Rehandanu Andana | 2606790246 | Teknik Metalurgi dan Material | Kelompok 28
+63. Margareth Elvrida Septiroi Sianturi | 2606790252 | Teknik Metalurgi dan Material | Kelompok 11
+64. Marvell Hans Adventus Purba | 2606854086 | Teknik Metalurgi dan Material | Kelompok 75
+65. Maulana Alvisheva Widyatmaka | 2606790265 | Teknik Metalurgi dan Material | Kelompok 59
+66. Maulana Muhammad Fatih | 2606738773 | Teknik Metalurgi dan Material | Kelompok 34
+67. Michelle Valerie Nily | 2606854110 | Teknik Metalurgi dan Material | Kelompok 63
+68. Mohamad Ilham Putra Siregar | 2606874964 | Teknik Metalurgi dan Material | Kelompok 49
+69. Muhamad Alfa Reza | 2606790271 | Teknik Metalurgi dan Material | Kelompok 101
+70. Muhamad Fadzlan Rabbani | 2606790284 | Teknik Metalurgi dan Material | Kelompok 72
+71. Muhamad Lukman Hakim | 2606790290 | Teknik Metalurgi dan Material | Kelompok 39
+72. Muhammad | 2606738880 | Teknik Metalurgi dan Material | Kelompok 78
+73. Muhammad Aufa Nailul Wisam | 2606854193 | Teknik Metalurgi dan Material | Kelompok 86
+74. Muhammad Fadhlurrahman | 2606738962 | Teknik Metalurgi dan Material | Kelompok 79
+75. Muhammad Fahri Haqie | 2606875254 | Teknik Metalurgi dan Material | Kelompok 30
+76. Muhammad Hilmy Noor Fajri | 2606739044 | Teknik Metalurgi dan Material | Kelompok 4
+77. Muhammad Ihsan | 2606790302 | Teknik Metalurgi dan Material | Kelompok 52
+78. Muhammad Ikhsan Firmansyah | 2606875424 | Teknik Metalurgi dan Material | Kelompok 32
+79. Muhammad Ilham Akbar | 2606790315 | Teknik Metalurgi dan Material | Kelompok 96
+80. Muhammad Maulana Basyira | 2606854230 | Teknik Metalurgi dan Material | Kelompok 76
+81. Muhammad Nabeel Abid Yusa | 2606875481 | Teknik Metalurgi dan Material | Kelompok 42
+82. Muhammad Rafa Prasetya | 2606739095 | Teknik Metalurgi dan Material | Kelompok 97
+83. Muhammad Rafan Fayzan | 2606790334 | Teknik Metalurgi dan Material | Kelompok 45
+84. Muhammad Salman Aszahari | 2606875651 | Teknik Metalurgi dan Material | Kelompok 90
+85. Muhammad Syafiq Waalidein | 2606739126 | Teknik Metalurgi dan Material | Kelompok 92
+86. Muhammad Thoriq Husain Aly | 2606875683 | Teknik Metalurgi dan Material | Kelompok 85
+87. Muhammad Zikri Alif | 2606875720 | Teknik Metalurgi dan Material | Kelompok 8
+88. Muthmainnah Alya Mukhbita Mp | 2606739183 | Teknik Metalurgi dan Material | Kelompok 82
+89. Naila Fatma Aulia | 2606875802 | Teknik Metalurgi dan Material | Kelompok 37
+90. Nathaneila Daniyah Rahma | 2606739315 | Teknik Metalurgi dan Material | Kelompok 65
+91. Naufal Ziad Hidayatullah | 2606875935 | Teknik Metalurgi dan Material | Kelompok 29
+92. Nayla Fitria | 2606790340 | Teknik Metalurgi dan Material | Kelompok 98
+93. Noval Triady Silaban | 2606790353 | Teknik Metalurgi dan Material | Kelompok 3
+94. Pangeran Johannes Deryan Djonna Purba | 2606876156 | Teknik Metalurgi dan Material | Kelompok 20
+95. Preti Brigida Pabarri | 2606739422 | Teknik Metalurgi dan Material | Kelompok 83
+96. Puan Saktyani Mahayu | 2606790372 | Teknik Metalurgi dan Material | Kelompok 13
+97. Putri Rohmah | 2606876212 | Teknik Metalurgi dan Material | Kelompok 95
+98. Rachel Carissa Putri | 2606790385 | Teknik Metalurgi dan Material | Kelompok 50
+99. Raden Roro Rifinda Kirana Danti | 2606876244 | Teknik Metalurgi dan Material | Kelompok 103
+100. Rafa Firman Ramadhan | 2606876282 | Teknik Metalurgi dan Material | Kelompok 35
+101. Raisa Nail Farzana | 2606854451 | Teknik Metalurgi dan Material | Kelompok 16
+102. Rama Raffi Fahrezy | 2606790391 | Teknik Metalurgi dan Material | Kelompok 5
+103. Rashya Azril Arifin | 2606739536 | Teknik Metalurgi dan Material | Kelompok 40
+104. Rayhan Alfatih Lirel | 2606790403 | Teknik Metalurgi dan Material | Kelompok 68
+105. Rayza Umam Dryandi | 2606790416 | Teknik Metalurgi dan Material | Kelompok 80
+106. Reisya Putri Azzahra | 2606739574 | Teknik Metalurgi dan Material | Kelompok 51
+107. Restu Rahman | 2606739580 | Teknik Metalurgi dan Material | Kelompok 81
+108. Rhayza Harviensyah Ar Rizky | 2606876635 | Teknik Metalurgi dan Material | Kelompok 62
+109. Ria Risty Fauzi | 2606739605 | Teknik Metalurgi dan Material | Kelompok 57
+110. Rickloof Kazim Balqi | 2606876641 | Teknik Metalurgi dan Material | Kelompok 54
+111. Riko Frananta Ginting | 2606739656 | Teknik Metalurgi dan Material | Kelompok 19
+112. Rival Satya Hamdani | 2606790422 | Teknik Metalurgi dan Material | Kelompok 17
+113. Salsabila Azaria | 2606790435 | Teknik Metalurgi dan Material | Kelompok 36
+114. Shaadiq Faraas Yulson | 2606854533 | Teknik Metalurgi dan Material | Kelompok 97
+115. Shalom Theoshema Namorasi Sibarani | 2606790441 | Teknik Metalurgi dan Material | Kelompok 64
+116. Shania Azzahra Budianto | 2606790454 | Teknik Metalurgi dan Material | Kelompok 25
+117. Sophieninda Putri Kalila | 2606739731 | Teknik Metalurgi dan Material | Kelompok 48
+118. Theresia Vinso Tampubolon | 2606790460 | Teknik Metalurgi dan Material | Kelompok 18
+119. Timothy Constantin Kussoy | 2606739832 | Teknik Metalurgi dan Material | Kelompok 105
+120. Tsany Khairina Fitria | 2606739845 | Teknik Metalurgi dan Material | Kelompok 14
+121. Varellynscy Suang | 2606877064 | Teknik Metalurgi dan Material | Kelompok 24
+122. Wafa Zahidah | 2606790486 | Teknik Metalurgi dan Material | Kelompok 89
+123. Wisnu Arvinsa Noercahyo | 2606790492 | Teknik Metalurgi dan Material | Kelompok 93
+124. Zaqillah Putri Betuah Emha | 2606854640 | Teknik Metalurgi dan Material | Kelompok 58
+125. Zen Farrell Suryanegara | 2606877285 | Teknik Metalurgi dan Material | Kelompok 88
+
+=== DTSL (Teknik Sipil / Teknik Lingkungan) — Total: 241 mahasiswa ===
+1. A. Fadil Rachmat | 2606736660 | Teknik Lingkungan | Kelompok 93
+2. Achmad Ismi | 2606736710 | Teknik Sipil | Kelompok 55
+3. Achmad Rafid Sakha | 2606871962 | Teknik Lingkungan | Kelompok 50
+4. Aditya Rahmat Firdaus | 2606736755 | Teknik Lingkungan | Kelompok 23
+5. Adli Wibowo Tamulu | 2606871994 | Teknik Sipil | Kelompok 53
+6. Agnes Alicia Andrian | 2606736761 | Teknik Sipil | Kelompok 98
+7. Ahmad Fadhli Mubarok | 2606791904 | Teknik Lingkungan | Kelompok 45
+8. Ahmad Fatih Ibnu Syarif | 2606788323 | Teknik Sipil | Kelompok 65
+9. Ahmad Roiq Wafa Nuzila | 2606736811 | Teknik Sipil | Kelompok 44
+10. Aiko Nabiilah Mansyur | 2606853360 | Teknik Lingkungan | Kelompok 62
+11. Aleina Nareswari Hananto | 2606872164 | Teknik Lingkungan | Kelompok 38
+12. Alfian Daffa Mubarok | 2606788336 | Teknik Sipil | Kelompok 41
+13. Alika Nur Agustin | 2606736894 | Teknik Sipil | Kelompok 43
+14. Alvian Zaidan Fahdia | 2606788342 | Teknik Sipil | Kelompok 69
+15. Alvyn Cahya Kusuma | 2606872271 | Teknik Sipil | Kelompok 2
+16. Alya Ilma | 2606788355 | Teknik Sipil | Kelompok 49
+17. Amabel Alifah Datunsolang | 2606736963 | Teknik Lingkungan | Kelompok 56
+18. Amanda Safa Salsabila | 2606894663 | Teknik Lingkungan | Kelompok 90
+19. Amirah Qoimah Bilqisthi | 2606736982 | Teknik Sipil | Kelompok 1
+20. Anang Priatmojo | 2606872340 | Teknik Sipil | Kelompok 12
+21. Andi Ufairah Azmi Latuconsina | 2606853423 | Teknik Sipil | Kelompok 25
+22. Andini Fatima Izyani | 2606791910 | Teknik Lingkungan | Kelompok 3
+23. Andra Nova Prasetia | 2606788361 | Teknik Sipil | Kelompok 27
+24. Anfield Fadsa | 2606872416 | Teknik Sipil | Kelompok 63
+25. Anggun Angelina | 2606791923 | Teknik Lingkungan | Kelompok 104
+26. Annisa Al Maghfira | 2606872422 | Teknik Sipil | Kelompok 40
+27. Archelya Kasih Pradjwasita | 2606894695 | Teknik Lingkungan | Kelompok 2
+28. Arganta Rasendriya Sakapurnama | 2606791942 | Teknik Lingkungan | Kelompok 15
+29. Arina Raifah Afandi | 2606853474 | Teknik Lingkungan | Kelompok 54
+30. Arnaz Tegar Panggalih | 2606872473 | Teknik Lingkungan | Kelompok 24
+31. Arvira Zahra Ghayda | 2606872492 | Teknik Sipil | Kelompok 22
+32. Ashalina Kamila Chalisa | 2606791955 | Teknik Lingkungan | Kelompok 103
+33. Asyira Kayana Putri Bawono | 2606788374 | Teknik Sipil | Kelompok 3
+34. Attiya Momin Rizkia | 2606737202 | Teknik Lingkungan | Kelompok 71
+35. Aura Putri | 2606872593 | Teknik Sipil | Kelompok 82
+36. Aurelia Arum Pramesty | 2606853511 | Teknik Lingkungan | Kelompok 87
+37. Aurora Kirania Azizah | 2606737221 | Teknik Lingkungan | Kelompok 17
+38. Ayla Rizqia | 2606788380 | Teknik Sipil | Kelompok 105
+39. Ayman Abisali Ar-rayyan | 2606737234 | Teknik Sipil | Kelompok 77
+40. Azka Barrel Maulana | 2606872630 | Teknik Sipil | Kelompok 106
+41. Azka Syakira Athaya | 2606894713 | Teknik Sipil | Kelompok 83
+42. Azkha Shahibih | 2606872643 | Teknik Lingkungan | Kelompok 45
+43. Benyamin Bagaskara Danendra | 2606788405 | Teknik Sipil | Kelompok 88
+44. Bimo Aqil Satrio | 2606872712 | Teknik Sipil | Kelompok 98
+45. Bintang Dirga Putra | 2606788411 | Teknik Sipil | Kelompok 35
+46. Brigitta Evelyna Ang | 2606737316 | Teknik Lingkungan | Kelompok 26
+47. Bunga Diva Aisyah | 2606872795 | Teknik Lingkungan | Kelompok 17
+48. Candra Kurniawan Yulianto | 2606872826 | Teknik Sipil | Kelompok 70
+49. Chastine Bayu Ariani | 2606853581 | Teknik Sipil | Kelompok 27
+50. Chavez Rhamadhanny Putro Kumala Jaya | 2606788424 | Teknik Sipil | Kelompok 85
+51. Chesta Azkha Winandya | 2606853594 | Teknik Sipil | Kelompok 105
+52. Christopher Rannu Liamata | 2606737404 | Teknik Sipil | Kelompok 7
+53. Clyeosa Artita Poernama | 2606737423 | Teknik Sipil | Kelompok 78
+54. Dafina Alia Karima | 2606791961 | Teknik Lingkungan | Kelompok 29
+55. Daniel Pascal Parka Turnip | 2606737474 | Teknik Sipil | Kelompok 42
+56. Darren Tomoya Imanuel Tarigan | 2606791974 | Teknik Lingkungan | Kelompok 67
+57. Dehatya Natasya Murdisantosa | 2606894751 | Teknik Sipil | Kelompok 32
+58. Deuxianne Keysha Zahrani Kamila | 2606853631 | Teknik Sipil | Kelompok 74
+59. Devina Primajati | 2606853650 | Teknik Lingkungan | Kelompok 50
+60. Diandra Aila Rizqita | 2606791980 | Teknik Lingkungan | Kelompok 58
+61. Diandra Anggaraditha | 2606737575 | Teknik Lingkungan | Kelompok 44
+62. Dicky Rahma Wardana | 2606873091 | Teknik Sipil | Kelompok 84
+63. Dimas | 2606737581 | Teknik Sipil | Kelompok 62
+64. Dimas Hafizh Abimanyu Herlambang | 2606788443 | Teknik Sipil | Kelompok 19
+65. Dimas Parikesit Wirya Adhi Permana | 2606873116 | Teknik Sipil | Kelompok 65
+66. Dimas Syahruz Zafar | 2606853663 | Teknik Sipil | Kelompok 14
+67. Dina Grecilia Napitupulu | 2606873135 | Teknik Sipil | Kelompok 24
+68. Dinda Aisyah Hakim | 2606737594 | Teknik Sipil | Kelompok 5
+69. Dinda Mehlika Gevherhan | 2606873141 | Teknik Lingkungan | Kelompok 73
+70. Ditha Candra Ramadhani | 2606737612 | Teknik Lingkungan | Kelompok 86
+71. Edward Samuel Saragi | 2606791993 | Teknik Lingkungan | Kelompok 11
+72. Egan Kautamana Shannahan | 2606873192 | Teknik Sipil | Kelompok 26
+73. Elang Nathanael Putranta Sebayang | 2606788456 | Teknik Sipil | Kelompok 33
+74. Elgia Khanza Khusnawan | 2606737644 | Teknik Lingkungan | Kelompok 30
+75. Emillya Raissa Jasmine | 2606873210 | Teknik Lingkungan | Kelompok 74
+76. Exel Ghailan Athari | 2606737732 | Teknik Sipil | Kelompok 46
+77. Ezra Julien Rafael Dalius | 2606788462 | Teknik Sipil | Kelompok 70
+78. Fahreza Satria Dwiandhika | 2606792005 | Teknik Lingkungan | Kelompok 95
+79. Faiha Zalika Santoso | 2606737764 | Teknik Sipil | Kelompok 9
+80. Faiz Ahmad Kurnia | 2606788475 | Teknik Sipil | Kelompok 38
+81. Farah Suryaaprilia Rimawati | 2606788481 | Teknik Sipil | Kelompok 1
+82. Farrel Indra Fahrezi | 2606873450 | Teknik Sipil | Kelompok 91
+83. Fathi Azra Hanindhia | 2606792011 | Teknik Lingkungan | Kelompok 21
+84. Fhilifyo Diaz | 2606853783 | Teknik Sipil | Kelompok 65
+85. Fiddarain Akramann | 2606792024 | Teknik Lingkungan | Kelompok 75
+86. Gabriel Zefanya Togu Saragih | 2606788494 | Teknik Sipil | Kelompok 84
+87. Gabriela Nathania Rysia | 2606792030 | Teknik Lingkungan | Kelompok 30
+88. Galih Akbar Fadlurrochman | 2606788506 | Teknik Sipil | Kelompok 89
+89. Gaya Fateema Mazari | 2606873702 | Teknik Lingkungan | Kelompok 77
+90. Ghania Kyoko Meisa | 2606894770 | Teknik Lingkungan | Kelompok 52
+91. Ghazi Muhammad Aufa | 2606788512 | Teknik Sipil | Kelompok 10
+92. Gianinna Deandra Lova | 2606788525 | Teknik Sipil | Kelompok 36
+93. Gita Cinta Larasati | 2606873772 | Teknik Lingkungan | Kelompok 31
+94. Greyer Yeremia Onibala | 2606738060 | Teknik Sipil | Kelompok 9
+95. Hafizh Farras Darmawan | 2606873841 | Teknik Sipil | Kelompok 31
+96. Hana Nathifa Syuhada | 2606853902 | Teknik Lingkungan | Kelompok 82
+97. Hanif Abdirrahman | 2606738123 | Teknik Sipil | Kelompok 4
+98. Hashifah Salma | 2606738180 | Teknik Sipil | Kelompok 42
+99. Hasna Rohadatul'aisy | 2606738193 | Teknik Sipil | Kelompok 15
+100. Haya Nuha Azizah | 2606792056 | Teknik Lingkungan | Kelompok 13
+101. Hilya Muthia Puteri Rahayu | 2606788531 | Teknik Sipil | Kelompok 38
+102. I Wayan Gde Yudanegara | 2606788550 | Teknik Sipil | Kelompok 18
+103. Ilyana Charlita Sagala | 2606792062 | Teknik Lingkungan | Kelompok 28
+104. Iqbal Syabili Munajat | 2606738306 | Teknik Sipil | Kelompok 101
+105. Isna Zahriah Maryam | 2606873980 | Teknik Lingkungan | Kelompok 48
+106. Isyraqul Haqi Alghifahri | 2606792075 | Teknik Lingkungan | Kelompok 71
+107. Jesselyn Andita Hutapea | 2606853972 | Teknik Lingkungan | Kelompok 34
+108. Jessica Christabel Hananto | 2606874081 | Teknik Lingkungan | Kelompok 106
+109. Joicelyn Taniella | 2606738363 | Teknik Sipil | Kelompok 32
+110. Jollene Audreynata | 2606738376 | Teknik Lingkungan | Kelompok 33
+111. Jovan Hasudungan Lumban Tobing | 2606788563 | Teknik Sipil | Kelompok 25
+112. Jovan Kurniandra | 2606788576 | Teknik Sipil | Kelompok 20
+113. Jovian Arsya Muhammad | 2606792081 | Teknik Lingkungan | Kelompok 36
+114. Kalila Marunizza | 2606738400 | Teknik Sipil | Kelompok 55
+115. Kania Firly Zaafarani | 2606738426 | Teknik Sipil | Kelompok 81
+116. Katarina Rosari Novita Putri Murtejo | 2606738432 | Teknik Lingkungan | Kelompok 37
+117. Kayrandia Kanugrahaning Senggoro | 2606874245 | Teknik Lingkungan | Kelompok 79
+118. Keiko Maria Hutabarat | 2606854003 | Teknik Lingkungan | Kelompok 97
+119. Keisha Aquilla Saputra | 2606788582 | Teknik Sipil | Kelompok 60
+120. Keisha Deanova Zamzami Mercado | 2606874270 | Teknik Lingkungan | Kelompok 86
+121. Keyla Rachel Irawan | 2606738501 | Teknik Lingkungan | Kelompok 21
+122. Khadafi Rafsyanjani | 2606854022 | Teknik Lingkungan | Kelompok 75
+123. Khairinnaim | 2606738533 | Teknik Sipil | Kelompok 76
+124. Khaizuran Mufid Islami | 2606874390 | Teknik Sipil | Kelompok 35
+125. Khayla Fatimaisa | 2606788595 | Teknik Sipil | Kelompok 49
+126. Kisley Jericho T.m. Nahampun | 2606788600 | Teknik Sipil | Kelompok 70
+127. Kristanti Ekasari Brata | 2606738590 | Teknik Lingkungan | Kelompok 92
+128. Leonard Arya Nugraha | 2606738621 | Teknik Sipil | Kelompok 37
+129. Litsa Nailul Amani | 2606792106 | Teknik Lingkungan | Kelompok 64
+130. Lovely Genevieve Impartialy Leke | 2606738634 | Teknik Sipil | Kelompok 23
+131. Lukas Bethalyas Pinem | 2606788613 | Teknik Sipil | Kelompok 44
+132. Lunetta Raishya | 2606874604 | Teknik Lingkungan | Kelompok 24
+133. Luqyana Haura Farhah Kennedy | 2606792112 | Teknik Lingkungan | Kelompok 11
+134. Lutfan Danish Putra | 2606792125 | Teknik Lingkungan | Kelompok 95
+135. M Fariz Fakhri | 2606874636 | Teknik Sipil | Kelompok 83
+136. M. Alfibian Ghifary | 2606738653 | Teknik Sipil | Kelompok 8
+137. M. Givaril | 2606738672 | Teknik Lingkungan | Kelompok 87
+138. M. Hafid Putra Akbar | 2606738691 | Teknik Sipil | Kelompok 6
+139. Magenta Natauli Sharon Sipahutar | 2606854073 | Teknik Lingkungan | Kelompok 34
+140. Malyadayu Hania Larasati | 2606738722 | Teknik Lingkungan | Kelompok 61
+141. Mazaya Althafunnisa | 2606874825 | Teknik Lingkungan | Kelompok 4
+142. Mero Munassar Remmu | 2606874882 | Teknik Sipil | Kelompok 20
+143. Miranda Manuella | 2606738823 | Teknik Sipil | Kelompok 93
+144. Moch Mahardika Wirayudha Prasetyo | 2606874932 | Teknik Sipil | Kelompok 100
+145. Muh. Fairuz Nuzri Islah | 2606788626 | Teknik Sipil | Kelompok 107
+146. Muhamad Amin Husein Fadilah | 2606738861 | Teknik Sipil | Kelompok 88
+147. Muhamad Bagus Wijdan Dhabits Aleynuo | 2606792131 | Teknik Lingkungan | Kelompok 101
+148. Muhamad Fathir Basalamah | 2606875001 | Teknik Sipil | Kelompok 54
+149. Muhamad Khaan Mochtar | 2606738874 | Teknik Sipil | Kelompok 96
+150. Muhammad Addjie | 2606788632 | Teknik Sipil | Kelompok 80
+151. Muhammad Aditya Ananda Putra | 2606792144 | Teknik Lingkungan | Kelompok 48
+152. Muhammad Adrian Avicenna | 2606854174 | Teknik Sipil | Kelompok 32
+153. Muhammad Akbar Firmansyah | 2606875084 | Teknik Sipil | Kelompok 8
+154. Muhammad Al Rasyid Adz Ashar Nugroho | 2606788645 | Teknik Sipil | Kelompok 12
+155. Muhammad Aryabumi Fatahillah | 2606738924 | Teknik Sipil | Kelompok 41
+156. Muhammad Azfahri | 2606792150 | Teknik Lingkungan | Kelompok 39
+157. Muhammad Aziz Assyafi | 2606894814 | Teknik Sipil | Kelompok 27
+158. Muhammad Daffa Athallah | 2606788651 | S1 Teknik Sipil | Kelompok 76
+159. Muhammad Devan Yonandafa Arbi | 2606788664 | Teknik Sipil | Kelompok 72
+160. Muhammad Fadhli Pradita Ridlo | 2606792163 | Teknik Lingkungan | Kelompok 53
+161. Muhammad Farrel Siregar | 2606875310 | Teknik Lingkungan | Kelompok 48
+162. Muhammad Fatihuddin Fawwazsyah | 2606875355 | Teknik Lingkungan | Kelompok 5
+163. Muhammad Fazlur Al Ahady | 2606875361 | Teknik Sipil | Kelompok 67
+164. Muhammad Ghifari Rifqy | 2606739012 | Teknik Lingkungan | Kelompok 81
+165. Muhammad Idraki | 2606792176 | Teknik Lingkungan | Kelompok 47
+166. Muhammad Irfan Cendikia | 2606788670 | Teknik Sipil | Kelompok 90
+167. Muhammad Nabil Khairi | 2606788683 | Teknik Sipil | Kelompok 46
+168. Muhammad Pahlevi Mujiono | 2606788696 | Teknik Sipil | Kelompok 51
+169. Muhammad Rafael Tsaqif Hanafi | 2606894846 | Teknik Sipil | Kelompok 22
+170. Muhammad Rahdyan Bismoko | 2606788701 | Teknik Sipil | Kelompok 43
+171. Muhammad Raif Fauzan | 2606739100 | Teknik Lingkungan | Kelompok 97
+172. Muhammad Rashadwan Mangelep | 2606788714 | Teknik Sipil | Kelompok 68
+173. Muhammad Salman Al-farizi Nabil Ash-sa'ad | 2606739113 | Teknik Sipil | Kelompok 39
+174. Muhammad Syahmi Nugraha | 2606739145 | Teknik Sipil | Kelompok 102
+175. Muhammad Zaki Attirmidzi | 2606788720 | Teknik Sipil | Kelompok 91
+176. Muhammad Zircon Asadullah | 2606792195 | Teknik Lingkungan | Kelompok 101
+177. Munifa Ramadhani | 2606854275 | Teknik Sipil | Kelompok 10
+178. Nabila Zakia | 2606739220 | Teknik Lingkungan | Kelompok 59
+179. Nabilatzu Zahra | 2606739233 | Teknik Lingkungan | Kelompok 64
+180. Nadha Tiara Prameswhary | 2606854281 | Teknik Sipil | Kelompok 53
+181. Nadiyah Asysyahidah | 2606792200 | Teknik Lingkungan | Kelompok 85
+182. Nadya Azzahra | 2606739271 | Teknik Lingkungan | Kelompok 19
+183. Namira Delima Mecca Pattimahu | 2606854306 | Teknik Sipil | Kelompok 104
+184. Nathanael Valentino Tambunan | 2606788733 | Teknik Sipil | Kelompok 60
+185. Naufal Zabran Rabbani | 2606875922 | Teknik Sipil | Kelompok 13
+186. Noebith Albert Joevan Pasaribu | 2606876074 | Teknik Sipil | Kelompok 61
+187. Nurkhomsi Ismail | 2606788746 | Teknik Sipil | Kelompok 64
+188. Patrick Nelson | 2606788752 | Teknik Sipil | Kelompok 102
+189. Paulus Alfredo | 2606788765 | Teknik Sipil | Kelompok 47
+190. Pury Rahmah Yusdian Amalia | 2606854400 | Teknik Sipil | Kelompok 94
+191. Putu Putri Puspadewi | 2606739435 | Teknik Lingkungan | Kelompok 57
+192. Qurrota A'yun Nur Ramadhani | 2606739460 | Teknik Sipil | Kelompok 94
+193. Rabani Syabil Arfiansyah | 2606739486 | Teknik Sipil | Kelompok 69
+194. Rabbani Surya Abyan | 2606788784 | Teknik Sipil | Kelompok 16
+195. Rachel Ophelia Celestyn Rompas | 2606876225 | Teknik Lingkungan | Kelompok 95
+196. Radhiya Saliqah | 2606788790 | Teknik Sipil | Kelompok 16
+197. Radithya Dzu Fakhry Syarif Vidiaksana | 2606854426 | Teknik Sipil | Kelompok 99
+198. Rafa Jabbar Muiz | 2606876295 | Teknik Sipil | Kelompok 80
+199. Rafeed Fawazka Artya | 2606876326 | Teknik Sipil | Kelompok 40
+200. Raihana Syahla Yustiaji | 2606876401 | Teknik Sipil | Kelompok 58
+201. Rania Adila Eryazti | 2606788802 | Teknik Sipil | Kelompok 57
+202. Raqiqa Nayyara Fazila | 2606739510 | Teknik Lingkungan | Kelompok 6
+203. Rarastya Aglaia Naryama | 2606792213 | Teknik Lingkungan | Kelompok 92
+204. Rayhan Shaka Ghany | 2606788815 | Teknik Sipil | Kelompok 1
+205. Regan Muhammad Ghaisan | 2606788821 | Teknik Sipil | Kelompok 78
+206. Regina Annisa Sonia | 2606739561 | Teknik Sipil | Kelompok 66
+207. Regita Ayu Diatri | 2606854464 | Teknik Sipil | Kelompok 92
+208. Richard Hasiolan Silalahi | 2606788834 | Teknik Sipil | Kelompok 99
+209. Rizky Kamaludin | 2606788840 | Teknik Sipil | Kelompok 3
+210. Rizky Wahyu Pratama | 2606894890 | Teknik Lingkungan | Kelompok 42
+211. Robi Agung Abdul Hamid | 2606876736 | Teknik Sipil | Kelompok 106
+212. Saif Fauzan Amanuloh | 2606894902 | Teknik Sipil | Kelompok 59
+213. Sandy Sanjaya | 2606788853 | Teknik Sipil | Kelompok 107
+214. Sayyid El Aqil Dalimunthe | 2606788866 | Teknik Sipil | Kelompok 43
+215. Sayyid Muhammad Wisesa Hermawan | 2606876830 | Teknik Sipil | Kelompok 72
+216. Sirilus Gilbert Natanael Siahaan | 2606876881 | Teknik Sipil | Kelompok 14
+217. Siti Arifah Cahyani | 2606854546 | Teknik Sipil | Kelompok 29
+218. Siti Azzura Ferdiansyah | 2606788872 | Teknik Sipil | Kelompok 102
+219. Syarifah Khadijah | 2606876950 | Teknik Lingkungan | Kelompok 96
+220. Tania Sekar Andhini | 2606792226 | Teknik Lingkungan | Kelompok 89
+221. Tanu Renardi | 2606788891 | Teknik Sipil | Kelompok 37
+222. Thierry Alexander | 2606792232 | Teknik Lingkungan | Kelompok 103
+223. Tiara Aretha Maritza | 2606739826 | Teknik Lingkungan | Kelompok 28
+224. Titis Amirah Shafiyah Cahya Anggraeni | 2606792245 | Teknik Lingkungan | Kelompok 39
+225. Try Anugrah Ramadhan | 2606854584 | Teknik Lingkungan | Kelompok 72
+226. Umar Nur Hikmat | 2606877013 | Teknik Sipil | Kelompok 4
+227. Vallerie De Callista Damanik | 2606877051 | Teknik Sipil | Kelompok 68
+228. Vanessa Priscilla Shaw | 2606739883 | Teknik Sipil | Kelompok 66
+229. Varel Aprilian Simaputra | 2606788903 | Teknik Sipil | Kelompok 36
+230. William Matthew Abeto | 2606877070 | Teknik Sipil | Kelompok 56
+231. Xannon Jared Pramono Siagian | 2606788916 | Teknik Sipil | Kelompok 73
+232. Yari Athaullah Nurkabisat | 2606739971 | Teknik Sipil | Kelompok 51
+233. Yasmin Fawwaz Humaira Wafi | 2606739984 | Teknik Lingkungan | Kelompok 100
+234. Yehezkiel Pratama Sinaga | 2606788922 | Teknik Sipil | Kelompok 63
+235. Yosafat Radu Daniel | 2606739990 | Teknik Sipil | Kelompok 52
+236. Yunus Adriyanto | 2606877165 | Teknik Lingkungan | Kelompok 7
+237. Zahra Najwa Adibrani | 2606877215 | Teknik Sipil | Kelompok 73
+238. Zahwa Novira | 2606877234 | Teknik Lingkungan | Kelompok 76
+239. Zaskia Syafa Aulia | 2606740052 | Teknik Sipil | Kelompok 18
+240. Zayyan Rabbani Baruna | 2606877266 | Teknik Sipil | Kelompok 79
+241. Zico Ahmad | 2606877303 | Teknik Sipil | Kelompok 86
+
+=== PI - Program Internasional (KKI, semua departemen) — Total: 431 mahasiswa ===
+1. Abdallah Omar Putranda Fahmi | 2606730045 | Arsitektur Interior (Internasional) | Kelompok 106
+2. Abyasa Abimanyu | 2606729466 | Arsitektur (Internasional) | Kelompok 29
+3. Achmad Fauzan Sahrul | 2606777811 | Teknik Sipil (Internasional) | Kelompok 101
+4. Achmad Rifqi Adhayaza Nasution | 2606819631 | Teknik Bioproses (Internasional) | Kelompok 106
+5. Adeline Nazla Azalia | 2606728974 | Teknik Sipil (Internasional) | Kelompok 30
+6. Adhara Fildzah Effendi | 2606728476 | Teknik Metalurgi dan Material (Internasional) | Kelompok 51
+7. Adiayra Ayudivyaswari Pratomo | 2606777824 | Teknik Elektro (Internasional) | Kelompok 100
+8. Adila Rafa Oktodio | 2606777830 | Teknik Komputer (Internasional) | Kelompok 86
+9. Adinda Fedora Santoso | 2606728980 | Teknik Sipil (Internasional) | Kelompok 22
+10. Adisty Nayifa | 2606777843 | Teknik Sipil (Internasional) | Kelompok 24
+11. Adrar Azmer Ardia | 2606777862 | Teknik Sipil (Internasional) | Kelompok 15
+12. Adrian Aulia Wicaksana | 2606729850 | Teknik Perkapalan (Internasional) | Kelompok 106
+13. Adrian Dhanish Setiawan | 2606729863 | Teknik Perkapalan (Internasional) | Kelompok 6
+14. Adzkia Nisgi Yasashi | 2606728772 | Teknik Kimia (Internasional) | Kelompok 58
+15. Aegisena Maulana | 2606777875 | Arsitektur (Internasional) | Kelompok 10
+16. Agung Waskito | 2606777881 | Teknik Sipil (Internasional) | Kelompok 88
+17. Ahmad Adrianno Yunus | 2606777894 | Teknik Perkapalan (Internasional) | Kelompok 2
+18. Ahmad Daffa Afifi | 2606897545 | Teknik Komputer (Internasional) | Kelompok 74
+19. Ahmad Fagih | 2606777906 | Teknik Industri (Internasional) | Kelompok 20
+20. Ahmad Izyan Putra Rifian | 2606728785 | Teknik Kimia (Internasional) | Kelompok 15
+21. Ahmad Nur Haq | 2606777912 | Teknik Industri (Internasional) | Kelompok 98
+22. Ahnaf Athallah Rizki Latif | 2606777925 | Teknik Industri (Internasional) | Kelompok 46
+23. Ahsan Adityaputra | 2606729876 | Teknik Perkapalan (Internasional) | Kelompok 20
+24. Aidan Syahm Hairuman | 2606777931 | Teknik Industri (Internasional) | Kelompok 78
+25. Aisha Anashya Jasmine Adhyraja | 2606728482 | Teknik Metalurgi dan Material (Internasional) | Kelompok 3
+26. Ajda Mustafazka | 2606728495 | Teknik Metalurgi dan Material (Internasional) | Kelompok 48
+27. Akbar Farizki | 2606729610 | Teknik Industri (Internasional) | Kelompok 40
+28. Akbar Hari Wicaksono | 2606777944 | Teknik Elektro (Internasional) | Kelompok 22
+29. Akhtar Chaska Siregar | 2606729390 | Teknik Elektro (Internasional) | Kelompok 24
+30. Alafta Abisya Anggoro | 2606728500 | Teknik Metalurgi dan Material (Internasional) | Kelompok 41
+31. Aldwindra Syarif Azzam | 2606777963 | Teknik Komputer (Internasional) | Kelompok 63
+32. Aleia Mairasya Kartadikaria | 2606729623 | Teknik Industri (Internasional) | Kelompok 26
+33. Alexandra Aurora Putri Hendry | 2606777976 | Teknik Komputer (Internasional) | Kelompok 61
+34. Alfian Rizqi Ramadhan | 2606729182 | Teknik Mesin (Internasional) | Kelompok 2
+35. Alif Syarofil Anam | 2606728513 | Teknik Metalurgi dan Material (Internasional) | Kelompok 99
+36. Alify Radhiya Prayogi | 2606729195 | Teknik Mesin (Internasional) | Kelompok 89
+37. Alika Putri Kianzi | 2606729472 | Arsitektur (Internasional) | Kelompok 70
+38. Alisha Cahyadewi Boedijanto | 2606729945 | Teknik Lingkungan (Internasional) | Kelompok 89
+39. Alisha Dyah Kirani | 2606777995 | Teknik Industri (Internasional) | Kelompok 103
+40. Aliya Nur Falisha | 2606778000 | Teknik Lingkungan (Internasional) | Kelompok 1
+41. Almira Nayfa Asranti | 2606730051 | Arsitektur Interior (Internasional) | Kelompok 36
+42. Althaf Azizan Kalzaman | 2606729200 | Teknik Mesin (Internasional) | Kelompok 4
+43. Althaf Shafa Hafizha | 2606778013 | Teknik Komputer (Internasional) | Kelompok 57
+44. Althaf Zayan Rosadi | 2606778026 | Teknik Komputer (Internasional) | Kelompok 67
+45. Alura Salmi Azani | 2606778032 | Arsitektur (Internasional) | Kelompok 72
+46. Alvaro Dimitri Garibaldi Permadi | 2606778045 | Teknik Elektro (Internasional) | Kelompok 103
+47. Alvin Matthew Mulyadi | 2606728526 | Teknik Metalurgi dan Material (Internasional) | Kelompok 104
+48. Alya Berliyanti | 2606778064 | Teknik Metalurgi dan Material (Internasional) | Kelompok 60
+49. Alyssa Karla Wardhana | 2606729402 | Teknik Elektro (Internasional) | Kelompok 65
+50. Ameera Devanda | 2606778070 | Teknik Sipil (Internasional) | Kelompok 44
+51. Amira Adhwa Fatiha | 2606778083 | Teknik Industri (Internasional) | Kelompok 107
+52. Ananta Tana Putra Naribu | 2606778096 | Teknik Kimia (Internasional) | Kelompok 15
+53. Anargya Alkeisha Harmanto | 2606897570 | Teknik Sipil (Internasional) | Kelompok 45
+54. Andhira Ammar Ramadhan | 2606729485 | Arsitektur (Internasional) | Kelompok 19
+55. Andhira Medina Pramesthi | 2606778101 | Teknik Mesin (Internasional) | Kelompok 91
+56. Andi Shakeira Pammusurang Djuanna | 2606778120 | Teknik Industri (Internasional) | Kelompok 19
+57. Andini Rahma Carissa | 2606778114 | Teknik Industri (Internasional) | Kelompok 87
+58. Andri Rizki Ramadhan | 2606778146 | Teknik Metalurgi dan Material (Internasional) | Kelompok 45
+59. Angga Permana Rasyid | 2606778152 | Teknik Perkapalan (Internasional) | Kelompok 9
+60. Anita Fadilah | 2606778165 | Teknik Sipil (Internasional) | Kelompok 1
+61. Annisa Kamila Syazwina | 2606778171 | Teknik Kimia (Internasional) | Kelompok 35
+62. Anselo Luthfi | 2606728532 | Teknik Metalurgi dan Material (Internasional) | Kelompok 27
+63. Anya Mufidah Marsyal | 2606728993 | Teknik Sipil (Internasional) | Kelompok 87
+64. Aqila Ghaisani Az Zahra | 2606778184 | Teknik Industri (Internasional) | Kelompok 87
+65. Arfa Ahnaf Wahyumoro | 2606778190 | Teknik Komputer (Internasional) | Kelompok 16
+66. Arkan Gheyzar Alfariq | 2606778202 | Teknik Industri (Internasional) | Kelompok 42
+67. Arshya Aretha Satriawan | 2606778215 | Teknik Metalurgi dan Material (Internasional) | Kelompok 30
+68. Arsyad Naufal Mirza | 2606778221 | Teknik Elektro (Internasional) | Kelompok 60
+69. Aryasatya Abrisam Rasendriya | 2606778234 | Teknik Elektro (Internasional) | Kelompok 49
+70. Aryasena Wiradana Razakka | 2606728545 | Teknik Metalurgi dan Material (Internasional) | Kelompok 29
+71. Asima Lumbung Lurianda | 2606729951 | Teknik Lingkungan (Internasional) | Kelompok 41
+72. Athalia Thalita Aretha | 2606729711 | Teknik Bioproses (Internasional) | Kelompok 97
+73. Athariq Diandra Fadhilah | 2606728564 | Teknik Metalurgi dan Material (Internasional) | Kelompok 40
+74. Atthariq Iman Putrayando | 2606778240 | Teknik Mesin (Internasional) | Kelompok 32
+75. Audrey Primadevi Subiakto | 2606729011 | Teknik Sipil (Internasional) | Kelompok 17
+76. Aulia Raushani Rabihah Faheem | 2606778253 | Arsitektur (Internasional) | Kelompok 35
+77. Aura Shazia Putri Mulyana | 2606778266 | Teknik Kimia (Internasional) | Kelompok 79
+78. Aurellius Elvic Anthony | 2606778272 | Teknik Mesin (Internasional) | Kelompok 4
+79. Avram Elidad Wynardo Noenoehitoe | 2606778285 | Teknik Komputer (Internasional) | Kelompok 26
+80. Awliya Janeeta Maheswara | 2606730064 | Arsitektur Interior (Internasional) | Kelompok 33
+81. Aylmar Muttaqi Maggading | 2606819663 | Teknik Kimia (Internasional) | Kelompok 47
+82. Aylmer Kyeira Cheynaura | 2606778291 | Teknik Industri (Internasional) | Kelompok 86
+83. Aymana Zalika Dasril | 2606778303 | Teknik Industri (Internasional) | Kelompok 62
+84. Azelea Zahrana Muttaqin | 2606729724 | Teknik Bioproses (Internasional) | Kelompok 55
+85. Azhar Ramdan Hamdani | 2606729213 | Teknik Mesin (Internasional) | Kelompok 68
+86. Azka Ariq | 2606728570 | Teknik Metalurgi dan Material (Internasional) | Kelompok 22
+87. Azka Fazia Rahayu | 2606729226 | Teknik Mesin (Internasional) | Kelompok 67
+88. Azka Zachary Sasongko | 2606729882 | Teknik Perkapalan (Internasional) | Kelompok 92
+89. Azka Zhafirah Adianca | 2606778316 | Teknik Industri (Internasional) | Kelompok 102
+90. Azratara Sammy Wicaksono | 2606729415 | Teknik Elektro (Internasional) | Kelompok 90
+91. Azzael Jebedyah Siwy | 2606778322 | Teknik Elektro (Internasional) | Kelompok 68
+92. Azzam Lihan Mandegar | 2606778335 | Teknik Industri (Internasional) | Kelompok 62
+93. Bagas Aryaguna | 2606778341 | Teknik Mesin (Internasional) | Kelompok 47
+94. Banyu Afif Rayyan | 2606778354 | Teknik Komputer (Internasional) | Kelompok 71
+95. Banyu Galih Wibisono | 2606729232 | Teknik Mesin (Internasional) | Kelompok 30
+96. Bhumi Ananda Putra Sagala | 2606778373 | Teknik Industri (Internasional) | Kelompok 107
+97. Bima Admaja | 2606897601 | Teknik Mesin (Internasional) | Kelompok 8
+98. Bintang Mahardhika Wirabhakti | 2606897614 | Teknik Perkapalan (Internasional) | Kelompok 52
+99. Brahmandito Girindrawardhana | 2606897620 | Teknik Metalurgi dan Material (Internasional) | Kelompok 80
+100. Bramantyo Putra Pamudji | 2606778386 | Teknik Industri (Internasional) | Kelompok 99
+101. Brazka Albilal Siambaton | 2606729024 | Teknik Sipil (Internasional) | Kelompok 105
+102. Budhi Mahardhika Warabrata | 2606778404 | Teknik Kimia (Internasional) | Kelompok 87
+103. Calista Zahira Daru Ramadhani | 2606729636 | Teknik Industri (Internasional) | Kelompok 25
+104. Callista Damaris Suryadi | 2606730070 | Arsitektur Interior (Internasional) | Kelompok 58
+105. Callysta Alisya Armansyah | 2606728791 | Teknik Kimia (Internasional) | Kelompok 35
+106. Carissa Arinka Navalinda | 2606729491 | Arsitektur (Internasional) | Kelompok 8
+107. Chantika Azzahra Hapsari | 2606728803 | Teknik Kimia (Internasional) | Kelompok 18
+108. Chelsea Putri Bisono | 2606778410 | Arsitektur Interior (Internasional) | Kelompok 23
+109. Cheryl Antarestri | 2606730083 | Arsitektur Interior (Internasional) | Kelompok 52
+110. Christian Mika Hayden Purba | 2606729421 | Teknik Elektro (Internasional) | Kelompok 72
+111. Cut Farrah Fathani | 2606729503 | Arsitektur (Internasional) | Kelompok 17
+112. Cycilia Yuniarti | 2606819676 | Teknik Komputer (Internasional) | Kelompok 4
+113. Czar Favian Syafif | 2606778436 | Teknik Industri (Internasional) | Kelompok 9
+114. Daffa Danish Wira | 2606729030 | Teknik Sipil (Internasional) | Kelompok 35
+115. Danish Putra Athallah | 2606778455 | Teknik Sipil (Internasional) | Kelompok 53
+116. Darrel Akio Maheswara | 2606778461 | Teknik Mesin (Internasional) | Kelompok 32
+117. Darryl Dzimar Abrar | 2606728583 | Teknik Metalurgi dan Material (Internasional) | Kelompok 28
+118. Deng Zi Xuan | 2606896196 | Teknik Komputer (Internasional) | Kelompok 17
+119. Derryan Andhikatama Fauzi | 2606778480 | Teknik Komputer (Internasional) | Kelompok 25
+120. Deshawn Kayzhar Wirakartakusumah | 2606728596 | Teknik Metalurgi dan Material (Internasional) | Kelompok 42
+121. Dhissa Miletha Wijayanto | 2606778493 | Teknik Kimia (Internasional) | Kelompok 59
+122. Dhiwa Ghufran Arradhin | 2606778505 | Arsitektur (Internasional) | Kelompok 23
+123. Diandra Chintia Pramita | 2606729642 | Teknik Industri (Internasional) | Kelompok 84
+124. Diasulhaq Elzagwan Ahmad Isya | 2606778511 | Teknik Mesin (Internasional) | Kelompok 50
+125. Dinda Zaskya Sena | 2606729730 | Teknik Bioproses (Internasional) | Kelompok 101
+126. Duan Yelin | 2606818755 | Teknik Mesin (Internasional) | Kelompok 16
+127. Dzaky Fawwaz Zulmi | 2606897646 | Teknik Sipil (Internasional) | Kelompok 83
+128. Edwin Billi Perdana Sihombing | 2606778524 | Teknik Bioproses (Internasional) | Kelompok 104
+129. El Radzy Alzaeema Ghassani Zalfatirsa | 2606728816 | Teknik Kimia (Internasional) | Kelompok 8
+130. Elia Louis Sudarma | 2606897652 | Teknik Elektro (Internasional) | Kelompok 36
+131. Elroy Tito Deandre | 2606728601 | Teknik Metalurgi dan Material (Internasional) | Kelompok 6
+132. Emmanuel Renata Ginting | 2606778530 | Teknik Kimia (Internasional) | Kelompok 38
+133. Evollet Putri Karissa | 2606729516 | Arsitektur (Internasional) | Kelompok 98
+134. Fachry Reifandri Hairiman | 2606728614 | S1 Kls Internasional Teknik Metalurgi dan Material | Kelompok 74
+135. Fadhil Aqila Zahid | 2606729895 | Teknik Perkapalan (Internasional) | Kelompok 2
+136. Fadhil Wijaya | 2606729251 | Teknik Mesin (Internasional) | Kelompok 12
+137. Fadlan Akhsan Sulistiono | 2606778556 | Teknik Elektro (Internasional) | Kelompok 19
+138. Fadlin Abdillah Fitrah | 2606778562 | Teknik Mesin (Internasional) | Kelompok 84
+139. Fahri Ramadhan Hendri | 2606778575 | Teknik Mesin (Internasional) | Kelompok 69
+140. Faiha Shaliha Zaenal | 2606778581 | Arsitektur Interior (Internasional) | Kelompok 104
+141. Faiz Yazid Nasution | 2606729434 | Teknik Elektro (Internasional) | Kelompok 3
+142. Faizadila Ainun Azkiya | 2606729964 | Teknik Lingkungan (Internasional) | Kelompok 75
+143. Fakhri Hisyam Rusli | 2606778594 | Teknik Mesin (Internasional) | Kelompok 62
+144. Falisha Jacinta | 2606778606 | Teknik Industri (Internasional) | Kelompok 13
+145. Farnaz Tallulah Arkanaya | 2606729900 | Teknik Perkapalan (Internasional) | Kelompok 42
+146. Farrand Kendrasta Primawan | 2606729970 | Teknik Lingkungan (Internasional) | Kelompok 89
+147. Fathia Apriliqueen | 2606728822 | Teknik Kimia (Internasional) | Kelompok 65
+148. Fathidhia Athamaheera | 2606819695 | Teknik Komputer (Internasional) | Kelompok 88
+149. Fathih Rakhsa Ardy | 2606729440 | Teknik Elektro (Internasional) | Kelompok 77
+150. Fatih Nabil Reswara | 2606778631 | Teknik Sipil (Internasional) | Kelompok 100
+151. Fauzan Bangkit Mahendra | 2606729913 | Teknik Perkapalan (Internasional) | Kelompok 26
+152. Fauzan Reza Ramadhan | 2606778644 | Teknik Industri (Internasional) | Kelompok 16
+153. Fauzi Putra Mahardika | 2606778650 | Teknik Metalurgi dan Material (Internasional) | Kelompok 7
+154. Fawnia Rachmaputri | 2606729983 | Teknik Lingkungan (Internasional) | Kelompok 43
+155. Fawwazah Dinda Khairun Niswah | 2606778663 | Teknik Bioproses (Internasional) | Kelompok 76
+156. Fayola Shifra Zarira | 2606778676 | Teknik Elektro (Internasional) | Kelompok 39
+157. Fazel Mawla Anggoro Putra | 2606778682 | Teknik Industri (Internasional) | Kelompok 14
+158. Fernando Farrel Sembiring | 2606778695 | Teknik Kimia (Internasional) | Kelompok 44
+159. Fidel Rafif Maheswara | 2606778700 | Teknik Elektro (Internasional) | Kelompok 14
+160. Fiel Valezka Soelistyono | 2606778713 | Arsitektur (Internasional) | Kelompok 39
+161. Firdaus Khresnamurti Azis | 2606778726 | Teknik Sipil (Internasional) | Kelompok 103
+162. Francisca Ramadhaniputeri | 2606897671 | Arsitektur Interior (Internasional) | Kelompok 26
+163. Galang Fausta Nandana Sada | 2606778732 | Teknik Kimia (Internasional) | Kelompok 10
+164. Galang Sakha Adinata Anuraga | 2606729655 | Teknik Industri (Internasional) | Kelompok 50
+165. Ghanya Aruna Rizkina | 2606728620 | Teknik Metalurgi dan Material (Internasional) | Kelompok 66
+166. Graziano Raffaele Joaquin Rugian | 2606819700 | Teknik Komputer (Internasional) | Kelompok 31
+167. Grizelda Celine Wilhelmina | 2606729661 | Teknik Industri (Internasional) | Kelompok 78
+168. Hadid Al Rasyid | 2606819713 | Teknik Komputer (Internasional) | Kelompok 91
+169. Hadid Pramana Khair | 2606897684 | Teknik Metalurgi dan Material (Internasional) | Kelompok 81
+170. Hadiyanto Effendi | 2606819726 | Teknik Komputer (Internasional) | Kelompok 52
+171. Haekal Keiji Rovani | 2606778783 | Teknik Komputer (Internasional) | Kelompok 11
+172. Hafiya Salma | 2606729264 | Teknik Mesin (Internasional) | Kelompok 37
+173. Hanatta Wijaya | 2606778801 | Teknik Industri (Internasional) | Kelompok 71
+174. Hanif Ilham Athaurrahman | 2606778814 | Teknik Komputer (Internasional) | Kelompok 10
+175. Hanif Kamil Azhar | 2606778820 | Teknik Mesin (Internasional) | Kelompok 100
+176. Hasna Najla Khaliqa | 2606729996 | Teknik Lingkungan (Internasional) | Kelompok 50
+177. Hazel Alazhar Khalivad Gautama | 2606729926 | Teknik Perkapalan (Internasional) | Kelompok 107
+178. Hilqim Hammam | 2606778846 | Teknik Komputer (Internasional) | Kelompok 14
+179. Hizkia Nathanael Sinaga | 2606819732 | Teknik Perkapalan (Internasional) | Kelompok 89
+180. Ida Ayu Anella Abreina | 2606729743 | Teknik Bioproses (Internasional) | Kelompok 91
+181. Ilona Anasya Mosvianto | 2606778852 | Teknik Kimia (Internasional) | Kelompok 58
+182. Insan Kamil Zaidan Firas | 2606729756 | Teknik Bioproses (Internasional) | Kelompok 80
+183. Irtiza Rasikh | 2606778865 | Teknik Industri (Internasional) | Kelompok 95
+184. Jabriel Raphael Nurachman | 2606778871 | Teknik Mesin (Internasional) | Kelompok 93
+185. Jacob Alrazee Rusli | 2606778884 | Teknik Industri (Internasional) | Kelompok 95
+186. Jaden Anthony Dela Cruz Lagamia | 2606818761 | Teknik Bioproses (Internasional) | Kelompok 55
+187. Jafa Jeffin | 2606778890 | Teknik Industri (Internasional) | Kelompok 43
+188. Jasmine Azzahra Vijaya | 2606778902 | Teknik Elektro (Internasional) | Kelompok 33
+189. Javier Fathir Imawan | 2606819745 | Teknik Bioproses (Internasional) | Kelompok 57
+190. Ji Zhilan | 2606818780 | Teknik Komputer (Internasional) | Kelompok 27
+191. Joban Raj Singh | 2606778915 | Teknik Sipil (Internasional) | Kelompok 66
+192. Jocelyn Arwan | 2606897721 | Teknik Kimia (Internasional) | Kelompok 83
+193. Jocelyn Tarigan | 2606729775 | Teknik Bioproses (Internasional) | Kelompok 7
+194. Jonathan Lexie | 2606778921 | Teknik Elektro (Internasional) | Kelompok 47
+195. Jovita Nathania | 2606728841 | Teknik Kimia (Internasional) | Kelompok 45
+196. Joy Mika | 2606778934 | Teknik Industri (Internasional) | Kelompok 56
+197. Kalila Ramadhina Rysandi | 2606778940 | Teknik Metalurgi dan Material (Internasional) | Kelompok 55
+198. Kanayla Mabelle Zivanka | 2606819764 | Teknik Bioproses (Internasional) | Kelompok 57
+199. Kareem Razzaqu Mohammedyn Yardinal | 2606778966 | Teknik Kimia (Internasional) | Kelompok 64
+200. Karissa Armita Reswara | 2606730096 | Arsitektur Interior (Internasional) | Kelompok 100
+201. Kathleen Michelle Sherenida Simanjuntak | 2606778972 | Teknik Lingkungan (Internasional) | Kelompok 25
+202. Kayla Anindhita Hadi | 2606778985 | Teknik Mesin (Internasional) | Kelompok 96
+203. Kayla Bonnanita Barus | 2606729932 | Teknik Perkapalan (Internasional) | Kelompok 53
+204. Keandre Edria Erawan | 2606779022 | Teknik Industri (Internasional) | Kelompok 81
+205. Keiichiro Matsuda | 2606896201 | Teknik Lingkungan (Internasional) | Kelompok 56
+206. Keisha Budiman | 2606729043 | Teknik Sipil (Internasional) | Kelompok 41
+207. Keisha Medina Wibowo | 2606779041 | Teknik Sipil (Internasional) | Kelompok 21
+208. Kemal Gani Wiryawan | 2606779054 | Teknik Komputer (Internasional) | Kelompok 16
+209. Ken Raka Deva | 2606730101 | Arsitektur Interior (Internasional) | Kelompok 85
+210. Kenza Aurora Adisriyanti | 2606779060 | Teknik Bioproses (Internasional) | Kelompok 84
+211. Kenza Nadda Ashila | 2606729056 | Teknik Sipil (Internasional) | Kelompok 38
+212. Keysha Ferrellina Mulya | 2606730114 | Arsitektur Interior (Internasional) | Kelompok 54
+213. Khadijah Salim | 2606779073 | Arsitektur (Internasional) | Kelompok 41
+214. Khalifah Muhammad Denzel Nugroho | 2606728854 | Teknik Kimia (Internasional) | Kelompok 64
+215. Khalila Amani Firmansyah Syukur | 2606779086 | Arsitektur Interior (Internasional) | Kelompok 30
+216. Kiandra Aricia Zalfa | 2606779092 | Arsitektur (Internasional) | Kelompok 63
+217. Kiaya Shaquina Callysta | 2606779104 | Teknik Industri (Internasional) | Kelompok 91
+218. Kirana Dianti Raharjo | 2606728860 | Teknik Kimia (Internasional) | Kelompok 38
+219. Kiranaya Aradua | 2606779110 | Teknik Lingkungan (Internasional) | Kelompok 68
+220. Krishan Awab | 2606896214 | Teknik Mesin (Internasional) | Kelompok 12
+221. Leviano Extrordy Wijaya | 2606897734 | Teknik Lingkungan (Internasional) | Kelompok 73
+222. Leyla Mercedes | 2606779123 | Teknik Industri (Internasional) | Kelompok 97
+223. Liangkaiwei | 2606896233 | Teknik Komputer (Internasional) | Kelompok 36
+224. Liu Tianci | 2606818793 | Teknik Elektro (Internasional) | Kelompok 25
+225. Ma Jia Hao | 2606896246 | Teknik Elektro (Internasional) | Kelompok 37
+226. Maharani Putri Adisty Kresnawan | 2606779142 | Teknik Sipil (Internasional) | Kelompok 42
+227. Mahira Rhea Pahlevi Tabrani | 2606819783 | Teknik Bioproses (Internasional) | Kelompok 40
+228. Mairysya Pradiptah Puteri Wildan | 2606897740 | Teknik Komputer (Internasional) | Kelompok 11
+229. Maistiur Lucyana Widyadana Napitupulu | 2606730120 | Arsitektur Interior (Internasional) | Kelompok 76
+230. Maitsaluna Ratu Risas | 2606779155 | Arsitektur Interior (Internasional) | Kelompok 34
+231. Malia Romauli Handaru Pardede | 2606779161 | Teknik Sipil (Internasional) | Kelompok 83
+232. Marcelle Brinette Renee Lefrandt | 2606729522 | Arsitektur (Internasional) | Kelompok 70
+233. Marsha Zahra Azkia | 2606819796 | Teknik Kimia (Internasional) | Kelompok 6
+234. Marthasya Putri Purnomo | 2606779174 | Arsitektur Interior (Internasional) | Kelompok 69
+235. Masyel Aisya Rinata | 2606729535 | Arsitektur (Internasional) | Kelompok 90
+236. Matthew Ethan Jefferson | 2606729062 | Teknik Sipil (Internasional) | Kelompok 96
+237. Melati Shaquilla Rahma Al Humaira | 2606779193 | Teknik Elektro (Internasional) | Kelompok 39
+238. Mezbareta Aeeshya Makkayla | 2606779205 | Arsitektur (Internasional) | Kelompok 21
+239. Michael Arvel Kristian Susilo | 2606897753 | Teknik Komputer (Internasional) | Kelompok 32
+240. Michael Kurnia Jansen | 2606728633 | Teknik Metalurgi dan Material (Internasional) | Kelompok 23
+241. Michelle Graciela Aditya Putri | 2606779211 | Arsitektur (Internasional) | Kelompok 68
+242. Mikael Andhika Warsokusumo | 2606779224 | Teknik Elektro (Internasional) | Kelompok 97
+243. Mikail Adisena Hardiawan | 2606779230 | Teknik Komputer (Internasional) | Kelompok 72
+244. Mirza Aulia Nayantara | 2606728646 | Teknik Metalurgi dan Material (Internasional) | Kelompok 1
+245. Mirza Iqbal Muliawan | 2606779243 | Teknik Mesin (Internasional) | Kelompok 93
+246. Mo Zi Qian | 2606896271 | Teknik Elektro (Internasional) | Kelompok 55
+247. Mochammad Farrel Clearesta Evan Nugroho | 2606729075 | Teknik Sipil (Internasional) | Kelompok 59
+248. Mohamad Juniar Putranto | 2606779256 | Teknik Lingkungan (Internasional) | Kelompok 29
+249. Mohammad Figo Hidayatulloh Putra | 2606779262 | Teknik Kimia (Internasional) | Kelompok 48
+250. Mohammad Revano Marcha Razak | 2606729270 | Teknik Mesin (Internasional) | Kelompok 66
+251. Muhamad Dhafi Aldebaran | 2606779275 | Teknik Industri (Internasional) | Kelompok 13
+252. Muhammad Akbar Halsistanry | 2606819801 | Teknik Komputer (Internasional) | Kelompok 4
+253. Muhammad Aldo Elgiansyah | 2606819814 | Teknik Metalurgi dan Material (Internasional) | Kelompok 46
+254. Muhammad Ammar Faruq | 2606779306 | Teknik Industri (Internasional) | Kelompok 18
+255. Muhammad Arkan Ghozian Miransyahputra | 2606779312 | Teknik Industri (Internasional) | Kelompok 78
+256. Muhammad Athallah Ramadhan Alfisyahrin | 2606897772 | Teknik Industri (Internasional) | Kelompok 11
+257. Muhammad Atthala Raya | 2606728873 | Teknik Kimia (Internasional) | Kelompok 69
+258. Muhammad Ayman Manaf | 2606819820 | Teknik Kimia (Internasional) | Kelompok 51
+259. Muhammad Davin Nayaka Atsal Sigit | 2606729283 | Teknik Mesin (Internasional) | Kelompok 65
+260. Muhammad Elang Adhyaksa Putra Hisa | 2606779331 | Teknik Sipil (Internasional) | Kelompok 94
+261. Muhammad Fadhli Siregar | 2606779344 | Teknik Industri (Internasional) | Kelompok 74
+262. Muhammad Faheem | 2606779350 | Teknik Elektro (Internasional) | Kelompok 46
+263. Muhammad Faiz Malewai | 2606728652 | Teknik Metalurgi dan Material (Internasional) | Kelompok 51
+264. Muhammad Fakhri | 2606730000 | Teknik Lingkungan (Internasional) | Kelompok 37
+265. Muhammad Fakhruddin | 2606779363 | Teknik Elektro (Internasional) | Kelompok 64
+266. Muhammad Farras | 2606779382 | Teknik Industri (Internasional) | Kelompok 102
+267. Muhammad Faruq Ramadhan | 2606730190 | Teknik Komputer (Internasional) | Kelompok 84
+268. Muhammad Fauzan Siddiq | 2606779395 | Teknik Bioproses (Internasional) | Kelompok 7
+269. Muhammad Gibran Aimar | 2606779400 | Teknik Mesin (Internasional) | Kelompok 13
+270. Muhammad Haical Trihatmojo | 2606819833 | Teknik Kimia (Internasional) | Kelompok 2
+271. Muhammad Kenaz Fadillah Putra | 2606779432 | Teknik Industri (Internasional) | Kelompok 21
+272. Muhammad Mikail Hidayat | 2606729296 | Teknik Mesin (Internasional) | Kelompok 95
+273. Muhammad Naufal Hafiy | 2606779445 | Teknik Komputer (Internasional) | Kelompok 99
+274. Muhammad Naufal Raissa Nasution | 2606729301 | Teknik Mesin (Internasional) | Kelompok 20
+275. Muhammad Putra Rasya | 2606779451 | Teknik Industri (Internasional) | Kelompok 44
+276. Muhammad Raafi Raditya | 2606897791 | Teknik Industri (Internasional) | Kelompok 53
+277. Muhammad Rafid Albana Irham | 2606779464 | Teknik Mesin (Internasional) | Kelompok 54
+278. Muhammad Rafka Adiwiguna | 2606779470 | Teknik Komputer (Internasional) | Kelompok 94
+279. Muhammad Rafy Rayyan Ermadi | 2606729081 | Teknik Sipil (Internasional) | Kelompok 101
+280. Muhammad Rais Hakim | 2606729094 | Teknik Sipil (Internasional) | Kelompok 66
+281. Muhammad Rasyid Hidayat | 2606779483 | Teknik Sipil (Internasional) | Kelompok 43
+282. Muhammad Reza Asyrafi | 2606729314 | Teknik Mesin (Internasional) | Kelompok 48
+283. Muhammad Sultan Akbar Indriasputra | 2606729106 | Teknik Sipil (Internasional) | Kelompok 27
+284. Muhammad Zacky Maruta Tarigan | 2606729320 | Teknik Mesin (Internasional) | Kelompok 88
+285. Muhammad Zaky Putrahusni | 2606779496 | Teknik Elektro (Internasional) | Kelompok 58
+286. Muhammad Zaydan Ghazi | 2606779501 | Teknik Elektro (Internasional) | Kelompok 47
+287. Mukhbitah Hulwah | 2606779514 | Teknik Bioproses (Internasional) | Kelompok 5
+288. Muthia Ramadhani | 2606729674 | Teknik Industri (Internasional) | Kelompok 78
+289. Muthia Tsabitha | 2606819852 | Teknik Bioproses (Internasional) | Kelompok 85
+290. Muzafhira Alika Rahmatya | 2606779520 | Teknik Industri (Internasional) | Kelompok 90
+291. Myshanda Naomi Humayra | 2606897803 | Teknik Metalurgi dan Material (Internasional) | Kelompok 28
+292. Nabil Athmar Wiza | 2606779533 | Teknik Elektro (Internasional) | Kelompok 49
+293. Nabila Noor Aqila Restyputri | 2606728671 | Teknik Metalurgi dan Material (Internasional) | Kelompok 18
+294. Nadia Raisa Purnomosidi | 2606819865 | Teknik Kimia (Internasional) | Kelompok 77
+295. Naira Nazara | 2606779546 | Teknik Bioproses (Internasional) | Kelompok 105
+296. Najla Muntaza | 2606728684 | Teknik Metalurgi dan Material (Internasional) | Kelompok 61
+297. Nalendra Sahaja Yoga Iskandar | 2606779552 | Teknik Industri (Internasional) | Kelompok 44
+298. Nasyama Putri Arini | 2606779565 | Teknik Lingkungan (Internasional) | Kelompok 85
+299. Nasywa Arzalia Rakhman Putri | 2606779571 | Teknik Bioproses (Internasional) | Kelompok 93
+300. Natasha Bintang Odelia | 2606729781 | Teknik Bioproses (Internasional) | Kelompok 72
+301. Nathan Ghanesvara Astawa | 2606728886 | Teknik Kimia (Internasional) | Kelompok 24
+302. Nathan Thifaly Abdurrahman | 2606897816 | Teknik Komputer (Internasional) | Kelompok 8
+303. Nawra Janitra Waraputri | 2606729541 | Arsitektur (Internasional) | Kelompok 36
+304. Nayla Fahira | 2606728690 | Teknik Metalurgi dan Material (Internasional) | Kelompok 74
+305. Nayla Mutiara | 2606779584 | Teknik Komputer (Internasional) | Kelompok 33
+306. Nera Qanitah | 2606730133 | Arsitektur Interior (Internasional) | Kelompok 28
+307. Nesya Khairunnisa | 2606779590 | Teknik Industri (Internasional) | Kelompok 67
+308. Nisrina Maulida Mumtaz | 2606728702 | Teknik Metalurgi dan Material (Internasional) | Kelompok 73
+309. Nizieta Fatimah Azzahra | 2606729680 | Teknik Industri (Internasional) | Kelompok 27
+310. Nour Alhoda Aljadaan | 2606818805 | Teknik Industri (Internasional) | Kelompok 78
+311. Nouvall Ananda Vedrila | 2606897822 | Teknik Mesin (Internasional) | Kelompok 54
+312. Olivier Basuki | 2606779602 | Teknik Kimia (Internasional) | Kelompok 69
+313. Omar Maliq Ahrenza | 2606729112 | Teknik Sipil (Internasional) | Kelompok 95
+314. Orin Silalahi | 2606730146 | Arsitektur Interior (Internasional) | Kelompok 79
+315. Orlando Welson Tan | 2606779615 | Teknik Perkapalan (Internasional) | Kelompok 83
+316. Owen Gavriel Tan | 2606729554 | Arsitektur (Internasional) | Kelompok 94
+317. Owen Wilmer Wahyudi | 2606779621 | Teknik Elektro (Internasional) | Kelompok 92
+318. Paulus Kristofer | 2606779634 | Teknik Perkapalan (Internasional) | Kelompok 19
+319. Pradipa Khairan Nugroho | 2606779640 | Teknik Komputer (Internasional) | Kelompok 3
+320. Prama Danuradya Wijanarko | 2606779653 | Teknik Kimia (Internasional) | Kelompok 73
+321. Pramatyo Lintang Wicaksono | 2606729125 | Teknik Sipil (Internasional) | Kelompok 77
+322. Prima Faeyza Asqalani | 2606779666 | Teknik Bioproses (Internasional) | Kelompok 67
+323. Putri Alyssa Maharani | 2606779672 | Teknik Komputer (Internasional) | Kelompok 53
+324. Qathrunnada | 2606728892 | Teknik Kimia (Internasional) | Kelompok 6
+325. Qonita Alia Monefa | 2606729560 | Arsitektur (Internasional) | Kelompok 75
+326. R. Kiandra Nabil Purnomo | 2606779880 | Arsitektur (Internasional) | Kelompok 102
+327. Rachel Lintang Aurya | 2606779703 | Arsitektur (Internasional) | Kelompok 86
+328. Radyastuti Putri Indraswari | 2606728904 | Teknik Kimia (Internasional) | Kelompok 14
+329. Rafa Zakaria Putra Widodo | 2606779735 | Teknik Perkapalan (Internasional) | Kelompok 49
+330. Rafael Enzo Millardi Wardana | 2606779716 | Arsitektur Interior (Internasional) | Kelompok 31
+331. Rafael Octovian Pardede | 2606779722 | Teknik Industri (Internasional) | Kelompok 98
+332. Raffertha Varen Prayitno | 2606729131 | Teknik Sipil (Internasional) | Kelompok 96
+333. Raffi Dzahwan Pratama | 2606779741 | Teknik Mesin (Internasional) | Kelompok 17
+334. Rafif Zufar Syahmi Albugis | 2606897835 | Teknik Mesin (Internasional) | Kelompok 105
+335. Rahil Magani | 2606897841 | Teknik Industri (Internasional) | Kelompok 96
+336. Rahsealexa Audrey Pahlewi | 2606729573 | Arsitektur (Internasional) | Kelompok 102
+337. Raihan Kenjiro Gardono | 2606730152 | Arsitektur Interior (Internasional) | Kelompok 22
+338. Raihana Violin | 2606779754 | Teknik Elektro (Internasional) | Kelompok 51
+339. Raihanah Alifah Ferdianursari | 2606729693 | Teknik Industri (Internasional) | Kelompok 61
+340. Rais Jaya Aziz Julianto | 2606779760 | Teknik Industri (Internasional) | Kelompok 82
+341. Raka Asmoro Widagdo | 2606728715 | Teknik Metalurgi dan Material (Internasional) | Kelompok 17
+342. Rakha Abiyasa Rhasenrendrya Agtar | 2606728721 | Teknik Metalurgi dan Material (Internasional) | Kelompok 70
+343. Rakhsanda Maiara | 2606728910 | Teknik Kimia (Internasional) | Kelompok 85
+344. Rania Nisrina Huda Palgunadi | 2606779773 | Teknik Industri (Internasional) | Kelompok 9
+345. Rania Rizqi Putri Junaid | 2606730165 | Arsitektur Interior (Internasional) | Kelompok 6
+346. Raqi Akmal Muyassar | 2606779786 | Arsitektur Interior (Internasional) | Kelompok 76
+347. Rashad Aidan Richard | 2606729586 | Arsitektur (Internasional) | Kelompok 79
+348. Rasyanara Putri Ismandiyanto | 2606779792 | Teknik Komputer (Internasional) | Kelompok 77
+349. Rasyiqah Mutiara Safanah Nurdiansyah | 2606729794 | Teknik Bioproses (Internasional) | Kelompok 56
+350. Ratu Jazeera Hirania Himawan | 2606729333 | Teknik Mesin (Internasional) | Kelompok 62
+351. Raynzie Atrhiga Prancafitri | 2606779804 | Teknik Lingkungan (Internasional) | Kelompok 82
+352. Rayyan Pradipa Hazali | 2606897904 | Teknik Komputer (Internasional) | Kelompok 82
+353. Rayyan Samy | 2606729144 | Teknik Sipil (Internasional) | Kelompok 81
+354. Razan Nazhif Izary | 2606730202 | Teknik Komputer (Internasional) | Kelompok 9
+355. Razqy Chafie Radithya | 2606897910 | Teknik Elektro (Internasional) | Kelompok 33
+356. Renata Christy Sihprasetyo | 2606729806 | Teknik Bioproses (Internasional) | Kelompok 34
+357. Renee Khairunnisa | 2606779810 | Teknik Mesin (Internasional) | Kelompok 31
+358. Renggo Rajasa | 2606779823 | Teknik Elektro (Internasional) | Kelompok 92
+359. Reshad Athaya Putra | 2606897923 | Teknik Perkapalan (Internasional) | Kelompok 24
+360. Reswara Arundaya Supriadi | 2606896284 | Teknik Elektro (Internasional) | Kelompok 39
+361. Reva Bilqis Callista | 2606729812 | Teknik Bioproses (Internasional) | Kelompok 50
+362. Revi Aliachmed Pahlevi | 2606728734 | Teknik Metalurgi dan Material (Internasional) | Kelompok 5
+363. Revy Lathifa Zahra | 2606730013 | Teknik Lingkungan (Internasional) | Kelompok 64
+364. Reyner Raza Athaya | 2606779836 | Teknik Industri (Internasional) | Kelompok 59
+365. Rifat Luthfirrahman | 2606819884 | Teknik Komputer (Internasional) | Kelompok 48
+366. Riffat Nuzul Hidayat | 2606729705 | Teknik Industri (Internasional) | Kelompok 107
+367. Rifqi Dimashandy | 2606779855 | Arsitektur (Internasional) | Kelompok 60
+368. Rifqy Akmal Najwan | 2606779861 | Teknik Elektro (Internasional) | Kelompok 104
+369. Riski Saputri Arief | 2606779874 | Arsitektur (Internasional) | Kelompok 38
+370. Roesenzo Wardhana Putra | 2606779893 | Teknik Elektro (Internasional) | Kelompok 15
+371. Romero Abraar Razzani | 2606779905 | Teknik Elektro (Internasional) | Kelompok 71
+372. Ronald Rauf Nurima | 2606779911 | Teknik Kimia (Internasional) | Kelompok 29
+373. Roselina Zefanya Wynette Sondakh | 2606729150 | Teknik Sipil (Internasional) | Kelompok 71
+374. Rr. Carissa Fiorenza Aqila F | 2606729592 | Arsitektur (Internasional) | Kelompok 37
+375. Ryandhika Maulana Nurdin | 2606729346 | Teknik Mesin (Internasional) | Kelompok 12
+376. Sagara Putra Marhaendra | 2606779930 | Teknik Elektro (Internasional) | Kelompok 90
+377. Saihan Kurnia Rahman Sulistya | 2606728923 | Teknik Kimia (Internasional) | Kelompok 43
+378. Salim Ramadhan Hami Seno | 2606779943 | Teknik Industri (Internasional) | Kelompok 63
+379. Salma Ayishah Yusril | 2606779956 | Teknik Kimia (Internasional) | Kelompok 106
+380. Salsabila Praditya | 2606779962 | Teknik Bioproses (Internasional) | Kelompok 34
+381. Samudra Asadel Patihrajawali | 2606779975 | Teknik Mesin (Internasional) | Kelompok 93
+382. Saphira Evani Maliqa | 2606779981 | Teknik Metalurgi dan Material (Internasional) | Kelompok 82
+383. Satria Adnan Lesmana | 2606779994 | Teknik Industri (Internasional) | Kelompok 12
+384. Seruni Sayisha Fisriy | 2606729825 | Teknik Bioproses (Internasional) | Kelompok 32
+385. Shafira Hafidza | 2606728740 | Teknik Metalurgi dan Material (Internasional) | Kelompok 73
+386. Shakeela Putri Prasetia | 2606780011 | Teknik Kimia (Internasional) | Kelompok 21
+387. Shareen Patricia Pakpahan | 2606780024 | Teknik Bioproses (Internasional) | Kelompok 13
+388. Sharen Jessica Saragi | 2606780030 | Teknik Industri (Internasional) | Kelompok 10
+389. Shifa Umayaa Putri | 2606730026 | Teknik Lingkungan (Internasional) | Kelompok 31
+390. Shifra Bianca Batti | 2606780043 | Teknik Industri (Internasional) | Kelompok 94
+391. Sri Lakshmi Sivakumar | 2606896290 | Teknik Komputer (Internasional) | Kelompok 103
+392. Sulthan Muhammad Zaki | 2606819902 | Teknik Elektro (Internasional) | Kelompok 65
+393. Sulthan Naufalino Yahya | 2606780062 | Teknik Komputer (Internasional) | Kelompok 7
+394. Sulthan Rasendriya Putra Pelana | 2606819915 | Teknik Perkapalan (Internasional) | Kelompok 40
+395. Sulthan Shafi Azzaini | 2606730032 | Teknik Lingkungan (Internasional) | Kelompok 11
+396. Sulthon Azkafarros Al Afif Riza | 2606728753 | Teknik Metalurgi dan Material (Internasional) | Kelompok 7
+397. Surya Agung Santoso | 2606780075 | Teknik Mesin (Internasional) | Kelompok 34
+398. Syafiq Aryasatya Wibowo | 2606897955 | Teknik Elektro (Internasional) | Kelompok 54
+399. Syahan Abyaz Syarif | 2606729453 | Teknik Elektro (Internasional) | Kelompok 5
+400. Syahfirizki Meutuah | 2606780081 | Teknik Industri (Internasional) | Kelompok 45
+401. Syanne Sweetliztania Wiranata | 2606729352 | Teknik Mesin (Internasional) | Kelompok 57
+402. Syarifah Alina Fatiyyah | 2606780094 | Teknik Komputer (Internasional) | Kelompok 80
+403. Syauqy Faiq Pasha | 2606729365 | Teknik Mesin (Internasional) | Kelompok 105
+404. Syifa Imara Tirta Purbaya | 2606729163 | Teknik Sipil (Internasional) | Kelompok 99
+405. Syifa Nur Fadiyah | 2606780106 | Teknik Kimia (Internasional) | Kelompok 28
+406. Talita Yura Nasution | 2606728766 | Teknik Metalurgi dan Material (Internasional) | Kelompok 76
+407. Tengku Rezlin Shah | 2606819921 | Teknik Bioproses (Internasional) | Kelompok 63
+408. Tengku Tristan Mochtar | 2606729371 | Teknik Mesin (Internasional) | Kelompok 92
+409. Timur Zulhaidi | 2606729384 | Teknik Mesin (Internasional) | Kelompok 88
+410. Valerie Erika Damarani | 2606729831 | Teknik Bioproses (Internasional) | Kelompok 46
+411. Valerie Rahel Ronauli | 2606780112 | Teknik Industri (Internasional) | Kelompok 56
+412. Vanessa Anggi Nicora L Tobing | 2606729604 | Arsitektur (Internasional) | Kelompok 81
+413. Vanessa Lakshmi Lim | 2606780125 | Arsitektur (Internasional) | Kelompok 79
+414. Vania Nadiendra Tahrir | 2606780131 | Teknik Sipil (Internasional) | Kelompok 75
+415. Vyanra Nadhifa Salsabila Dilmy | 2606728936 | Teknik Kimia (Internasional) | Kelompok 23
+416. Winne Cahya Karisa | 2606729844 | Teknik Bioproses (Internasional) | Kelompok 52
+417. Wu Lan | 2606896220 | Teknik Bioproses (Internasional) | Kelompok 3
+418. Xabi Kevano Urionabarrenechea D | 2606897980 | Arsitektur (Internasional) | Kelompok 61
+419. Xu Chenghan | 2606896302 | Teknik Komputer (Internasional) | Kelompok 5
+420. Yasmine Nava Aprilia | 2606728942 | Teknik Kimia (Internasional) | Kelompok 18
+421. Zahra Anindya | 2606780150 | Teknik Komputer (Internasional) | Kelompok 59
+422. Zahra Mutiara Gunawan | 2606780163 | Teknik Industri (Internasional) | Kelompok 1
+423. Zahwa Callista | 2606780176 | Teknik Bioproses (Internasional) | Kelompok 97
+424. Zakyan Daniswara | 2606780182 | Teknik Industri (Internasional) | Kelompok 98
+425. Zalvano Abbyakta Ajie | 2606728955 | Teknik Kimia (Internasional) | Kelompok 80
+426. Zanira Kayana | 2606897993 | Teknik Metalurgi dan Material (Internasional) | Kelompok 70
+427. Zavier Habiburahman | 2606780195 | Teknik Kimia (Internasional) | Kelompok 75
+428. Zefanya Aquast Nathania | 2606728961 | Teknik Kimia (Internasional) | Kelompok 25
+429. Zefanya Louisa El Indriyanto | 2606780200 | Teknik Kimia (Internasional) | Kelompok 49
+430. Zhafran Avisena Syafriel | 2606780213 | Teknik Industri (Internasional) | Kelompok 101
+431. Zhafrano Ranvier Sujarto | 2606780226 | Teknik Elektro (Internasional) | Kelompok 20

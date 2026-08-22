@@ -139,7 +139,6 @@ export const mahasiswaDTSL: Mahasiswa[] = [
   { npm: "2606872473", nama: "Arnaz Tegar Panggalih", departemen: "DTSL", prodi: "Teknik Lingkungan", kelompok: 24, linkGrupLine: "https://line.me/ti/g/CpAFHzZeyC" },
   { npm: "2606788645", nama: "Muhammad Al Rasyid Adz Ashar Nugroho", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 12, linkGrupLine: "https://line.me/ti/g/D8c4jeubKz" },
   { npm: "2606872643", nama: "Azkha Shahibih", departemen: "DTSL", prodi: "Teknik Lingkungan", kelompok: 45, linkGrupLine: "https://line.me/ti/g/zFUzck2BFX" },
-  { npm: "2606788651", nama: "Muhammad Daffa Athallah", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 93, linkGrupLine: "https://line.me/ti/g/e8UYpbMAz6" },
   { npm: "2606872795", nama: "Bunga Diva Aisyah", departemen: "DTSL", prodi: "Teknik Lingkungan", kelompok: 17, linkGrupLine: "https://line.me/ti/g/QCfxM5jnUD" },
   { npm: "2606788664", nama: "Muhammad Devan Yonandafa Arbi", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 72, linkGrupLine: "https://line.me/ti/g/AV5s6MPC4m" },
   { npm: "2606873141", nama: "Dinda Mehlika Gevherhan", departemen: "DTSL", prodi: "Teknik Lingkungan", kelompok: 73, linkGrupLine: "https://line.me/ti/g/C7YzFKhRtX" },
@@ -242,4 +241,5 @@ export const mahasiswaDTSL: Mahasiswa[] = [
   { npm: "2606894814", nama: "Muhammad Aziz Assyafi", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 27, linkGrupLine: "https://line.me/ti/g/jWJP6fX9YE" },
   { npm: "2606894846", nama: "Muhammad Rafael Tsaqif Hanafi", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 22, linkGrupLine: "https://line.me/ti/g/pCVuhKvQsa" },
   { npm: "2606894902", nama: "Saif Fauzan Amanuloh", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 59, linkGrupLine: "https://line.me/ti/g/x3cxekngHG" },
+  { npm: "2606788651", nama: "Muhammad Daffa Athallah", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 76, linkGrupLine: "https://line.me/ti/g/JUTYeepYnp" },
 ];

@@ -173,7 +173,6 @@ export const mahasiswaDTM: Mahasiswa[] = [
   { npm: "2606872800", nama: "Cakra Dharma Satya Rohaedi", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 48, linkGrupLine: "https://line.me/ti/g/Y5DLFqsZFF" },
   { npm: "2606789433", nama: "Reyner Aziz Sulistyardi", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 64, linkGrupLine: "https://line.me/ti/g/Wu5mSeHtLp" },
   { npm: "2606873122", nama: "Dimas Raditya Abryan Bramantyo", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 22, linkGrupLine: "https://line.me/ti/g/pCVuhKvQsa" },
-  { npm: "2606789446", nama: "Steven Adrian Auw", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 60, linkGrupLine: "https://line.me/ti/g/3tc2EysVMy" },
   { npm: "2606873204", nama: "Eghi Azhar Andani", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 103, linkGrupLine: "https://line.me/R/ti/g/zw9npbQU8Q" },
   { npm: "2606789452", nama: "Teges Asmo Budisatrio", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 74, linkGrupLine: "https://line.me/ti/g/_jqX_z78tu" },
   { npm: "2606873513", nama: "Fathir Islami Abrar", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 85, linkGrupLine: "https://line.me/ti/g/Pau9kDz9tC" },
@@ -198,7 +197,6 @@ export const mahasiswaDTM: Mahasiswa[] = [
   { npm: "2606853770", nama: "Ferdian Rafif", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 13, linkGrupLine: "https://line.me/ti/g/pxPnfDx_59" },
   { npm: "2606875153", nama: "Muhammad Athar Agitama", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 5, linkGrupLine: "https://line.me/ti/g/U7nTwreQXf" },
   { npm: "2606853833", nama: "Gabriel Asima Ramakandra Tambunan", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 77, linkGrupLine: "https://line.me/ti/g/tfAE36Zqtu" },
-  { npm: "2606875172", nama: "Muhammad Daffa Athallah", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 93, linkGrupLine: "https://line.me/ti/g/e8UYpbMAz6" },
   { npm: "2606854041", nama: "Khannavarro Maulana Elfawwaz", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 59, linkGrupLine: "https://line.me/ti/g/x3cxekngHG" },
   { npm: "2606875430", nama: "Muhammad Javas Al Huda", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 88, linkGrupLine: "https://line.me/ti/g/hY948pJ9zQ" },
   { npm: "2606854325", nama: "Naufal Fadhillah", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 73, linkGrupLine: "https://line.me/ti/g/C7YzFKhRtX" },
@@ -259,4 +257,6 @@ export const mahasiswaDTM: Mahasiswa[] = [
   { npm: "2606876654", nama: "Rifki Althafvista Wibisono", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 27, linkGrupLine: "https://line.me/ti/g/jWJP6fX9YE" },
   { npm: "2606877133", nama: "Yosafat Binsar Raja Nathanael Sipangkar", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 60, linkGrupLine: "https://line.me/ti/g/3tc2EysVMy" },
   { npm: "2606877221", nama: "Zahran Azizi Prasetyo", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 6, linkGrupLine: "https://line.me/ti/g/JDCZremK9S" },
+  { npm: "2606789446", nama: "Steven Adrian Auw", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 58, linkGrupLine: "https://line.me/ti/g/SytN47mPVG" },
+  { npm: "2606875172", nama: "Muhammad Daffa Athallah", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 93, linkGrupLine: "https://line.me/ti/g/e8UYpbMAz6" },
 ];

@@ -2,7 +2,6 @@ import type { Mahasiswa } from "./types";
 
 export const mahasiswaDA: Mahasiswa[] = [
   { npm: "2606736774", nama: "Ahmad Asraf. Hs", departemen: "DA", prodi: "Arsitektur", kelompok: 52, linkGrupLine: "https://line.me/ti/g/3XcmaCdPRC" },
-  { npm: "2606736856", nama: "Albert Tannesa", departemen: "DA", prodi: "Arsitektur Interior", kelompok: null, linkGrupLine: null },
   { npm: "2606736843", nama: "Aksara Kemal", departemen: "DA", prodi: "Arsitektur", kelompok: 65, linkGrupLine: "https://line.me/ti/g/WvuSG8akAb" },
   { npm: "2606737032", nama: "Andi Sitti Fathimah Zahrah Al-ghafirah", departemen: "DA", prodi: "Arsitektur Interior", kelompok: 43, linkGrupLine: "https://line.me/ti/g/LDYtVY5Fem" },
   { npm: "2606736912", nama: "Almas Shatha Mulia", departemen: "DA", prodi: "Arsitektur", kelompok: 71, linkGrupLine: "https://line.me/ti/g/V-xTECCk7v" },
