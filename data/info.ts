@@ -7,7 +7,7 @@ export const infoLinks: InfoLinks = {
   },
   guidebook: {
     label: "Buka Guidebook",
-    url: "",
+    url: "https://drive.google.com/drive/folders/1lq2Am2WCA77fUd3jEcsp9XlWnAYaFbVK?usp=sharing",
   },
   kalender: {
     label: "Buka Kalender",
