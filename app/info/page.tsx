@@ -86,9 +86,9 @@ function ExternalButton({
         accent && "bg-amber-700 text-white hover:bg-amber-800"
       )}
     >
-      <a href={safe} target="_blank" rel="noopener noreferrer">
-        {label}
-        <ExternalLink data-slot="icon-inline-end" />
+      <a href={safe} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 min-w-0 overflow-hidden text-ellipsis whitespace-nowrap">
+        <span className="truncate">{label}</span>
+        <ExternalLink data-slot="icon-inline-end" className="shrink-0" />
       </a>
     </Button>
   );
