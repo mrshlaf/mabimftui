@@ -6,7 +6,7 @@ export const infoLinks: InfoLinks = {
     url: "https://bit.ly/PelanggaranMABIMFTUI2026",
   },
   guidebook: {
-    label: "Buka Guidebook",
+    label: "Guidebook",
     url: "https://drive.google.com/drive/folders/1lq2Am2WCA77fUd3jEcsp9XlWnAYaFbVK?usp=sharing",
   },
   kalender: {
