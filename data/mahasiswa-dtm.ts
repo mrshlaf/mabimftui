@@ -259,4 +259,6 @@ export const mahasiswaDTM: Mahasiswa[] = [
   { npm: "2606877221", nama: "Zahran Azizi Prasetyo", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 6, linkGrupLine: "https://line.me/ti/g/JDCZremK9S" },
   { npm: "2606789446", nama: "Steven Adrian Auw", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 58, linkGrupLine: "https://line.me/ti/g/SytN47mPVG" },
   { npm: "2606875172", nama: "Muhammad Daffa Athallah", departemen: "DTM", prodi: "Teknik Perkapalan", kelompok: 93, linkGrupLine: "https://line.me/ti/g/e8UYpbMAz6" },
+  { npm: "2606876963", nama: "Talitha Destianti Setiadi", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 39, linkGrupLine: "https://line.me/ti/g/eCTnCDj5t9" },
+  { npm: "2606897892", nama: "Raymond Benhanza", departemen: "DTM", prodi: "Teknik Mesin", kelompok: 46, linkGrupLine: "https://line.me/ti/g/gJK6cgxCk2" },
 ];

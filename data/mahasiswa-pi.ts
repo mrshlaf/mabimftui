@@ -431,4 +431,10 @@ export const mahasiswaPI: Mahasiswa[] = [
   { npm: "2606780131", nama: "Vania Nadiendra Tahrir", departemen: "PI", prodi: "Teknik Sipil (Internasional)", kelompok: 75, linkGrupLine: "https://line.me/ti/g/S5eFhqwLg7" },
   { npm: "2606897570", nama: "Anargya Alkeisha Harmanto", departemen: "PI", prodi: "Teknik Sipil (Internasional)", kelompok: 45, linkGrupLine: "https://line.me/ti/g/zFUzck2BFX" },
   { npm: "2606897646", nama: "Dzaky Fawwaz Zulmi", departemen: "PI", prodi: "Teknik Sipil (Internasional)", kelompok: 83, linkGrupLine: "https://line.me/ti/g/CgJsUMK5L7" },
+  { npm: "2606897854", nama: "Raihan Ardiyanto", departemen: "PI", prodi: "Teknik Perkapalan (Internasional)", kelompok: 10, linkGrupLine: "https://line.me/ti/g/mwh7B3hKLL" },
+  { npm: "2606897961", nama: "Talitha Yolandra Shafira", departemen: "PI", prodi: "Teknik Kimia (Internasional)", kelompok: 87, linkGrupLine: "https://line.me/ti/g/nKTurqWWq4" },
+  { npm: "2606897665", nama: "Ferdano Akmal", departemen: "PI", prodi: "Teknik Elektro (Internasional)", kelompok: 17, linkGrupLine: "https://line.me/ti/g/QCfxM5jnUD" },
+  { npm: "2606897860", nama: "Raiqa Aaliyah", departemen: "PI", prodi: "Teknik Bioproses (Internasional)", kelompok: 19, linkGrupLine: "https://line.me/ti/g/7LSx4DVuW6" },
+  { npm: "2606897596", nama: "Bhaskara Panji Aditya Wardhana", departemen: "PI", prodi: "Teknik Elektro (Internasional)", kelompok: 11, linkGrupLine: "https://line.me/ti/g/uxrpnYg52n" },
+  { npm: "2606897633", nama: "Dionisius Bennett Andrianto", departemen: "PI", prodi: "Arsitektur (Internasional)", kelompok: 20, linkGrupLine: "https://line.me/ti/g/h6yYa-paVM" },
 ];

@@ -303,6 +303,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Galang Fausta Nandana Sada", d: "PI", npm: "2606778732" },
     { n: "Hanif Ilham Athaurrahman", d: "PI", npm: "2606778814" },
     { n: "Sharen Jessica Saragi", d: "PI", npm: "2606780030" },
+    { n: "Raihan Ardiyanto", d: "PI", npm: "2606897854" },
   ],
   11: [
     { n: "Rheinata Fatima Aurellia", d: "DA", npm: "2606790712" },
@@ -321,6 +322,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Sulthan Shafi Azzaini", d: "PI", npm: "2606730032" },
     { n: "Haekal Keiji Rovani", d: "PI", npm: "2606778783" },
     { n: "Mairysya Pradiptah Puteri Wildan", d: "PI", npm: "2606897740" },
+    { n: "Bhaskara Panji Aditya Wardhana", d: "PI", npm: "2606897596" },
   ],
   12: [
     { n: "Fayola Khansa Celena Indhy Prasastyo", d: "DA", npm: "2606792996" },
@@ -434,6 +436,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Audrey Primadevi Subiakto", d: "PI", npm: "2606729011" },
     { n: "Cut Farrah Fathani", d: "PI", npm: "2606729503" },
     { n: "Raffi Dzahwan Pratama", d: "PI", npm: "2606779741" },
+    { n: "Ferdano Akmal", d: "PI", npm: "2606897665" },
   ],
   18: [
     { n: "Ivander Jeconiah Rinda Barrung", d: "DA", npm: "2606873993" },
@@ -470,6 +473,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Paulus Kristofer", d: "PI", npm: "2606779634" },
     { n: "Andi Shakeira Pammusurang Djuanna", d: "PI", npm: "2606778120" },
     { n: "Fadlan Akhsan Sulistiono", d: "PI", npm: "2606778556" },
+    { n: "Raiqa Aaliyah", d: "PI", npm: "2606897860" },
   ],
   20: [
     { n: "Hammam Musthafa Prasha", d: "DA", npm: "2606894783" },
@@ -488,6 +492,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Zhafrano Ranvier Sujarto", d: "PI", npm: "2606780226" },
     { n: "Muhammad Naufal Raissa Nasution", d: "PI", npm: "2606729301" },
     { n: "Ahmad Fagih", d: "PI", npm: "2606777906" },
+    { n: "Dionisius Bennett Andrianto", d: "PI", npm: "2606897633" },
   ],
   21: [
     { n: "Syarifah Khalila Saskia", d: "DA", npm: "2606854565" },
@@ -846,6 +851,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Melati Shaquilla Rahma Al Humaira", d: "PI", npm: "2606779193" },
     { n: "Fiel Valezka Soelistyono", d: "PI", npm: "2606778713" },
     { n: "Fayola Shifra Zarira", d: "PI", npm: "2606778676" },
+    { n: "Talitha Destianti Setiadi", d: "DTM", npm: "2606876963" },
   ],
   40: [
     { n: "Sultan Ar-rasyid Andrianto", d: "DA", npm: "2606854552" },
@@ -977,6 +983,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Muhammad Aldo Elgiansyah", d: "PI", npm: "2606819814" },
     { n: "Muhammad Faheem", d: "PI", npm: "2606779350" },
     { n: "Valerie Erika Damarani", d: "PI", npm: "2606729831" },
+    { n: "Raymond Benhanza", d: "DTM", npm: "2606897892" },
   ],
   47: [
     { n: "Lavenia Madeline Wardana", d: "DA", npm: "2606738615" },
@@ -1753,6 +1760,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Aqila Ghaisani Az Zahra", d: "PI", npm: "2606778184" },
     { n: "Budhi Mahardhika Warabrata", d: "PI", npm: "2606778404" },
     { n: "Andini Rahma Carissa", d: "PI", npm: "2606778114" },
+    { n: "Talitha Yolandra Shafira", d: "PI", npm: "2606897961" },
   ],
   88: [
     { n: "Moh. Dafin Azka Aldric", d: "DA", npm: "2606854123" },
