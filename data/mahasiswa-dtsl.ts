@@ -242,4 +242,5 @@ export const mahasiswaDTSL: Mahasiswa[] = [
   { npm: "2606894846", nama: "Muhammad Rafael Tsaqif Hanafi", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 22, linkGrupLine: "https://line.me/ti/g/pCVuhKvQsa" },
   { npm: "2606894902", nama: "Saif Fauzan Amanuloh", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 59, linkGrupLine: "https://line.me/ti/g/x3cxekngHG" },
   { npm: "2606788651", nama: "Muhammad Daffa Athallah", departemen: "DTSL", prodi: "Teknik Sipil", kelompok: 76, linkGrupLine: "https://line.me/ti/g/JUTYeepYnp" },
+  { npm: "2606792094", nama: "Ken Anthony Widjaja", departemen: "DTSL", prodi: "Teknik Lingkungan", kelompok: 67, linkGrupLine: "https://line.me/ti/g/jHnsUyR6pb" },
 ];

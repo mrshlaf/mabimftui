@@ -757,6 +757,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Maitsaluna Ratu Risas", d: "PI", npm: "2606779155" },
     { n: "Renata Christy Sihprasetyo", d: "PI", npm: "2606729806" },
     { n: "Surya Agung Santoso", d: "PI", npm: "2606780075" },
+    { n: "Ratu Gharine", d: "PI", npm: "2606879886" },
   ],
   35: [
     { n: "Ignatius Kilau Lintang Nugroho", d: "DA", npm: "2606853934" },
@@ -1381,6 +1382,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Prima Faeyza Asqalani", d: "PI", npm: "2606779666" },
     { n: "Althaf Zayan Rosadi", d: "PI", npm: "2606778026" },
     { n: "Azka Fazia Rahayu", d: "PI", npm: "2606729226" },
+    { n: "Ken Anthony Widjaja", d: "DTSL", npm: "2606792094" },
   ],
   68: [
     { n: "Jody Reinhart Situmorang", d: "DA", npm: "2606874112" },
