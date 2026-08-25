@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -13,6 +13,7 @@ import {
   isUnlocked,
   type CalendarMonth,
   type KalendarEvent,
+  type KalendarTag,
 } from "@/data/kalendar";
 import { cn } from "@/lib/utils";
 import Reveal from "./Reveal";
@@ -444,6 +445,36 @@ export default function CalendarGrid({
     [cal.year, cal.month],
   );
 
+  const upcomingEvents = useMemo(() => {
+    const now = new Date();
+    const todayMs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    return KALENDER_EVENTS.filter((ev) => {
+      if (locked && !isUnlocked(ev, nowMs)) return false;
+      const endMs = ev.end
+        ? new Date(ev.end + "T23:59:59").getTime()
+        : new Date(ev.start + "T23:59:59").getTime();
+      return endMs >= todayMs;
+    }).slice(0, 6);
+  }, [locked, nowMs]);
+
+  const nextEvent = useMemo(() => {
+    const now = new Date();
+    const todayMs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    for (const ev of KALENDER_EVENTS) {
+      const startMs = new Date(ev.start + "T00:00:00").getTime();
+      if (startMs >= todayMs) return ev;
+    }
+    return null;
+  }, []);
+
+  const daysUntilNext = useMemo(() => {
+    if (!nextEvent) return null;
+    const now = new Date();
+    const todayMs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    const startMs = new Date(nextEvent.start + "T00:00:00").getTime();
+    return Math.ceil((startMs - todayMs) / 86400000);
+  }, [nextEvent]);
+
   return (
     <>
       <Reveal>
@@ -519,6 +550,98 @@ export default function CalendarGrid({
           </div>
         </Card>
       </Reveal>
+
+      <Reveal delay={120}>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+          {(["day", "deadline", "range"] as KalendarTag[]).map((tag) => {
+            const s = TAG_STYLE[tag];
+            return (
+              <div key={tag} className="flex items-center gap-1.5">
+                <span className={cn("h-2.5 w-2.5 rounded-full", s.bar)} />
+                <span className="text-[11px] font-bold text-muted-foreground">
+                  {TAG_LABEL[tag]}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </Reveal>
+
+      {nextEvent && daysUntilNext !== null && (
+        <Reveal delay={160}>
+          <Card className="mt-5 overflow-hidden rounded-[1.5rem] ring-border/60 shadow-card">
+            <div className="relative flex items-center gap-4 px-5 py-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-accent/15">
+                <Clock className="h-5 w-5 text-accent" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                  Acara Berikutnya
+                </p>
+                <p className="mt-0.5 truncate font-heading text-sm font-bold text-foreground">
+                  {nextEvent.label}
+                </p>
+                <p className="mt-0.5 text-xs text-muted-foreground">
+                  {nextEvent.start}
+                  {nextEvent.waktu && ` \u00B7 ${nextEvent.waktu}`}
+                </p>
+              </div>
+              <div className="shrink-0 text-right">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/15 font-heading text-lg font-extrabold text-accent">
+                  {daysUntilNext}
+                </span>
+                <p className="mt-0.5 text-[10px] font-bold text-muted-foreground">
+                  hari lagi
+                </p>
+              </div>
+            </div>
+          </Card>
+        </Reveal>
+      )}
+
+      {upcomingEvents.length > 0 && (
+        <Reveal delay={200}>
+          <div className="mt-5">
+            <h3 className="mb-3 font-heading text-sm font-bold text-foreground">
+              Jadwal Mendatang
+            </h3>
+            <div className="space-y-2">
+              {upcomingEvents.map((ev) => {
+                const s = TAG_STYLE[ev.tag];
+                return (
+                  <Card
+                    key={ev.label}
+                    className="overflow-hidden rounded-xl ring-border/40 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card"
+                  >
+                    <div className="flex items-center gap-3 px-4 py-3">
+                      <span className={cn("h-2.5 w-2.5 shrink-0 rounded-full", s.bar)} />
+                      <div className="min-w-0 flex-1">
+                        <p className={cn("truncate text-sm font-bold leading-snug", s.text)}>
+                          {ev.label}
+                        </p>
+                        <div className="mt-0.5 flex items-center gap-2">
+                          <span className="rounded-full bg-background/60 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground ring-1 ring-border/40">
+                            {TAG_LABEL[ev.tag]}
+                          </span>
+                          <span className="text-[11px] text-muted-foreground">
+                            {ev.start}
+                            {ev.end && ` s/d ${ev.end}`}
+                          </span>
+                          {ev.waktu && (
+                            <span className="text-[11px] text-muted-foreground">
+                              {ev.waktu}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </Reveal>
+      )}
 
       {selectedDate && (
         <EventPopup
