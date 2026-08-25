@@ -8,5 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/dashboard`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/info`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/kontak`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/kalendar`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 }

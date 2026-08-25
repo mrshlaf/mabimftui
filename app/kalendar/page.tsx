@@ -2,17 +2,20 @@ import type { Metadata } from "next";
 import { CalendarDays } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import CalendarGrid from "../components/CalendarGrid";
+import { BreadcrumbJsonLd } from "../components/JsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Kalender",
+  title: "Jadwal Kegiatan Mabim",
   alternates: { canonical: "/kalendar" },
   description:
-    "Jadwal kegiatan Mabim FTUI 2026 — klik tanggal untuk melihat detail.",
+    "Jadwal lengkap kegiatan Mabim FTUI 2026: Mabim Day, penugasan, deadline, dan jadwal penting lainnya.",
 };
 
 export default function KalendarPage() {
   return (
     <div className="min-h-full">
+      <BreadcrumbJsonLd items={[{ name: "Jadwal Kegiatan", url: `${siteUrl}/kalendar` }]} />
       <PageHeader
         eyebrow="Jadwal Mabim"
         title="Kalender Kegiatan"

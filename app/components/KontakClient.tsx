@@ -110,9 +110,9 @@ function LembagaSection({
         >
           {lembaga.kode}
         </Badge>
-        <h3 className="font-heading text-xl font-semibold text-foreground">
+        <h2 className="font-heading text-xl font-semibold text-foreground">
           {lembaga.nama}
-        </h3>
+        </h2>
       </div>
       {lembaga.kontak.length > 0 ? (
         <div className="grid gap-4 sm:grid-cols-2">

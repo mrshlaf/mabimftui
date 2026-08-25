@@ -16,13 +16,48 @@ import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import InstagramIcon from "../components/InstagramIcon";
 import RSCarousel from "../components/RSCarousel";
+import { FaqJsonLd, BreadcrumbJsonLd } from "../components/JsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Info Penting",
+  title: "Info & Panduan Lengkap",
   alternates: { canonical: "/info" },
   description:
-    "Pengaduan, guidebook, dan kalender kegiatan Mabim FTUI 2026 dalam satu tempat.",
+    "Info penting Mabim FTUI 2026: pengaduan, guidebook, jadwal kegiatan, jam operasional, dan rumah sakit terdekat.",
 };
+
+const MABIM_FAQS = [
+  {
+    question: "Kapan Mabim FTUI 2026 dilaksanakan?",
+    answer:
+      "Mabim FTUI 2026 dimulai pada 29 Agustus 2026 (Day 1) dan berlangsung hingga Oktober 2026. Kegiatan utama mencakup 7 hari Mabim Day, penugasan departemen, dan kegiatan IKM.",
+  },
+  {
+    question: "Apa itu Mabim FTUI?",
+    answer:
+      "Mabim (Masa Bimbingan) adalah kegiatan wajib bagi mahasiswa baru Fakultas Teknik Universitas Indonesia (FTUI). Mabim bertujuan membimbing mahasiswa baru beradaptasi dengan lingkungan kampus, mengenal departemen, dan membangun kebersamaan antar angkatan.",
+  },
+  {
+    question: "Dimana lokasi Mabim FTUI 2026?",
+    answer:
+      "Kegiatan Mabim FTUI 2026 dilaksanakan di Fakultas Teknik Universitas Indonesia, Depok, Jawa Barat.",
+  },
+  {
+    question: "Bagaimana cara mengakses dashboard Mabim FTUI 2026?",
+    answer:
+      "Mahasiswa baru dapat mengakses dashboard pribadi di mabimftui.page/dashboard untuk melihat kelompok, grup Line, dan tugas departemen masing-masing.",
+  },
+  {
+    question: "Jam berapa kegiatan Mabim FTUI 2026?",
+    answer:
+      "Jam kegiatan Mabim Senin-Jumat pukul 08.00-20.00 WIB, dan Sabtu pukul 06.00-17.00 WIB. Jadwal harian dibagikan di grup masing-masing kelompok.",
+  },
+  {
+    question: "Bagaimana cara melaporkan pelanggaran selama Mabim?",
+    answer:
+      "Pelanggaran atau kendala selama Mabim dapat dilaporkan melalui form resmi pengaduan yang tersedia di halaman Info Penting situs mabimftui.page.",
+  },
+];
 
 const INSTAGRAM_URL = "https://www.instagram.com/mabimftui";
 
@@ -138,6 +173,8 @@ function InfoCell({ cell }: { cell: InfoCell }) {
 export default function InfoPage() {
   return (
     <div className="min-h-full">
+      <FaqJsonLd faqs={MABIM_FAQS} />
+      <BreadcrumbJsonLd items={[{ name: "Info & Panduan", url: `${siteUrl}/info` }]} />
       <PageHeader
         eyebrow="Info Penting"
         title="Info & Bantuan"

@@ -2,17 +2,20 @@ import type { Metadata } from "next";
 import { Phone } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import KontakClient from "../components/KontakClient";
+import { BreadcrumbJsonLd } from "../components/JsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Kontak SC",
+  title: "Kontak Panitia & SC",
   alternates: { canonical: "/kontak" },
   description:
-    "Hubungi contact person resmi BEM, MPM, dan lembaga lain Mabim FTUI 2026.",
+    "Kontak panitia Mabim FTUI 2026: hubungi BEM, MPM, dan lembaga lainnya via WhatsApp atau telepon.",
 };
 
 export default function KontakPage() {
   return (
     <div className="min-h-full">
+      <BreadcrumbJsonLd items={[{ name: "Kontak Panitia", url: `${siteUrl}/kontak` }]} />
       <PageHeader
         eyebrow="Kontak SC"
         title="Hubungi Kami"

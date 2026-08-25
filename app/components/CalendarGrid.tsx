@@ -602,9 +602,9 @@ export default function CalendarGrid({
       {upcomingEvents.length > 0 && (
         <Reveal delay={200}>
           <div className="mt-5">
-            <h3 className="mb-3 font-heading text-sm font-bold text-foreground">
+            <h2 className="mb-3 font-heading text-sm font-bold text-foreground">
               Jadwal Mendatang
-            </h3>
+            </h2>
             <div className="space-y-2">
               {upcomingEvents.map((ev) => {
                 const s = TAG_STYLE[ev.tag];

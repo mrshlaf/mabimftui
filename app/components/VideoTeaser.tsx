@@ -28,7 +28,7 @@ export default function VideoTeaser() {
         >
           <Image
             src="/hero-mabim.jpg"
-            alt=""
+            alt="Poster video teaser Mabim FTUI 2026"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 768px"

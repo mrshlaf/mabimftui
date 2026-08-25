@@ -16,11 +16,13 @@ import Countdown from "./components/Countdown";
 import Reveal from "./components/Reveal";
 import VideoTeaser from "./components/VideoTeaser";
 import { statistik, DEPARTEMEN_WARNA } from "@/data/statistik";
+import { siteName, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
+  title: "Masa Bimbingan Fakultas Teknik UI",
   alternates: { canonical: "/" },
   description:
-    "Satu pintu informasi Mabim FTUI 2026: dashboard pribadi untuk cari kelompok dan grup Line, info penting, dan kontak Steering Committee.",
+    "Mabim FTUI 2026: satu pintu info untuk kelompok, grup Line, jadwal kegiatan, dan kontak SC Masa Bimbingan Fakultas Teknik Universitas Indonesia.",
 };
 
 const MENU: {
@@ -93,6 +95,34 @@ export default function Home() {
 
   return (
     <div className="min-h-full">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: siteName,
+            startDate: "2026-08-29",
+            endDate: "2026-09-12",
+            location: {
+              "@type": "Place",
+              name: "Fakultas Teknik Universitas Indonesia",
+              address: "Depok, Jawa Barat, Indonesia",
+            },
+            organizer: {
+              "@type": "Organization",
+              name: "Fakultas Teknik Universitas Indonesia",
+            },
+            description:
+              "Masa Bimbingan Mahasiswa Baru Fakultas Teknik Universitas Indonesia 2026",
+            image: `${siteUrl}/hero-mabim.jpg`,
+            url: siteUrl,
+            eventStatus: "https://schema.org/EventScheduled",
+            eventAttendanceMode:
+              "https://schema.org/OfflineEventAttendanceMode",
+          }),
+        }}
+      />
       <section className="mx-auto max-w-6xl px-4 pb-2 pt-4 sm:px-6 sm:pb-3 sm:pt-6 lg:px-8 lg:pb-4 lg:pt-8">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
           <div

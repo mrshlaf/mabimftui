@@ -19,16 +19,17 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: siteName,
-    template: `%s | ${siteName}`,
+    default: `${siteName} - Masa Bimbingan Fakultas Teknik UI`,
+    template: `${siteName} - %s`,
   },
   description: siteDescription,
   applicationName: siteName,
   keywords: [
-    "Mabim",
-    "FTUI",
     "Mabim FTUI 2026",
-    "Mahasiswa Baru",
+    "Masa Bimbingan FTUI",
+    "Ospek FTUI 2026",
+    "Mabim Fakultas Teknik UI",
+    "Mahasiswa Baru FTUI",
     "Universitas Indonesia",
     "kelompok mabim",
     "link tugas mabim",
@@ -38,17 +39,22 @@ export const metadata: Metadata = {
     siteName,
     locale: "id_ID",
     url: siteUrl,
-    title: siteName,
+    title: `${siteName} - Masa Bimbingan Fakultas Teknik UI`,
     description: siteDescription,
+    images: ["/hero-mabim.jpg"],
   },
   twitter: {
-    card: "summary",
-    title: siteName,
+    card: "summary_large_image",
+    title: `${siteName} - Masa Bimbingan Fakultas Teknik UI`,
     description: siteDescription,
+    images: ["/hero-mabim.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  other: {
+    "manifest": "/site.webmanifest",
   },
 };
 
