@@ -757,7 +757,7 @@ export const KELOMPOK_MEMBER: Record<number, KelompokMember[]> = {
     { n: "Maitsaluna Ratu Risas", d: "PI", npm: "2606779155" },
     { n: "Renata Christy Sihprasetyo", d: "PI", npm: "2606729806" },
     { n: "Surya Agung Santoso", d: "PI", npm: "2606780075" },
-    { n: "Ratu Gharine", d: "PI", npm: "2606879886" },
+    { n: "Ratu Gharine", d: "PI", npm: "2606897886" },
   ],
   35: [
     { n: "Ignatius Kilau Lintang Nugroho", d: "DA", npm: "2606853934" },

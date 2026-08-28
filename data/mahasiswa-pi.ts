@@ -437,5 +437,5 @@ export const mahasiswaPI: Mahasiswa[] = [
   { npm: "2606897860", nama: "Raiqa Aaliyah", departemen: "PI", prodi: "Teknik Bioproses (Internasional)", kelompok: 19, linkGrupLine: "https://line.me/ti/g/7LSx4DVuW6" },
   { npm: "2606897596", nama: "Bhaskara Panji Aditya Wardhana", departemen: "PI", prodi: "Teknik Elektro (Internasional)", kelompok: 11, linkGrupLine: "https://line.me/ti/g/uxrpnYg52n" },
   { npm: "2606897633", nama: "Dionisius Bennett Andrianto", departemen: "PI", prodi: "Arsitektur (Internasional)", kelompok: 20, linkGrupLine: "https://line.me/ti/g/h6yYa-paVM" },
-  { npm: "2606879886", nama: "Ratu Gharine", departemen: "PI", prodi: "Teknik Bioproses (Internasional)", kelompok: 34, linkGrupLine: "https://line.me/ti/g/n4_3RALLxb" },
+  { npm: "2606897886", nama: "Ratu Gharine", departemen: "PI", prodi: "Teknik Bioproses (Internasional)", kelompok: 34, linkGrupLine: "https://line.me/ti/g/n4_3RALLxb" },
 ];
