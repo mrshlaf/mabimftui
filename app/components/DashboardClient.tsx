@@ -105,9 +105,14 @@ function LembagaBlock({
                 key={i}
                 className="rounded-2xl border border-border bg-secondary/40 p-4"
               >
-                <p className="font-heading text-sm font-bold text-foreground">
-                  {t.judul}
-                </p>
+                <div className="flex items-center gap-2.5">
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-accent to-amber-500 font-heading text-sm font-bold text-white shadow-lg">
+                    {i + 1}
+                  </span>
+                  <p className="min-w-0 flex-1 font-heading text-base font-bold tracking-tight text-foreground">
+                    {t.judul}
+                  </p>
+                </div>
                 {dl && (
                   <p className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1">
                     <span className="text-xs text-muted-foreground">
