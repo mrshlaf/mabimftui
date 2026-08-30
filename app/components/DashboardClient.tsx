@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import {
-  ExternalLink,
   FileText,
   LogOut,
   Megaphone,
@@ -40,6 +39,38 @@ function initials(nama: string) {
     .join("");
 }
 
+function deadlineInfo(deadline: string) {
+  const d = new Date(deadline);
+  if (Number.isNaN(d.getTime())) return null;
+  const diff = d.getTime() - Date.now();
+  const days = Math.ceil(diff / 86_400_000);
+  const label = new Intl.DateTimeFormat("id-ID", {
+    weekday: "short",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Asia/Jakarta",
+  }).format(d);
+  let badgeText: string;
+  let badgeCls: string;
+  if (days < 0) {
+    badgeText = "Tenggat lewat";
+    badgeCls = "bg-red-600 text-white";
+  } else if (days === 0) {
+    badgeText = "Hari ini!";
+    badgeCls = "bg-amber-500 text-amber-950";
+  } else if (days <= 2) {
+    badgeText = `${days} hari lagi`;
+    badgeCls = "bg-amber-500 text-amber-950";
+  } else {
+    badgeText = `${days} hari lagi`;
+    badgeCls = "bg-secondary text-muted-foreground";
+  }
+  return { label, badgeText, badgeCls };
+}
+
 function LembagaBlock({
   lembaga,
   badge,
@@ -47,7 +78,6 @@ function LembagaBlock({
   lembaga: TugasLembaga;
   badge?: string;
 }) {
-  const formUrl = safeExternalUrl(lembaga.linkForm ?? "");
   return (
     <div className="rounded-3xl bg-card p-5 ring-1 ring-border/60 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift hover:ring-accent/40 sm:p-6">
       <div className="flex items-center gap-3">
@@ -64,31 +94,76 @@ function LembagaBlock({
         </h4>
       </div>
 
-      <div className="mt-4 space-y-2">
+      <div className="mt-4 space-y-3">
         {lembaga.tugas.length > 0 ? (
           lembaga.tugas.map((t, i) => {
-            const url = safeExternalUrl(t.url);
-            if (!url) {
-              return (
-                <p
-                  key={i}
-                  className="rounded-2xl bg-secondary/60 px-4 py-3 text-sm text-muted-foreground"
-                >
-                  {t.label} (link menyusul)
-                </p>
-              );
-            }
+            const torUrl = safeExternalUrl(t.tor ?? "");
+            const kumpulUrl = safeExternalUrl(t.kumpul ?? "");
+            const dl = t.deadline ? deadlineInfo(t.deadline) : null;
             return (
-              <a
+              <div
                 key={i}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex min-h-12 items-center justify-between gap-3 rounded-2xl border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent/40 hover:bg-accent/5 active:scale-[0.99]"
+                className="rounded-2xl border border-border bg-secondary/40 p-4"
               >
-                <span>{t.label}</span>
-                <ExternalLink className="h-4 w-4 shrink-0 text-accent" />
-              </a>
+                <p className="font-heading text-sm font-bold text-foreground">
+                  {t.judul}
+                </p>
+                {dl && (
+                  <p className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+                    <span className="text-xs text-muted-foreground">
+                      Tenggat {dl.label} WIB
+                    </span>
+                    <span
+                      className={cn(
+                        "rounded-full px-2 py-0.5 text-[10px] font-bold",
+                        dl.badgeCls
+                      )}
+                    >
+                      {dl.badgeText}
+                    </span>
+                  </p>
+                )}
+                <div className="mt-3 grid grid-cols-2 gap-2">
+                  {torUrl ? (
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="rounded-xl"
+                    >
+                      <a href={torUrl} target="_blank" rel="noopener noreferrer">
+                        <FileText data-slot="icon-inline-start" />
+                        TOR Tugas
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      disabled
+                      className="rounded-xl"
+                    >
+                      TOR menyusul
+                    </Button>
+                  )}
+                  {kumpulUrl ? (
+                    <Button asChild size="sm" className="rounded-xl">
+                      <a
+                        href={kumpulUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Upload data-slot="icon-inline-start" />
+                        Kumpulkan
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button size="sm" disabled className="rounded-xl">
+                      Link kumpul menyusul
+                    </Button>
+                  )}
+                </div>
+              </div>
             );
           })
         ) : (
@@ -97,24 +172,6 @@ function LembagaBlock({
           </p>
         )}
       </div>
-
-      {formUrl ? (
-        <Button asChild size="lg" className="mt-4 h-12 w-full rounded-full">
-          <a href={formUrl} target="_blank" rel="noopener noreferrer">
-            <Upload data-slot="icon-inline-start" />
-            Kumpulkan Tugas {lembaga.kode}
-          </a>
-        </Button>
-      ) : (
-        <Button
-          variant="secondary"
-          size="lg"
-          disabled
-          className="mt-4 h-12 w-full rounded-full"
-        >
-          Link form {lembaga.kode} menyusul
-        </Button>
-      )}
     </div>
   );
 }
@@ -160,6 +217,12 @@ export default function DashboardClient() {
   const dept = tugasLembaga.find((t) => t.kode === user.departemen);
   const bem = tugasLembaga.find((t) => t.kode === "BEM");
   const bok = tugasLembaga.filter((t) => t.kategori === "bok");
+
+  const tugasCount: Record<TabKey, number> = {
+    dept: dept?.tugas.length ?? 0,
+    bem: bem?.tugas.length ?? 0,
+    bok: bok.reduce((n, l) => n + l.tugas.length, 0),
+  };
 
   const firstName = user.nama.split(/\s+/)[0] ?? user.nama;
 
@@ -318,23 +381,38 @@ export default function DashboardClient() {
           aria-label="Kategori tugas"
           className="mt-5 flex gap-1 rounded-full bg-secondary/70 p-1.5"
         >
-          {TABS.map((t) => (
-            <button
-              key={t.key}
-              type="button"
-              role="tab"
-              aria-selected={tab === t.key}
-              onClick={() => setTab(t.key)}
-              className={cn(
-                "h-11 flex-1 rounded-full text-sm font-semibold transition-colors active:scale-[0.98]",
-                tab === t.key
-                  ? "bg-card text-foreground shadow-card"
-                  : "text-muted-foreground hover:text-foreground"
-              )}
-            >
-              {t.label}
-            </button>
-          ))}
+          {TABS.map((t) => {
+            const count = tugasCount[t.key];
+            return (
+              <button
+                key={t.key}
+                type="button"
+                role="tab"
+                aria-selected={tab === t.key}
+                onClick={() => setTab(t.key)}
+                className={cn(
+                  "h-11 flex-1 rounded-full text-sm font-semibold transition-colors active:scale-[0.98]",
+                  tab === t.key
+                    ? "bg-card text-foreground shadow-card"
+                    : "text-muted-foreground hover:text-foreground"
+                )}
+              >
+                {t.label}
+                {count > 0 && (
+                  <span
+                    className={cn(
+                      "ml-1.5 inline-grid h-5 min-w-5 place-items-center rounded-full px-1 text-[10px] font-bold",
+                      tab === t.key
+                        ? "bg-accent text-white"
+                        : "bg-secondary text-muted-foreground"
+                    )}
+                  >
+                    {count}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
 
         <div role="tabpanel" className="mt-4">
