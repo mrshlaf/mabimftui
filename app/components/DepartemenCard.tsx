@@ -69,7 +69,7 @@ export default function DepartemenCard({
   return (
     <div
       onClick={() => setFlipped(!flipped)}
-      className="group h-[190px] w-full cursor-pointer [perspective:1000px]"
+      className="group h-[200px] sm:h-[190px] w-full cursor-pointer [perspective:1000px]"
     >
       <div
         className={cn(
@@ -80,7 +80,7 @@ export default function DepartemenCard({
         {/* Front Side */}
         <Card
           className={cn(
-            "absolute inset-0 h-full w-full rounded-[2rem] p-5 ring-1 shadow-card transition-all duration-500 hover:-translate-y-1 hover:ring-2 [backface-visibility:hidden] overflow-hidden",
+            "absolute inset-0 h-full w-full rounded-[2rem] p-4 sm:p-5 ring-1 shadow-card transition-all duration-500 hover:-translate-y-1 hover:ring-2 [backface-visibility:hidden] overflow-hidden",
             warna.card,
             glowClass
           )}
@@ -94,13 +94,13 @@ export default function DepartemenCard({
             </span>
             <span className={cn("text-xs font-bold", warna.sub)}>{pct}%</span>
           </div>
-          <p className={cn("relative z-10 mt-4 font-heading text-3xl font-extrabold tracking-tight transition-transform duration-300 group-hover:translate-x-0.5", warna.heading)}>
+          <p className={cn("relative z-10 mt-2.5 sm:mt-4 font-heading text-2xl sm:text-3xl font-extrabold tracking-tight transition-transform duration-300 group-hover:translate-x-0.5", warna.heading)}>
             {d.jumlah.toLocaleString("id-ID")}
           </p>
-          <p className={cn("relative z-10 mt-1 text-sm font-medium leading-snug", warna.sub)}>
+          <p className={cn("relative z-10 mt-1 text-xs sm:text-sm font-medium leading-snug", warna.sub)}>
             {d.nama}
           </p>
-          <div className={cn("relative z-10 mt-4 h-1.5 overflow-hidden rounded-full transition-colors duration-300", warna.track)}>
+          <div className={cn("relative z-10 mt-2.5 sm:mt-4 h-1.5 overflow-hidden rounded-full transition-colors duration-300", warna.track)}>
             <div
               className={cn("h-full rounded-full transition-all duration-1000 ease-out", warna.bar)}
               style={{ width: `${pct}%` }}
@@ -111,7 +111,7 @@ export default function DepartemenCard({
         {/* Back Side */}
         <Card
           className={cn(
-            "absolute inset-0 h-full w-full rounded-[2rem] p-5 ring-1 shadow-card transition-all duration-500 hover:-translate-y-1 hover:ring-2 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-between overflow-hidden",
+            "absolute inset-0 h-full w-full rounded-[2rem] p-4 sm:p-5 ring-1 shadow-card transition-all duration-500 hover:-translate-y-1 hover:ring-2 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-between overflow-hidden",
             warna.card,
             glowClass
           )}
@@ -126,7 +126,7 @@ export default function DepartemenCard({
               </span>
               <RefreshCw className={cn("h-3.5 w-3.5 animate-pulse", warna.sub)} />
             </div>
-            <ul className={cn("mt-2.5 space-y-1 text-[11px] font-semibold leading-relaxed max-h-[95px] overflow-y-auto pr-1 select-none scrollbar-thin scrollbar-thumb-black/10 scrollbar-track-transparent", warna.heading)}>
+            <ul className={cn("mt-2 space-y-1 text-[10.5px] sm:text-[11px] font-semibold leading-relaxed max-h-[100px] overflow-y-auto pr-1 select-none scrollbar-thin scrollbar-thumb-black/10 scrollbar-track-transparent", warna.heading)}>
               {prodis.map((p, idx) => (
                 <li key={idx} className="flex items-center gap-1.5 truncate">
                   <span className={cn("h-1.5 w-1.5 shrink-0 rounded-full", warna.bar)} />
@@ -135,7 +135,7 @@ export default function DepartemenCard({
               ))}
             </ul>
           </div>
-          <p className={cn("relative z-10 text-[10px] font-bold uppercase tracking-wider text-center mt-2 flex items-center justify-center gap-1", warna.sub)}>
+          <p className={cn("relative z-10 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-center mt-2 flex items-center justify-center gap-1", warna.sub)}>
             Klik untuk membalik
           </p>
         </Card>
