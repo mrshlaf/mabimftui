@@ -35,23 +35,30 @@ function KontakCard({ person }: { person: KontakPerson }) {
   const tel = hasTelp ? safeExternalUrl(phoneToTel(person.noTelp)) : null;
   const wa = hasTelp ? safeExternalUrl(phoneToWa(person.noTelp)) : null;
   return (
-    <Card className="h-full rounded-[2rem] p-6 ring-border/60 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift hover:ring-accent/40">
-      <div className="flex items-center gap-3">
-        <Avatar
-          size="lg"
-          className="size-12 bg-gradient-to-br from-secondary to-accent/15 text-accent"
-        >
-          <AvatarFallback className="font-heading text-base font-bold">
-            {initials(person.nama)}
-          </AvatarFallback>
-        </Avatar>
-        <div className="min-w-0">
-          <h3 className="truncate font-heading text-base font-semibold text-foreground">
-            {person.nama}
-          </h3>
-          <p className="truncate text-sm text-muted-foreground">{person.peran}</p>
-        </div>
-      </div>
+    <Card className="group relative overflow-hidden h-full rounded-[2rem] p-6 ring-border/60 shadow-card transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_-8px_rgba(9,65,82,0.12)] hover:ring-accent/25">
+      {/* Subtle Colored Background Gradient */}
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-teal-dark/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      {/* Glass Glare Highlight */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+      <div className="relative z-10 flex flex-col h-full justify-between">
+        <div>
+          <div className="flex items-center gap-3">
+            <Avatar
+              size="lg"
+              className="size-12 bg-gradient-to-br from-secondary to-accent/15 text-accent transition-transform duration-300 group-hover:scale-105"
+            >
+              <AvatarFallback className="font-heading text-base font-bold">
+                {initials(person.nama)}
+              </AvatarFallback>
+            </Avatar>
+            <div className="min-w-0">
+              <h3 className="truncate font-heading text-base font-bold text-foreground transition-colors duration-300 group-hover:text-accent">
+                {person.nama}
+              </h3>
+              <p className="truncate text-sm text-muted-foreground">{person.peran}</p>
+            </div>
+          </div>
 
       <div className="mt-4 space-y-1.5 text-sm text-muted-foreground">
         {person.npm && (
@@ -90,6 +97,8 @@ function KontakCard({ person }: { person: KontakPerson }) {
             </a>
           </Button>
         )}
+      </div>
+        </div>
       </div>
     </Card>
   );

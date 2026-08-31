@@ -135,36 +135,50 @@ function InfoCell({ cell }: { cell: InfoCell }) {
     <Card
       id={cell.id}
       className={cn(
-        "h-full scroll-mt-20 rounded-[2rem] p-5 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift",
-        accent ? "bg-amber-100/80 ring-amber-300/60" : "ring-border/60"
+        "group relative overflow-hidden h-full scroll-mt-20 rounded-[2rem] p-5 shadow-card transition-all duration-500 hover:-translate-y-1.5",
+        accent
+          ? "bg-amber-100/80 ring-amber-300/60 hover:shadow-[0_12px_32px_-8px_rgba(217,101,26,0.18)] hover:ring-accent/30"
+          : "ring-border/60 hover:shadow-[0_12px_32px_-8px_rgba(9,65,82,0.12)] hover:ring-accent/25"
       )}
     >
-      <span
+      {/* Subtle Colored Background Gradient */}
+      <div
         className={cn(
-          "grid h-12 w-12 shrink-0 place-items-center rounded-full",
-          accent ? "bg-card text-amber-700 shadow-card" : "bg-secondary text-accent"
+          "absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity duration-500 group-hover:opacity-100",
+          accent ? "from-accent/5 to-amber-500/5" : "from-teal-500/5 to-teal-dark/5"
         )}
-      >
-        <cell.icon className="h-6 w-6" />
-      </span>
-      <h2
-        className={cn(
-          "mt-3 font-heading text-base font-semibold",
-          accent ? "text-amber-950" : "text-foreground"
-        )}
-      >
-        {cell.title}
-      </h2>
-      <p
-        className={cn(
-          "mt-1.5 text-sm leading-relaxed",
-          accent ? "text-amber-800/80" : "text-muted-foreground"
-        )}
-      >
-        {cell.desc}
-      </p>
-      <div className="mt-4">
-        <ExternalButton label={cell.link.label} url={cell.link.url} accent={accent} />
+      />
+      {/* Glass Glare Highlight */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+      <div className="relative z-10">
+        <span
+          className={cn(
+            "grid h-12 w-12 shrink-0 place-items-center rounded-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md",
+            accent ? "bg-card text-amber-700 shadow-card" : "bg-secondary text-accent"
+          )}
+        >
+          <cell.icon className="h-6 w-6" />
+        </span>
+        <h2
+          className={cn(
+            "mt-3 font-heading text-base font-bold transition-colors duration-300 group-hover:text-accent",
+            accent ? "text-amber-950" : "text-foreground"
+          )}
+        >
+          {cell.title}
+        </h2>
+        <p
+          className={cn(
+            "mt-1.5 text-sm leading-relaxed",
+            accent ? "text-amber-800/80" : "text-muted-foreground"
+          )}
+        >
+          {cell.desc}
+        </p>
+        <div className="mt-4">
+          <ExternalButton label={cell.link.label} url={cell.link.url} accent={accent} />
+        </div>
       </div>
     </Card>
   );
@@ -185,13 +199,16 @@ export default function InfoPage() {
       />
 
       <section className="mx-auto max-w-5xl px-4 pt-5 pb-16 sm:px-6 sm:pt-6 sm:pb-20 lg:px-8">
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-          <Reveal className="col-span-2 h-full lg:row-span-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <Reveal className="col-span-1 sm:col-span-2 h-full lg:row-span-2">
             <Card
               id="instagram"
-              className="relative flex h-full scroll-mt-20 flex-col justify-between overflow-hidden rounded-[2rem] bg-teal-dark p-6 text-cream shadow-lift ring-1 ring-white/15 transition-all duration-300 hover:-translate-y-1 hover:shadow-lift sm:p-8"
+              className="group relative flex h-full scroll-mt-20 flex-col justify-between overflow-hidden rounded-[2rem] bg-teal-dark p-6 text-cream ring-1 ring-white/15 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_-8px_rgba(9,65,82,0.35)] hover:ring-accent/30 sm:p-8"
             >
-              <div className="relative flex h-full flex-col justify-between gap-8">
+              {/* Glass Glare Highlight */}
+              <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+              
+              <div className="relative z-10 flex h-full flex-col justify-between gap-8">
                 <span
                   aria-hidden="true"
                   className="pointer-events-none absolute -bottom-24 -right-12 h-64 w-64 rounded-full bg-accent/25 blur-3xl"
@@ -206,10 +223,10 @@ export default function InfoPage() {
                   className="pointer-events-none absolute -bottom-10 -right-6 h-40 w-40 text-white/5"
                 />
                 <div>
-                  <span className="grid h-12 w-12 place-items-center rounded-full bg-white/10 text-accent ring-1 ring-white/15">
+                  <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white/10 text-accent ring-1 ring-white/15 transition-transform duration-300 group-hover:scale-110 group-hover:shadow-md">
                     <InstagramIcon className="h-6 w-6" />
                   </span>
-                  <h2 className="mt-4 font-heading text-xl font-bold tracking-tight sm:text-2xl">
+                  <h2 className="mt-4 font-heading text-xl font-bold tracking-tight transition-colors duration-300 group-hover:text-accent sm:text-2xl">
                     Info terbaru ada di{" "}
                     <span className="bg-gradient-to-r from-accent via-cream to-white bg-clip-text text-transparent">
                       Instagram
@@ -244,42 +261,49 @@ export default function InfoPage() {
             </Reveal>
           ))}
 
-          <Reveal className="h-full" delay={320}>
+          <Reveal className="h-full col-span-1 sm:col-span-2 lg:col-span-1" delay={320}>
             <Card
               id="jam-kegiatan"
-              className="h-full scroll-mt-20 rounded-[2rem] p-5 shadow-card transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lift ring-border/60"
+              className="group relative overflow-hidden h-full scroll-mt-20 rounded-[2rem] p-5 ring-border/60 shadow-card transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_-8px_rgba(9,65,82,0.12)] hover:ring-accent/25"
             >
-              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
-                <Clock3 className="h-6 w-6" />
-              </span>
-              <h2 className="mt-3 font-heading text-base font-semibold text-foreground">
-                Jam Kegiatan Mabim
-              </h2>
-              <div className="mt-4 space-y-2.5">
-                <div className="rounded-2xl bg-secondary/70 p-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    Senin - Jumat
-                  </p>
-                  <p className="mt-0.5 font-heading text-lg font-bold leading-none text-foreground">
-                    {infoTimeline.jamSeninJumat}
-                  </p>
+              {/* Subtle Colored Background Gradient */}
+              <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-teal-dark/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+              {/* Glass Glare Highlight */}
+              <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+              <div className="relative z-10">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-secondary text-accent transition-transform duration-300 group-hover:scale-110 group-hover:shadow-md">
+                  <Clock3 className="h-6 w-6" />
+                </span>
+                <h2 className="mt-3 font-heading text-base font-bold text-foreground transition-colors duration-300 group-hover:text-accent">
+                  Jam Kegiatan Mabim
+                </h2>
+                <div className="mt-4 space-y-2.5">
+                  <div className="rounded-2xl bg-secondary/70 p-3">
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                      Senin - Jumat
+                    </p>
+                    <p className="mt-0.5 font-heading text-lg font-bold leading-none text-foreground">
+                      {infoTimeline.jamSeninJumat}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-secondary/70 p-3">
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                      Sabtu
+                    </p>
+                    <p className="mt-0.5 font-heading text-lg font-bold leading-none text-foreground">
+                      {infoTimeline.jamSabtu}
+                    </p>
+                  </div>
                 </div>
-                <div className="rounded-2xl bg-secondary/70 p-3">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    Sabtu
-                  </p>
-                  <p className="mt-0.5 font-heading text-lg font-bold leading-none text-foreground">
-                    {infoTimeline.jamSabtu}
-                  </p>
-                </div>
+                <p className="mt-3 text-xs text-muted-foreground">
+                  Jadwal harian dibagikan di grup masing-masing kelompok.
+                </p>
               </div>
-              <p className="mt-3 text-xs text-muted-foreground">
-                Jadwal harian dibagikan di grup masing-masing kelompok.
-              </p>
             </Card>
           </Reveal>
 
-          <Reveal className="col-span-2 lg:col-span-4" delay={400}>
+          <Reveal className="col-span-1 sm:col-span-2 lg:col-span-4" delay={400}>
             <Card
               id="rumah-sakit"
               className="h-full scroll-mt-20 rounded-[2rem] p-5 shadow-card ring-border/60"

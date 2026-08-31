@@ -15,8 +15,10 @@ import { Card } from "@/components/ui/card";
 import Countdown from "./components/Countdown";
 import Reveal from "./components/Reveal";
 import VideoTeaser from "./components/VideoTeaser";
+import DepartemenCard from "./components/DepartemenCard";
 import { statistik, DEPARTEMEN_WARNA } from "@/data/statistik";
 import { siteName, siteUrl } from "@/lib/site";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Masa Bimbingan Fakultas Teknik UI",
@@ -34,6 +36,8 @@ const MENU: {
   card: string;
   chip: string;
   watermark: string;
+  gradient: string;
+  glow: string;
 }[] = [
   {
     href: "/dashboard",
@@ -41,9 +45,11 @@ const MENU: {
     title: "Dashboard",
     desc: "Masuk untuk lihat kelompok, grup Line, dan teman se-departemen.",
     numeral: "01",
-    card: "bg-teal-50 ring-teal-200/50",
-    chip: "bg-teal-dark text-white",
-    watermark: "text-teal-900/10",
+    card: "bg-white/75 hover:bg-white/90 ring-border/40",
+    chip: "bg-teal-dark text-cream shadow-sm",
+    watermark: "text-teal-900/5 group-hover:text-teal-900/10",
+    gradient: "from-teal-500/5 to-teal-dark/5",
+    glow: "group-hover:shadow-[0_12_32px_-8px_rgba(9,65,82,0.15)] group-hover:ring-teal-500/35",
   },
   {
     href: "/info",
@@ -51,9 +57,11 @@ const MENU: {
     title: "Info Penting",
     desc: "Pengaduan, guidebook, kalender, dan RS terdekat.",
     numeral: "02",
-    card: "bg-orange-50 ring-orange-200/50",
-    chip: "bg-accent text-white",
-    watermark: "text-orange-900/10",
+    card: "bg-white/75 hover:bg-white/90 ring-border/40",
+    chip: "bg-accent text-white shadow-sm",
+    watermark: "text-orange-900/5 group-hover:text-orange-900/10",
+    gradient: "from-amber-500/5 to-accent/5",
+    glow: "group-hover:shadow-[0_12_32px_-8px_rgba(217,101,26,0.15)] group-hover:ring-accent/35",
   },
   {
     href: "/kontak",
@@ -61,9 +69,11 @@ const MENU: {
     title: "Kontak SC",
     desc: "Hubungi contact person BEM, MPM, dan lembaga lainnya.",
     numeral: "03",
-    card: "bg-emerald-50 ring-emerald-200/50",
-    chip: "bg-emerald-700 text-white",
-    watermark: "text-emerald-900/10",
+    card: "bg-white/75 hover:bg-white/90 ring-border/40",
+    chip: "bg-emerald-700 text-white shadow-sm",
+    watermark: "text-emerald-900/5 group-hover:text-emerald-900/10",
+    gradient: "from-emerald-500/5 to-emerald-700/5",
+    glow: "group-hover:shadow-[0_12_32px_-8px_rgba(4,120,87,0.15)] group-hover:ring-emerald-500/35",
   },
 ];
 
@@ -242,11 +252,28 @@ export default function Home() {
             {MENU.map((card, i) => (
               <Reveal key={card.href} delay={i * 90}>
                 <Card
-                  className={`group relative overflow-hidden rounded-[2rem] p-0 ring-1 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift hover:ring-accent/40 has-[:focus-visible]:outline-none has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-accent/70 has-[:focus-visible]:ring-offset-2 has-[:focus-visible]:ring-offset-background ${card.card}`}
+                  className={cn(
+                    "group relative overflow-hidden rounded-[2rem] p-0 ring-1 shadow-card transition-all duration-500 hover:-translate-y-1.5 has-[:focus-visible]:outline-none has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-accent/70 backdrop-blur-sm",
+                    card.card,
+                    card.glow
+                  )}
                 >
+                  {/* Subtle Colored Background Gradient */}
+                  <div
+                    className={cn(
+                      "absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity duration-500 group-hover:opacity-100",
+                      card.gradient
+                    )}
+                  />
+                  {/* Glass Glare Highlight */}
+                  <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  
                   <span
                     aria-hidden="true"
-                    className={`pointer-events-none absolute -right-3 -top-6 select-none font-heading text-8xl font-bold leading-none tracking-tight ${card.watermark}`}
+                    className={cn(
+                      "pointer-events-none absolute -right-3 -top-6 select-none font-heading text-8xl font-black leading-none tracking-tight transition-all duration-500 group-hover:scale-105 group-hover:translate-x-1 group-hover:-translate-y-1",
+                      card.watermark
+                    )}
                   >
                     {card.numeral}
                   </span>
@@ -255,16 +282,19 @@ export default function Home() {
                     className="relative flex items-start gap-4 p-5"
                   >
                     <span
-                      className={`grid h-12 w-12 shrink-0 place-items-center rounded-full text-white shadow-card transition-colors group-hover:bg-accent ${card.chip}`}
+                      className={cn(
+                        "grid h-12 w-12 shrink-0 place-items-center rounded-2xl transition-all duration-350 group-hover:scale-110 group-hover:shadow-md",
+                        card.chip
+                      )}
                     >
                       <card.icon className="h-6 w-6" />
                     </span>
                     <span className="min-w-0 flex-1">
                       <span className="flex items-center justify-between gap-2">
-                        <span className="font-heading text-base font-semibold text-foreground">
+                        <span className="font-heading text-base font-bold text-foreground transition-colors duration-300 group-hover:text-accent">
                           {card.title}
                         </span>
-                        <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
+                        <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-all duration-300 group-hover:translate-x-1 group-hover:text-accent" />
                       </span>
                       <span className="mt-1 block text-sm leading-snug text-muted-foreground">
                         {card.desc}
@@ -302,34 +332,7 @@ export default function Home() {
               const pct = Math.round((d.jumlah / statistik.total) * 100);
               return (
                 <Reveal key={d.kode} delay={(i % 4) * 60}>
-                  <Card
-                    className={`rounded-[2rem] p-5 ring-1 shadow-card transition-all hover:-translate-y-1 hover:shadow-lift ${c.card}`}
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <span
-                        className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold ${c.badge}`}
-                      >
-                        {d.kode}
-                      </span>
-                      <span className={`text-xs font-bold ${c.sub}`}>
-                        {pct}%
-                      </span>
-                    </div>
-                    <p
-                      className={`mt-4 font-heading text-3xl font-bold tracking-tight ${c.heading}`}
-                    >
-                      {d.jumlah.toLocaleString("id-ID")}
-                    </p>
-                    <p className={`mt-1 text-sm font-medium leading-snug ${c.sub}`}>
-                      {d.nama}
-                    </p>
-                    <div className={`mt-4 h-1.5 overflow-hidden rounded-full ${c.track}`}>
-                      <div
-                        className={`h-full rounded-full ${c.bar}`}
-                        style={{ width: `${pct}%` }}
-                      />
-                    </div>
-                  </Card>
+                  <DepartemenCard d={d} warna={c} pct={pct} />
                 </Reveal>
               );
             })}

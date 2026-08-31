@@ -71,6 +71,18 @@ function deadlineInfo(deadline: string) {
   return { label, badgeText, badgeCls };
 }
 
+const GLOWS: Record<string, string> = {
+  DTE: "hover:shadow-[0_12px_32px_-8px_rgba(3,105,161,0.35)] hover:ring-sky-400/30",
+  DTM: "hover:shadow-[0_12px_32px_-8px_rgba(23,23,23,0.3)] hover:ring-neutral-400/30",
+  DTSL: "hover:shadow-[0_12px_32px_-8px_rgba(71,85,105,0.35)] hover:ring-slate-400/30",
+  DTMM: "hover:shadow-[0_12px_32px_-8px_rgba(4,120,87,0.35)] hover:ring-emerald-400/30",
+  DTK: "hover:shadow-[0_12px_32px_-8px_rgba(185,28,28,0.35)] hover:ring-red-400/30",
+  DA: "hover:shadow-[0_12px_32px_-8px_rgba(109,40,217,0.35)] hover:ring-violet-400/30",
+  DTI: "hover:shadow-[0_12px_32px_-8px_rgba(82,82,91,0.35)] hover:ring-zinc-400/30",
+  PI: "hover:shadow-[0_12px_32px_-8px_rgba(180,83,9,0.35)] hover:ring-amber-400/30",
+  BEM: "hover:shadow-[0_12px_32px_-8px_rgba(30,58,138,0.25)] hover:ring-blue-500/30",
+};
+
 function LembagaBlock({
   lembaga,
   badge,
@@ -78,9 +90,19 @@ function LembagaBlock({
   lembaga: TugasLembaga;
   badge?: string;
 }) {
+  const glowClass = GLOWS[lembaga.kode] || "hover:shadow-[0_12px_32px_-8px_rgba(9,65,82,0.12)] hover:ring-accent/25";
   return (
-    <div className="rounded-3xl bg-card p-5 ring-1 ring-border/60 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift hover:ring-accent/40 sm:p-6">
-      <div className="flex items-center gap-3">
+    <div className={cn(
+      "group relative overflow-hidden rounded-3xl bg-card p-5 ring-1 ring-border/60 shadow-card transition-all duration-500 hover:-translate-y-1.5 sm:p-6",
+      glowClass
+    )}>
+      {/* Subtle Colored Background Gradient */}
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-teal-dark/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      {/* Glass Glare Highlight */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+      <div className="relative z-10">
+        <div className="flex items-center gap-3">
         <span
           className={cn(
             "shrink-0 rounded-full px-2.5 py-1 text-xs font-bold",
@@ -176,6 +198,7 @@ function LembagaBlock({
             Daftar tugas {lembaga.nama} akan diumumkan SC segera.
           </p>
         )}
+      </div>
       </div>
     </div>
   );
