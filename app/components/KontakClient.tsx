@@ -191,7 +191,7 @@ export default function KontakClient() {
       </div>
 
       <Reveal delay={120}>
-        <p className="mt-12 text-center text-xs text-muted-foreground">
+        <p className="mt-6 text-center text-xs text-muted-foreground">
           Data contact person dikelola Steering Committee Mabim FTUI 2026 dan
           dapat diperbarui sewaktu-waktu.
         </p>

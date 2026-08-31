@@ -198,7 +198,7 @@ export default function InfoPage() {
         accentWord="Bantuan"
       />
 
-      <section className="mx-auto max-w-5xl px-4 pt-5 pb-16 sm:px-6 sm:pt-6 sm:pb-20 lg:px-8">
+      <section className="mx-auto max-w-5xl px-4 pt-4 pb-8 sm:px-6 sm:pt-6 sm:pb-12 lg:px-8">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Reveal className="col-span-1 sm:col-span-2 h-full lg:row-span-2">
             <Card

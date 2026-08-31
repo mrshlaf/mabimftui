@@ -25,7 +25,7 @@ export default function KalendarPage() {
         accentWord="Kegiatan"
       />
 
-      <section className="mx-auto max-w-5xl px-4 pt-5 pb-16 sm:px-6 sm:pt-6 sm:pb-20 lg:px-8">
+      <section className="mx-auto max-w-5xl px-4 pt-4 pb-8 sm:px-6 sm:pt-6 sm:pb-12 lg:px-8">
         <CalendarGrid locked />
       </section>
     </div>

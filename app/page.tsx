@@ -231,7 +231,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section className="px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="flex items-center gap-3">
@@ -308,7 +308,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <section className="px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="flex items-center gap-3">
