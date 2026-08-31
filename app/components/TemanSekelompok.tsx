@@ -104,7 +104,7 @@ export default function TemanSekelompok({
               <div
                 key={m.n}
                 className={cn(
-                  "flex items-center gap-2.5 rounded-2xl px-3 py-2.5",
+                  "flex items-center gap-2.5 rounded-2xl px-3 py-2.5 min-w-0",
                   isMe
                     ? "bg-accent/10 ring-1 ring-accent/30"
                     : "bg-secondary/60"
