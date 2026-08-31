@@ -5,7 +5,14 @@ export const tugasLembaga: TugasLembaga[] = [
     kode: "BEM",
     nama: "BEM FTUI",
     kategori: "bem",
-    tugas: [],
+    tugas: [
+      {
+        judul: "Bingo Eskalasi",
+        tor: "https://bit.ly/TORBINGOESKALASI2026",
+        kumpul: "https://www.mabimftui.page",
+        deadline: "2026-09-04T23:59:00+07:00",
+      },
+    ],
   },
   {
     kode: "FUSI",

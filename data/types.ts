@@ -29,8 +29,10 @@ export const DEPARTEMEN_NAMA: Record<DepartemenCode, string> = {
 };
 
 export interface TugasItem {
-  label: string;
-  url: string;
+  judul: string;
+  tor?: string;
+  kumpul?: string;
+  deadline?: string;
 }
 
 export type KategoriTugas = "departemen" | "bem" | "bok";
@@ -40,7 +42,6 @@ export interface TugasLembaga {
   nama: string;
   kategori: KategoriTugas;
   tugas: TugasItem[];
-  linkForm?: string;
 }
 
 export interface InfoLinks {
