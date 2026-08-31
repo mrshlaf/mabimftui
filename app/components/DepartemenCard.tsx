@@ -69,7 +69,7 @@ export default function DepartemenCard({
   return (
     <div
       onClick={() => setFlipped(!flipped)}
-      className="group h-[190px] w-full cursor-pointer [perspective:1000px]"
+      className="group h-[160px] sm:h-[185px] w-full cursor-pointer [perspective:1000px]"
     >
       <div
         className={cn(
@@ -126,7 +126,7 @@ export default function DepartemenCard({
               </span>
               <RefreshCw className={cn("h-3.5 w-3.5 animate-pulse", warna.sub)} />
             </div>
-            <ul className={cn("mt-2.5 space-y-1 text-[11px] font-semibold leading-relaxed max-h-[95px] overflow-y-auto pr-1 select-none scrollbar-thin scrollbar-thumb-black/10 scrollbar-track-transparent", warna.heading)}>
+            <ul className={cn("mt-2 text-[11px] font-semibold leading-normal max-h-[90px] overflow-y-auto pr-1 select-none scrollbar-thin scrollbar-thumb-black/10 scrollbar-track-transparent grid grid-cols-2 gap-x-4 gap-y-1 lg:grid-cols-1 lg:space-y-0.5", warna.heading)}>
               {prodis.map((p, idx) => (
                 <li key={idx} className="flex items-center gap-1.5 truncate">
                   <span className={cn("h-1.5 w-1.5 shrink-0 rounded-full", warna.bar)} />

@@ -326,7 +326,7 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:gap-4">
+          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {departemen.map((d, i) => {
               const c = DEPARTEMEN_WARNA[d.kode];
               const pct = Math.round((d.jumlah / statistik.total) * 100);
