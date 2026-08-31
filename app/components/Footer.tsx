@@ -44,7 +44,7 @@ function FooterColumn({
           <li key={l.label}>
             <Link
               href={l.href}
-              className="block py-2 text-sm text-cream/75 transition-colors hover:text-accent"
+              className="block py-2 text-sm text-cream/75 transition-all duration-300 hover:translate-x-1.5 hover:text-accent"
             >
               {l.label}
             </Link>
@@ -86,18 +86,18 @@ export default function Footer() {
 
         <Reveal>
         <div className="relative flex flex-col gap-5 px-6 pt-8 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <div className="flex items-center gap-3">
+          <Link href="/" className="group flex items-center gap-3">
             <Image
               src="/logo-mabim.png"
               alt="Logo Mabim FTUI"
               width={44}
               height={44}
-              className="rounded-full ring-2 ring-white/15"
+              className="rounded-full ring-2 ring-white/15 transition-all duration-500 group-hover:ring-accent/50 group-hover:scale-105 group-hover:rotate-6 group-hover:shadow-[0_0_15px_rgba(217,101,26,0.25)]"
             />
             <div>
-              <p className="font-heading text-lg font-bold tracking-tight">
+              <p className="font-heading text-lg font-bold tracking-tight transition-colors duration-300 group-hover:text-accent">
                 Mabim FTUI{" "}
-                <span className="bg-gradient-to-r from-cream via-white to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cream via-white to-accent bg-clip-text text-transparent transition-all duration-500 group-hover:from-accent group-hover:to-cream">
                   2026
                 </span>
               </p>
@@ -105,24 +105,24 @@ export default function Footer() {
                 Satu pintu informasi Mahasiswa Baru FTUI.
               </p>
             </div>
-          </div>
-          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+          </Link>
+          <div className="flex w-full items-center gap-3 sm:w-auto">
             <a
               href="https://www.instagram.com/mabimftui"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram Mabim FTUI"
-              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 text-cream ring-1 ring-white/15 transition-colors hover:bg-accent hover:text-cream"
+              className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white/10 text-cream ring-1 ring-white/15 transition-all duration-300 hover:scale-105 hover:bg-accent hover:text-cream hover:shadow-[0_0_15px_rgba(217,101,26,0.3)] hover:rotate-6"
             >
               <InstagramIcon className="h-5 w-5" />
             </a>
             <Button
               asChild
               size="lg"
-              className="h-11 w-full rounded-full bg-cream px-6 text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark sm:w-auto"
+              className="group h-11 flex-1 rounded-full bg-cream px-6 text-teal-dark shadow-lift hover:bg-white hover:text-teal-950 hover:shadow-[0_0_20px_rgba(241,239,215,0.25)] hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-300 sm:w-auto sm:flex-initial"
             >
               <Link href="/kontak">
-                <LifeBuoy data-slot="icon-inline-start" />
+                <LifeBuoy data-slot="icon-inline-start" className="transition-transform duration-300 group-hover:rotate-45" />
                 Hubungi SC
               </Link>
             </Button>
@@ -141,7 +141,7 @@ export default function Footer() {
                 <li key={l.label}>
                   <Link
                     href={l.href}
-                    className="block py-2 text-sm text-cream/75 transition-colors hover:text-accent"
+                    className="block py-2 text-sm text-cream/75 transition-all duration-300 hover:translate-x-1.5 hover:text-accent"
                   >
                     {l.label}
                   </Link>
@@ -154,10 +154,10 @@ export default function Footer() {
         <div className="relative border-t border-white/10">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-5 text-xs text-cream/50 sm:flex-row sm:px-8">
             <p>© 2026 Mabim FTUI. Dibuat untuk Mahasiswa Baru FTUI.</p>
-          <p className="flex items-center gap-1.5">
-            <Compass className="h-3.5 w-3.5 text-accent/70" />
-            Find Your Path, Forge Your Legacy
-          </p>
+            <div className="group flex items-center gap-1.5 cursor-default select-none">
+              <Compass className="h-3.5 w-3.5 text-accent/70 transition-transform duration-700 ease-out group-hover:rotate-180" />
+              <span className="transition-colors duration-300 group-hover:text-accent">Find Your Path, Forge Your Legacy</span>
+            </div>
           </div>
         </div>
         </Reveal>
