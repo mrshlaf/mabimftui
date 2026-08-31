@@ -59,18 +59,18 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-40">
       <div className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between gap-4 rounded-[2rem] border border-border/60 bg-background/80 px-4 shadow-lift backdrop-blur-xl sm:px-5">
+        <div className="relative flex h-16 items-center justify-between gap-4 rounded-[2rem] border border-border/60 bg-background/85 px-4 shadow-[0_4px_20px_-4px_rgba(6,47,59,0.08),0_20px_48px_-20px_rgba(6,47,59,0.22),inset_0_1px_0_rgba(255,255,255,0.6)] backdrop-blur-xl transition-all duration-300 sm:px-5">
           <Link href="/" className="group flex items-center gap-2.5">
             <Image
               src="/logo-mabim.png"
               alt="Logo Mabim FTUI"
               width={36}
               height={36}
-              className="rounded-full ring-1 ring-border/60 transition-colors group-hover:ring-accent/40"
+              className="rounded-full ring-1 ring-border/60 transition-all duration-500 group-hover:ring-accent/50 group-hover:scale-105 group-hover:rotate-6 group-hover:shadow-[0_0_15px_rgba(217,101,26,0.25)]"
             />
-            <span className="font-heading text-lg font-bold tracking-tight text-foreground">
+            <span className="font-heading text-lg font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-accent">
               Mabim FTUI{" "}
-              <span className="bg-gradient-to-r from-accent to-amber-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-accent to-amber-500 bg-clip-text text-transparent transition-all duration-500 group-hover:from-amber-500 group-hover:to-accent">
                 2026
               </span>
             </span>
@@ -84,14 +84,17 @@ export default function Nav() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors active:scale-[0.98]",
+                    "inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 active:scale-[0.96]",
                     active
-                      ? "bg-teal-dark text-cream"
-                      : "text-muted-foreground hover:bg-secondary/70 hover:text-foreground"
+                      ? "bg-teal-dark text-cream shadow-[0_4px_12px_rgba(6,47,59,0.25)] ring-1 ring-white/10"
+                      : "text-muted-foreground hover:bg-secondary/80 hover:text-foreground hover:shadow-inner"
                   )}
                 >
                   <item.icon
-                    className={cn("h-4 w-4", active && "text-accent")}
+                    className={cn(
+                      "h-4 w-4 transition-transform duration-300",
+                      active ? "text-accent scale-110" : "group-hover:scale-110"
+                    )}
                   />
                   {item.label}
                 </Link>
@@ -108,29 +111,29 @@ export default function Nav() {
                   <Link
                     href="/dashboard"
                     className={cn(
-                      "flex items-center gap-2 rounded-full border border-border bg-card py-1 pl-1 pr-3.5 text-sm font-semibold transition-colors hover:border-accent/40 hover:bg-accent/5",
-                      isActive("/dashboard") && "border-accent/40 bg-accent/5"
+                      "group flex items-center gap-2 rounded-full border border-border bg-card py-1 pl-1 pr-3.5 text-sm font-semibold transition-all duration-300 hover:border-accent/40 hover:bg-accent/5 hover:shadow-sm active:scale-[0.98]",
+                      isActive("/dashboard") && "border-accent/45 bg-accent/8"
                     )}
                   >
-                    <span className="grid h-7 w-7 place-items-center rounded-full bg-accent text-xs font-bold text-white ring-2 ring-accent/30">
+                    <span className="grid h-7 w-7 place-items-center rounded-full bg-gradient-to-br from-accent to-amber-500 text-xs font-bold text-white shadow-sm ring-2 ring-accent/25 transition-transform duration-300 group-hover:scale-105">
                       {initials(user.nama)}
                     </span>
-                    <span className="max-w-28 truncate">{user.nama}</span>
+                    <span className="max-w-28 truncate transition-colors duration-300 group-hover:text-accent">{user.nama}</span>
                   </Link>
                   <Button
                     type="button"
                     variant="ghost"
                     onClick={logout}
-                    className="h-9 rounded-full px-3 text-destructive hover:bg-destructive/10 hover:text-destructive"
+                    className="h-9 rounded-full px-3 text-destructive transition-all duration-300 hover:bg-destructive/10 hover:text-destructive active:scale-[0.96]"
                     aria-label="Keluar"
                   >
-                    <LogOut className="h-4 w-4" />
+                    <LogOut className="h-4 w-4 transition-transform duration-300 hover:scale-110" />
                   </Button>
                 </div>
               ) : (
-                <Button asChild size="lg" className="h-9 rounded-full px-5">
+                <Button asChild size="lg" className="group h-9 rounded-full bg-teal-dark px-5 text-cream transition-all duration-300 hover:bg-teal-dark/95 hover:shadow-[0_4px_12px_rgba(6,47,59,0.2)] active:scale-[0.98]">
                   <Link href="/dashboard">
-                    <LayoutDashboard data-slot="icon-inline-start" />
+                    <LayoutDashboard data-slot="icon-inline-start" className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-105" />
                     Masuk
                   </Link>
                 </Button>
@@ -142,8 +145,8 @@ export default function Nav() {
               variant="ghost"
               onClick={() => setOpen((o) => !o)}
               className={cn(
-                "h-11 w-11 rounded-full p-0 transition-colors md:hidden",
-                open && "bg-secondary text-foreground"
+                "h-11 w-11 rounded-full p-0 transition-all duration-300 md:hidden",
+                open && "bg-secondary text-foreground rotate-90"
               )}
               aria-label={open ? "Tutup menu" : "Buka menu"}
               aria-expanded={open}
