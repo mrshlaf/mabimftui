@@ -9,7 +9,8 @@ export const tugasLembaga: TugasLembaga[] = [
       {
         judul: "Bingo Eskalasi",
         tor: "https://bit.ly/TORBINGOESKALASI2026",
-        kumpul: "https://www.mabimftui.page",
+        kumpul:
+          "https://docs.google.com/forms/d/153QuAYTj54xox8mCKOgW5-bseAbKHxn7pq1vj9ULzFw/preview?edit_requested=true",
         deadline: "2026-09-04T23:59:00+07:00",
       },
     ],
