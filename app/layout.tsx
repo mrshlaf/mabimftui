@@ -88,7 +88,7 @@ export default function RootLayout({
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed inset-0 z-[-1] bg-cover bg-center opacity-[0.15]"
+          className="pointer-events-none fixed inset-0 z-[-1] bg-cover bg-center opacity-[0.07]"
           style={{ backgroundImage: "url('/bg-site.jpg')" }}
         />
         <AuthProvider>

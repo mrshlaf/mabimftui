@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { IdCard, LogIn, ShieldCheck, User, UserX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -67,24 +66,24 @@ export default function LoginForm() {
   }
 
   return (
-    <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card !overflow-visible sm:p-8">
+    <Card className="rounded-3xl border border-border/80 bg-card p-6 shadow-sm !overflow-visible sm:p-8">
       <div className="flex items-center gap-3">
-        <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-secondary text-accent">
-          <LogIn className="h-6 w-6" />
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+          <LogIn className="h-5 w-5" />
         </span>
         <div>
           <h2 className="font-heading text-lg font-bold text-foreground">
             Masuk Dashboard
           </h2>
-          <p className="text-sm text-muted-foreground">
-            Masukkan nama lengkap dan NPM sesuai data resmi.
+          <p className="text-xs text-muted-foreground">
+            Masukkan nama lengkap dan NPM sesuai data resmi SIAK-NG.
           </p>
         </div>
       </div>
 
-      <form className="mt-6 space-y-3" onSubmit={handleSubmit}>
+      <form className="mt-6 space-y-3.5" onSubmit={handleSubmit}>
         <div className="relative">
-          <User className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
+          <User className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             type="text"
             autoComplete="off"
@@ -101,10 +100,13 @@ export default function LoginForm() {
               }, 150)
             }
             placeholder="Nama lengkap kamu"
-            className="h-13 rounded-full border-border bg-card pl-12 pr-4 text-base shadow-card placeholder:text-muted-foreground/70"
+            className="h-12 rounded-full border-border/80 bg-background pl-11 pr-4 text-sm shadow-none focus-visible:border-accent/60 focus-visible:ring-accent/20 placeholder:text-muted-foreground/60"
           />
           {namaFocus && suggestions.length > 0 && (
-            <ul className="absolute left-0 right-0 top-[calc(100%+6px)] z-20 max-h-[232px] overflow-y-auto rounded-2xl border border-border bg-card shadow-lift">
+            <ul className="absolute left-0 right-0 top-[calc(100%+6px)] z-20 max-h-[240px] overflow-y-auto rounded-2xl border border-border/80 bg-card shadow-lift p-1.5 space-y-0.5">
+              <li className="px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                Saran Nama Mahasiswa
+              </li>
               {suggestions.map((m) => (
                 <li key={m.npm}>
                   <button
@@ -115,10 +117,15 @@ export default function LoginForm() {
                       setSuggestions([]);
                       setNamaFocus(false);
                     }}
-                    className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left text-sm text-foreground transition-colors hover:bg-secondary"
+                    className="flex w-full items-center justify-between gap-3 px-3 py-2 rounded-xl text-left text-xs text-foreground transition-all hover:bg-secondary active:scale-[0.99] cursor-pointer"
                   >
-                    <span className="truncate font-medium">{m.nama}</span>
-                    <span className="shrink-0 text-xs text-muted-foreground">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-secondary text-[10px] font-bold text-accent">
+                        {m.nama.slice(0, 1)}
+                      </span>
+                      <span className="truncate font-medium">{m.nama}</span>
+                    </div>
+                    <span className="shrink-0 rounded-md bg-secondary/80 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
                       {m.prodi}
                     </span>
                   </button>
@@ -127,62 +134,46 @@ export default function LoginForm() {
             </ul>
           )}
         </div>
+
         <div className="relative">
-          <IdCard className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
+          <IdCard className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             type="text"
             inputMode="numeric"
-            autoComplete="off"
             value={npm}
-            onChange={(e) => setNpm(e.target.value.replace(/\D/g, ""))}
-            placeholder="NPM kamu (contoh: 2606736862)"
-            className="h-13 rounded-full border-border bg-card pl-12 pr-4 text-base shadow-card placeholder:text-muted-foreground/70"
+            onChange={(e) => setNpm(e.target.value)}
+            placeholder="NPM (10 digit)"
+            className="h-12 rounded-full border-border/80 bg-background pl-11 pr-4 text-sm shadow-none focus-visible:border-accent/60 focus-visible:ring-accent/20 placeholder:text-muted-foreground/60"
           />
         </div>
-        <Button type="submit" size="lg" className="h-13 w-full rounded-full">
-          <LogIn data-slot="icon-inline-start" />
-          Masuk
+
+        {status === "notfound" && (
+          <div className="flex items-center gap-2 rounded-2xl border border-destructive/30 bg-destructive/10 px-4 py-2.5 text-xs text-destructive">
+            <UserX className="h-4 w-4 shrink-0" />
+            <span>Data tidak ditemukan. Pastikan nama dan NPM sudah tepat.</span>
+          </div>
+        )}
+
+        {status === "error" && (
+          <p className="text-center text-xs text-destructive">
+            Terjadi kesalahan saat memuat data. Coba lagi.
+          </p>
+        )}
+
+        <Button
+          type="submit"
+          disabled={status === "loading" || !nama.trim() || !npm.trim()}
+          size="default"
+          className="h-11 w-full rounded-full bg-teal-dark font-semibold text-cream shadow-sm hover:bg-teal-dark/90 active:scale-[0.98] disabled:opacity-50 cursor-pointer"
+        >
+          {status === "loading" ? "Memeriksa data..." : "Masuk"}
         </Button>
       </form>
 
-      {status === "loading" && (
-        <p className="mt-5 flex items-center justify-center gap-2 text-sm font-semibold text-foreground">
-          <span className="h-4 w-4 animate-spin rounded-full border-2 border-accent border-t-transparent" />
-          Memeriksa data kamu...
-        </p>
-      )}
-
-      {status === "notfound" && (
-        <div className="mt-5 rounded-2xl bg-red-100 p-4 text-center">
-          <UserX className="mx-auto h-6 w-6 text-red-600" />
-          <p className="mt-2 text-sm font-semibold text-red-800">
-            Data tidak ditemukan
-          </p>
-          <p className="mt-1 text-xs text-red-700">
-            Nama atau NPM tidak cocok dengan data Mabim FTUI 2026.{" "}
-            <Link
-              href="/kontak"
-              className="font-semibold underline underline-offset-2"
-            >
-              Hubungi SC
-            </Link>{" "}
-            jika butuh bantuan.
-          </p>
-        </div>
-      )}
-
-      {status === "error" && (
-        <div className="mt-5 rounded-2xl bg-red-100 p-4 text-center">
-          <p className="text-sm font-semibold text-red-800">
-            Gagal memuat data. Coba muat ulang halaman.
-          </p>
-        </div>
-      )}
-
-      <p className="mt-5 flex items-center justify-center gap-1.5 text-center text-xs text-muted-foreground">
-        <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-emerald-600" />
-        Login hanya untuk Mahasiswa Baru FTUI 2026.
-      </p>
+      <div className="mt-6 flex items-center justify-center gap-1.5 border-t border-border/60 pt-4 text-xs text-muted-foreground">
+        <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
+        <span>SIAK-NG FTUI 2026 · Akses Mahasiswa Baru</span>
+      </div>
     </Card>
   );
 }

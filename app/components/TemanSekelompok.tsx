@@ -43,55 +43,57 @@ export default function TemanSekelompok({
   const userNormal = useMemo(() => normalize(nama), [nama]);
 
   return (
-    <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card sm:p-8">
-      <div className="flex items-center gap-3">
-        <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-gradient-to-br from-secondary to-accent/15 text-accent">
-          <Users className="h-6 w-6" />
-        </span>
-        <div>
-          <h3 className="font-heading text-lg font-bold text-foreground">
-            Teman Sekelompok
-          </h3>
-          <p className="text-sm text-muted-foreground">
-            {kelompok
-              ? `Kelompok ${kelompok} · ${members?.length ?? "..."} orang`
-              : "Nomor kelompok belum tersedia."}
-          </p>
+    <Card className="rounded-3xl border border-border/80 bg-card p-6 shadow-sm sm:p-8">
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+            <Users className="h-5 w-5" />
+          </span>
+          <div>
+            <h3 className="font-heading text-lg font-bold text-foreground">
+              Teman Sekelompok
+            </h3>
+            <p className="text-xs text-muted-foreground">
+              {kelompok
+                ? `Kelompok ${kelompok} · ${members?.length ?? "..."} orang`
+                : "Nomor kelompok belum diumumkan."}
+            </p>
+          </div>
         </div>
-      </div>
 
-      {kelompok && KELOMPOK_LINE[kelompok] && (
-        <a
-          href={KELOMPOK_LINE[kelompok]}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-secondary hover:text-accent"
-        >
-          <Link2 className="h-4 w-4" />
-          Gabung Grup LINE
-        </a>
-      )}
+        {kelompok && KELOMPOK_LINE[kelompok] && (
+          <a
+            href={KELOMPOK_LINE[kelompok]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary/60 px-3.5 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary hover:border-accent/40"
+          >
+            <Link2 className="h-3.5 w-3.5 text-accent" />
+            Grup LINE
+          </a>
+        )}
+      </div>
 
       {!kelompok ? (
         <div className="mt-5 space-y-3">
-          <p className="text-center text-sm text-muted-foreground">
-            Nomor kelompok belum diumumkan.
+          <p className="text-center text-xs text-muted-foreground">
+            Nomor kelompok akan diumumkan oleh Steering Committee.
           </p>
           <div className="grid gap-2 sm:grid-cols-2">
-            {Array.from({ length: 6 }).map((_, i) => (
+            {Array.from({ length: 4 }).map((_, i) => (
               <div
                 key={i}
-                className="h-14 animate-pulse rounded-2xl bg-secondary/60"
+                className="h-12 animate-pulse rounded-2xl bg-secondary/40"
               />
             ))}
           </div>
         </div>
       ) : members === null ? (
-        <p className="mt-5 text-center text-sm text-muted-foreground">
-          Memuat daftar teman sekelompok...
+        <p className="mt-5 text-center text-xs text-muted-foreground">
+          Memuat daftar anggota kelompok...
         </p>
       ) : members.length === 0 ? (
-        <p className="mt-5 text-center text-sm text-muted-foreground">
+        <p className="mt-5 text-center text-xs text-muted-foreground">
           Belum ada data anggota kelompok.
         </p>
       ) : (
@@ -104,32 +106,32 @@ export default function TemanSekelompok({
               <div
                 key={m.n}
                 className={cn(
-                  "flex items-center gap-2.5 rounded-2xl px-3 py-2.5 min-w-0",
+                  "flex items-center justify-between gap-2.5 rounded-2xl px-3 py-2 border transition-all",
                   isMe
-                    ? "bg-accent/10 ring-1 ring-accent/30"
-                    : "bg-secondary/60"
+                    ? "border-accent/40 bg-accent/5"
+                    : "border-border/60 bg-secondary/30"
                 )}
               >
-                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-secondary font-heading text-xs font-bold text-accent">
-                  {initials(m.n)}
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate text-sm font-semibold text-foreground">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-secondary text-xs font-bold text-accent">
+                    {initials(m.n)}
+                  </span>
+                  <span className="truncate text-xs font-semibold text-foreground">
                     {m.n}
                     {isMe && (
-                      <span className="ml-1.5 text-[10px] font-bold uppercase tracking-wide text-accent">
-                        kamu
+                      <span className="ml-1 text-[10px] font-bold text-accent uppercase tracking-wider">
+                        (kamu)
                       </span>
                     )}
                   </span>
-                </span>
+                </div>
                 <span
                   className={cn(
                     "shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold",
                     badge ?? "bg-secondary text-muted-foreground"
                   )}
                 >
-                  {dept ?? "—"}
+                  {dept ?? "-"}
                 </span>
               </div>
             );

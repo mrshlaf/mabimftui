@@ -18,10 +18,10 @@ export default function Countdown() {
 
   if (days === null) {
     return (
-      <span className="inline-flex items-center gap-2 rounded-full bg-cream/95 px-4 py-2.5 text-sm font-medium text-teal-dark shadow-card">
-        <CalendarDays className="h-4 w-4 text-accent" />
-        Menghitung hari menuju Mabim...
-      </span>
+      <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-medium text-cream/80 backdrop-blur-md">
+        <CalendarDays className="h-3.5 w-3.5 text-accent" />
+        <span>Menghitung hari menuju Mabim...</span>
+      </div>
     );
   }
 
@@ -30,13 +30,13 @@ export default function Countdown() {
   }
 
   return (
-    <span className="inline-flex items-center gap-2.5 rounded-full bg-cream/95 px-4 py-2.5 text-sm font-medium text-teal-dark shadow-card">
-      <CalendarDays className="h-4 w-4 text-accent" />
-      Mabim dimulai dalam
-      <span className="font-heading text-2xl font-bold leading-none text-accent">
+    <div className="inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-medium text-cream backdrop-blur-md shadow-sm">
+      <span className="flex h-2 w-2 rounded-full bg-accent" />
+      <span>Mabim dimulai dalam</span>
+      <span className="font-heading text-base font-bold text-accent">
         {days}
       </span>
-      hari lagi
-    </span>
+      <span>hari lagi</span>
+    </div>
   );
 }

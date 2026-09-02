@@ -11,8 +11,9 @@
   --color-accent: #d9651a;
   --color-ink: #14282f;
   --color-olive: #e6ebe0;
-  --shadow-card: 0 1px 2px rgba(6, 47, 59, 0.04), 0 12px 32px -16px rgba(6, 47, 59, 0.16);
-  --shadow-lift: 0 2px 6px rgba(6, 47, 59, 0.06), 0 20px 48px -20px rgba(6, 47, 59, 0.24);
+  --shadow-card: 0 1px 3px rgba(6, 47, 59, 0.04), 0 12px 28px -10px rgba(6, 47, 59, 0.09);
+  --shadow-lift: 0 4px 12px rgba(6, 47, 59, 0.06), 0 24px 48px -18px rgba(6, 47, 59, 0.22);
+  --shadow-subtle: 0 1px 2px rgba(6, 47, 59, 0.05);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
   --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
@@ -55,14 +56,55 @@
 }
 
 html {
-  scroll-padding-top: 4.5rem;
+  scroll-padding-top: 5rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: #fff;
+  background: #d9651a;
+  color: #ffffff;
 }
 
+/* Smooth glass and surface utility classes */
+.glass-surface {
+  background: rgba(241, 239, 215, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(221, 226, 214, 0.7);
+}
+
+.glass-surface-dark {
+  background: rgba(6, 47, 59, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Clean subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 47, 59, 0.16);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 47, 59, 0.28);
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
 @keyframes aurora-drift {
   0%,
   100% {
@@ -91,10 +133,10 @@ html {
 
   .reveal {
     opacity: 0;
-    transform: translateY(1.5rem);
+    transform: translateY(1rem);
     transition:
-      opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .reveal.is-visible {

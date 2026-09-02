@@ -71,17 +71,6 @@ function deadlineInfo(deadline: string) {
   return { label, badgeText, badgeCls };
 }
 
-const GLOWS: Record<string, string> = {
-  DTE: "hover:shadow-[0_12px_32px_-8px_rgba(3,105,161,0.35)] hover:ring-sky-400/30",
-  DTM: "hover:shadow-[0_12px_32px_-8px_rgba(23,23,23,0.3)] hover:ring-neutral-400/30",
-  DTSL: "hover:shadow-[0_12px_32px_-8px_rgba(71,85,105,0.35)] hover:ring-slate-400/30",
-  DTMM: "hover:shadow-[0_12px_32px_-8px_rgba(4,120,87,0.35)] hover:ring-emerald-400/30",
-  DTK: "hover:shadow-[0_12px_32px_-8px_rgba(185,28,28,0.35)] hover:ring-red-400/30",
-  DA: "hover:shadow-[0_12px_32px_-8px_rgba(109,40,217,0.35)] hover:ring-violet-400/30",
-  DTI: "hover:shadow-[0_12px_32px_-8px_rgba(82,82,91,0.35)] hover:ring-zinc-400/30",
-  PI: "hover:shadow-[0_12px_32px_-8px_rgba(180,83,9,0.35)] hover:ring-amber-400/30",
-  BEM: "hover:shadow-[0_12px_32px_-8px_rgba(30,58,138,0.25)] hover:ring-blue-500/30",
-};
 
 function LembagaBlock({
   lembaga,
@@ -90,32 +79,21 @@ function LembagaBlock({
   lembaga: TugasLembaga;
   badge?: string;
 }) {
-  const glowClass = GLOWS[lembaga.kode] || "hover:shadow-[0_12px_32px_-8px_rgba(9,65,82,0.12)] hover:ring-accent/25";
   return (
-    <div className={cn(
-      "group relative overflow-hidden rounded-3xl bg-card p-5 ring-1 ring-border/60 shadow-card transition-all duration-500 hover:-translate-y-1.5 sm:p-6",
-      glowClass
-    )}>
-      {/* Subtle Colored Background Gradient */}
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-teal-dark/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-      {/* Glass Glare Highlight */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
-      <div className="relative z-10">
-        <div className="flex items-center gap-3">
+    <div className="rounded-2xl sm:rounded-3xl border border-border/70 bg-secondary/30 p-4 sm:p-6">
+      <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
         <span
           className={cn(
-            "shrink-0 rounded-full px-2.5 py-1 text-xs font-bold",
+            "shrink-0 rounded-full px-2.5 py-0.5 text-xs font-bold",
             badge ?? "bg-secondary text-secondary-foreground"
           )}
         >
           {lembaga.kode}
         </span>
-        <h4 className="truncate font-heading text-base font-semibold text-foreground">
+        <h4 className="font-heading text-sm sm:text-base font-bold text-foreground leading-snug">
           {lembaga.nama}
         </h4>
       </div>
-
       <div className="mt-4 space-y-3">
         {lembaga.tugas.length > 0 ? (
           lembaga.tugas.map((t, i) => {
@@ -125,20 +103,20 @@ function LembagaBlock({
             return (
               <div
                 key={i}
-                className="rounded-2xl border border-border bg-secondary/40 p-4"
+                className="rounded-2xl border border-border/60 bg-secondary/30 p-4 transition-all hover:border-accent/30"
               >
                 <div className="flex items-center gap-2.5">
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-accent to-amber-500 font-heading text-sm font-bold text-white shadow-lg">
+                  <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent text-xs font-bold text-white shadow-sm">
                     {i + 1}
                   </span>
-                  <p className="min-w-0 flex-1 font-heading text-base font-bold tracking-tight text-foreground">
+                  <p className="min-w-0 flex-1 font-heading text-sm font-bold text-foreground">
                     {t.judul}
                   </p>
                 </div>
                 {dl && (
-                  <p className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <p className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">
                     <span className="text-xs text-muted-foreground">
-                      Tenggat {dl.label} WIB
+                      Tenggat: {dl.label} WIB
                     </span>
                     <span
                       className={cn(
@@ -156,10 +134,10 @@ function LembagaBlock({
                       asChild
                       variant="outline"
                       size="sm"
-                      className="rounded-xl"
+                      className="rounded-full border-border/80 text-xs font-semibold hover:border-accent/40 hover:bg-accent/5"
                     >
                       <a href={torUrl} target="_blank" rel="noopener noreferrer">
-                        <FileText data-slot="icon-inline-start" />
+                        <FileText data-slot="icon-inline-start" className="h-3.5 w-3.5" />
                         TOR Tugas
                       </a>
                     </Button>
@@ -168,24 +146,24 @@ function LembagaBlock({
                       variant="outline"
                       size="sm"
                       disabled
-                      className="rounded-xl"
+                      className="rounded-full text-xs"
                     >
                       TOR menyusul
                     </Button>
                   )}
                   {kumpulUrl ? (
-                    <Button asChild size="sm" className="rounded-xl">
+                    <Button asChild size="sm" className="rounded-full bg-teal-dark text-cream text-xs font-semibold hover:bg-teal-dark/90">
                       <a
                         href={kumpulUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Upload data-slot="icon-inline-start" />
+                        <Upload data-slot="icon-inline-start" className="h-3.5 w-3.5" />
                         Kumpulkan
                       </a>
                     </Button>
                   ) : (
-                    <Button size="sm" disabled className="rounded-xl">
+                    <Button size="sm" disabled className="rounded-full text-xs">
                       Link kumpul menyusul
                     </Button>
                   )}
@@ -194,11 +172,12 @@ function LembagaBlock({
             );
           })
         ) : (
-          <p className="text-sm text-muted-foreground">
-            Daftar tugas {lembaga.nama} akan diumumkan SC segera.
-          </p>
+          <div className="mt-4 rounded-xl border border-dashed border-border/80 bg-background/50 p-5 text-center">
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              Daftar penugasan {lembaga.nama} akan diumumkan oleh Steering Committee segera.
+            </p>
+          </div>
         )}
-      </div>
       </div>
     </div>
   );
@@ -256,67 +235,35 @@ export default function DashboardClient() {
 
   return (
     <div className="space-y-5">
-      <div className="relative overflow-hidden rounded-[2.5rem] bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
+      <div className="relative overflow-hidden rounded-3xl bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-15 grayscale"
           style={{ backgroundImage: "url('/bg-site.jpg')" }}
           aria-hidden="true"
         />
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-          <span
-            className="aurora-blob -left-24 -top-24 h-80 w-80"
-            style={{
-              background:
-                "radial-gradient(closest-side, rgba(217, 101, 26, 0.30), transparent 70%)",
-              animationDelay: "0s",
-            }}
-          />
-          <span
-            className="aurora-blob right-0 top-1/4 h-72 w-72"
-            style={{
-              background:
-                "radial-gradient(closest-side, rgba(241, 239, 215, 0.12), transparent 70%)",
-              animationDelay: "-7s",
-            }}
-          />
-          <span
-            className="aurora-blob -bottom-16 -right-16 h-80 w-80"
-            style={{
-              background:
-                "radial-gradient(closest-side, rgba(6, 47, 59, 0.6), transparent 70%)",
-              animationDelay: "-13s",
-            }}
-          />
-        </div>
         <div aria-hidden="true" className="hero-beam" />
-        <span
-          aria-hidden="true"
-          className="pointer-events-none absolute -right-6 -top-8 select-none font-heading text-[8rem] font-bold leading-none tracking-tight text-white/5 sm:text-[11rem]"
-        >
-          {user.departemen}
-        </span>
 
-        <div className="hero-fade relative px-6 py-8 sm:px-10 sm:py-10">
+        <div className="hero-fade relative px-6 py-8 sm:px-8 sm:py-9">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="flex min-w-0 items-center gap-4">
-              <span className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-gradient-to-br from-accent to-amber-500 font-heading text-lg font-bold text-white shadow-lift ring-2 ring-white/25">
+              <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-accent text-lg font-bold text-white shadow-sm ring-2 ring-white/20">
                 {initials(user.nama)}
               </span>
               <div className="min-w-0">
-                <h2 className="truncate font-heading text-3xl font-bold tracking-tight sm:text-4xl">
+                <h2 className="truncate font-heading text-2xl font-bold tracking-tight text-white sm:text-3xl">
                   Halo,{" "}
-                  <span className="bg-gradient-to-r from-cream via-white to-accent bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-cream via-amber-200 to-accent bg-clip-text text-transparent">
                     {firstName}
                   </span>
                 </h2>
-                <p className="mt-1 truncate text-sm text-cream/80">
+                <p className="mt-1 truncate text-xs text-cream/80">
                   {user.prodi} · NPM {user.npm}
                 </p>
               </div>
             </div>
             <span
               className={cn(
-                "shrink-0 rounded-full px-3 py-1 text-xs font-bold",
+                "shrink-0 rounded-full px-3 py-0.5 text-xs font-bold",
                 warna?.badge
               )}
             >
@@ -324,64 +271,64 @@ export default function DashboardClient() {
             </span>
           </div>
 
-          <div className="mt-7 grid gap-3 sm:grid-cols-2">
-            <div className="rounded-3xl bg-white/10 p-5 text-center ring-1 ring-white/15 backdrop-blur">
-              <p className="text-xs font-semibold uppercase tracking-wide text-cream/70">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            <div className="rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-md">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-cream/70">
                 Nomor Kelompok
               </p>
               {user.kelompok ? (
-                <p className="mt-1 font-heading text-5xl font-bold tracking-tight text-cream sm:text-6xl">
+                <p className="mt-1 font-heading text-4xl font-bold tracking-tight text-white sm:text-5xl">
                   {user.kelompok}
                 </p>
               ) : (
-                <p className="mt-3 text-sm text-cream/80">
+                <p className="mt-2 text-xs text-cream/80">
                   Nomor kelompok menyusul
                 </p>
               )}
             </div>
-            <div className="flex flex-col items-center justify-center rounded-3xl bg-white/10 p-5 text-center ring-1 ring-white/15 backdrop-blur">
-              <p className="text-xs font-semibold uppercase tracking-wide text-cream/70">
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-md">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-cream/70">
                 Grup Line
               </p>
               {lineUrl ? (
                 <Button
                   asChild
-                  size="lg"
-                  className="mt-3 h-12 w-full rounded-full bg-cream text-teal-dark shadow-lift hover:bg-cream/90 hover:text-teal-dark"
+                  size="default"
+                  className="mt-2 h-10 w-full rounded-full bg-cream text-xs font-semibold text-teal-dark shadow-sm hover:bg-white hover:text-teal-950 active:scale-[0.98]"
                 >
                   <a href={lineUrl} target="_blank" rel="noopener noreferrer">
-                    <LineIcon className="h-5 w-5" />
+                    <LineIcon className="h-4 w-4" />
                     Gabung Grup Line
                   </a>
                 </Button>
               ) : (
-                <p className="mt-3 text-sm text-cream/80">
-                  Link grup Line dibagikan SC segera.
+                <p className="mt-2 text-xs text-cream/80">
+                  Link grup Line dibagikan segera.
                 </p>
               )}
             </div>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-2.5">
+          <div className="mt-5 flex flex-wrap gap-2.5">
             <Button
               asChild
               variant="outline"
-              size="lg"
-              className="h-12 rounded-full border-white/25 bg-transparent px-6 text-cream hover:bg-white/10 hover:text-cream"
+              size="sm"
+              className="h-9 rounded-full border-white/20 bg-white/5 px-4 text-xs font-medium text-cream hover:bg-white/15 hover:text-white"
             >
               <Link href="/info">
-                <Megaphone data-slot="icon-inline-start" />
+                <Megaphone data-slot="icon-inline-start" className="h-3.5 w-3.5 text-amber-300" />
                 Info Mabim
               </Link>
             </Button>
             <Button
               type="button"
               variant="ghost"
-              size="lg"
+              size="sm"
               onClick={logout}
-              className="h-12 rounded-full bg-destructive px-5 text-white shadow-lift hover:bg-destructive/85 hover:text-white focus-visible:ring-destructive/50 active:scale-[0.98]"
+              className="h-9 rounded-full bg-destructive/80 px-4 text-xs font-semibold text-white hover:bg-destructive hover:text-white active:scale-[0.98] cursor-pointer"
             >
-              <LogOut data-slot="icon-inline-start" />
+              <LogOut data-slot="icon-inline-start" className="h-3.5 w-3.5" />
               Keluar
             </Button>
           </div>
@@ -389,85 +336,85 @@ export default function DashboardClient() {
       </div>
 
       <Reveal>
-        <Card className="rounded-[2rem] p-6 ring-border/60 shadow-card sm:p-8">
+        <Card className="rounded-3xl border border-border/80 bg-card p-6 shadow-sm sm:p-8">
           <div className="flex items-center gap-3">
-            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-gradient-to-br from-secondary to-accent/15 text-accent">
-              <FileText className="h-6 w-6" />
+            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+              <FileText className="h-5 w-5" />
             </span>
             <div>
               <h3 className="font-heading text-lg font-bold text-foreground">
-                Tugas
+                Daftar Penugasan
               </h3>
-              <p className="text-sm text-muted-foreground">
-                Tugas dari departemenmu, BEM, dan BOK dalam satu tempat.
+              <p className="text-xs text-muted-foreground">
+                Tugas dari departemenmu, BEM, dan BOK dalam satu portal.
               </p>
             </div>
           </div>
 
-        <div
-          role="tablist"
-          aria-label="Kategori tugas"
-          className="mt-5 flex gap-1 rounded-full bg-secondary/70 p-1.5"
-        >
-          {TABS.map((t) => {
-            const count = tugasCount[t.key];
-            return (
-              <button
-                key={t.key}
-                type="button"
-                role="tab"
-                aria-selected={tab === t.key}
-                onClick={() => setTab(t.key)}
-                className={cn(
-                  "h-11 flex-1 rounded-full text-sm font-semibold transition-colors active:scale-[0.98]",
-                  tab === t.key
-                    ? "bg-card text-foreground shadow-card"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
-              >
-                {t.label}
-                {count > 0 && (
-                  <span
-                    className={cn(
-                      "ml-1.5 inline-grid h-5 min-w-5 place-items-center rounded-full px-1 text-[10px] font-bold",
-                      tab === t.key
-                        ? "bg-accent text-white"
-                        : "bg-secondary text-muted-foreground"
-                    )}
-                  >
-                    {count}
-                  </span>
-                )}
-              </button>
-            );
-          })}
-        </div>
+          <div
+            role="tablist"
+            aria-label="Kategori tugas"
+            className="mt-5 grid w-full grid-cols-3 gap-1 rounded-2xl border border-border/70 bg-secondary/50 p-1 sm:rounded-full"
+          >
+            {TABS.map((t) => {
+              const count = tugasCount[t.key];
+              return (
+                <button
+                  key={t.key}
+                  type="button"
+                  role="tab"
+                  aria-selected={tab === t.key}
+                  onClick={() => setTab(t.key)}
+                  className={cn(
+                    "flex h-9 sm:h-10 items-center justify-center gap-1.5 rounded-xl sm:rounded-full px-2 text-xs sm:text-sm font-semibold transition-all active:scale-[0.98] cursor-pointer",
+                    tab === t.key
+                      ? "bg-card text-foreground shadow-xs"
+                      : "text-muted-foreground hover:text-foreground"
+                  )}
+                >
+                  <span>{t.label}</span>
+                  {count > 0 && (
+                    <span
+                      className={cn(
+                        "inline-grid h-4.5 min-w-4.5 place-items-center rounded-full px-1 text-[10px] font-bold",
+                        tab === t.key
+                          ? "bg-accent text-white"
+                          : "bg-secondary text-muted-foreground"
+                      )}
+                    >
+                      {count}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
 
-        <div role="tabpanel" className="mt-4">
-          {tab === "dept" &&
-            (dept ? (
-              <LembagaBlock lembaga={dept} badge={warna?.badge} />
-            ) : null)}
-          {tab === "bem" &&
-            (bem ? (
-              <LembagaBlock
-                lembaga={bem}
-                badge={DEPARTEMEN_WARNA.BEM?.badge}
-              />
-            ) : null)}
-          {tab === "bok" && (
-            <div className="space-y-3">
-              {bok.map((l) => (
+          <div role="tabpanel" className="mt-4">
+            {tab === "dept" &&
+              (dept ? (
+                <LembagaBlock lembaga={dept} badge={warna?.badge} />
+              ) : null)}
+            {tab === "bem" &&
+              (bem ? (
                 <LembagaBlock
-                  key={l.kode}
-                  lembaga={l}
-                  badge={DEPARTEMEN_WARNA[l.kode]?.badge}
+                  lembaga={bem}
+                  badge={DEPARTEMEN_WARNA.BEM?.badge}
                 />
-              ))}
-            </div>
-          )}
-        </div>
-      </Card>
+              ) : null)}
+            {tab === "bok" && (
+              <div className="space-y-3">
+                {bok.map((l) => (
+                  <LembagaBlock
+                    key={l.kode}
+                    lembaga={l}
+                    badge={DEPARTEMEN_WARNA[l.kode]?.badge}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        </Card>
       </Reveal>
 
       <Reveal>

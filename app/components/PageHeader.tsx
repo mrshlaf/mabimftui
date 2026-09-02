@@ -76,21 +76,22 @@ export default function PageHeader({
           </span>
         )}
 
-        <div className="relative mx-auto max-w-4xl px-6 py-14 sm:px-12 sm:py-16 lg:px-16">
-          <p
-            className="hero-fade inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-accent backdrop-blur"
+        <div className="relative mx-auto max-w-4xl px-6 py-12 sm:px-10 sm:py-16 lg:px-14">
+          <div
+            className="hero-fade inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1 text-xs font-semibold tracking-wide text-cream/90 backdrop-blur-md"
             style={{ animationDelay: "0.05s" }}
           >
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             {eyebrow}
-          </p>
+          </div>
           <h1
-            className="hero-fade mt-5 max-w-2xl font-heading text-3xl font-bold tracking-tight text-cream sm:text-4xl lg:text-5xl"
+            className="hero-fade mt-4 max-w-2xl font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
             style={{ animationDelay: "0.12s" }}
           >
             {parts ? (
               <>
                 {parts[0]}
-                <span className="bg-gradient-to-r from-cream via-white to-accent bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cream via-amber-200 to-accent bg-clip-text text-transparent">
                   {accentWord}
                 </span>
                 {parts[1]}
@@ -100,7 +101,7 @@ export default function PageHeader({
             )}
           </h1>
           <p
-            className="hero-fade mt-3 max-w-2xl text-sm text-cream/90 sm:text-base"
+            className="hero-fade mt-3 max-w-2xl text-sm leading-relaxed text-cream/80 sm:text-base"
             style={{ animationDelay: "0.19s" }}
           >
             {desc}

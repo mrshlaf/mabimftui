@@ -35,51 +35,46 @@ function KontakCard({ person }: { person: KontakPerson }) {
   const tel = hasTelp ? safeExternalUrl(phoneToTel(person.noTelp)) : null;
   const wa = hasTelp ? safeExternalUrl(phoneToWa(person.noTelp)) : null;
   return (
-    <Card className="group relative overflow-hidden h-full rounded-[2rem] p-6 ring-border/60 shadow-card transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_-8px_rgba(9,65,82,0.12)] hover:ring-accent/25">
-      {/* Subtle Colored Background Gradient */}
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-teal-dark/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-      {/* Glass Glare Highlight */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+    <Card className="group relative flex flex-col justify-between overflow-hidden h-full rounded-3xl border border-border/80 bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-card sm:p-6">
+      <div>
+        <div className="flex items-center gap-3">
+          <Avatar
+            size="lg"
+            className="size-11 rounded-2xl bg-secondary text-accent font-heading font-bold"
+          >
+            <AvatarFallback className="font-heading text-sm font-bold">
+              {initials(person.nama)}
+            </AvatarFallback>
+          </Avatar>
+          <div className="min-w-0 flex-1">
+            <h3 className="truncate font-heading text-base font-bold text-foreground transition-colors group-hover:text-accent">
+              {person.nama}
+            </h3>
+            <p className="truncate text-xs text-muted-foreground">{person.peran}</p>
+          </div>
+        </div>
 
-      <div className="relative z-10 flex flex-col h-full justify-between">
-        <div>
-          <div className="flex items-center gap-3">
-            <Avatar
-              size="lg"
-              className="size-12 bg-gradient-to-br from-secondary to-accent/15 text-accent transition-transform duration-300 group-hover:scale-105"
-            >
-              <AvatarFallback className="font-heading text-base font-bold">
-                {initials(person.nama)}
-              </AvatarFallback>
-            </Avatar>
-            <div className="min-w-0">
-              <h3 className="truncate font-heading text-base font-bold text-foreground transition-colors duration-300 group-hover:text-accent">
-                {person.nama}
-              </h3>
-              <p className="truncate text-sm text-muted-foreground">{person.peran}</p>
+        <div className="mt-4 space-y-1 text-xs text-muted-foreground">
+          {person.npm && (
+            <div className="flex items-center gap-2">
+              <IdCard className="h-3.5 w-3.5 shrink-0 text-accent" />
+              <span>NPM {person.npm}</span>
             </div>
-          </div>
-
-      <div className="mt-4 space-y-1.5 text-sm text-muted-foreground">
-        {person.npm && (
-          <div className="flex items-center gap-2">
-            <IdCard className="h-4 w-4 shrink-0 text-accent/70" />
-            <span>NPM {person.npm}</span>
-          </div>
-        )}
-        {person.departemen && (
-          <div className="flex items-center gap-2">
-            <Building2 className="h-4 w-4 shrink-0 text-accent/70" />
-            <span>{person.departemen}</span>
-          </div>
-        )}
+          )}
+          {person.departemen && (
+            <div className="flex items-center gap-2">
+              <Building2 className="h-3.5 w-3.5 shrink-0 text-accent" />
+              <span>{person.departemen}</span>
+            </div>
+          )}
+        </div>
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-2.5">
+      <div className="mt-5 grid grid-cols-2 gap-2">
         {tel && (
-          <Button asChild size="lg" className="h-12 rounded-full px-4">
+          <Button asChild size="default" className="h-10 rounded-full bg-teal-dark text-xs font-semibold text-cream hover:bg-teal-dark/90">
             <a href={tel}>
-              <Phone data-slot="icon-inline-start" />
+              <Phone data-slot="icon-inline-start" className="h-3.5 w-3.5" />
               Telepon
             </a>
           </Button>
@@ -87,18 +82,16 @@ function KontakCard({ person }: { person: KontakPerson }) {
         {wa && (
           <Button
             asChild
-            size="lg"
+            size="default"
             variant="outline"
-            className="h-12 rounded-full border-border px-4 text-foreground hover:border-accent/40 hover:bg-accent/5"
+            className="h-10 rounded-full border-border/80 text-xs font-semibold text-foreground hover:border-accent/40 hover:bg-accent/5"
           >
             <a href={wa} target="_blank" rel="noopener noreferrer">
-              <MessageCircle data-slot="icon-inline-start" />
+              <MessageCircle data-slot="icon-inline-start" className="h-3.5 w-3.5 text-emerald-600" />
               WhatsApp
             </a>
           </Button>
         )}
-      </div>
-        </div>
       </div>
     </Card>
   );
@@ -115,26 +108,26 @@ function LembagaSection({
       <div className="mb-4 flex items-center gap-2.5">
         <Badge
           variant="secondary"
-          className={cn("rounded-full px-3 py-1.5 text-sm", warna?.badge)}
+          className={cn("rounded-full px-3 py-0.5 text-xs font-bold", warna?.badge)}
         >
           {lembaga.kode}
         </Badge>
-        <h2 className="font-heading text-xl font-semibold text-foreground">
+        <h2 className="font-heading text-lg font-bold text-foreground">
           {lembaga.nama}
         </h2>
       </div>
       {lembaga.kontak.length > 0 ? (
         <div className="grid gap-4 sm:grid-cols-2">
           {lembaga.kontak.map((person, i) => (
-            <Reveal key={person.npm} className="h-full" delay={i * 70}>
+            <Reveal key={person.npm} className="h-full" delay={i * 60}>
               <KontakCard person={person} />
             </Reveal>
           ))}
         </div>
       ) : (
         <Reveal>
-          <Card className="rounded-[2rem] border border-dashed p-6 text-center text-sm text-muted-foreground ring-0">
-            <Building2 className="mx-auto h-6 w-6 text-accent/60" />
+          <Card className="rounded-3xl border border-dashed border-border p-6 text-center text-xs text-muted-foreground">
+            <Building2 className="mx-auto h-5 w-5 text-accent/60" />
             <p className="mt-2">Kontak lembaga ini menyusul.</p>
           </Card>
         </Reveal>
@@ -160,7 +153,7 @@ export default function KontakClient() {
         <div
           role="tablist"
           aria-label="Filter kategori kontak"
-          className="flex gap-1 rounded-full bg-secondary/70 p-1.5"
+          className="grid w-full grid-cols-3 gap-1 rounded-2xl border border-border/70 bg-secondary/50 p-1 max-w-md mx-auto sm:rounded-full"
         >
           {FILTERS.map((f) => (
             <button
@@ -170,9 +163,9 @@ export default function KontakClient() {
               aria-selected={filter === f.key}
               onClick={() => setFilter(f.key)}
               className={cn(
-                "h-11 flex-1 rounded-full text-sm font-semibold transition-colors active:scale-[0.98]",
+                "flex h-9 items-center justify-center rounded-xl sm:rounded-full text-xs font-semibold transition-all active:scale-[0.98] cursor-pointer",
                 filter === f.key
-                  ? "bg-card text-foreground shadow-card"
+                  ? "bg-card text-foreground shadow-xs"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >

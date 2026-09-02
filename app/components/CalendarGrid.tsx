@@ -153,21 +153,21 @@ function DayCell({
         cell.current ? onSelect(cell.key) : undefined
       }
       className={cn(
-        "group relative flex h-14 flex-col items-center justify-between border-b border-r border-border/30 p-1.5 transition-all duration-300 sm:h-24 sm:p-2.5",
+        "group relative flex h-14 flex-col items-center justify-between border-b border-r border-border/40 p-1.5 transition-all duration-200 sm:h-24 sm:p-2.5",
         cell.current
-          ? "bg-background hover:bg-secondary/40"
-          : "bg-muted/10 text-muted-foreground/30",
-        isSelected && "bg-accent/8 ring-2 ring-inset ring-accent/40 shadow-inner"
+          ? "bg-background hover:bg-secondary/50"
+          : "bg-muted/20 text-muted-foreground/30 pointer-events-none",
+        isSelected && "bg-accent/10 ring-2 ring-inset ring-accent/60"
       )}
     >
       {/* Range Highlight Box */}
       {cell.current && rangeHighlight && (
         <div
           className={cn(
-            "absolute inset-y-1.5 left-0 right-0 z-0 opacity-80 sm:inset-y-2.5",
+            "absolute inset-y-1 left-0 right-0 z-0 opacity-70 sm:inset-y-2",
             TAG_STYLE[rangeHighlight.ev.tag].bg,
-            rangeHighlight.isStart ? "rounded-l-xl left-1" : "",
-            rangeHighlight.isEnd ? "rounded-r-xl right-1" : ""
+            rangeHighlight.isStart ? "rounded-l-lg left-1" : "",
+            rangeHighlight.isEnd ? "rounded-r-lg right-1" : ""
           )}
         />
       )}
@@ -175,11 +175,11 @@ function DayCell({
       {/* Date Number Indicator */}
       <span
         className={cn(
-          "relative z-10 inline-flex h-6 w-6 items-center justify-center rounded-full text-[11px] font-extrabold transition-all duration-300 sm:h-8 sm:w-8 sm:text-xs",
-          isToday && "bg-accent text-white shadow-md shadow-accent/25",
-          !cell.current && "opacity-20",
-          !isToday && cell.current && "text-foreground group-hover:scale-105",
-          !isToday && cell.current && cellTagStyle && !rangeHighlight && cn("ring-1 ring-offset-1 ring-offset-background", cellTagStyle.bar.replace("bg-", "ring-"))
+          "relative z-10 inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-semibold transition-all sm:h-7 sm:w-7",
+          isToday && "bg-accent text-white font-bold shadow-sm",
+          !cell.current && "opacity-25",
+          !isToday && cell.current && "text-foreground",
+          !isToday && cell.current && cellTagStyle && !rangeHighlight && "ring-1 ring-border/80"
         )}
       >
         {cell.day}
@@ -354,17 +354,15 @@ export default function CalendarGrid({
 
       {/* Calendar Grid Card */}
       <Reveal delay={80}>
-        <Card className="relative overflow-hidden rounded-[2.5rem] border-transparent p-0.5 ring-1 ring-border/40 shadow-card">
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10" />
-          
-          <div className="relative grid grid-cols-7 border-b border-border/40 bg-secondary/30">
+        <Card className="relative overflow-hidden rounded-3xl border border-border/80 bg-card p-0 shadow-sm">
+          <div className="relative grid grid-cols-7 border-b border-border/60 bg-secondary/50">
             {DAY_NAMES.map((d) => (
               <div
                 key={d}
                 className={cn(
-                  "py-2 text-center text-[10px] font-bold uppercase tracking-wider",
+                  "py-2.5 text-center text-[11px] font-semibold uppercase tracking-wider",
                   d === "Min" || d === "Sab"
-                    ? "text-rose-500/80"
+                    ? "text-rose-600/90"
                     : "text-muted-foreground"
                 )}
               >
@@ -391,12 +389,12 @@ export default function CalendarGrid({
 
       {/* Tag Legend */}
       <Reveal delay={125}>
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 rounded-2xl bg-secondary/40 px-4 py-2.5">
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 rounded-2xl border border-border/60 bg-secondary/30 px-4 py-2 text-xs font-medium text-muted-foreground">
           {(["day", "deadline", "range"] as KalendarTag[]).map((tag) => {
             const s = TAG_STYLE[tag];
             return (
-              <div key={tag} className="flex items-center gap-1.5 text-[11px] font-bold text-muted-foreground">
-                <span className={cn("h-2.5 w-2.5 rounded-full ring-1 ring-white/10", s.bar)} />
+              <div key={tag} className="flex items-center gap-2">
+                <span className={cn("h-2.5 w-2.5 rounded-full", s.bar)} />
                 <span>{TAG_LABEL[tag]}</span>
               </div>
             );
@@ -406,19 +404,12 @@ export default function CalendarGrid({
 
       {/* Inline Selected Date Agenda Details */}
       <Reveal delay={160}>
-        <Card className="relative overflow-hidden rounded-[2rem] border-transparent p-6 ring-1 ring-border/40 shadow-card">
-          {/* Accent Glow Backdrops */}
-          <div className="pointer-events-none absolute inset-0">
-            <span aria-hidden="true" className="absolute -left-12 -top-12 h-36 w-36 rounded-full bg-accent/8 blur-2xl" />
-            <span aria-hidden="true" className="absolute -bottom-8 -right-8 h-32 w-32 rounded-full bg-amber-400/5 blur-2xl" />
-            <div aria-hidden="true" className="hero-beam" />
-          </div>
-
+        <Card className="relative overflow-hidden rounded-3xl border border-border/80 bg-card p-6 shadow-sm">
           <div className="relative z-10 flex flex-col gap-4">
-            <div className="flex items-center gap-2 border-b border-border/40 pb-3">
-              <Calendar className="h-4.5 w-4.5 text-accent" />
+            <div className="flex items-center gap-2 border-b border-border/60 pb-3">
+              <Calendar className="h-4 w-4 text-accent" />
               <h3 className="font-heading text-sm font-bold text-foreground">
-                Detail Agenda · <span className="text-muted-foreground">{selectedDateFormatted}</span>
+                Detail Agenda · <span className="font-normal text-muted-foreground">{selectedDateFormatted}</span>
               </h3>
             </div>
 
@@ -430,18 +421,18 @@ export default function CalendarGrid({
                     <div
                       key={idx}
                       className={cn(
-                        "group relative overflow-hidden rounded-2xl border border-border/40 px-4 py-3.5 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm",
+                        "group relative overflow-hidden rounded-2xl border border-border/60 px-4 py-3 transition-all",
                         s.bg
                       )}
                     >
                       <div className="flex items-start gap-3">
-                        <span className={cn("mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ring-1 ring-white/10", s.bar)} />
+                        <span className={cn("mt-1.5 h-2 w-2 shrink-0 rounded-full", s.bar)} />
                         <div className="min-w-0 flex-1">
                           <p className={cn("font-heading text-sm font-bold leading-snug", s.text)}>
                             {ev.label}
                           </p>
                           <div className="mt-1.5 flex flex-wrap items-center gap-2 text-xs">
-                            <span className="rounded-full bg-background/70 px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-muted-foreground ring-1 ring-border/30 shadow-sm">
+                            <span className="rounded-full bg-background/90 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground border border-border/60">
                               {TAG_LABEL[ev.tag]}
                             </span>
                             {ev.waktu && (
@@ -465,9 +456,9 @@ export default function CalendarGrid({
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center py-6 text-center text-muted-foreground">
-                <AlertCircle className="h-8 w-8 opacity-40 text-muted-foreground mb-2" />
-                <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground/60">Tidak Ada Agenda</p>
-                <p className="text-[11px] mt-0.5">Belum ada agenda resmi Mabim pada tanggal ini.</p>
+                <AlertCircle className="h-6 w-6 opacity-40 text-muted-foreground mb-1.5" />
+                <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Tidak Ada Agenda</p>
+                <p className="text-xs mt-0.5 text-muted-foreground/80">Belum ada agenda resmi Mabim pada tanggal ini.</p>
               </div>
             )}
           </div>
