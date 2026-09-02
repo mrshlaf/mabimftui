@@ -147,6 +147,7 @@ function DepartemenContent() {
             {DEPARTEMEN_CODES.map((code) => {
               const active = selectedDept === code;
               const deptStat = statistik.departemen.find((d) => d.kode === code);
+              const deptWarna = DEPARTEMEN_WARNA[code];
               return (
                 <button
                   key={code}
@@ -157,15 +158,19 @@ function DepartemenContent() {
                   className={cn(
                     "flex flex-col sm:flex-row items-center justify-center gap-1 rounded-xl py-2 px-1 text-xs font-bold transition-all active:scale-[0.98] cursor-pointer",
                     active
-                      ? "bg-teal-dark text-cream shadow-xs"
+                      ? cn("shadow-xs ring-2 ring-offset-1 ring-offset-background ring-accent/60", deptWarna?.badge)
                       : "text-muted-foreground hover:bg-secondary/70 hover:text-foreground"
                   )}
                 >
                   <span>{code}</span>
                   <span
                     className={cn(
-                      "text-[10px] font-medium px-1.5 py-0.2 rounded-full",
-                      active ? "bg-accent text-white" : "bg-secondary text-muted-foreground"
+                      "text-[10px] font-semibold px-1.5 py-0.2 rounded-full",
+                      active
+                        ? code === "DTI"
+                          ? "bg-zinc-200 text-zinc-900"
+                          : "bg-white/20 text-white"
+                        : deptWarna?.badge ?? "bg-secondary text-muted-foreground"
                     )}
                   >
                     {deptStat?.jumlah ?? 0}
@@ -179,35 +184,35 @@ function DepartemenContent() {
 
       {/* Department Summary & Prodi Filter Bar */}
       <Reveal delay={60}>
-        <div className="rounded-3xl border border-border/80 bg-card p-5 shadow-sm sm:p-6">
+        <div className={cn("relative overflow-hidden rounded-3xl border border-border/80 p-5 shadow-sm sm:p-6 transition-all duration-300", warna?.card ?? "bg-card")}>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-3 min-w-0">
               <span
                 className={cn(
-                  "grid h-11 w-11 shrink-0 place-items-center rounded-2xl font-heading text-sm font-bold text-white shadow-xs",
-                  warna?.bar || "bg-accent"
+                  "grid h-12 w-12 shrink-0 place-items-center rounded-2xl font-heading text-sm font-bold shadow-md",
+                  warna?.badge ?? "bg-accent text-white"
                 )}
               >
                 {selectedDept}
               </span>
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className={cn("rounded-full px-2.5 py-0.5 text-[11px] font-bold", warna?.badge)}>
+                  <span className={cn("rounded-full px-2.5 py-0.5 text-[11px] font-bold shadow-xs", warna?.badge)}>
                     {selectedDept}
                   </span>
-                  <span className="text-xs text-muted-foreground font-medium">
+                  <span className={cn("text-xs font-medium", warna?.sub ?? "text-muted-foreground")}>
                     {deptStudents.length} Mahasiswa Baru 2026
                   </span>
                 </div>
-                <h2 className="mt-1 font-heading text-lg sm:text-xl font-bold tracking-tight text-foreground">
+                <h2 className={cn("mt-1 font-heading text-lg sm:text-xl font-bold tracking-tight", warna?.heading ?? "text-foreground")}>
                   {DEPARTEMEN_NAMA[selectedDept]}
                 </h2>
               </div>
             </div>
 
             {/* Quick Stat Counter */}
-            <div className="flex items-center gap-2.5 rounded-2xl border border-border/70 bg-secondary/30 px-3.5 py-2 shrink-0 self-start sm:self-auto">
-              <Users className="h-4 w-4 text-accent shrink-0" />
+            <div className="flex items-center gap-2.5 rounded-2xl border border-border/70 bg-card/80 backdrop-blur-xs px-3.5 py-2 shrink-0 self-start sm:self-auto shadow-xs">
+              <Users className={cn("h-4 w-4 shrink-0", warna?.sub ? "text-accent" : "text-accent")} />
               <div>
                 <span className="font-heading text-sm font-bold text-foreground">
                   {deptStudents.length.toLocaleString("id-ID")} Maba
@@ -220,20 +225,20 @@ function DepartemenContent() {
           </div>
 
           {/* Program Studi Filter Chips */}
-          <div className="mt-4 border-t border-border/60 pt-3.5">
+          <div className="mt-4 border-t border-black/10 pt-3.5">
             <div className="flex flex-wrap items-center gap-1.5">
-              <span className="mr-1 text-xs font-semibold text-muted-foreground flex items-center gap-1">
-                <GraduationCap className="h-3.5 w-3.5 text-accent" />
+              <span className={cn("mr-1 text-xs font-semibold flex items-center gap-1", warna?.heading ?? "text-muted-foreground")}>
+                <GraduationCap className="h-3.5 w-3.5" />
                 Prodi:
               </span>
               <button
                 type="button"
                 onClick={() => handleProdiChange("all")}
                 className={cn(
-                  "rounded-full px-3 py-1 text-xs font-semibold transition-all active:scale-[0.98] cursor-pointer",
+                  "rounded-full px-3 py-1 text-xs font-semibold transition-all active:scale-[0.98] cursor-pointer shadow-2xs",
                   selectedProdi === "all"
-                    ? "bg-teal-dark text-cream shadow-xs"
-                    : "border border-border/70 bg-secondary/40 text-muted-foreground hover:text-foreground"
+                    ? cn("text-white shadow-xs", warna?.badge ?? "bg-teal-dark text-cream")
+                    : "border border-border/70 bg-card/90 text-foreground hover:bg-card"
                 )}
               >
                 Semua ({deptStudents.length})
@@ -247,10 +252,10 @@ function DepartemenContent() {
                     type="button"
                     onClick={() => handleProdiChange(p)}
                     className={cn(
-                      "rounded-full px-3 py-1 text-xs font-semibold transition-all active:scale-[0.98] cursor-pointer",
+                      "rounded-full px-3 py-1 text-xs font-semibold transition-all active:scale-[0.98] cursor-pointer shadow-2xs",
                       active
-                        ? "bg-teal-dark text-cream shadow-xs"
-                        : "border border-border/70 bg-secondary/40 text-muted-foreground hover:text-foreground"
+                        ? cn("text-white shadow-xs", warna?.badge ?? "bg-teal-dark text-cream")
+                        : "border border-border/70 bg-card/90 text-foreground hover:bg-card"
                     )}
                   >
                     {p} ({count})
@@ -330,7 +335,7 @@ function DepartemenContent() {
               <Reveal key={m.npm} delay={(i % 6) * 20}>
                 <div className="group relative flex items-center justify-between gap-3 rounded-2xl border border-border/70 bg-card p-3 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-sm">
                   <div className="flex items-center gap-2.5 min-w-0">
-                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-secondary font-heading text-[11px] font-bold text-accent">
+                    <span className={cn("grid h-8 w-8 shrink-0 place-items-center rounded-full font-heading text-[11px] font-bold", warna?.badge ?? "bg-secondary text-accent")}>
                       {initials(m.nama)}
                     </span>
                     <div className="min-w-0">

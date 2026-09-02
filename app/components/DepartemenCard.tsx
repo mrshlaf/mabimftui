@@ -43,14 +43,14 @@ const PRODIS: Record<string, string[]> = {
 };
 
 const GLOWS: Record<string, string> = {
-  DTE: "hover:border-sky-400/50 hover:shadow-card",
-  DTM: "hover:border-neutral-400/50 hover:shadow-card",
-  DTSL: "hover:border-slate-400/50 hover:shadow-card",
-  DTMM: "hover:border-emerald-400/50 hover:shadow-card",
-  DTK: "hover:border-red-400/50 hover:shadow-card",
-  DA: "hover:border-violet-400/50 hover:shadow-card",
-  DTI: "hover:border-zinc-400/50 hover:shadow-card",
-  PI: "hover:border-amber-400/50 hover:shadow-card",
+  DTE: "hover:border-sky-400/60 hover:shadow-card",
+  DTM: "hover:border-neutral-700/60 hover:shadow-card",
+  DTSL: "hover:border-slate-500/60 hover:shadow-card",
+  DTMM: "hover:border-emerald-600/60 hover:shadow-card",
+  DTK: "hover:border-red-600/60 hover:shadow-card",
+  DA: "hover:border-purple-600/60 hover:shadow-card",
+  DTI: "hover:border-zinc-400/70 hover:shadow-card",
+  PI: "hover:border-amber-700/60 hover:shadow-card",
 };
 
 export default function DepartemenCard({
