@@ -33,14 +33,14 @@ export default function RSCarousel() {
     <>
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
             <Hospital className="h-5 w-5" />
           </span>
           <div>
-            <h2 className="font-heading text-lg font-bold text-foreground">
+            <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
               Rumah Sakit Terdekat
             </h2>
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
               Rujukan medis darurat di sekitar Depok dan Jakarta Timur.
             </p>
           </div>

@@ -46,14 +46,14 @@ export default function TemanSekelompok({
     <Card className="rounded-3xl border border-border/80 bg-card p-6 shadow-sm sm:p-8">
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
             <Users className="h-5 w-5" />
           </span>
           <div>
-            <h3 className="font-heading text-lg font-bold text-foreground">
+            <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
               Teman Sekelompok
-            </h3>
-            <p className="text-xs text-muted-foreground">
+            </h2>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
               {kelompok
                 ? `Kelompok ${kelompok} · ${members?.length ?? "..."} orang`
                 : "Nomor kelompok belum diumumkan."}

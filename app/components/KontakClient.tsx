@@ -112,7 +112,7 @@ function LembagaSection({
         >
           {lembaga.kode}
         </Badge>
-        <h2 className="font-heading text-lg font-bold text-foreground">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
           {lembaga.nama}
         </h2>
       </div>

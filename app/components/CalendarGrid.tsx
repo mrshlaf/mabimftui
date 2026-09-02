@@ -320,11 +320,16 @@ export default function CalendarGrid({
   return (
     <div className="space-y-5">
       <Reveal>
-        <div className="flex items-center justify-between">
-          <h2 className="font-heading text-base font-bold text-foreground">
-            Agenda Mabim
-          </h2>
-          <div className="flex items-center gap-1.5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
+              Agenda Mabim
+            </h2>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+              Jadwal kegiatan, penugasan, dan tenggat waktu resmi.
+            </p>
+          </div>
+          <div className="flex items-center gap-1.5 self-start sm:self-auto">
             <Button
               type="button"
               variant="outline"

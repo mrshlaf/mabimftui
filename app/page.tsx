@@ -182,18 +182,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+      <section className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <div className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-secondary text-accent">
-                <Compass className="h-4 w-4" />
+            <div className="flex items-center gap-3">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+                <Compass className="h-5 w-5" />
               </span>
               <div>
-                <h2 className="font-heading text-lg sm:text-xl font-bold tracking-tight text-foreground">
+                <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                   Menu Utama
                 </h2>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
                   Tiga pintu layanan utama selama masa bimbingan.
                 </p>
               </div>
@@ -356,24 +356,23 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
+      <section className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-3">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
                   <Building2 className="h-5 w-5" />
                 </span>
                 <div>
-                  <h2 className="font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                  <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                     Tujuh Departemen & Program Internasional
                   </h2>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
                     Delapan lembaga, {statistik.prodi} program studi.
                   </p>
                 </div>
               </div>
-
               <Button
                 asChild
                 size="default"

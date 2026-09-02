@@ -250,10 +250,10 @@ export default function AdminPanel({ authenticated }: { authenticated: boolean }
 
       <Card className="rounded-3xl border border-border/80 bg-card p-5 shadow-sm sm:p-6">
         <div className="mb-4">
-          <h2 className="font-heading text-base font-bold text-foreground">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
             Kalender Kegiatan (Unlocked View)
           </h2>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
             Seluruh jadwal agenda dan penugasan dalam status terbuka.
           </p>
         </div>
