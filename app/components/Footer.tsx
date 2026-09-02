@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const FOOTER_NAV = [
   { href: "/", label: "Home" },
+  { href: "/departemen", label: "Departemen" },
   { href: "/info", label: "Info" },
   { href: "/kalendar", label: "Kalender" },
   { href: "/kontak", label: "Kontak SC" },

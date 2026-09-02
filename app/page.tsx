@@ -182,58 +182,58 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
+      <section className="px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <div className="flex items-center gap-3">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
-                <Compass className="h-5 w-5" />
+            <div className="flex items-center gap-2.5">
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-secondary text-accent">
+                <Compass className="h-4 w-4" />
               </span>
               <div>
-                <h2 className="font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                <h2 className="font-heading text-lg sm:text-xl font-bold tracking-tight text-foreground">
                   Menu Utama
                 </h2>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs text-muted-foreground">
                   Tiga pintu layanan utama selama masa bimbingan.
                 </p>
               </div>
             </div>
           </Reveal>
 
-          <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-12">
-            {/* Card 1: Dashboard Portal (Featured Bento) */}
-            <Reveal className="lg:col-span-7 h-full">
-              <Card className="group relative flex flex-col justify-between overflow-hidden h-full rounded-3xl bg-teal-dark p-6 text-cream shadow-lift ring-1 ring-white/15 transition-all duration-300 hover:-translate-y-1 sm:p-7">
+          <div className="mt-4 grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-3">
+            {/* Card 1: Dashboard Mahasiswa */}
+            <Reveal delay={0}>
+              <Card className="group relative flex flex-col justify-between overflow-hidden h-full rounded-2xl bg-teal-dark p-5 text-cream shadow-lift ring-1 ring-white/15 transition-all duration-300 hover:-translate-y-1">
                 <div aria-hidden="true" className="hero-beam" />
                 <div
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-16 -right-16 h-56 w-56 rounded-full bg-accent/20 blur-3xl"
+                  className="pointer-events-none absolute -bottom-10 -right-10 h-32 w-32 rounded-full bg-accent/20 blur-2xl"
                 />
-                <div className="relative z-10 flex flex-col justify-between h-full gap-6">
+                <div className="relative z-10 flex flex-col justify-between h-full gap-4">
                   <div>
-                    <div className="flex items-center justify-between">
-                      <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white/10 text-accent ring-1 ring-white/15">
-                        <LayoutDashboard className="h-6 w-6" />
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="grid h-9 w-9 place-items-center rounded-xl bg-white/10 text-accent ring-1 ring-white/15">
+                        <LayoutDashboard className="h-4 w-4" />
                       </span>
-                      <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold text-cream/90">
+                      <span className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-2.5 py-0.5 text-[10px] font-semibold text-cream/90">
                         Portal Pribadi
                       </span>
                     </div>
-                    <h3 className="mt-5 font-heading text-xl sm:text-2xl font-bold tracking-tight text-white transition-colors group-hover:text-accent">
+                    <h3 className="mt-3 font-heading text-base font-bold tracking-tight text-white transition-colors group-hover:text-accent">
                       Dashboard Mahasiswa
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-cream/75 max-w-md">
-                      Masuk untuk melihat nomor kelompok, tautan grup Line resmi, teman se-departemen, dan rincian penugasan.
+                    <p className="mt-1 text-xs text-cream/75">
+                      Cek nomor kelompok, grup LINE resmi, dan penugasan.
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold text-cream/90">
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      <span className="rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-medium text-cream/90">
                         Nomor Kelompok
                       </span>
-                      <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold text-cream/90">
-                        Grup LINE Resmi
+                      <span className="rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-medium text-cream/90">
+                        Grup LINE
                       </span>
-                      <span className="rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold text-cream/90">
-                        Daftar Penugasan
+                      <span className="rounded-md bg-white/10 px-2 py-0.5 text-[10px] font-medium text-cream/90">
+                        Penugasan
                       </span>
                     </div>
                   </div>
@@ -241,8 +241,8 @@ export default function Home() {
                   <div className="pt-2">
                     <Button
                       asChild
-                      size="default"
-                      className="h-10 rounded-full bg-cream px-5 text-xs font-semibold text-teal-dark shadow-sm hover:bg-white hover:text-teal-950 active:scale-[0.98]"
+                      size="sm"
+                      className="h-9 w-full rounded-full bg-cream px-4 text-xs font-semibold text-teal-dark shadow-sm hover:bg-white hover:text-teal-950 active:scale-[0.98]"
                     >
                       <Link href="/dashboard">
                         <LayoutDashboard data-slot="icon-inline-start" className="h-3.5 w-3.5 text-accent" />
@@ -255,82 +255,93 @@ export default function Home() {
               </Card>
             </Reveal>
 
-            {/* Card 2: Info & Guidebook */}
-            <Reveal className="lg:col-span-5 h-full" delay={80}>
-              <Card className="group relative flex flex-col justify-between overflow-hidden h-full rounded-3xl border border-border/80 bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-card sm:p-7">
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="grid h-12 w-12 place-items-center rounded-2xl bg-amber-500/10 text-accent">
-                      <Megaphone className="h-6 w-6" />
-                    </span>
-                    <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
-                      Pusat Informasi
-                    </span>
+            {/* Card 2: Info & Panduan */}
+            <Reveal delay={60}>
+              <Card className="group relative flex flex-col justify-between overflow-hidden h-full rounded-2xl border border-border/80 bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-card">
+                <div className="flex flex-col justify-between h-full gap-4">
+                  <div>
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="grid h-9 w-9 place-items-center rounded-xl bg-amber-500/10 text-accent">
+                        <Megaphone className="h-4 w-4" />
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-accent/10 px-2.5 py-0.5 text-[10px] font-semibold text-accent">
+                        Pusat Informasi
+                      </span>
+                    </div>
+                    <h3 className="mt-3 font-heading text-base font-bold tracking-tight text-foreground transition-colors group-hover:text-accent">
+                      Info & Panduan
+                    </h3>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Guidebook, pengaduan resmi, dan RS rujukan terdekat.
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      <span className="rounded-md border border-border/60 bg-secondary/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                        Guidebook
+                      </span>
+                      <span className="rounded-md border border-border/60 bg-secondary/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                        Pengaduan
+                      </span>
+                      <span className="rounded-md border border-border/60 bg-secondary/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                        RS Rujukan
+                      </span>
+                    </div>
                   </div>
-                  <h3 className="mt-5 font-heading text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-accent">
-                    Info & Panduan
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    Form pengaduan resmi, guidebook Mabim, jam operasional kegiatan, dan rujukan RS terdekat.
-                  </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="rounded-full border border-border/70 bg-secondary/50 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
-                      Guidebook
-                    </span>
-                    <span className="rounded-full border border-border/70 bg-secondary/50 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
-                      Pengaduan
-                    </span>
-                    <span className="rounded-full border border-border/70 bg-secondary/50 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
-                      RS Rujukan
-                    </span>
-                  </div>
-                </div>
 
-                <div className="mt-6 pt-2">
-                  <Button
-                    asChild
-                    size="default"
-                    variant="outline"
-                    className="h-10 rounded-full border-border/80 text-xs font-semibold text-foreground hover:border-accent/40 hover:bg-accent/5 active:scale-[0.98]"
-                  >
-                    <Link href="/info">
-                      <Megaphone data-slot="icon-inline-start" className="h-3.5 w-3.5 text-accent" />
-                      Lihat Info & Bantuan
-                      <ArrowRight className="ml-1 h-3.5 w-3.5 text-accent" />
-                    </Link>
-                  </Button>
+                  <div className="pt-2">
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="outline"
+                      className="h-9 w-full rounded-full border-border/80 text-xs font-semibold text-foreground hover:border-accent/40 hover:bg-accent/5 active:scale-[0.98]"
+                    >
+                      <Link href="/info">
+                        <Megaphone data-slot="icon-inline-start" className="h-3.5 w-3.5 text-accent" />
+                        Lihat Info & Bantuan
+                        <ArrowRight className="ml-1 h-3.5 w-3.5 text-accent" />
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </Card>
             </Reveal>
 
-            {/* Card 3: Kontak Panitia & SC (Horizontal Wide Bento) */}
-            <Reveal className="lg:col-span-12" delay={160}>
-              <Card className="group relative overflow-hidden rounded-3xl border border-border/80 bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-600/40 hover:shadow-card sm:p-7">
-                <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-                  <div className="flex items-start gap-4">
-                    <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-emerald-700/10 text-emerald-700">
-                      <Phone className="h-6 w-6" />
-                    </span>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <h3 className="font-heading text-lg sm:text-xl font-bold tracking-tight text-foreground transition-colors group-hover:text-emerald-700">
-                          Kontak Steering Committee & Lembaga
-                        </h3>
-                        <span className="hidden sm:inline-flex items-center rounded-full bg-emerald-700/10 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-700">
-                          Narahubung
-                        </span>
-                      </div>
-                      <p className="mt-1 text-xs sm:text-sm text-muted-foreground max-w-2xl leading-relaxed">
-                        Hubungi contact person resmi BEM, MPM, dan SC tiap departemen via WhatsApp atau telepon saat butuh bantuan.
-                      </p>
+            {/* Card 3: Kontak SC & Lembaga */}
+            <Reveal delay={120}>
+              <Card className="group relative flex flex-col justify-between overflow-hidden h-full rounded-2xl border border-border/80 bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-600/40 hover:shadow-card">
+                <div className="flex flex-col justify-between h-full gap-4">
+                  <div>
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-700/10 text-emerald-700">
+                        <Phone className="h-4 w-4" />
+                      </span>
+                      <span className="inline-flex items-center rounded-full bg-emerald-700/10 px-2.5 py-0.5 text-[10px] font-semibold text-emerald-700">
+                        Narahubung
+                      </span>
+                    </div>
+                    <h3 className="mt-3 font-heading text-base font-bold tracking-tight text-foreground transition-colors group-hover:text-emerald-700">
+                      Kontak SC & Lembaga
+                    </h3>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Narahubung resmi BEM, MPM, dan SC departemen.
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      <span className="rounded-md border border-border/60 bg-secondary/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                        BEM & MPM
+                      </span>
+                      <span className="rounded-md border border-border/60 bg-secondary/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                        SC Departemen
+                      </span>
+                      <span className="rounded-md border border-border/60 bg-secondary/50 px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                        WhatsApp
+                      </span>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 shrink-0">
+                  <div className="pt-2">
                     <Button
                       asChild
-                      size="default"
-                      className="h-10 rounded-full bg-teal-dark px-5 text-xs font-semibold text-cream hover:bg-teal-dark/90 active:scale-[0.98]"
+                      size="sm"
+                      className="h-9 w-full rounded-full bg-teal-dark px-4 text-xs font-semibold text-cream hover:bg-teal-dark/90 active:scale-[0.98]"
                     >
                       <Link href="/kontak">
                         <Phone data-slot="icon-inline-start" className="h-3.5 w-3.5 text-accent" />
@@ -348,18 +359,33 @@ export default function Home() {
       <section className="px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <div className="flex items-center gap-3">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
-                <Building2 className="h-5 w-5" />
-              </span>
-              <div>
-                <h2 className="font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                  Tujuh Departemen & Program Internasional
-                </h2>
-                <p className="text-sm text-muted-foreground">
-                  Delapan lembaga, {statistik.prodi} program studi.
-                </p>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-3">
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-secondary text-accent">
+                  <Building2 className="h-5 w-5" />
+                </span>
+                <div>
+                  <h2 className="font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                    Tujuh Departemen & Program Internasional
+                  </h2>
+                  <p className="text-sm text-muted-foreground">
+                    Delapan lembaga, {statistik.prodi} program studi.
+                  </p>
+                </div>
               </div>
+
+              <Button
+                asChild
+                size="default"
+                variant="outline"
+                className="h-10 rounded-full border-border/80 text-xs font-semibold text-foreground hover:border-accent/40 hover:bg-accent/5 active:scale-[0.98] shrink-0"
+              >
+                <Link href="/departemen">
+                  <Building2 data-slot="icon-inline-start" className="h-3.5 w-3.5 text-accent" />
+                  Direktori Mahasiswa
+                  <ArrowRight className="ml-1 h-3.5 w-3.5 text-accent" />
+                </Link>
+              </Button>
             </div>
           </Reveal>
 

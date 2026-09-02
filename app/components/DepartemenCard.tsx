@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
-import { RefreshCw } from "lucide-react";
+import { ArrowUpRight, RefreshCw } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
@@ -131,9 +132,22 @@ export default function DepartemenCard({
               ))}
             </ul>
           </div>
-          <p className={cn("text-[10px] font-semibold text-center mt-1", warna.sub)}>
-            Klik untuk kembali
-          </p>
+          <div className="mt-1 flex items-center justify-between gap-1 pt-1 border-t border-black/5">
+            <span className={cn("text-[10px] font-semibold", warna.sub)}>
+              Klik untuk putar
+            </span>
+            <Link
+              href={`/departemen?dept=${d.kode}`}
+              onClick={(e) => e.stopPropagation()}
+              className={cn(
+                "inline-flex items-center gap-0.5 rounded-full px-2 py-0.5 text-[10px] font-bold transition-transform active:scale-95",
+                warna.badge
+              )}
+            >
+              Lihat Maba
+              <ArrowUpRight className="h-3 w-3" />
+            </Link>
+          </div>
         </Card>
       </div>
     </div>
