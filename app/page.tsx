@@ -19,12 +19,47 @@ import { statistik, DEPARTEMEN_WARNA } from "@/data/statistik";
 import { siteName, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Masa Bimbingan Fakultas Teknik UI",
+  title: "Mabim FTUI 2026 - Masa Bimbingan Fakultas Teknik Universitas Indonesia",
   alternates: { canonical: "/" },
   description:
-    "Mabim FTUI 2026: satu pintu info untuk kelompok, grup Line, jadwal kegiatan, dan kontak SC Masa Bimbingan Fakultas Teknik Universitas Indonesia.",
+    "Satu pintu informasi resmi Mabim FTUI 2026: pembagian nomor kelompok, link grup LINE resmi, jadwal kegiatan, penugasan departemen & BEM, serta kontak SC panitia.",
+  keywords: [
+    "Mabim FTUI 2026",
+    "Masa Bimbingan FTUI 2026",
+    "Ospek Teknik UI 2026",
+    "Mahasiswa Baru FTUI",
+    "Cek Kelompok Mabim FTUI",
+    "Link Grup LINE Mabim FTUI",
+    "Tugas Mabim FTUI 2026",
+    "Jadwal Kegiatan Mabim FTUI",
+    "Fakultas Teknik Universitas Indonesia",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "Mabim FTUI 2026",
+    locale: "id_ID",
+    title: "Mabim FTUI 2026 - Masa Bimbingan Fakultas Teknik Universitas Indonesia",
+    description:
+      "Satu pintu informasi resmi Mabim FTUI 2026: pembagian nomor kelompok, link grup LINE resmi, jadwal kegiatan, dan penugasan.",
+    url: siteUrl,
+    images: [
+      {
+        url: "/hero-mabim.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Masa Bimbingan Fakultas Teknik Universitas Indonesia 2026",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mabim FTUI 2026 - Masa Bimbingan Fakultas Teknik Universitas Indonesia",
+    description:
+      "Satu pintu informasi resmi Mabim FTUI 2026: pembagian nomor kelompok, link grup LINE resmi, jadwal kegiatan, dan penugasan.",
+    images: ["/hero-mabim.jpg"],
+    creator: "@mabimftui",
+  },
 };
-
 
 const AURORA: { color: string; className: string; delay: string }[] = [
   {
@@ -60,29 +95,106 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Event",
-            name: siteName,
-            startDate: "2026-08-29",
-            endDate: "2026-09-12",
+            "@id": `${siteUrl}/#event-mabim-2026`,
+            name: `${siteName} - Masa Bimbingan Mahasiswa Baru`,
+            alternateName: "Masa Bimbingan Fakultas Teknik Universitas Indonesia 2026",
+            startDate: "2026-08-29T07:00:00+07:00",
+            endDate: "2026-10-31T17:00:00+07:00",
+            eventStatus: "https://schema.org/EventScheduled",
+            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             location: {
               "@type": "Place",
               name: "Fakultas Teknik Universitas Indonesia",
-              address: "Depok, Jawa Barat, Indonesia",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Kampus Baru UI Depok",
+                addressLocality: "Depok",
+                addressRegion: "Jawa Barat",
+                postalCode: "16424",
+                addressCountry: "ID",
+              },
             },
             organizer: {
-              "@type": "Organization",
+              "@type": "EducationalOrganization",
               name: "Fakultas Teknik Universitas Indonesia",
+              url: "https://eng.ui.ac.id",
+              logo: `${siteUrl}/logo-mabim.png`,
+            },
+            performer: {
+              "@type": "Organization",
+              name: "Panitia Mabim FTUI 2026 & BEM FTUI",
+              url: "https://www.instagram.com/mabimftui",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "IDR",
+              availability: "https://schema.org/InStock",
+              url: siteUrl,
+              validFrom: "2026-08-01",
             },
             description:
-              "Masa Bimbingan Mahasiswa Baru Fakultas Teknik Universitas Indonesia 2026",
+              "Masa Bimbingan Mahasiswa Baru Fakultas Teknik Universitas Indonesia 2026 untuk 7 departemen dan program internasional.",
             image: `${siteUrl}/hero-mabim.jpg`,
             url: siteUrl,
-            eventStatus: "https://schema.org/EventScheduled",
-            eventAttendanceMode:
-              "https://schema.org/OfflineEventAttendanceMode",
+            inLanguage: "id-ID",
+            isAccessibleForFree: true,
+            typicalAgeRange: "17-22",
+            audience: {
+              "@type": "EducationalAudience",
+              educationalRole: "student",
+              audienceType: "Mahasiswa Baru Fakultas Teknik UI 2026",
+            },
           }),
         }}
       />
-      <section className="mx-auto max-w-6xl px-4 pb-2 pt-4 sm:px-6 sm:pb-3 sm:pt-6 lg:px-8 lg:pb-4 lg:pt-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            name: "Teaser Video Mabim FTUI 2026",
+            description:
+              "Video teaser resmi Masa Bimbingan Mahasiswa Baru Fakultas Teknik Universitas Indonesia 2026.",
+            thumbnailUrl: [
+              "https://i.ytimg.com/vi/b4e9hyJ0DIg/hqdefault.jpg",
+              `${siteUrl}/hero-mabim.jpg`,
+            ],
+            uploadDate: "2026-08-01T00:00:00+07:00",
+            embedUrl: "https://www.youtube-nocookie.com/embed/b4e9hyJ0DIg",
+            publisher: {
+              "@type": "EducationalOrganization",
+              name: "Fakultas Teknik Universitas Indonesia",
+              url: "https://eng.ui.ac.id",
+              logo: `${siteUrl}/logo-mabim.png`,
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            contentUrl: `${siteUrl}/hero-mabim.jpg`,
+            name: "Poster Resmi Mabim FTUI 2026",
+            description:
+              "Poster visual resmi Masa Bimbingan Mahasiswa Baru Fakultas Teknik Universitas Indonesia 2026.",
+            caption: "Masa Bimbingan FTUI 2026 - Find Your Path, Forge Your Legacy",
+            inLanguage: "id-ID",
+            author: {
+              "@type": "EducationalOrganization",
+              name: "Fakultas Teknik Universitas Indonesia",
+              url: "https://eng.ui.ac.id",
+            },
+            width: "1200",
+            height: "630",
+          }),
+        }}
+      />
+      <section aria-label="Hero Utama Mabim FTUI 2026" className="mx-auto max-w-6xl px-4 pb-2 pt-4 sm:px-6 sm:pb-3 sm:pt-6 lg:px-8 lg:pb-4 lg:pt-8">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-15 grayscale"
@@ -182,7 +294,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <section aria-labelledby="menu-utama-heading" className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="flex items-center gap-3">
@@ -190,7 +302,7 @@ export default function Home() {
                 <Compass className="h-5 w-5" />
               </span>
               <div>
-                <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
+                <h2 id="menu-utama-heading" className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                   Menu Utama
                 </h2>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
@@ -356,7 +468,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <section aria-labelledby="departemen-heading" className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -365,7 +477,7 @@ export default function Home() {
                   <Building2 className="h-5 w-5" />
                 </span>
                 <div>
-                  <h2 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
+                  <h2 id="departemen-heading" className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                     Tujuh Departemen & Program Internasional
                   </h2>
                   <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">

@@ -47,6 +47,14 @@ const nextConfig: NextConfig = {
         headers: staticCache,
       },
       {
+        source: "/site.webmanifest",
+        headers: staticCache,
+      },
+      {
+        source: "/icon.png",
+        headers: staticCache,
+      },
+      {
         source: "/(.*)",
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },

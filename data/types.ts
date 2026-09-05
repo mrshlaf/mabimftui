@@ -46,6 +46,7 @@ export interface TugasLembaga {
 
 export interface InfoLinks {
   pengaduan: { label: string; url: string };
+  ketidaknyamanan?: { label: string; url: string };
   guidebook: { label: string; url: string };
   kalender: { label: string; url: string };
 }

@@ -74,7 +74,9 @@ function DepartemenContent() {
     DEPARTEMEN_CODES.includes(initialDept) ? initialDept : "DTSL"
   );
   const [selectedProdi, setSelectedProdi] = useState<string>("all");
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(
+    () => searchParams.get("search") || searchParams.get("q") || ""
+  );
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
@@ -367,13 +369,13 @@ function DepartemenContent() {
           /* Student Directory - Compact Table / List View */
           <div className="overflow-hidden rounded-2xl border border-border/80 bg-card shadow-xs">
             <div className="overflow-x-auto">
-              <table className="w-full text-left text-xs">
+              <table aria-label="Tabel Direktori Mahasiswa Departemen FTUI" className="w-full text-left text-xs">
                 <thead>
                   <tr className="border-b border-border/60 bg-secondary/40 text-[11px] font-semibold text-muted-foreground">
-                    <th className="py-2.5 pl-4 pr-2 w-10">#</th>
-                    <th className="py-2.5 px-3">Nama Mahasiswa</th>
-                    <th className="py-2.5 px-3">Program Studi</th>
-                    <th className="py-2.5 px-3 text-right pr-4">Kelompok</th>
+                    <th scope="col" className="py-2.5 pl-4 pr-2 w-10">#</th>
+                    <th scope="col" className="py-2.5 px-3">Nama Mahasiswa</th>
+                    <th scope="col" className="py-2.5 px-3">Program Studi</th>
+                    <th scope="col" className="py-2.5 px-3 text-right pr-4">Kelompok</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border/40">
@@ -382,7 +384,7 @@ function DepartemenContent() {
                       key={m.npm}
                       className="transition-colors hover:bg-secondary/30"
                     >
-                      <td className="py-2.5 pl-4 pr-2 text-muted-foreground font-mono text-[11px]">
+                      <td scope="row" className="py-2.5 pl-4 pr-2 text-muted-foreground font-mono text-[11px]">
                         {idx + 1}
                       </td>
                       <td className="py-2.5 px-3 font-semibold text-foreground">

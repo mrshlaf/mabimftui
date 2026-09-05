@@ -65,7 +65,7 @@ export default function Nav() {
           <Link href="/" className="group flex items-center gap-2.5">
             <Image
               src="/logo-mabim.png"
-              alt="Logo Mabim FTUI"
+              alt="Logo Resmi Masa Bimbingan Fakultas Teknik Universitas Indonesia 2026"
               width={34}
               height={34}
               priority
@@ -77,13 +77,14 @@ export default function Nav() {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-1 md:flex">
+          <nav aria-label="Navigasi Utama" className="hidden items-center gap-1 md:flex">
             {NAV_ITEMS.map((item) => {
               const active = isActive(item.href);
               return (
                 <Link
                   key={item.href}
                   href={item.href}
+                  aria-current={active ? "page" : undefined}
                   className={cn(
                     "inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-200 active:scale-[0.97]",
                     active
@@ -161,13 +162,14 @@ export default function Nav() {
               id="mobile-menu"
               className="animate-in fade-in slide-in-from-top-2 motion-reduce:animate-none duration-200 absolute inset-x-0 top-full z-50 mt-2 rounded-3xl border border-border/80 bg-card p-3 shadow-lift md:hidden"
             >
-              <nav className="flex flex-col gap-1">
+              <nav aria-label="Navigasi Menu Mobile" className="flex flex-col gap-1">
                 {mobileItems.map((item, i) => {
                   const active = isActive(item.href);
                   return (
                     <Link
                       key={item.href}
                       href={item.href}
+                      aria-current={active ? "page" : undefined}
                       style={{ animationDelay: `${i * 30}ms` }}
                       className={cn(
                         "flex min-h-11 items-center gap-3 rounded-2xl px-3.5 py-2.5 text-sm font-medium transition-all active:scale-[0.98]",

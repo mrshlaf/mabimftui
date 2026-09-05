@@ -5,7 +5,9 @@ import {
   CalendarDays,
   Clock3,
   ExternalLink,
+  HeartHandshake,
   Megaphone,
+  ShieldAlert,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -16,16 +18,50 @@ import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import InstagramIcon from "../components/InstagramIcon";
 import RSCarousel from "../components/RSCarousel";
-import { FaqJsonLd, BreadcrumbJsonLd } from "../components/JsonLd";
+import { FaqJsonLd, BreadcrumbJsonLd, WebPageJsonLd } from "../components/JsonLd";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Info & Panduan Lengkap",
+  title: "Info Penting, Guidebook & Pengaduan Mabim FTUI 2026",
   alternates: { canonical: "/info" },
   description:
-    "Info penting Mabim FTUI 2026: pengaduan, guidebook, jadwal kegiatan, jam operasional, dan rumah sakit terdekat.",
+    "Pusat informasi penting Mabim FTUI 2026: tautan form pengaduan resmi, buku panduan guidebook Mabim, jam operasional kegiatan, dan rujukan rumah sakit terdekat Kampus UI Depok.",
+  keywords: [
+    "Info Mabim FTUI 2026",
+    "Guidebook Mabim FTUI 2026",
+    "Buku Panduan Mabim FTUI",
+    "Form Pengaduan Mabim FTUI",
+    "Rumah Sakit Terdekat UI Depok",
+    "RS Rujukan Mabim FTUI",
+    "Jam Operasional Mabim FTUI",
+    "FAQ Mabim FTUI 2026",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "Mabim FTUI 2026",
+    locale: "id_ID",
+    title: "Info Penting, Guidebook & Pengaduan Mabim FTUI 2026",
+    description:
+      "Informasi resmi Mabim FTUI 2026: pengaduan resmi, guidebook Mabim, jam operasional, dan rujukan RS terdekat.",
+    url: `${siteUrl}/info`,
+    images: [
+      {
+        url: "/hero-mabim.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Info Penting dan Guidebook Mabim FTUI 2026",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Info Penting, Guidebook & Pengaduan Mabim FTUI 2026",
+    description:
+      "Pusat informasi penting Mabim FTUI 2026: form pengaduan resmi, guidebook, jam operasional, dan RS rujukan.",
+    images: ["/hero-mabim.jpg"],
+    creator: "@mabimftui",
+  },
 };
-
 const MABIM_FAQS = [
   {
     question: "Kapan Mabim FTUI 2026 dilaksanakan?",
@@ -35,27 +71,32 @@ const MABIM_FAQS = [
   {
     question: "Apa itu Mabim FTUI?",
     answer:
-      "Mabim (Masa Bimbingan) adalah kegiatan wajib bagi mahasiswa baru Fakultas Teknik Universitas Indonesia (FTUI). Mabim bertujuan membimbing mahasiswa baru beradaptasi dengan lingkungan kampus, mengenal departemen, dan membangun kebersamaan antar angkatan.",
+      "Mabim (Masa Bimbingan) adalah kegiatan resmi pengenalan dan pembinaan bagi mahasiswa baru Fakultas Teknik Universitas Indonesia (FTUI) untuk beradaptasi dengan iklim akademik, mengenal departemen, dan membangun kebersamaan.",
   },
   {
-    question: "Dimana lokasi Mabim FTUI 2026?",
+    question: "Dimana lokasi pelaksanaan Mabim FTUI 2026?",
     answer:
-      "Kegiatan Mabim FTUI 2026 dilaksanakan di Fakultas Teknik Universitas Indonesia, Depok, Jawa Barat.",
+      "Kegiatan Mabim FTUI 2026 dilaksanakan secara luring di lingkungan Fakultas Teknik Universitas Indonesia, Kampus UI Depok, Jawa Barat.",
   },
   {
-    question: "Bagaimana cara mengakses dashboard Mabim FTUI 2026?",
+    question: "Apa saja jenis penugasan selama Mabim FTUI 2026?",
     answer:
-      "Mahasiswa baru dapat mengakses dashboard pribadi di mabimftui.page/dashboard untuk melihat kelompok, grup Line, dan tugas departemen masing-masing.",
+      "Penugasan Mabim FTUI terbagi menjadi Tugas Departemen (dari masing-masing 7 departemen dan KKI), Tugas BEM FTUI, dan Tugas BOK. Detail dan Term of Reference (TOR) penugasan dapat diakses melalui Dashboard Mahasiswa.",
   },
   {
-    question: "Jam berapa kegiatan Mabim FTUI 2026?",
+    question: "Bagaimana cara mengakses nomor kelompok dan grup LINE resmi?",
     answer:
-      "Jam kegiatan Mabim Senin-Jumat pukul 08.00-20.00 WIB, dan Sabtu pukul 06.00-17.00 WIB. Jadwal harian dibagikan di grup masing-masing kelompok.",
+      "Mahasiswa baru dapat mengakses dashboard resmi di mabimftui.page/dashboard untuk melihat nomor kelompok, tautan undangan grup LINE resmi angkatan & departemen, serta daftar teman sekelompok.",
   },
   {
-    question: "Bagaimana cara melaporkan pelanggaran selama Mabim?",
+    question: "Jam berapa operasional kegiatan Mabim FTUI 2026?",
     answer:
-      "Pelanggaran atau kendala selama Mabim dapat dilaporkan melalui form resmi pengaduan yang tersedia di halaman Info Penting situs mabimftui.page.",
+      "Jam kegiatan resmi Mabim berlangsung Senin-Jumat pukul 08.00-20.00 WIB, dan Sabtu pukul 06.00-17.00 WIB sesuai jadwal harian yang diumumkan.",
+  },
+  {
+    question: "Bagaimana cara melaporkan pelanggaran atau ketidaknyamanan selama Mabim?",
+    answer:
+      "Tersedia dua form resmi: (1) Form Pengaduan MABIM untuk pelanggaran/misconduct seperti bentakan, kekerasan fisik, pelecehan, denda/pemerasan, atau pelanggaran aturan; dan (2) Form Ketidaknyamanan MABIM untuk evaluasi dan concern seperti pengondisian terlalu menekan, komunikasi kurang jelas, jadwal melelahkan, atau fasilitas kurang layak.",
   },
 ];
 
@@ -65,6 +106,7 @@ type InfoCell = {
   id: string;
   icon: ComponentType<{ className?: string }>;
   title: string;
+  badge?: string;
   desc: string;
   link: { label: string; url: string };
   tone?: "default" | "accent";
@@ -73,17 +115,27 @@ type InfoCell = {
 const INFO_CELLS: InfoCell[] = [
   {
     id: "pengaduan",
-    icon: Megaphone,
-    title: "Pelaporan Pengaduan",
-    desc: "Laporkan pelanggaran atau kendala selama Mabim lewat form resmi.",
+    icon: ShieldAlert,
+    title: "Form Pengaduan MABIM",
+    badge: "Pelanggaran & Misconduct",
+    desc: "Fokus pelanggaran aturan, bentakan, hinaan, kekerasan fisik, pelecehan seksual, sentuhan melanggar batas, atau denda/pemerasan.",
     link: infoLinks.pengaduan,
+    tone: "accent",
+  },
+  {
+    id: "ketidaknyamanan",
+    icon: HeartHandshake,
+    title: "Form Ketidaknyamanan MABIM",
+    badge: "Concern & Evaluasi",
+    desc: "Fokus pengalaman tidak nyaman, pengondisian terlalu menekan, komunikasi panitia kurang jelas, jadwal melelahkan, atau fasilitas kurang layak.",
+    link: infoLinks.ketidaknyamanan!,
     tone: "accent",
   },
   {
     id: "guidebook",
     icon: BookOpen,
     title: "Guidebook Mabim",
-    desc: "Panduan lengkap kegiatan Mabim dalam satu dokumen.",
+    desc: "Panduan lengkap kegiatan Mabim dalam satu dokumen resmi.",
     link: infoLinks.guidebook,
   },
   {
@@ -144,7 +196,7 @@ function InfoCell({ cell }: { cell: InfoCell }) {
       )}
     >
       <div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           <span
             className={cn(
               "grid h-11 w-11 shrink-0 place-items-center rounded-2xl transition-transform duration-300 group-hover:scale-105",
@@ -153,9 +205,9 @@ function InfoCell({ cell }: { cell: InfoCell }) {
           >
             <cell.icon className="h-5 w-5" />
           </span>
-          {accent && (
-            <span className="inline-flex items-center rounded-full bg-accent/10 px-2.5 py-0.5 text-[11px] font-semibold text-accent">
-              Penting
+          {cell.badge && (
+            <span className="inline-flex items-center rounded-full bg-accent/10 px-2.5 py-0.5 text-[10px] font-bold text-accent">
+              {cell.badge}
             </span>
           )}
         </div>
@@ -176,8 +228,91 @@ function InfoCell({ cell }: { cell: InfoCell }) {
 export default function InfoPage() {
   return (
     <div className="min-h-full">
+      <WebPageJsonLd
+        title="Info Penting, Guidebook & Pengaduan Mabim FTUI 2026"
+        description="Pusat informasi penting Mabim FTUI 2026: buku panduan guidebook, form pengaduan resmi, dan rujukan RS terdekat."
+        url={`${siteUrl}/info`}
+      />
       <FaqJsonLd faqs={MABIM_FAQS} />
       <BreadcrumbJsonLd items={[{ name: "Info & Panduan", url: `${siteUrl}/info` }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Daftar Rumah Sakit & Fasilitas Medis Rujukan Sekitar Kampus UI Depok",
+            description:
+              "Rujukan rumah sakit terdekat dari Fakultas Teknik UI untuk penanganan medis darurat selama kegiatan Mabim FTUI 2026.",
+            itemListElement: [
+              {
+                "@type": "Hospital",
+                position: 1,
+                name: "RSUI (Rumah Sakit Universitas Indonesia)",
+                address: "Kampus Baru UI, Jl. Prof. Dr. R. Soemantri Brodjonegoro, Kukusan, Beji, Depok",
+                telephone: "021-7868800",
+                openingHours: "Mo-Su 00:00-24:00",
+                currenciesAccepted: "IDR",
+                isAcceptingNewPatients: true,
+              },
+              {
+                "@type": "Hospital",
+                position: 2,
+                name: "RS Bunda Margonda",
+                address: "Jl. Margonda Raya No. 28, Kemiri Muka, Beji, Depok",
+                telephone: "021-77211135",
+                openingHours: "Mo-Su 00:00-24:00",
+                currenciesAccepted: "IDR",
+                isAcceptingNewPatients: true,
+              },
+              {
+                "@type": "Hospital",
+                position: 3,
+                name: "RS Grha Permata Ibu",
+                address: "Jl. Raya Kukusan No. 56, Kukusan, Beji, Depok",
+                telephone: "021-7864580",
+                openingHours: "Mo-Su 00:00-24:00",
+                currenciesAccepted: "IDR",
+                isAcceptingNewPatients: true,
+              },
+              {
+                "@type": "Hospital",
+                position: 4,
+                name: "RSU Hermina Depok",
+                address: "Jl. Siliwangi No. 24, Depok",
+                telephone: "021-77210115",
+                openingHours: "Mo-Su 00:00-24:00",
+                currenciesAccepted: "IDR",
+                isAcceptingNewPatients: true,
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "DigitalDocument",
+            name: "Buku Panduan (Guidebook) Mabim FTUI 2026",
+            description:
+              "Buku panduan resmi pelaksanaan Masa Bimbingan Mahasiswa Baru Fakultas Teknik Universitas Indonesia 2026.",
+            url: "https://drive.google.com/drive/folders/1lq2Am2WCA77fUd3jEcsp9XlWnAYaFbVK?usp=sharing",
+            inLanguage: "id-ID",
+            fileFormat: "application/pdf",
+            author: {
+              "@type": "EducationalOrganization",
+              name: "Fakultas Teknik Universitas Indonesia",
+              url: "https://eng.ui.ac.id",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Panitia Mabim FTUI 2026",
+            },
+          }),
+        }}
+      />
       <PageHeader
         eyebrow="Info Penting"
         title="Info & Bantuan"

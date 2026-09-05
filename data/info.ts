@@ -2,11 +2,15 @@ import type { InfoLinks, InfoTimeline } from "./types";
 
 export const infoLinks: InfoLinks = {
   pengaduan: {
-    label: "Laporkan",
+    label: "Form Pengaduan",
     url: "https://bit.ly/PelanggaranMABIMFTUI2026",
   },
+  ketidaknyamanan: {
+    label: "Form Ketidaknyamanan",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSevf_4rnrbBtyCotpB972hNoTD9Bvjj0ZrDXOHXsWnNnJBeTg/viewform?usp=dialog",
+  },
   guidebook: {
-    label: "Guidebook",
+    label: "Buka Guidebook",
     url: "https://drive.google.com/drive/folders/1lq2Am2WCA77fUd3jEcsp9XlWnAYaFbVK?usp=sharing",
   },
   kalender: {

@@ -20,9 +20,9 @@ const FOOTER_TUGAS = [
   { href: "/dashboard", label: "Tugas BOK" },
   { href: "/dashboard", label: "Grup Line" },
 ];
-
 const FOOTER_BANTUAN = [
-  { href: "/info#pengaduan", label: "Pengaduan" },
+  { href: "/info#pengaduan", label: "Form Pengaduan" },
+  { href: "/info#ketidaknyamanan", label: "Form Ketidaknyamanan" },
   { href: "/info#guidebook", label: "Guidebook" },
   { href: "/kalendar", label: "Kalender" },
   { href: "/info#rumah-sakit", label: "RS Terdekat" },
@@ -58,7 +58,7 @@ function FooterColumn({
 
 export default function Footer() {
   return (
-    <footer className="mt-auto px-4 pb-6 pt-3 sm:px-6 lg:px-8">
+    <footer itemScope itemType="https://schema.org/WPFooter" className="mt-auto px-4 pb-6 pt-3 sm:px-6 lg:px-8">
       <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-teal-dark text-cream shadow-lift ring-1 ring-white/15">
         <div
           aria-hidden="true"
@@ -90,7 +90,7 @@ export default function Footer() {
             <Link href="/" className="group flex items-center gap-3">
               <Image
                 src="/logo-mabim.png"
-                alt="Logo Mabim FTUI"
+                alt="Logo Resmi Masa Bimbingan Fakultas Teknik Universitas Indonesia 2026"
                 width={40}
                 height={40}
                 className="rounded-full ring-1 ring-white/20 transition-transform duration-300 group-hover:scale-105"
@@ -109,7 +109,8 @@ export default function Footer() {
                 href="https://www.instagram.com/mabimftui"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram Mabim FTUI"
+                title="Instagram Resmi Mabim FTUI 2026 (@mabimftui)"
+                aria-label="Instagram Resmi Mabim FTUI 2026"
                 className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/15 bg-white/10 text-cream transition-all hover:border-accent/50 hover:bg-accent hover:text-white"
               >
                 <InstagramIcon className="h-4 w-4" />
