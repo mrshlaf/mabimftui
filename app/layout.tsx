@@ -111,9 +111,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/icon.png",
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
     shortcut: "/favicon.ico",
-    apple: "/icon.png",
+    apple: "/logo-mabim.png",
   },
   other: {
     manifest: "/site.webmanifest",
@@ -135,6 +138,9 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <head>
+        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/logo-mabim.png" />
         <link rel="preconnect" href="https://img.youtube.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://i.ytimg.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
