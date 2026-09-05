@@ -101,12 +101,10 @@ const MABIM_FAQS = [
 ];
 
 const INSTAGRAM_URL = "https://www.instagram.com/mabimftui";
-
 type InfoCell = {
   id: string;
   icon: ComponentType<{ className?: string }>;
   title: string;
-  badge?: string;
   desc: string;
   link: { label: string; url: string };
   tone?: "default" | "accent";
@@ -117,7 +115,6 @@ const INFO_CELLS: InfoCell[] = [
     id: "pengaduan",
     icon: ShieldAlert,
     title: "Form Pengaduan MABIM",
-    badge: "Pelanggaran & Misconduct",
     desc: "Fokus pelanggaran aturan, bentakan, hinaan, kekerasan fisik, pelecehan seksual, sentuhan melanggar batas, atau denda/pemerasan.",
     link: infoLinks.pengaduan,
     tone: "accent",
@@ -126,7 +123,6 @@ const INFO_CELLS: InfoCell[] = [
     id: "ketidaknyamanan",
     icon: HeartHandshake,
     title: "Form Ketidaknyamanan MABIM",
-    badge: "Concern & Evaluasi",
     desc: "Fokus pengalaman tidak nyaman, pengondisian terlalu menekan, komunikasi panitia kurang jelas, jadwal melelahkan, atau fasilitas kurang layak.",
     link: infoLinks.ketidaknyamanan!,
     tone: "accent",
@@ -196,7 +192,7 @@ function InfoCell({ cell }: { cell: InfoCell }) {
       )}
     >
       <div>
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between">
           <span
             className={cn(
               "grid h-11 w-11 shrink-0 place-items-center rounded-2xl transition-transform duration-300 group-hover:scale-105",
@@ -205,11 +201,6 @@ function InfoCell({ cell }: { cell: InfoCell }) {
           >
             <cell.icon className="h-5 w-5" />
           </span>
-          {cell.badge && (
-            <span className="inline-flex items-center rounded-full bg-accent/10 px-2.5 py-0.5 text-[10px] font-bold text-accent">
-              {cell.badge}
-            </span>
-          )}
         </div>
         <h2 className="mt-4 font-heading text-base font-bold text-foreground transition-colors group-hover:text-accent sm:text-lg">
           {cell.title}
@@ -322,28 +313,35 @@ export default function InfoPage() {
         accentWord="Bantuan"
       />
 
-      <section className="mx-auto max-w-5xl px-4 pt-4 pb-8 sm:px-6 sm:pt-6 sm:pb-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <Reveal className="col-span-1 sm:col-span-2 h-full lg:row-span-2">
+      <section className="mx-auto max-w-6xl px-4 pt-4 pb-8 sm:px-6 sm:pt-6 sm:pb-12 lg:px-8">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Card 1: Form Pengaduan MABIM */}
+          <Reveal className="h-full" delay={0}>
+            <InfoCell cell={INFO_CELLS[0]} />
+          </Reveal>
+
+          {/* Card 2: Form Ketidaknyamanan MABIM */}
+          <Reveal className="h-full" delay={60}>
+            <InfoCell cell={INFO_CELLS[1]} />
+          </Reveal>
+
+          {/* Card 3: Instagram Mabim FTUI */}
+          <Reveal className="h-full" delay={120}>
             <Card
               id="instagram"
-              className="group relative flex h-full scroll-mt-20 flex-col justify-between overflow-hidden rounded-3xl bg-teal-dark p-6 text-cream shadow-lift ring-1 ring-white/15 transition-all duration-300 hover:-translate-y-1 sm:p-8"
+              className="group relative flex h-full scroll-mt-20 flex-col justify-between overflow-hidden rounded-3xl bg-teal-dark p-5 text-cream shadow-lift ring-1 ring-white/15 transition-all duration-300 hover:-translate-y-1 sm:p-6"
             >
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-24 -right-12 h-64 w-64 rounded-full bg-accent/20 blur-3xl"
-              />
-              <div
-                aria-hidden="true"
-                className="pointer-events-none absolute -left-10 top-1/3 h-56 w-56 rounded-full bg-amber-400/10 blur-3xl"
+                className="pointer-events-none absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-accent/20 blur-3xl"
               />
               <div aria-hidden="true" className="hero-beam" />
               <InstagramIcon
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-8 -right-4 h-36 w-36 text-white/5"
+                className="pointer-events-none absolute -bottom-6 -right-4 h-28 w-28 text-white/5"
               />
-              
-              <div className="relative z-10 flex h-full flex-col justify-between gap-8">
+
+              <div className="relative z-10 flex h-full flex-col justify-between gap-5">
                 <div>
                   <div className="flex items-center justify-between">
                     <span className="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 text-accent ring-1 ring-white/15">
@@ -353,26 +351,24 @@ export default function InfoPage() {
                       IG Resmi
                     </span>
                   </div>
-                  <h2 className="mt-5 font-heading text-xl font-bold tracking-tight text-white sm:text-2xl">
-                    Informasi Terkini di{" "}
-                    <span className="bg-gradient-to-r from-cream via-amber-200 to-accent bg-clip-text text-transparent">
-                      Instagram
-                    </span>
+                  <h2 className="mt-4 font-heading text-lg sm:text-xl font-bold tracking-tight text-white">
+                    Instagram <span className="text-accent">@mabimftui</span>
                   </h2>
-                  <p className="mt-2.5 max-w-[34ch] text-sm leading-relaxed text-cream/75">
+                  <p className="mt-1.5 text-xs sm:text-sm leading-relaxed text-cream/75">
                     Pengumuman resmi, jadwal mendadak, dokumentasi, dan kabar penting selama masa bimbingan.
                   </p>
                 </div>
 
-                <div className="flex flex-wrap items-center gap-3">
+                <div className="pt-2">
                   <Button
                     asChild
                     size="default"
-                    className="h-10 rounded-full bg-cream px-5 font-semibold text-teal-dark shadow-lift hover:bg-white hover:text-teal-950 active:scale-[0.98]"
+                    className="w-full rounded-full bg-cream px-5 text-xs font-semibold text-teal-dark shadow-sm hover:bg-white hover:text-teal-950 active:scale-[0.98]"
                   >
                     <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-                      <InstagramIcon className="h-4 w-4 text-accent" />
-                      @mabimftui
+                      <InstagramIcon className="h-3.5 w-3.5 text-accent" />
+                      Kunjungi @mabimftui
+                      <ExternalLink data-slot="icon-inline-end" className="h-3.5 w-3.5" />
                     </a>
                   </Button>
                 </div>
@@ -380,13 +376,18 @@ export default function InfoPage() {
             </Card>
           </Reveal>
 
-          {INFO_CELLS.map((cell, i) => (
-            <Reveal key={cell.id} className="h-full" delay={(i + 1) * 80}>
-              <InfoCell cell={cell} />
-            </Reveal>
-          ))}
+          {/* Card 4: Guidebook Mabim */}
+          <Reveal className="h-full" delay={180}>
+            <InfoCell cell={INFO_CELLS[2]} />
+          </Reveal>
 
-          <Reveal className="h-full col-span-1 sm:col-span-2 lg:col-span-1" delay={320}>
+          {/* Card 5: Kalender Kegiatan */}
+          <Reveal className="h-full" delay={240}>
+            <InfoCell cell={INFO_CELLS[3]} />
+          </Reveal>
+
+          {/* Card 6: Jam Kegiatan */}
+          <Reveal className="h-full" delay={300}>
             <Card
               id="jam-kegiatan"
               className="group relative flex flex-col justify-between overflow-hidden h-full scroll-mt-20 rounded-3xl border border-border/80 bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-card sm:p-6"
@@ -398,32 +399,33 @@ export default function InfoPage() {
                 <h2 className="mt-4 font-heading text-base font-bold text-foreground transition-colors group-hover:text-accent sm:text-lg">
                   Jam Kegiatan
                 </h2>
-                <div className="mt-3 space-y-2">
-                  <div className="rounded-2xl border border-border/60 bg-secondary/50 p-3">
-                    <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                <div className="mt-3 grid grid-cols-2 gap-2">
+                  <div className="rounded-2xl border border-border/60 bg-secondary/50 p-2.5">
+                    <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
                       Senin - Jumat
                     </p>
-                    <p className="mt-0.5 font-heading text-base font-bold leading-none text-foreground">
+                    <p className="mt-0.5 font-heading text-sm font-bold text-foreground">
                       {infoTimeline.jamSeninJumat}
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-border/60 bg-secondary/50 p-3">
-                    <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                  <div className="rounded-2xl border border-border/60 bg-secondary/50 p-2.5">
+                    <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
                       Sabtu
                     </p>
-                    <p className="mt-0.5 font-heading text-base font-bold leading-none text-foreground">
+                    <p className="mt-0.5 font-heading text-sm font-bold text-foreground">
                       {infoTimeline.jamSabtu}
                     </p>
                   </div>
                 </div>
               </div>
-              <p className="mt-3 text-xs text-muted-foreground">
+              <p className="mt-4 text-xs text-muted-foreground">
                 Jadwal harian dibagikan di grup masing-masing.
               </p>
             </Card>
           </Reveal>
 
-          <Reveal className="col-span-1 sm:col-span-2 lg:col-span-4" delay={400}>
+          {/* Row 3: Rumah Sakit Rujukan Carousel */}
+          <Reveal className="col-span-1 sm:col-span-2 lg:col-span-3" delay={360}>
             <Card
               id="rumah-sakit"
               className="h-full scroll-mt-20 rounded-3xl border border-border/80 bg-card p-6 shadow-sm"
