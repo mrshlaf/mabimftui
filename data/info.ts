@@ -3,7 +3,7 @@ import type { InfoLinks, InfoTimeline } from "./types";
 export const infoLinks: InfoLinks = {
   pengaduan: {
     label: "Form Pengaduan",
-    url: "https://bit.ly/PelanggaranMABIMFTUI2026",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfeNgcH-zffp72yeM6AVttXlolI5nokhpBzM6kwa2gy036rLw/viewform?usp=preview",
   },
   ketidaknyamanan: {
     label: "Form Ketidaknyamanan",
