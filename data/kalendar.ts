@@ -90,8 +90,6 @@ export const KALENDER_EVENTS: KalendarEvent[] = [
 
   { label: "DAY 6 - MABIM FTUI 2026", tag: "day", start: "2026-10-03", waktu: "07:00 WIB", unlockDate: U5 },
 
-  { label: "WEEK TUGAS PENGGANTI", tag: "range", start: "2026-10-05", end: "2026-10-09", unlockDate: U6 },
-  { label: "TUGAS PENGGANTI", tag: "deadline", start: "2026-10-09", waktu: "00:00 WIB", unlockDate: U6 },
   { label: "DAY 7 - MABIM FTUI 2026", tag: "day", start: "2026-10-10", waktu: "06:00 WIB", unlockDate: U6 },
   { label: "PENUGASAN TECHNOPRENEURSHIP", tag: "deadline", start: "2026-10-10", waktu: "08:00 WIB", unlockDate: U6 },
 ];
